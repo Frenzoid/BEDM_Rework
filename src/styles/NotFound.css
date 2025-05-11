@@ -1,0 +1,194 @@
+/* pages/NotFound/NotFound.css */
+.not-found-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.not-found-image {
+  margin-bottom: 2rem;
+}
+
+.compass-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('https://www.bernerdm.ch/wp-content/uploads/2024/12/compass.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: rotateCompass 10s linear infinite;
+}
+
+@keyframes rotateCompass {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.not-found-content h1 {
+  font-size: 7rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  text-shadow: 3px 3px 0 var(--secondary-color);
+}
+
+.not-found-content h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.not-found-content p {
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.btn-icon {
+  margin-right: 0.5rem;
+}
+
+.suggested-routes {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+.suggested-routes h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.route-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.route-link {
+  display: flex;
+  align-items: center;
+  color: var(--tertiary-color);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.route-link:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.route-link svg {
+  margin-right: 0.5rem;
+}
+
+/* Bear Tracks */
+.bear-tracks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.track {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background-image: url('https://www.bernerdm.ch/wp-content/uploads/2024/12/bear-track.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.track-1 {
+  top: 20%;
+  left: 10%;
+  transform: rotate(15deg);
+}
+
+.track-2 {
+  top: 35%;
+  left: 15%;
+  transform: rotate(-10deg);
+}
+
+.track-3 {
+  top: 50%;
+  left: 8%;
+  transform: rotate(20deg);
+}
+
+.track-4 {
+  top: 25%;
+  right: 12%;
+  transform: rotate(-15deg);
+}
+
+.track-5 {
+  top: 40%;
+  right: 8%;
+  transform: rotate(10deg);
+}
+
+.track-6 {
+  top: 60%;
+  right: 15%;
+  transform: rotate(-5deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .not-found-content h1 {
+    font-size: 5rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .compass-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .not-found-actions .btn {
+    width: 100%;
+  }
+}

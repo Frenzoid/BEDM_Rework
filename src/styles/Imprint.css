@@ -1,0 +1,114 @@
+/* pages/Imprint/Imprint.css */
+.imprint-page {
+  padding-bottom: 4rem;
+}
+
+.legal-banner {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.legal-banner h1 {
+  color: var(--white);
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.title-icon {
+  margin-right: 1rem;
+  font-size: 1.75rem;
+}
+
+.imprint-content {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+}
+
+.legal-section {
+  margin-bottom: 3rem;
+}
+
+.legal-section:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.legal-section p {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.entity-details {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+}
+
+.entity-details p {
+  margin-bottom: 1rem;
+}
+
+.entity-details p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.legal-list li {
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.legal-list li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-details {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-top: 1.5rem;
+}
+
+.contact-details p {
+  margin-bottom: 1rem;
+}
+
+.contact-details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .legal-banner {
+    padding: 2rem 0;
+  }
+
+  .imprint-content {
+    padding: 1.5rem;
+  }
+
+  .title-icon {
+    font-size: 1.5rem;
+  }
+}

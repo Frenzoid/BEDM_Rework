@@ -1,0 +1,323 @@
+/* pages/History/History.css */
+.history-page {
+  padding-bottom: 4rem;
+}
+
+.history-content {
+  margin-top: 3rem;
+}
+
+/* History Intro */
+.history-intro {
+  margin-bottom: 4rem;
+}
+
+.intro-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro-header h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-icon {
+  color: var(--tertiary-color);
+  margin-right: 0.75rem;
+}
+
+.intro-text {
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.intro-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--tertiary-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin: 0 auto 1.25rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+/* History Quote */
+.history-quote {
+  background-color: var(--secondary-color);
+  padding: 4rem 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: var(--white);
+}
+
+.quote-icon {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 3rem;
+  position: absolute;
+}
+
+.quote-left {
+  top: -1.5rem;
+  left: -2rem;
+}
+
+.quote-right {
+  bottom: -1.5rem;
+  right: -2rem;
+}
+
+.quote-container blockquote {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.quote-container cite {
+  font-size: 1rem;
+  font-style: normal;
+  opacity: 0.8;
+}
+
+/* History Timeline */
+.history-timeline {
+  margin-bottom: 4rem;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.timeline-header h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-header p {
+  color: var(--dark-gray);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: var(--tertiary-color);
+  transform: translateX(-50%);
+}
+
+/* History Gallery */
+.history-gallery {
+  margin-bottom: 4rem;
+}
+
+.history-gallery h2 {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 200px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* History Testimony */
+.history-testimony {
+  margin-bottom: 2rem;
+}
+
+.history-testimony h2 {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.testimony-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimony-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.testimony-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimony-content {
+  padding: 2rem;
+  position: relative;
+}
+
+.testimony-content::before {
+  content: '"';
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--light-gray);
+  font-family: serif;
+}
+
+.testimony-content p {
+  color: var(--text-color);
+  line-height: 1.7;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.testimony-author {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--light-gray);
+  border-top: 1px solid var(--medium-gray);
+}
+
+.testimony-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid var(--white);
+}
+
+.author-details h4 {
+  color: var(--secondary-color);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.author-details p {
+  color: var(--dark-gray);
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .quote-icon {
+    font-size: 2rem;
+  }
+
+  .quote-left {
+    top: -1rem;
+    left: -1rem;
+  }
+
+  .quote-right {
+    bottom: -1rem;
+    right: -1rem;
+  }
+
+  .quote-container blockquote {
+    font-size: 1.25rem;
+  }
+
+  .timeline-line {
+    left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-stats {
+    gap: 2rem;
+  }
+
+  .history-quote {
+    padding: 3rem 1.5rem;
+  }
+
+  .quote-container blockquote {
+    font-size: 1.1rem;
+  }
+
+  .quote-icon {
+    display: none;
+  }
+
+  .gallery-item {
+    height: 180px;
+  }
+}

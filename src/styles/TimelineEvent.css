@@ -1,0 +1,150 @@
+/* components/TimelineEvent/TimelineEvent.css */
+.timeline-event {
+  position: relative;
+  margin-bottom: 5rem;
+  width: 50%;
+  padding: 0 3rem;
+}
+
+.timeline-event:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-event.left {
+  left: 0;
+}
+
+.timeline-event.right {
+  left: 50%;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 2rem;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: 2;
+  border: 4px solid var(--white);
+  box-shadow: 0 0 0 3px var(--tertiary-color);
+}
+
+.timeline-event.left .timeline-dot {
+  right: -10px;
+}
+
+.timeline-event.right .timeline-dot {
+  left: -10px;
+}
+
+.event-content {
+  position: relative;
+}
+
+.event-year {
+  display: inline-block;
+  background-color: var(--tertiary-color);
+  color: var(--white);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(116, 128, 103, 0.3);
+}
+
+.event-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.event-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.event-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.05);
+}
+
+.event-text {
+  padding: 1.5rem;
+}
+
+.event-text h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+.event-text p {
+  color: var(--text-color);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Connecting line from dot to card */
+.timeline-event.left::before,
+.timeline-event.right::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  width: 3rem;
+  height: 2px;
+  background-color: var(--tertiary-color);
+  z-index: 1;
+}
+
+.timeline-event.left::before {
+  right: 0;
+}
+
+.timeline-event.right::before {
+  left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .timeline-event {
+    width: calc(100% - 4rem);
+    left: 4rem !important;
+    padding: 0 1rem 0 3rem;
+  }
+
+  .timeline-dot {
+    left: -10px !important;
+  }
+
+  .timeline-event.left::before,
+  .timeline-event.right::before {
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-event {
+    width: calc(100% - 3rem);
+    left: 3rem !important;
+    padding: 0 0 0 2rem;
+  }
+
+  .event-image {
+    height: 180px;
+  }
+}

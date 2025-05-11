@@ -1,0 +1,494 @@
+/* pages/Home/Home.css */
+.home-page {
+  overflow-x: hidden;
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: var(--transition);
+  text-align: center;
+  border: 1px solid var(--light-gray);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--light-gray);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.feature-card:hover .feature-icon {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.feature-card h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.feature-card p {
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Event Section */
+.event-section {
+  padding: 5rem 0;
+  background-color: var(--light-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.event-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.bernerdm.ch/wp-content/uploads/2024/12/topo-map-bg.png');
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.event-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.event-info h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+}
+
+.event-info p {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.event-details {
+  margin-bottom: 2rem;
+}
+
+.event-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.event-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+}
+
+.event-detail h4 {
+  color: var(--secondary-color);
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.event-detail p {
+  color: var(--dark-gray);
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.event-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.event-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiss-map-container {
+  position: relative;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.swiss-map {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.pulsating-dot {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pulsating-dot::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  opacity: 0.7;
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+    opacity: 0.7;
+  }
+
+  80%,
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* History Section */
+.history-section {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.history-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.history-image img:hover {
+  transform: scale(1.02);
+}
+
+.history-info h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+}
+
+.history-info p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.history-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-icon {
+  margin-right: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 5rem 0;
+  background-color: var(--light-gray);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Countdown Section */
+.countdown-section {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.bernerdm.ch/wp-content/uploads/2024/12/hiking-pattern.png');
+  background-size: cover;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.countdown-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.countdown-content h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.countdown-content p {
+  color: var(--medium-gray);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.countdown-timer-large {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.countdown-item-large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.count-large {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.label-large {
+  font-size: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.countdown-separator {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.countdown-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.quick-link-card {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  transition: var(--transition);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+}
+
+.quick-link-card:hover {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.quick-link-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.quick-link-card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.quick-link-card p {
+  color: var(--dark-gray);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+
+  .event-content,
+  .history-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .event-image {
+    order: -1;
+  }
+
+  .countdown-item-large {
+    margin: 0 0.75rem 1rem;
+  }
+
+  .count-large {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+
+  .countdown-separator {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .features-section,
+  .event-section,
+  .history-section,
+  .testimonials-section,
+  .countdown-section,
+  .quick-links-section {
+    padding: 3rem 0;
+  }
+
+  .count-large {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .label-large {
+    font-size: 0.8rem;
+  }
+
+  .countdown-separator {
+    font-size: 2rem;
+  }
+
+  .event-actions,
+  .countdown-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .event-actions .btn,
+  .countdown-actions .btn {
+    width: 100%;
+  }
+
+  .history-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .stat {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+}
