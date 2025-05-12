@@ -148,6 +148,7 @@
   flex: 1;
   background-color: var(--primary);
   position: relative;
+  margin: 1px 0;
 }
 
 .bar-value {
