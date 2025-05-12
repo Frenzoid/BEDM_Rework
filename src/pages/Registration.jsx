@@ -1,534 +1,310 @@
-// pages/Registration/Registration.jsx
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { motion } from "motion/react"
-import { FaUser, FaEnvelope, FaPhone, FaIdCard, FaBirthdayCake, FaFlag, FaUsers, FaShieldAlt, FaWalking, FaInfoCircle, FaCheck } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import '../styles/Registration.css';
-import PageBanner from '../components/PageBanner';
 
 const Registration = () => {
-  const { t } = useTranslation();
-  const [step, setStep] = useState(1);
-  const [registrationType, setRegistrationType] = useState('individual');
-  const [category, setCategory] = useState('');
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
-    dateOfBirth: '',
-    nationality: '',
-    idNumber: '',
+    birthDate: '',
+    category: '',
     groupName: '',
-    groupSize: '',
-    isUniform: false,
-    emergencyContact: '',
-    emergencyPhone: '',
-    termsAccepted: false
+    isGroup: false,
+    agreeTerms: false
   });
+
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  // Handle form input changes
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
       [name]: type === 'checkbox' ? checked : value
     });
+
+    // If category is group-related, set isGroup to true
+    if (name === 'category' && (value === 'category-a-group' || value === 'category-c-group')) {
+      setFormData(prevData => ({
+        ...prevData,
+        isGroup: true
+      }));
+    } else if (name === 'category') {
+      setFormData(prevData => ({
+        ...prevData,
+        isGroup: false,
+        groupName: ''
+      }));
+    }
   };
 
-  // Handle registration type selection
-  const handleRegistrationTypeChange = (type) => {
-    setRegistrationType(type);
-  };
-
-  // Handle category selection
-  const handleCategoryChange = (cat) => {
-    setCategory(cat);
-  };
-
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    // In a real app, we would submit the form data to a server here
     console.log('Form submitted:', formData);
     setFormSubmitted(true);
+
+    // Simulate form submission
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
   };
 
-  // Go to next step
-  const goToNextStep = () => {
-    setStep(step + 1);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const handleReset = () => {
+    setFormSubmitted(false);
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      birthDate: '',
+      category: '',
+      groupName: '',
+      isGroup: false,
+      agreeTerms: false
+    });
   };
 
-  // Go to previous step
-  const goToPrevStep = () => {
-    setStep(step - 1);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
   };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.4 }
+    }
+  };
+
+  if (formSubmitted) {
+    return (
+      <div className="registration-page success-page">
+        <motion.div
+          className="success-container"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="success-icon">
+            <i className="fas fa-check-circle"></i>
+          </div>
+          <h2>Registration Successful!</h2>
+          <p>Thank you for registering for the 67th Bernese Distance March. We're excited to have you join us!</p>
+          <p>A confirmation email has been sent to {formData.email} with further details about the event.</p>
+          <p>Your registration details:</p>
+          <ul className="registration-details">
+            <li><strong>Name:</strong> {formData.firstName} {formData.lastName}</li>
+            <li><strong>Category:</strong> {formData.category.replace('-', ' ').toUpperCase()}</li>
+            {formData.isGroup && (
+              <li><strong>Group Name:</strong> {formData.groupName}</li>
+            )}
+          </ul>
+          <p>If you have any questions, please contact us at <a href="mailto:kommando@bernerdm.ch">kommando@bernerdm.ch</a>.</p>
+          <button className="btn btn-primary" onClick={handleReset}>Register Another Participant</button>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
     <div className="registration-page">
-      <PageBanner
-        title={t('registration')}
-        subtitle={t('registerForMarch')}
-        background="https://www.bernerdm.ch/wp-content/uploads/2024/12/registration-bg.jpg"
-      />
+      <div className="page-header">
+        <div className="container">
+          <h1>Registration</h1>
+          <p>Sign up for the 67th Bernese Distance March - December 6th, 2025</p>
+        </div>
+      </div>
 
       <div className="container">
-        {/* Registration Steps */}
-        <div className="registration-steps">
-          <div className={`step ${step >= 1 ? 'active' : ''}`}>
-            <div className="step-number">1</div>
-            <span className="step-name">{t('participantType')}</span>
-          </div>
-
-          <div className="step-connector"></div>
-
-          <div className={`step ${step >= 2 ? 'active' : ''}`}>
-            <div className="step-number">2</div>
-            <span className="step-name">{t('personalInfo')}</span>
-          </div>
-
-          <div className="step-connector"></div>
-
-          <div className={`step ${step >= 3 ? 'active' : ''}`}>
-            <div className="step-number">3</div>
-            <span className="step-name">{t('confirmation')}</span>
-          </div>
-        </div>
-
-        {/* Registration Form */}
-        <motion.div
-          className="registration-form-container"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          {formSubmitted ? (
-            <div className="registration-success">
-              <div className="success-icon">
-                <FaCheck />
+        <div className="registration-content">
+          <div className="registration-info">
+            <h2>Registration Information</h2>
+            <div className="info-card">
+              <div className="info-icon">
+                <i className="fas fa-info-circle"></i>
               </div>
-              <h2>{t('registrationComplete')}</h2>
-              <p>{t('registrationSuccessMessage')}</p>
-              <p>{t('checkEmailMessage')}</p>
+              <div className="info-content">
+                <h3>Important Notes</h3>
+                <ul>
+                  <li>Registration deadline: <strong>November 15, 2025</strong></li>
+                  <li>Registration fee: <strong>CHF 25.00</strong> for adults</li>
+                  <li>Children under 7: <strong>Free</strong></li>
+                  <li>Payment to be made on-site (cash only)</li>
+                  <li>No credit cards or checks accepted</li>
+                </ul>
+              </div>
             </div>
-          ) : (
+
+            <div className="info-card">
+              <div className="info-icon">
+                <i className="fas fa-tags"></i>
+              </div>
+              <div className="info-content">
+                <h3>Categories</h3>
+                <ul>
+                  <li><strong>Category A:</strong> Uniformed participants (military, police, etc.)</li>
+                  <li><strong>Category B:</strong> Youth & Sport (under 20)</li>
+                  <li><strong>Category C:</strong> Civilian participants</li>
+                  <li><strong>Groups:</strong> Register as Category A or C group</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="registration-image">
+              <img src="https://www.bernerdm.ch/wp-content/uploads/2024/12/image-1-1024x680.png" alt="Participants in the Bernese Distance March" />
+            </div>
+          </div>
+
+          <motion.div
+            className="registration-form-container"
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+          >
+            <h2>Registration Form</h2>
             <form className="registration-form" onSubmit={handleSubmit}>
-              {/* Step 1: Participant Type */}
-              {step === 1 && (
-                <div className="form-step">
-                  <h2>{t('chooseParticipantType')}</h2>
-                  <p className="form-description">{t('participantTypeDesc')}</p>
-
-                  <div className="type-selection">
-                    <div
-                      className={`type-card ${registrationType === 'individual' ? 'selected' : ''}`}
-                      onClick={() => handleRegistrationTypeChange('individual')}
-                    >
-                      <div className="type-icon">
-                        <FaUser />
-                      </div>
-                      <h3>{t('individual')}</h3>
-                      <p>{t('individualDesc')}</p>
-                    </div>
-
-                    <div
-                      className={`type-card ${registrationType === 'group' ? 'selected' : ''}`}
-                      onClick={() => handleRegistrationTypeChange('group')}
-                    >
-                      <div className="type-icon">
-                        <FaUsers />
-                      </div>
-                      <h3>{t('group')}</h3>
-                      <p>{t('groupDesc')}</p>
-                    </div>
-                  </div>
-
-                  <h3 className="category-title">{t('selectCategory')}</h3>
-                  <p className="form-description">{t('categoryDesc')}</p>
-
-                  <div className="category-selection">
-                    <div
-                      className={`category-card ${category === 'A' ? 'selected' : ''}`}
-                      onClick={() => handleCategoryChange('A')}
-                    >
-                      <div className="category-header">
-                        <h4>{t('categoryA')}</h4>
-                        <div className="uniform-badge">
-                          <FaShieldAlt /> {t('uniformed')}
-                        </div>
-                      </div>
-                      <p>{t('categoryADesc')}</p>
-                    </div>
-
-                    <div
-                      className={`category-card ${category === 'B' ? 'selected' : ''}`}
-                      onClick={() => handleCategoryChange('B')}
-                    >
-                      <div className="category-header">
-                        <h4>{t('categoryB')}</h4>
-                      </div>
-                      <p>{t('categoryBDesc')}</p>
-                    </div>
-
-                    <div
-                      className={`category-card ${category === 'C' ? 'selected' : ''}`}
-                      onClick={() => handleCategoryChange('C')}
-                    >
-                      <div className="category-header">
-                        <h4>{t('categoryC')}</h4>
-                      </div>
-                      <p>{t('categoryCDesc')}</p>
-                    </div>
-                  </div>
-
-                  <div className="info-box">
-                    <FaInfoCircle className="info-icon" />
-                    <p>{t('categoryInfo')}</p>
-                  </div>
-
-                  <div className="form-actions">
-                    <button type="button" className="btn" onClick={goToNextStep}>
-                      {t('continue')}
-                    </button>
-                  </div>
+              <motion.div className="form-row" variants={itemVariants}>
+                <div className="form-group">
+                  <label htmlFor="firstName">First Name *</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
+                <div className="form-group">
+                  <label htmlFor="lastName">Last Name *</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </motion.div>
+
+              <motion.div className="form-row" variants={itemVariants}>
+                <div className="form-group">
+                  <label htmlFor="email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </motion.div>
+
+              <motion.div className="form-group" variants={itemVariants}>
+                <label htmlFor="birthDate">Date of Birth *</label>
+                <input
+                  type="date"
+                  id="birthDate"
+                  name="birthDate"
+                  value={formData.birthDate}
+                  onChange={handleChange}
+                  required
+                />
+              </motion.div>
+
+              <motion.div className="form-group" variants={itemVariants}>
+                <label htmlFor="category">Category *</label>
+                <select
+                  id="category"
+                  name="category"
+                  value={formData.category}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select a category</option>
+                  <option value="category-a-men">Category A - Men (Uniformed)</option>
+                  <option value="category-a-women">Category A - Women (Uniformed)</option>
+                  <option value="category-a-group">Category A - Group (Uniformed)</option>
+                  <option value="category-b">Category B - Youth & Sport (under 20)</option>
+                  <option value="category-c-men">Category C - Men</option>
+                  <option value="category-c-women">Category C - Women</option>
+                  <option value="category-c-group">Category C - Group</option>
+                </select>
+              </motion.div>
+
+              {formData.isGroup && (
+                <motion.div
+                  className="form-group"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <label htmlFor="groupName">Group Name *</label>
+                  <input
+                    type="text"
+                    id="groupName"
+                    name="groupName"
+                    value={formData.groupName}
+                    onChange={handleChange}
+                    required
+                  />
+                </motion.div>
               )}
 
-              {/* Step 2: Personal Information */}
-              {step === 2 && (
-                <div className="form-step">
-                  <h2>{t('personalInformation')}</h2>
-                  <p className="form-description">{t('personalInfoDesc')}</p>
+              <motion.div className="form-group checkbox-group" variants={itemVariants}>
+                <input
+                  type="checkbox"
+                  id="agreeTerms"
+                  name="agreeTerms"
+                  checked={formData.agreeTerms}
+                  onChange={handleChange}
+                  required
+                />
+                <label htmlFor="agreeTerms">
+                  I agree to the <a href="#terms">terms and conditions</a> and acknowledge that I am physically fit to participate in this event.
+                </label>
+              </motion.div>
 
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="firstName">
-                        <FaUser className="form-icon" />
-                        {t('firstName')} *
-                      </label>
-                      <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="lastName">
-                        <FaUser className="form-icon" />
-                        {t('lastName')} *
-                      </label>
-                      <input
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="email">
-                        <FaEnvelope className="form-icon" />
-                        {t('email')} *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="phone">
-                        <FaPhone className="form-icon" />
-                        {t('phone')} *
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="dateOfBirth">
-                        <FaBirthdayCake className="form-icon" />
-                        {t('dateOfBirth')} *
-                      </label>
-                      <input
-                        type="date"
-                        id="dateOfBirth"
-                        name="dateOfBirth"
-                        value={formData.dateOfBirth}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="nationality">
-                        <FaFlag className="form-icon" />
-                        {t('nationality')} *
-                      </label>
-                      <input
-                        type="text"
-                        id="nationality"
-                        name="nationality"
-                        value={formData.nationality}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="idNumber">
-                        <FaIdCard className="form-icon" />
-                        {t('idNumber')} *
-                      </label>
-                      <input
-                        type="text"
-                        id="idNumber"
-                        name="idNumber"
-                        value={formData.idNumber}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-
-                    {registrationType === 'group' && (
-                      <div className="form-group">
-                        <label htmlFor="groupName">
-                          <FaUsers className="form-icon" />
-                          {t('groupName')} *
-                        </label>
-                        <input
-                          type="text"
-                          id="groupName"
-                          name="groupName"
-                          value={formData.groupName}
-                          onChange={handleChange}
-                          required={registrationType === 'group'}
-                        />
-                      </div>
-                    )}
-                  </div>
-
-                  {registrationType === 'group' && (
-                    <div className="form-row">
-                      <div className="form-group">
-                        <label htmlFor="groupSize">
-                          <FaUsers className="form-icon" />
-                          {t('groupSize')} *
-                        </label>
-                        <select
-                          id="groupSize"
-                          name="groupSize"
-                          value={formData.groupSize}
-                          onChange={handleChange}
-                          required={registrationType === 'group'}
-                        >
-                          <option value="">{t('selectGroupSize')}</option>
-                          <option value="2-5">2-5 {t('people')}</option>
-                          <option value="6-10">6-10 {t('people')}</option>
-                          <option value="11-20">11-20 {t('people')}</option>
-                          <option value="21+">21+ {t('people')}</option>
-                        </select>
-                      </div>
-                    </div>
-                  )}
-
-                  {(category === 'A' || category === 'C') && (
-                    <div className="form-row">
-                      <div className="form-group checkbox-group">
-                        <input
-                          type="checkbox"
-                          id="isUniform"
-                          name="isUniform"
-                          checked={formData.isUniform}
-                          onChange={handleChange}
-                        />
-                        <label htmlFor="isUniform">
-                          <FaShieldAlt className="form-icon" />
-                          {t('participatingInUniform')}
-                        </label>
-                      </div>
-                    </div>
-                  )}
-
-                  <h3 className="section-title">{t('emergencyContact')}</h3>
-
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="emergencyContact">
-                        <FaUser className="form-icon" />
-                        {t('emergencyContactName')} *
-                      </label>
-                      <input
-                        type="text"
-                        id="emergencyContact"
-                        name="emergencyContact"
-                        value={formData.emergencyContact}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="emergencyPhone">
-                        <FaPhone className="form-icon" />
-                        {t('emergencyContactPhone')} *
-                      </label>
-                      <input
-                        type="tel"
-                        id="emergencyPhone"
-                        name="emergencyPhone"
-                        value={formData.emergencyPhone}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="form-actions">
-                    <button type="button" className="btn btn-secondary" onClick={goToPrevStep}>
-                      {t('back')}
-                    </button>
-                    <button type="button" className="btn" onClick={goToNextStep}>
-                      {t('continue')}
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {/* Step 3: Confirmation */}
-              {step === 3 && (
-                <div className="form-step">
-                  <h2>{t('confirmRegistration')}</h2>
-                  <p className="form-description">{t('confirmRegistrationDesc')}</p>
-
-                  <div className="confirmation-box">
-                    <div className="confirmation-header">
-                      <FaWalking className="confirmation-icon" />
-                      <h3>{t('registrationSummary')}</h3>
-                    </div>
-
-                    <div className="confirmation-content">
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('registrationType')}:</span>
-                        <span className="confirmation-value">
-                          {registrationType === 'individual' ? t('individual') : t('group')}
-                        </span>
-                      </div>
-
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('category')}:</span>
-                        <span className="confirmation-value">
-                          {t(`category${category}`)}
-                          {formData.isUniform && ` (${t('uniformed')})`}
-                        </span>
-                      </div>
-
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('name')}:</span>
-                        <span className="confirmation-value">{`${formData.firstName} ${formData.lastName}`}</span>
-                      </div>
-
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('email')}:</span>
-                        <span className="confirmation-value">{formData.email}</span>
-                      </div>
-
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('phone')}:</span>
-                        <span className="confirmation-value">{formData.phone}</span>
-                      </div>
-
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('dateOfBirth')}:</span>
-                        <span className="confirmation-value">{formData.dateOfBirth}</span>
-                      </div>
-
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('nationality')}:</span>
-                        <span className="confirmation-value">{formData.nationality}</span>
-                      </div>
-
-                      {registrationType === 'group' && (
-                        <>
-                          <div className="confirmation-item">
-                            <span className="confirmation-label">{t('groupName')}:</span>
-                            <span className="confirmation-value">{formData.groupName}</span>
-                          </div>
-
-                          <div className="confirmation-item">
-                            <span className="confirmation-label">{t('groupSize')}:</span>
-                            <span className="confirmation-value">{formData.groupSize}</span>
-                          </div>
-                        </>
-                      )}
-
-                      <div className="confirmation-item">
-                        <span className="confirmation-label">{t('emergencyContact')}:</span>
-                        <span className="confirmation-value">
-                          {formData.emergencyContact} ({formData.emergencyPhone})
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="terms-section">
-                    <div className="form-group checkbox-group">
-                      <input
-                        type="checkbox"
-                        id="termsAccepted"
-                        name="termsAccepted"
-                        checked={formData.termsAccepted}
-                        onChange={handleChange}
-                        required
-                      />
-                      <label htmlFor="termsAccepted">
-                        {t('termsAgreement')} <a href="/terms" target="_blank">{t('termsAndConditions')}</a> *
-                      </label>
-                    </div>
-                  </div>
-
-                  <div className="info-box">
-                    <FaInfoCircle className="info-icon" />
-                    <p>{t('registrationFeeInfo')}</p>
-                  </div>
-
-                  <div className="form-actions">
-                    <button type="button" className="btn btn-secondary" onClick={goToPrevStep}>
-                      {t('back')}
-                    </button>
-                    <button type="submit" className="btn" disabled={!formData.termsAccepted}>
-                      {t('completeRegistration')}
-                    </button>
-                  </div>
-                </div>
-              )}
+              <motion.div className="form-actions" variants={itemVariants}>
+                <button type="submit" className="btn btn-primary">Submit Registration</button>
+                <button type="reset" className="btn btn-secondary" onClick={() => setFormData({
+                  firstName: '',
+                  lastName: '',
+                  email: '',
+                  phone: '',
+                  birthDate: '',
+                  category: '',
+                  groupName: '',
+                  isGroup: false,
+                  agreeTerms: false
+                })}>Reset Form</button>
+              </motion.div>
             </form>
-          )}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

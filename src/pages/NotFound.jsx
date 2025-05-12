@@ -1,14 +1,9 @@
-// pages/NotFound/NotFound.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaHome, FaMapMarkerAlt, FaQuestionCircle } from 'react-icons/fa';
 import '../styles/NotFound.css';
 
 const NotFound = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="not-found-page">
       <div className="container">
@@ -19,46 +14,97 @@ const NotFound = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="not-found-image">
-            <div className="compass-image"></div>
+            <img
+              src="https://www.bernerdm.ch/wp-content/uploads/2022/07/DMB_Logo_Stempel_gelb-1.png"
+              alt="Berner DM Logo"
+            />
           </div>
 
-          <h1>404</h1>
-          <h2>{t('pageNotFound')}</h2>
-          <p>{t('pageNotFoundDesc')}</p>
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            404 - Page Not Found
+          </motion.h1>
 
-          <div className="not-found-actions">
-            <Link to="/" className="btn">
-              <FaHome className="btn-icon" /> {t('backToHome')}
-            </Link>
-            <Link to="/contact" className="btn btn-secondary">
-              <FaQuestionCircle className="btn-icon" /> {t('contactUs')}
-            </Link>
-          </div>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="not-found-message"
+          >
+            It seems you've gone off the designated route!
+          </motion.p>
 
-          <div className="suggested-routes">
-            <h3>{t('suggestedRoutes')}</h3>
-            <div className="route-links">
-              <Link to="/" className="route-link">
-                <FaHome /> {t('home')}
-              </Link>
-              <Link to="/current-march" className="route-link">
-                <FaMapMarkerAlt /> {t('currentMarch')}
-              </Link>
-              <Link to="/registration" className="route-link">
-                <FaMapMarkerAlt /> {t('registration')}
-              </Link>
+          <motion.div
+            className="not-found-map"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <div className="map-container">
+              <div className="map-markers">
+                <div className="marker start">
+                  <i className="fas fa-map-marker-alt"></i>
+                  <span>Start</span>
+                </div>
+                <div className="marker lost pulse">
+                  <i className="fas fa-question"></i>
+                  <span>You are here</span>
+                </div>
+                <div className="marker finish">
+                  <i className="fas fa-flag-checkered"></i>
+                  <span>Finish</span>
+                </div>
+              </div>
+              <div className="map-routes">
+                <div className="route-line"></div>
+                <div className="route-dotted"></div>
+              </div>
             </div>
-          </div>
-        </motion.div>
-      </div>
+          </motion.div>
 
-      <div className="bear-tracks">
-        <div className="track track-1"></div>
-        <div className="track track-2"></div>
-        <div className="track track-3"></div>
-        <div className="track track-4"></div>
-        <div className="track track-5"></div>
-        <div className="track track-6"></div>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
+            Don't worry! Unlike in the real march, we can help you find your way back.
+          </motion.p>
+
+          <motion.div
+            className="not-found-actions"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+          >
+            <Link to="/" className="btn btn-primary">
+              <i className="fas fa-home"></i> Return to Home
+            </Link>
+            <Link to="/current-march" className="btn btn-secondary">
+              <i className="fas fa-map-signs"></i> View Current March
+            </Link>
+          </motion.div>
+
+          <motion.div
+            className="not-found-help"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+          >
+            <h3>Looking for something specific?</h3>
+            <ul className="quick-links">
+              <li><Link to="/registration">Registration</Link></li>
+              <li><Link to="/history">History</Link></li>
+              <li><Link to="/leaderboards">Leaderboards</Link></li>
+              <li><Link to="/gallery">Photo Gallery</Link></li>
+            </ul>
+            <p>
+              If you need assistance, please <a href="mailto:kommando@bernerdm.ch">contact us</a>.
+            </p>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

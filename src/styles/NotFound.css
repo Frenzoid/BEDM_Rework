@@ -1,194 +1,245 @@
-/* pages/NotFound/NotFound.css */
+/* NotFound.css - Styles for the 404 page */
+
 .not-found-page {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
-  padding: 4rem 0;
+  padding: var(--spacing-2xl) 0;
 }
 
 .not-found-content {
+  max-width: 800px;
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
+  padding: var(--spacing-2xl);
+  background-color: var(--light);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .not-found-image {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-lg);
 }
 
-.compass-image {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-  background-image: url('https://www.bernerdm.ch/wp-content/uploads/2024/12/compass.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: rotateCompass 10s linear infinite;
+.not-found-image img {
+  height: 100px;
+  width: auto;
 }
 
-@keyframes rotateCompass {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.not-found-page h1 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary);
 }
 
-.not-found-content h1 {
-  font-size: 7rem;
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-  line-height: 1;
-  text-shadow: 3px 3px 0 var(--secondary-color);
+.not-found-message {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-xl);
+  color: var(--gray);
 }
 
-.not-found-content h2 {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-  font-size: 2rem;
+.not-found-map {
+  margin: var(--spacing-xl) 0;
+  height: 200px;
+  position: relative;
 }
 
-.not-found-content p {
-  color: var(--dark-gray);
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
+.map-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--neutral);
+  border-radius: var(--border-radius-lg);
+  position: relative;
+  overflow: hidden;
 }
 
-.not-found-actions {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-}
-
-.btn-icon {
-  margin-right: 0.5rem;
-}
-
-.suggested-routes {
-  background-color: var(--light-gray);
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-}
-
-.suggested-routes h3 {
-  color: var(--secondary-color);
-  margin-bottom: 1.25rem;
-  font-size: 1.25rem;
-}
-
-.route-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.route-link {
-  display: flex;
-  align-items: center;
-  color: var(--tertiary-color);
-  font-weight: 500;
-  transition: var(--transition);
-}
-
-.route-link:hover {
-  color: var(--primary-color);
-  transform: translateY(-3px);
-}
-
-.route-link svg {
-  margin-right: 0.5rem;
-}
-
-/* Bear Tracks */
-.bear-tracks {
+.map-markers {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
-  z-index: 1;
 }
 
-.track {
+.marker {
   position: absolute;
-  width: 30px;
-  height: 40px;
-  background-image: url('https://www.bernerdm.ch/wp-content/uploads/2024/12/bear-track.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.track-1 {
-  top: 20%;
-  left: 10%;
-  transform: rotate(15deg);
+.marker i {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-xs);
 }
 
-.track-2 {
-  top: 35%;
-  left: 15%;
-  transform: rotate(-10deg);
+.marker span {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  background-color: var(--light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
 }
 
-.track-3 {
-  top: 50%;
-  left: 8%;
-  transform: rotate(20deg);
+.marker.start {
+  top: 30px;
+  left: 50px;
+  color: var(--secondary);
 }
 
-.track-4 {
-  top: 25%;
-  right: 12%;
-  transform: rotate(-15deg);
+.marker.lost {
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--warning);
 }
 
-.track-5 {
-  top: 40%;
-  right: 8%;
-  transform: rotate(10deg);
+.marker.finish {
+  top: 30px;
+  right: 50px;
+  color: var(--success);
 }
 
-.track-6 {
-  top: 60%;
-  right: 15%;
-  transform: rotate(-5deg);
+.marker.pulse i {
+  animation: pulse 2s infinite;
 }
 
-/* Responsive Design */
+.map-routes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.route-line {
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  width: calc(100% - 130px);
+  height: 3px;
+  background-color: var(--secondary);
+}
+
+.route-dotted {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 3px;
+  height: 70px;
+  background: repeating-linear-gradient(to bottom,
+      var(--warning) 0,
+      var(--warning) 5px,
+      transparent 5px,
+      transparent 10px);
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.not-found-help {
+  background-color: var(--neutral);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  text-align: left;
+}
+
+.not-found-help h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  padding-left: 0;
+  list-style: none;
+}
+
+.quick-links li a {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--light);
+  border-radius: var(--border-radius-md);
+  color: var(--primary);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.quick-links li a:hover {
+  background-color: var(--primary);
+  color: var(--light);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.not-found-help p {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-  .not-found-content h1 {
-    font-size: 5rem;
+  .not-found-content {
+    padding: var(--spacing-lg);
   }
 
-  .not-found-content h2 {
-    font-size: 1.5rem;
+  .not-found-page h1 {
+    font-size: var(--font-size-2xl);
   }
 
-  .compass-image {
-    width: 120px;
-    height: 120px;
+  .not-found-message {
+    font-size: var(--font-size-lg);
   }
 
   .not-found-actions {
     flex-direction: column;
-    align-items: center;
+    gap: var(--spacing-sm);
   }
 
-  .not-found-actions .btn {
-    width: 100%;
+  .not-found-help {
+    text-align: center;
+  }
+
+  .quick-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .not-found-map {
+    height: 150px;
+  }
+
+  .marker i {
+    font-size: var(--font-size-xl);
+  }
+
+  .marker span {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-xs);
+    max-width: 80px;
+    text-align: center;
+  }
+
+  .marker.start {
+    left: 20px;
+  }
+
+  .marker.finish {
+    right: 20px;
+  }
+
+  .route-line {
+    left: 35px;
+    width: calc(100% - 70px);
   }
 }

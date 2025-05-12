@@ -1,354 +1,466 @@
-// pages/Statistics/Statistics.jsx
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaChartBar, FaUsers, FaGlobeEurope, FaRulerHorizontal, FaClipboardList } from 'react-icons/fa';
 import '../styles/Statistics.css';
-import PageBanner from '../components/PageBanner';
 
 const Statistics = () => {
-  const { t } = useTranslation();
-  const [activeYear, setActiveYear] = useState('all');
+  const [activeChart, setActiveChart] = useState('participants');
+  const [chartLoaded, setChartLoaded] = useState(false);
 
-  // Simulated data for statistics visualizations
-  const participationData = {
-    labels: ['1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s'],
-    datasets: [
-      {
-        label: t('participants'),
-        data: [1200, 3500, 6000, 5000, 4200, 4800, 5200]
-      }
-    ]
-  };
-
-  const countryData = {
-    labels: ['Switzerland', 'Germany', 'France', 'Austria', 'Italy', 'Other'],
-    datasets: [
-      {
-        data: [65, 12, 8, 5, 4, 6]
-      }
-    ]
-  };
-
-  const categoryData = {
-    labels: [t('categoryA'), t('categoryB'), t('categoryC'), t('groupCategories')],
-    datasets: [
-      {
-        data: [30, 15, 40, 15]
-      }
-    ]
-  };
-
-  const distanceData = {
-    labels: ['15-20km', '25-30km', '35-40km', '45+km'],
-    datasets: [
-      {
-        data: [20, 35, 30, 15]
-      }
-    ]
-  };
-
-  const completionData = {
-    overall: 92,
-    categoryA: 95,
-    categoryB: 87,
-    categoryC: 90,
-    groups: 94
-  };
-
-  // Stats highlights
-  const statsHighlights = [
-    {
-      icon: <FaUsers />,
-      number: '5,200+',
-      label: t('participantsIn2024')
-    },
-    {
-      icon: <FaGlobeEurope />,
-      number: '35+',
-      label: t('countriesRepresented')
-    },
-    {
-      icon: <FaRulerHorizontal />,
-      number: '45km',
-      label: t('averageDistance')
-    },
-    {
-      icon: <FaClipboardList />,
-      number: '92%',
-      label: t('completionRate')
-    }
-  ];
-
-  // Simulated records data
-  const recordsData = [
-    {
-      category: t('longestDistance'),
-      record: '68.5 km',
-      holder: 'Thomas Wagner',
-      year: '2018'
-    },
-    {
-      category: t('fastestCompletion'),
-      record: '6h 12m',
-      holder: 'Michael Baumgartner',
-      year: '2022'
-    },
-    {
-      category: t('mostParticipations'),
-      record: '45',
-      holder: 'Hans Müller',
-      year: '1975-2023'
-    },
-    {
-      category: t('largestGroup'),
-      record: '32 ' + t('people'),
-      holder: 'Team Helvetia',
-      year: '2019'
-    },
-    {
-      category: t('oldestParticipant'),
-      record: '87 ' + t('yearsOld'),
-      holder: 'Karl Weber',
-      year: '2021'
-    },
-    {
-      category: t('youngestFinisher'),
-      record: '15 ' + t('yearsOld'),
-      holder: 'Lukas Schmid',
-      year: '2023'
-    }
-  ];
-
-  // Initialize charts after component mounts
   useEffect(() => {
-    // This would normally use a charting library like Chart.js
-    // For this example, we're using simulated data
+    // Reset chart loaded state when active chart changes
+    setChartLoaded(false);
+    // Simulate chart loading delay
+    const timer = setTimeout(() => {
+      setChartLoaded(true);
+    }, 500);
 
-    // In a real application, you would initialize the charts here
-    // For example, using Chart.js:
-    // const participationChart = new Chart(participationCtx, { ... });
+    return () => clearTimeout(timer);
+  }, [activeChart]);
 
-    // Simple loader animation for simulation
-    const chartCanvases = document.querySelectorAll('.chart-canvas');
-    chartCanvases.forEach(canvas => {
-      const context = canvas.getContext('2d');
-      context.fillStyle = '#f5f5f5';
-      context.fillRect(0, 0, canvas.width, canvas.height);
+  const participantData = [
+    { year: 2015, total: 422, catA: 187, catB: 68, catC: 167 },
+    { year: 2016, total: 451, catA: 201, catB: 72, catC: 178 },
+    { year: 2017, total: 483, catA: 213, catB: 85, catC: 185 },
+    { year: 2018, total: 512, catA: 225, catB: 91, catC: 196 },
+    { year: 2019, total: 547, catA: 236, catB: 97, catC: 214 },
+    { year: 2020, total: 320, catA: 142, catB: 51, catC: 127 }, // Remote march during COVID
+    { year: 2021, total: 487, catA: 218, catB: 82, catC: 187 },
+    { year: 2022, total: 531, catA: 239, catB: 93, catC: 199 },
+    { year: 2023, total: 569, catA: 251, catB: 104, catC: 214 },
+    { year: 2024, total: 598, catA: 265, catB: 112, catC: 221 },
+  ];
 
-      // Draw a simple placeholder for demonstration
-      context.fillStyle = '#748067';
-      context.fillRect(10, 10, canvas.width - 20, canvas.height - 20);
+  const internationalData = [
+    { country: 'Switzerland', percentage: 68 },
+    { country: 'Germany', percentage: 12 },
+    { country: 'France', percentage: 8 },
+    { country: 'Austria', percentage: 5 },
+    { country: 'Italy', percentage: 3 },
+    { country: 'Other', percentage: 4 },
+  ];
 
-      // Add text
-      context.fillStyle = '#fff';
-      context.font = '14px Arial';
-      context.textAlign = 'center';
-      context.fillText('Chart Visualization', canvas.width / 2, canvas.height / 2);
-    });
-  }, [activeYear]);
+  const ageDistributionData = [
+    { ageGroup: 'Under 20', percentage: 17 },
+    { ageGroup: '20-30', percentage: 21 },
+    { ageGroup: '31-40', percentage: 25 },
+    { ageGroup: '41-50', percentage: 19 },
+    { ageGroup: '51-60', percentage: 12 },
+    { ageGroup: 'Over 60', percentage: 6 },
+  ];
 
-  return (
-    <div className="statistics-page">
-      <PageBanner
-        title={t('statistics')}
-        subtitle={t('statisticsSubtitle')}
-        background="https://www.bernerdm.ch/wp-content/uploads/2024/12/statistics-bg.jpg"
-      />
+  const completionRatesData = [
+    { year: 2020, rate: 92 },
+    { year: 2021, rate: 94 },
+    { year: 2022, rate: 93 },
+    { year: 2023, rate: 95 },
+    { year: 2024, rate: 96 },
+  ];
 
-      <div className="container">
-        <motion.div
-          className="statistics-content"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="statistics-header">
-            <h2><FaChartBar className="header-icon" /> {t('marchStatistics')}</h2>
-            <p className="header-description">{t('statisticsDesc')}</p>
+  const handleChartChange = (chart) => {
+    setActiveChart(chart);
+  };
 
-            <div className="year-selector">
-              <span>{t('selectYear')}:</span>
-              <div className="year-buttons">
-                <button
-                  className={activeYear === 'all' ? 'active' : ''}
-                  onClick={() => setActiveYear('all')}
-                >
-                  {t('allYears')}
-                </button>
-                <button
-                  className={activeYear === '2024' ? 'active' : ''}
-                  onClick={() => setActiveYear('2024')}
-                >
-                  2024
-                </button>
-                <button
-                  className={activeYear === '2023' ? 'active' : ''}
-                  onClick={() => setActiveYear('2023')}
-                >
-                  2023
-                </button>
-                <button
-                  className={activeYear === '2022' ? 'active' : ''}
-                  onClick={() => setActiveYear('2022')}
-                >
-                  2022
-                </button>
-                <button
-                  className={activeYear === '2021' ? 'active' : ''}
-                  onClick={() => setActiveYear('2021')}
-                >
-                  2021
-                </button>
-                <button
-                  className={activeYear === '2020' ? 'active' : ''}
-                  onClick={() => setActiveYear('2020')}
-                >
-                  2020
-                </button>
+  const renderParticipantsChart = () => (
+    <div className="chart participants-chart">
+      <div className="chart-header">
+        <h3>Participants by Year and Category</h3>
+        <p>The total number of participants in the Bernese Distance March from 2015 to 2024</p>
+      </div>
+      <div className="chart-content">
+        {chartLoaded && (
+          <>
+            <div className="chart-bars">
+              {participantData.map((data, index) => (
+                <div className="year-bar" key={index}>
+                  <div className="bar-group">
+                    <motion.div
+                      className="bar cat-a"
+                      initial={{ height: 0 }}
+                      animate={{ height: `${(data.catA / data.total) * 200}px` }}
+                      transition={{ duration: 0.5, delay: index * 0.05 }}
+                    >
+                      <span className="bar-value">{data.catA}</span>
+                    </motion.div>
+                    <motion.div
+                      className="bar cat-b"
+                      initial={{ height: 0 }}
+                      animate={{ height: `${(data.catB / data.total) * 200}px` }}
+                      transition={{ duration: 0.5, delay: index * 0.05 + 0.1 }}
+                    >
+                      <span className="bar-value">{data.catB}</span>
+                    </motion.div>
+                    <motion.div
+                      className="bar cat-c"
+                      initial={{ height: 0 }}
+                      animate={{ height: `${(data.catC / data.total) * 200}px` }}
+                      transition={{ duration: 0.5, delay: index * 0.05 + 0.2 }}
+                    >
+                      <span className="bar-value">{data.catC}</span>
+                    </motion.div>
+                  </div>
+                  <div className="bar-year">{data.year}</div>
+                  <div className="bar-total">{data.total}</div>
+                </div>
+              ))}
+            </div>
+            <div className="chart-legend">
+              <div className="legend-item">
+                <span className="legend-color cat-a"></span>
+                <span className="legend-label">Category A (Military)</span>
+              </div>
+              <div className="legend-item">
+                <span className="legend-color cat-b"></span>
+                <span className="legend-label">Category B (Youth)</span>
+              </div>
+              <div className="legend-item">
+                <span className="legend-color cat-c"></span>
+                <span className="legend-label">Category C (Civilian)</span>
               </div>
             </div>
+          </>
+        )}
+        {!chartLoaded && (
+          <div className="chart-loading">
+            <div className="loading-spinner"></div>
+            <p>Loading chart data...</p>
           </div>
+        )}
+      </div>
+    </div>
+  );
 
-          {/* Stats Highlights */}
-          <div className="stats-highlights">
-            {statsHighlights.map((stat, index) => (
-              <div className="stat-card" key={index}>
-                <div className="stat-icon">
-                  {stat.icon}
-                </div>
-                <div className="stat-number">{stat.number}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Visualizations */}
-          <div className="visualizations-section">
-            <div className="visualization-grid">
-              <div className="visualization-card">
-                <h3>{t('participationTrends')}</h3>
-                <div className="chart-container">
-                  <canvas className="chart-canvas" width="400" height="300"></canvas>
-                </div>
-              </div>
-
-              <div className="visualization-card">
-                <h3>{t('participantsByCountry')}</h3>
-                <div className="chart-container">
-                  <canvas className="chart-canvas" width="400" height="300"></canvas>
-                </div>
-              </div>
-
-              <div className="visualization-card">
-                <h3>{t('participantsByCategory')}</h3>
-                <div className="chart-container">
-                  <canvas className="chart-canvas" width="400" height="300"></canvas>
-                </div>
-              </div>
-
-              <div className="visualization-card">
-                <h3>{t('distanceDistribution')}</h3>
-                <div className="chart-container">
-                  <canvas className="chart-canvas" width="400" height="300"></canvas>
-                </div>
+  const renderInternationalChart = () => (
+    <div className="chart international-chart">
+      <div className="chart-header">
+        <h3>International Participation</h3>
+        <p>Percentage of participants by country of origin (2024 data)</p>
+      </div>
+      <div className="chart-content">
+        {chartLoaded ? (
+          <div className="pie-chart-container">
+            <div className="pie-chart">
+              {internationalData.map((data, index) => (
+                <motion.div
+                  key={index}
+                  className={`pie-slice country-${index}`}
+                  style={{
+                    '--slice-start': `${index > 0
+                      ? internationalData.slice(0, index).reduce((sum, item) => sum + item.percentage, 0)
+                      : 0}%`,
+                    '--slice-end': `${internationalData.slice(0, index + 1).reduce((sum, item) => sum + item.percentage, 0)}%`
+                  }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                />
+              ))}
+              <div className="pie-center">
+                <span>2024</span>
               </div>
             </div>
-          </div>
-
-          {/* Completion Rates */}
-          <div className="completion-section">
-            <h3>{t('completionRates')}</h3>
-            <div className="completion-bars">
-              <div className="completion-bar-item">
-                <div className="bar-label">{t('overall')}</div>
-                <div className="bar-container">
-                  <div
-                    className="bar-fill"
-                    style={{ width: `${completionData.overall}%` }}
-                  >
-                    <span className="bar-value">{completionData.overall}%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="completion-bar-item">
-                <div className="bar-label">{t('categoryA')}</div>
-                <div className="bar-container">
-                  <div
-                    className="bar-fill category-a"
-                    style={{ width: `${completionData.categoryA}%` }}
-                  >
-                    <span className="bar-value">{completionData.categoryA}%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="completion-bar-item">
-                <div className="bar-label">{t('categoryB')}</div>
-                <div className="bar-container">
-                  <div
-                    className="bar-fill category-b"
-                    style={{ width: `${completionData.categoryB}%` }}
-                  >
-                    <span className="bar-value">{completionData.categoryB}%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="completion-bar-item">
-                <div className="bar-label">{t('categoryC')}</div>
-                <div className="bar-container">
-                  <div
-                    className="bar-fill category-c"
-                    style={{ width: `${completionData.categoryC}%` }}
-                  >
-                    <span className="bar-value">{completionData.categoryC}%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="completion-bar-item">
-                <div className="bar-label">{t('groups')}</div>
-                <div className="bar-container">
-                  <div
-                    className="bar-fill groups"
-                    style={{ width: `${completionData.groups}%` }}
-                  >
-                    <span className="bar-value">{completionData.groups}%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Records Section */}
-          <div className="records-section">
-            <h3>{t('marchRecords')}</h3>
-            <div className="records-grid">
-              {recordsData.map((record, index) => (
-                <div className="record-card" key={index}>
-                  <div className="record-category">{record.category}</div>
-                  <div className="record-value">{record.record}</div>
-                  <div className="record-details">
-                    <span className="record-holder">{record.holder}</span>
-                    <span className="record-year">{record.year}</span>
-                  </div>
+            <div className="pie-legend">
+              {internationalData.map((data, index) => (
+                <div className="legend-item" key={index}>
+                  <span className={`legend-color country-${index}`}></span>
+                  <span className="legend-label">{data.country}</span>
+                  <span className="legend-value">{data.percentage}%</span>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Data Notes */}
-          <div className="data-notes">
-            <h3>{t('dataNotes')}</h3>
-            <ul className="notes-list">
-              <li>{t('dataNote1')}</li>
-              <li>{t('dataNote2')}</li>
-              <li>{t('dataNote3')}</li>
-            </ul>
+        ) : (
+          <div className="chart-loading">
+            <div className="loading-spinner"></div>
+            <p>Loading chart data...</p>
           </div>
-        </motion.div>
+        )}
+      </div>
+    </div>
+  );
+
+  const renderAgeDistributionChart = () => (
+    <div className="chart age-distribution-chart">
+      <div className="chart-header">
+        <h3>Age Distribution</h3>
+        <p>Percentage of participants by age group (2024 data)</p>
+      </div>
+      <div className="chart-content">
+        {chartLoaded ? (
+          <div className="horizontal-bars">
+            {ageDistributionData.map((data, index) => (
+              <div className="bar-row" key={index}>
+                <div className="bar-label">{data.ageGroup}</div>
+                <div className="bar-container">
+                  <motion.div
+                    className="horizontal-bar"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${data.percentage * 5}px` }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
+                    <span className="bar-value">{data.percentage}%</span>
+                  </motion.div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="chart-loading">
+            <div className="loading-spinner"></div>
+            <p>Loading chart data...</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
+  const renderCompletionRatesChart = () => (
+    <div className="chart completion-rates-chart">
+      <div className="chart-header">
+        <h3>Completion Rates</h3>
+        <p>Percentage of participants who successfully completed the march</p>
+      </div>
+      <div className="chart-content">
+        {chartLoaded ? (
+          <div className="line-chart">
+            <div className="chart-grid">
+              {Array.from({ length: 6 }, (_, i) => (
+                <div key={i} className="grid-line">
+                  <span className="grid-value">{100 - (i * 5)}%</span>
+                </div>
+              ))}
+            </div>
+            <div className="line-container">
+              <svg className="line-svg" viewBox="0 0 500 200" preserveAspectRatio="none">
+                <motion.path
+                  d={`M 
+                    ${0},${200 - (completionRatesData[0].rate * 2)} 
+                    ${125},${200 - (completionRatesData[1].rate * 2)} 
+                    ${250},${200 - (completionRatesData[2].rate * 2)} 
+                    ${375},${200 - (completionRatesData[3].rate * 2)} 
+                    ${500},${200 - (completionRatesData[4].rate * 2)}
+                  `}
+                  fill="none"
+                  stroke="#4a8c3f"
+                  strokeWidth="3"
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  animate={{ pathLength: 1, opacity: 1 }}
+                  transition={{ duration: 1.5 }}
+                />
+                {completionRatesData.map((data, index) => (
+                  <motion.circle
+                    key={index}
+                    cx={index * 125}
+                    cy={200 - (data.rate * 2)}
+                    r="6"
+                    fill="#4a8c3f"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3, delay: 1 + (index * 0.1) }}
+                  />
+                ))}
+              </svg>
+              <div className="line-labels">
+                {completionRatesData.map((data, index) => (
+                  <div key={index} className="line-label" style={{ left: `${index * 25}%` }}>
+                    <div className="label-year">{data.year}</div>
+                    <div className="label-value">{data.rate}%</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="chart-loading">
+            <div className="loading-spinner"></div>
+            <p>Loading chart data...</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
+  const renderActiveChart = () => {
+    switch (activeChart) {
+      case 'participants':
+        return renderParticipantsChart();
+      case 'international':
+        return renderInternationalChart();
+      case 'age':
+        return renderAgeDistributionChart();
+      case 'completion':
+        return renderCompletionRatesChart();
+      default:
+        return renderParticipantsChart();
+    }
+  };
+
+  return (
+    <div className="statistics-page">
+      <div className="page-header">
+        <div className="container">
+          <h1>Statistics</h1>
+          <p>Data and insights from past Bernese Distance Marches</p>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="statistics-intro">
+          <p>
+            The Bernese Distance March has been collecting data since its inception in the 1960s.
+            These statistics offer insights into participation trends, international representation,
+            and other interesting facts about this unique event.
+          </p>
+        </div>
+
+        <div className="chart-tabs">
+          <button
+            className={`chart-tab ${activeChart === 'participants' ? 'active' : ''}`}
+            onClick={() => handleChartChange('participants')}
+          >
+            <i className="fas fa-users"></i>
+            <span>Participation</span>
+          </button>
+          <button
+            className={`chart-tab ${activeChart === 'international' ? 'active' : ''}`}
+            onClick={() => handleChartChange('international')}
+          >
+            <i className="fas fa-globe-europe"></i>
+            <span>International</span>
+          </button>
+          <button
+            className={`chart-tab ${activeChart === 'age' ? 'active' : ''}`}
+            onClick={() => handleChartChange('age')}
+          >
+            <i className="fas fa-user-clock"></i>
+            <span>Age Groups</span>
+          </button>
+          <button
+            className={`chart-tab ${activeChart === 'completion' ? 'active' : ''}`}
+            onClick={() => handleChartChange('completion')}
+          >
+            <i className="fas fa-chart-line"></i>
+            <span>Completion Rates</span>
+          </button>
+        </div>
+
+        <div className="chart-container">
+          {renderActiveChart()}
+        </div>
+
+        <div className="key-statistics">
+          <h2>Key Statistics</h2>
+          <div className="stats-cards">
+            <div className="stat-card">
+              <div className="stat-icon">
+                <i className="fas fa-users"></i>
+              </div>
+              <div className="stat-number">598</div>
+              <div className="stat-label">Participants in 2024</div>
+              <div className="stat-trend positive">
+                <i className="fas fa-arrow-up"></i> 5.1% from 2023
+              </div>
+            </div>
+
+            <div className="stat-card">
+              <div className="stat-icon">
+                <i className="fas fa-medal"></i>
+              </div>
+              <div className="stat-number">67</div>
+              <div className="stat-label">Years of tradition</div>
+              <div className="stat-trend">
+                <i className="fas fa-calendar-alt"></i> Since 1960
+              </div>
+            </div>
+
+            <div className="stat-card">
+              <div className="stat-icon">
+                <i className="fas fa-flag"></i>
+              </div>
+              <div className="stat-number">14</div>
+              <div className="stat-label">Countries represented</div>
+              <div className="stat-trend positive">
+                <i className="fas fa-arrow-up"></i> 2 new countries in 2024
+              </div>
+            </div>
+
+            <div className="stat-card">
+              <div className="stat-icon">
+                <i className="fas fa-route"></i>
+              </div>
+              <div className="stat-number">23,920</div>
+              <div className="stat-label">Total km walked in 2024</div>
+              <div className="stat-trend positive">
+                <i className="fas fa-arrow-up"></i> 1,160 km from 2023
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="interesting-facts">
+          <h2>Interesting Facts</h2>
+          <div className="facts-grid">
+            <div className="fact-card">
+              <div className="fact-icon">
+                <i className="fas fa-clock"></i>
+              </div>
+              <h3>Fastest Time</h3>
+              <p>The fastest completion time ever recorded was 4:21:05 by Thomas Huber in 2023 (Category A).</p>
+            </div>
+
+            <div className="fact-card">
+              <div className="fact-icon">
+                <i className="fas fa-baby"></i>
+              </div>
+              <h3>Youngest Participant</h3>
+              <p>The youngest participant was 7-year-old Emma Keller, who completed the youth course in 2022.</p>
+            </div>
+
+            <div className="fact-card">
+              <div className="fact-icon">
+                <i className="fas fa-user-clock"></i>
+              </div>
+              <h3>Oldest Participant</h3>
+              <p>The oldest participant was 82-year-old Johann Weber, who completed his 45th march in 2024.</p>
+            </div>
+
+            <div className="fact-card">
+              <div className="fact-icon">
+                <i className="fas fa-user-friends"></i>
+              </div>
+              <h3>Largest Group</h3>
+              <p>The largest group ever to participate was the "Bern Veterans" with 28 members in 2019.</p>
+            </div>
+
+            <div className="fact-card">
+              <div className="fact-icon">
+                <i className="fas fa-plane"></i>
+              </div>
+              <h3>Farthest Traveler</h3>
+              <p>In 2023, a participant traveled from New Zealand (18,000 km) to join the march.</p>
+            </div>
+
+            <div className="fact-card">
+              <div className="fact-icon">
+                <i className="fas fa-history"></i>
+              </div>
+              <h3>Perfect Attendance</h3>
+              <p>Paul Fürst has participated in all 66 editions of the march without missing a single year.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="data-download">
+          <h2>Historical Data</h2>
+          <p>Looking for more detailed statistics? Download our historical data files:</p>
+          <div className="download-buttons">
+            <a href="#" className="btn btn-secondary">
+              <i className="fas fa-download"></i> Participation Data (2000-2024)
+            </a>
+            <a href="#" className="btn btn-secondary">
+              <i className="fas fa-download"></i> Complete Results Archive
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
