@@ -86,7 +86,7 @@ const Header = () => {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          <span className="bar m-1"></span>
+          <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </button>
