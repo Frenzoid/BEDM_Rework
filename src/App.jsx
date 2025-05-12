@@ -21,7 +21,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <motion.div
         className="app-container"
         initial={{ opacity: 0 }}
