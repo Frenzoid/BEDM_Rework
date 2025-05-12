@@ -12,8 +12,12 @@ const Footer = () => {
         <div className="footer-main">
           <div className="footer-logo">
             {/* Replaced image with text logo */}
-            <div className="logo-text">BDM</div>
-            <h2>Bernese Distance March</h2>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Canton_of_Bern.svg/250px-Flag_of_Canton_of_Bern.svg.png"
+              alt="Berner DM Logo"
+              className="logo"
+            />
+            <h2 className="mt-2 text-center">Bernese Distance March</h2>
           </div>
 
           <div className="footer-section">

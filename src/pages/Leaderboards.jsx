@@ -237,7 +237,7 @@ const Leaderboards = () => {
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           className="leaderboard-container"
           key={`${selectedYear}-${selectedCategory}`}
           initial={{ opacity: 0, y: 20 }}
@@ -261,7 +261,7 @@ const Leaderboards = () => {
               </thead>
               <tbody>
                 {leaderboardData[selectedYear][selectedCategory].map((participant, index) => (
-                  <motion.tr 
+                  <motion.tr
                     key={index}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -345,7 +345,7 @@ const Leaderboards = () => {
         <div className="archive-section">
           <h3>Leaderboard Archive</h3>
           <p>Looking for older results? Check out our comprehensive archive of past Bernese Distance March leaderboards:</p>
-          
+
           <div className="archive-years">
             {/* These would link to archived results from previous years */}
             <a href="#" className="archive-year">2021</a>
@@ -357,7 +357,7 @@ const Leaderboards = () => {
             <a href="#" className="archive-year">2015</a>
             <span className="archive-more">...</span>
           </div>
-          
+
           <button className="btn btn-secondary">
             <i className="fas fa-archive"></i> View Complete Archive
           </button>

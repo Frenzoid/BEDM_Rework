@@ -71,6 +71,7 @@
 
 .info-content ul li {
   margin-bottom: var(--spacing-sm);
+  text-align: left;
 }
 
 .info-content ul li:last-child {

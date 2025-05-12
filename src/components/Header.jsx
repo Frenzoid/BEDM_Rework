@@ -70,7 +70,7 @@ const Header = () => {
         <div className="logo-container">
           <Link to="/" className="logo-link">
             <img
-              src="https://www.bernerdm.ch/wp-content/uploads/2022/07/DMB_Logo_Stempel_gelb-1.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Canton_of_Bern.svg/250px-Flag_of_Canton_of_Bern.svg.png"
               alt="Berner DM Logo"
               className="logo"
             />

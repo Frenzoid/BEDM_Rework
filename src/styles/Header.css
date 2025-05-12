@@ -308,3 +308,34 @@
     display: none !important;
   }
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  margin: 5px;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  border: 2px solid red;
+}
+
+.site-title {
+  flex-grow: 1;
+}

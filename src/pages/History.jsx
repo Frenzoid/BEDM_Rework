@@ -213,7 +213,7 @@ const History = () => {
             >
               <div className="participant-image">
                 <img
-                  src="https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
+                  src="https://www.bernerdm.ch/wp-content/uploads/2021/01/Oberst_Kraehenbuehl-726x1024.jpg"
                   alt="Heinz Krähenbühl"
                 />
               </div>

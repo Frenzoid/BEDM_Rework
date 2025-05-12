@@ -1,8 +1,6 @@
 /* CurrentMarch.css - Styles for the current march page */
 
-.current-march-page {
-  padding-bottom: var(--spacing-3xl);
-}
+
 
 /* Tabs Container */
 .tabs-container {

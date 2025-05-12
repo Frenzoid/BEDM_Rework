@@ -15,7 +15,7 @@ const NotFound = () => {
         >
           <div className="not-found-image">
             <img
-              src="https://www.bernerdm.ch/wp-content/uploads/2022/07/DMB_Logo_Stempel_gelb-1.png"
+              src="https://img.freepik.com/premium-vector/minimal-modern-clean-bear-logo-simple-logo-template-icon_746614-161.jpg"
               alt="Berner DM Logo"
             />
           </div>
