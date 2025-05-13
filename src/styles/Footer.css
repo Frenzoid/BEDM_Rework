@@ -27,6 +27,13 @@
   flex-direction: column;
 }
 
+.footer-logo img {
+  filter: invert(1);
+
+}
+
+
+
 /* Added styles for text logo in footer */
 .footer-logo .logo-text {
   display: flex;

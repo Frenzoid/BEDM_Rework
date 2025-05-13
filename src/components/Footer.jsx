@@ -11,9 +11,8 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-main">
           <div className="footer-logo">
-            {/* Replaced image with text logo */}
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Canton_of_Bern.svg/250px-Flag_of_Canton_of_Bern.svg.png"
+              src="https://www.bernerdm.ch/wp-content/uploads/2022/10/Logo-2.png"
               alt="Berner DM Logo"
               className="logo"
             />
@@ -75,7 +74,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="copyright">
-            <p>&copy; {currentYear} Bernese Distance March. All Rights Reserved.</p>
+            <p>&copy; {currentYear} Bernese Distance March. All Rights Reserved. - Made by <a href="https://frenzoid.dev/">Frenzoid</a> with ❤️.</p>
           </div>
           <div className="footer-links">
             <Link to="/privacy-policy">Privacy Policy</Link>

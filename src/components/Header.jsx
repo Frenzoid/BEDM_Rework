@@ -70,7 +70,7 @@ const Header = () => {
         <div className="logo-container">
           <Link to="/" className="logo-link">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Canton_of_Bern.svg/250px-Flag_of_Canton_of_Bern.svg.png"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBPL3mXo4fYYoIGtLs8CjWTEuCHKXFYX41YekzljWwOP1PVTjeBVSr2YYy9ZdV2JzRbGk&usqp=CAU"
               alt="Berner DM Logo"
               className="logo"
             />
