@@ -706,14 +706,15 @@
       },
       "videoSection": {
         "title": "Video Highlights",
-        "highlightsTitle": "Highlights from the 66th Bernese Distance March (2024)",
-        "description": "Experience the highlights from the 66th Bernese Distance March in 2024. This video showcases the beautiful routes, enthusiastic participants, and the spirit of camaraderie that makes this event special.",
+        "highlightsTitle": "Highlights from the 62th Bernese Distance March (2020)",
+        "description": "Experience the highlights from the 62th Bernese Distance March in 2020. This video showcases the beautiful routes, enthusiastic participants, and the spirit of camaraderie that makes this event special.",
         "viewMoreVideos": "View More Videos"
       }
     },
     "notFound": {
       "title": "404 - Page Not Found",
       "message": "It seems you've gone off the designated route!",
+      "youAreHere": "You are here!",
       "help": "Don't worry! Unlike in the real march, we can help you find your way back.",
       "returnHome": "Return to Home",
       "viewCurrentMarch": "View Current March",

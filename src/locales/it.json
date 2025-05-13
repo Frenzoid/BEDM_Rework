@@ -706,8 +706,8 @@
       },
       "videoSection": {
         "title": "Video in Evidenza",
-        "highlightsTitle": "Momenti salienti della 66ª Marcia di Distanza Bernese (2024)",
-        "description": "Vivi i momenti salienti della 66ª Marcia di Distanza Bernese nel 2024. Questo video mostra i bellissimi percorsi, i partecipanti entusiasti e lo spirito di cameratismo che rende speciale questo evento.",
+        "highlightsTitle": "Momenti salienti della 62ª Marcia di Distanza Bernese (2020)",
+        "description": "Vivi i momenti salienti della 62ª Marcia di Distanza Bernese nel 2020. Questo video mostra i bellissimi percorsi, i partecipanti entusiasti e lo spirito di cameratismo che rende speciale questo evento.",
         "viewMoreVideos": "Guarda Altri Video"
       }
     },
@@ -715,6 +715,7 @@
       "title": "404 - Pagina Non Trovata",
       "message": "Sembra che tu sia uscito dal percorso designato!",
       "help": "Non preoccuparti! A differenza della vera marcia, possiamo aiutarti a trovare la strada del ritorno.",
+      "youAreHere": "Sei qui",
       "returnHome": "Torna alla Home",
       "viewCurrentMarch": "Visualizza Marcia Attuale",
       "lookingFor": {

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/Registration.css';
 
 const Registration = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -98,19 +100,19 @@ const Registration = () => {
           <div className="success-icon">
             <i className="fas fa-check-circle"></i>
           </div>
-          <h2>Registration Successful!</h2>
-          <p>Thank you for registering for the 67th Bernese Distance March. We're excited to have you join us!</p>
-          <p>A confirmation email has been sent to {formData.email} with further details about the event.</p>
-          <p>Your registration details:</p>
+          <h2>{t('pages.registration.success.title')}</h2>
+          <p>{t('pages.registration.success.thankYou')}</p>
+          <p>{t('pages.registration.success.emailSent', { email: formData.email })}</p>
+          <p>{t('pages.registration.success.details')}</p>
           <ul className="registration-details">
-            <li><strong>Name:</strong> {formData.firstName} {formData.lastName}</li>
-            <li><strong>Category:</strong> {formData.category.replace('-', ' ').toUpperCase()}</li>
+            <li><strong>{t('pages.registration.success.name')}</strong> {formData.firstName} {formData.lastName}</li>
+            <li><strong>{t('pages.registration.success.category')}</strong> {formData.category.replace('-', ' ').toUpperCase()}</li>
             {formData.isGroup && (
-              <li><strong>Group Name:</strong> {formData.groupName}</li>
+              <li><strong>{t('pages.registration.success.groupName')}</strong> {formData.groupName}</li>
             )}
           </ul>
-          <p>If you have any questions, please contact us at <a href="mailto:kommando@bernerdm.ch">kommando@bernerdm.ch</a>.</p>
-          <button className="btn btn-primary" onClick={handleReset}>Register Another Participant</button>
+          <p>{t('pages.registration.success.questions')} <a href="mailto:kommando@bernerdm.ch">kommando@bernerdm.ch</a>.</p>
+          <button className="btn btn-primary" onClick={handleReset}>{t('pages.registration.success.registerAnother')}</button>
         </motion.div>
       </div>
     );
@@ -120,27 +122,27 @@ const Registration = () => {
     <div className="registration-page">
       <div className="page-header">
         <div className="container">
-          <h1>Registration</h1>
-          <p>Sign up for the 67th Bernese Distance March - December 6th, 2025</p>
+          <h1>{t('pages.registration.header.title')}</h1>
+          <p>{t('pages.registration.header.subtitle')}</p>
         </div>
       </div>
 
       <div className="container">
         <div className="registration-content">
           <div className="registration-info">
-            <h2>Registration Information</h2>
+            <h2>{t('pages.registration.info.title')}</h2>
             <div className="info-card">
               <div className="info-icon">
                 <i className="fas fa-info-circle"></i>
               </div>
               <div className="info-content">
-                <h3>Important Notes</h3>
+                <h3>{t('pages.registration.info.importantNotes.title')}</h3>
                 <ul>
-                  <li>Registration deadline: <strong>November 15, 2025</strong></li>
-                  <li>Registration fee: <strong>CHF 25.00</strong> for adults</li>
-                  <li>Children under 7: <strong>Free</strong></li>
-                  <li>Payment to be made on-site (cash only)</li>
-                  <li>No credit cards or checks accepted</li>
+                  <li>{t('pages.registration.info.importantNotes.deadline')}</li>
+                  <li>{t('pages.registration.info.importantNotes.fee')}</li>
+                  <li>{t('pages.registration.info.importantNotes.childrenFree')}</li>
+                  <li>{t('pages.registration.info.importantNotes.payment')}</li>
+                  <li>{t('pages.registration.info.importantNotes.noCards')}</li>
                 </ul>
               </div>
             </div>
@@ -150,18 +152,18 @@ const Registration = () => {
                 <i className="fas fa-tags"></i>
               </div>
               <div className="info-content">
-                <h3>Categories</h3>
+                <h3>{t('pages.registration.info.categories.title')}</h3>
                 <ul>
-                  <li><strong>Category A:</strong> Uniformed participants (military, police, etc.)</li>
-                  <li><strong>Category B:</strong> Youth & Sport (under 20)</li>
-                  <li><strong>Category C:</strong> Civilian participants</li>
-                  <li><strong>Groups:</strong> Register as Category A or C group</li>
+                  <li>{t('pages.registration.info.categories.catA')}</li>
+                  <li>{t('pages.registration.info.categories.catB')}</li>
+                  <li>{t('pages.registration.info.categories.catC')}</li>
+                  <li>{t('pages.registration.info.categories.groups')}</li>
                 </ul>
               </div>
             </div>
 
             <div className="registration-image">
-              <img src="https://www.bernerdm.ch/wp-content/uploads/2024/12/image-1-1024x680.png" alt="Participants in the Bernese Distance March" />
+              <img src="https://www.bernerdm.ch/wp-content/uploads/2024/12/image-1-1024x680.png" alt={t('pages.registration.imageAlt')} />
             </div>
           </div>
 
@@ -171,11 +173,11 @@ const Registration = () => {
             animate="visible"
             variants={containerVariants}
           >
-            <h2>Registration Form</h2>
+            <h2>{t('pages.registration.form.title')}</h2>
             <form className="registration-form" onSubmit={handleSubmit}>
               <motion.div className="form-row" variants={itemVariants}>
                 <div className="form-group">
-                  <label htmlFor="firstName">First Name *</label>
+                  <label htmlFor="firstName">{t('pages.registration.form.fields.firstName')} *</label>
                   <input
                     type="text"
                     id="firstName"
@@ -186,7 +188,7 @@ const Registration = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="lastName">Last Name *</label>
+                  <label htmlFor="lastName">{t('pages.registration.form.fields.lastName')} *</label>
                   <input
                     type="text"
                     id="lastName"
@@ -200,7 +202,7 @@ const Registration = () => {
 
               <motion.div className="form-row" variants={itemVariants}>
                 <div className="form-group">
-                  <label htmlFor="email">Email Address *</label>
+                  <label htmlFor="email">{t('pages.registration.form.fields.email')} *</label>
                   <input
                     type="email"
                     id="email"
@@ -211,7 +213,7 @@ const Registration = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="phone">Phone Number *</label>
+                  <label htmlFor="phone">{t('pages.registration.form.fields.phone')} *</label>
                   <input
                     type="tel"
                     id="phone"
@@ -224,7 +226,7 @@ const Registration = () => {
               </motion.div>
 
               <motion.div className="form-group" variants={itemVariants}>
-                <label htmlFor="birthDate">Date of Birth *</label>
+                <label htmlFor="birthDate">{t('pages.registration.form.fields.birthDate')} *</label>
                 <input
                   type="date"
                   id="birthDate"
@@ -236,7 +238,7 @@ const Registration = () => {
               </motion.div>
 
               <motion.div className="form-group" variants={itemVariants}>
-                <label htmlFor="category">Category *</label>
+                <label htmlFor="category">{t('pages.registration.form.fields.category')} *</label>
                 <select
                   id="category"
                   name="category"
@@ -244,14 +246,14 @@ const Registration = () => {
                   onChange={handleChange}
                   required
                 >
-                  <option value="">Select a category</option>
-                  <option value="category-a-men">Category A - Men (Uniformed)</option>
-                  <option value="category-a-women">Category A - Women (Uniformed)</option>
-                  <option value="category-a-group">Category A - Group (Uniformed)</option>
-                  <option value="category-b">Category B - Youth & Sport (under 20)</option>
-                  <option value="category-c-men">Category C - Men</option>
-                  <option value="category-c-women">Category C - Women</option>
-                  <option value="category-c-group">Category C - Group</option>
+                  <option value="">{t('pages.registration.form.categories.select')}</option>
+                  <option value="category-a-men">{t('pages.registration.form.categories.catAMen')}</option>
+                  <option value="category-a-women">{t('pages.registration.form.categories.catAWomen')}</option>
+                  <option value="category-a-group">{t('pages.registration.form.categories.catAGroup')}</option>
+                  <option value="category-b">{t('pages.registration.form.categories.catB')}</option>
+                  <option value="category-c-men">{t('pages.registration.form.categories.catCMen')}</option>
+                  <option value="category-c-women">{t('pages.registration.form.categories.catCWomen')}</option>
+                  <option value="category-c-group">{t('pages.registration.form.categories.catCGroup')}</option>
                 </select>
               </motion.div>
 
@@ -262,7 +264,7 @@ const Registration = () => {
                   animate={{ opacity: 1, height: 'auto' }}
                   transition={{ duration: 0.3 }}
                 >
-                  <label htmlFor="groupName">Group Name *</label>
+                  <label htmlFor="groupName">{t('pages.registration.form.fields.groupName')} *</label>
                   <input
                     type="text"
                     id="groupName"
@@ -284,23 +286,29 @@ const Registration = () => {
                   required
                 />
                 <label htmlFor="agreeTerms">
-                  I agree to the <a href="#terms">terms and conditions</a> and acknowledge that I am physically fit to participate in this event.
+                  {t('pages.registration.form.fields.agreeTerms')}
                 </label>
               </motion.div>
 
               <motion.div className="form-actions" variants={itemVariants}>
-                <button type="submit" className="btn btn-primary">Submit Registration</button>
-                <button type="reset" className="btn btn-secondary" onClick={() => setFormData({
-                  firstName: '',
-                  lastName: '',
-                  email: '',
-                  phone: '',
-                  birthDate: '',
-                  category: '',
-                  groupName: '',
-                  isGroup: false,
-                  agreeTerms: false
-                })}>Reset Form</button>
+                <button type="submit" className="btn btn-primary">{t('pages.registration.form.buttons.submit')}</button>
+                <button
+                  type="reset"
+                  className="btn btn-secondary"
+                  onClick={() => setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    phone: '',
+                    birthDate: '',
+                    category: '',
+                    groupName: '',
+                    isGroup: false,
+                    agreeTerms: false
+                  })}
+                >
+                  {t('pages.registration.form.buttons.reset')}
+                </button>
               </motion.div>
             </form>
           </motion.div>

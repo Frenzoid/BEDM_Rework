@@ -525,7 +525,7 @@
           "trend": "2 nuevos países en 2024"
         },
         "totalDistance": {
-          "value": "23 920",
+          "value": "23.920",
           "label": "Total de km recorridos en 2024",
           "trend": "1 160 km respecto a 2023"
         }
@@ -706,8 +706,8 @@
       },
       "videoSection": {
         "title": "Destacados en video",
-        "highlightsTitle": "Destacados de la 66.ª Marcha de Distancia de Berna (2024)",
-        "description": "Disfruta de los mejores momentos de la 66.ª Marcha de Distancia de Berna en 2024. Este video muestra las rutas, los participantes entusiastas y el espíritu de camaradería que hace especial este evento.",
+        "highlightsTitle": "Destacados de la 62.ª Marcha de Distancia de Berna (2020)",
+        "description": "Disfruta de los mejores momentos de la 62.ª Marcha de Distancia de Berna en 2020. Este video muestra las rutas, los participantes entusiastas y el espíritu de camaradería que hace especial este evento.",
         "viewMoreVideos": "Ver más videos"
       }
     },
@@ -715,6 +715,7 @@
       "title": "404 - Página no encontrada",
       "message": "¡Parece que te has salido de la ruta designada!",
       "help": "¡No te preocupes! A diferencia de la marcha real, podemos ayudarte a volver.",
+      "youAreHere": "Estás aquí",
       "returnHome": "Volver al inicio",
       "viewCurrentMarch": "Ver marcha actual",
       "lookingFor": {

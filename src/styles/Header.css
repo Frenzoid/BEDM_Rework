@@ -338,3 +338,154 @@
 .site-title {
   flex-grow: 1;
 }
+
+/* Language selector styles */
+.language-selector {
+  position: relative;
+  margin-left: 20px;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.language-flag {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.language-code {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+.language-selector:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 160px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #333;
+}
+
+.language-option:hover {
+  background-color: #fcb0b0;
+}
+
+.language-option.active {
+  background-color: #ff5e5e;
+  font-weight: 600;
+  color: white;
+}
+
+.language-name {
+  margin-left: 8px;
+}
+
+/* Mobile language selector */
+.mobile-language-selector {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-language-selector p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+.mobile-language-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobile-language-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.mobile-language-option:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-language-option.active {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 2px #ffffff40;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .language-selector {
+    display: none;
+    /* Hide desktop language selector on mobile */
+  }
+}
+
+/* Add these to your existing styles to ensure proper layout */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.scrolled .language-toggle {
+  color: #333;
+}
+
+/* When the header is scrolled, adjust colors for better visibility */
+.scrolled .language-toggle {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.scrolled .language-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

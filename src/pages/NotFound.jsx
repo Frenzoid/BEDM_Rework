@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/NotFound.css';
 
 const NotFound = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="not-found-page">
       <div className="container">
@@ -25,7 +28,7 @@ const NotFound = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            404 - Page Not Found
+            {t('pages.notFound.title')}
           </motion.h1>
 
           <motion.p
@@ -34,7 +37,7 @@ const NotFound = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="not-found-message"
           >
-            It seems you've gone off the designated route!
+            {t('pages.notFound.message')}
           </motion.p>
 
           <motion.div
@@ -51,7 +54,7 @@ const NotFound = () => {
                 </div>
                 <div className="marker lost pulse">
                   <i className="fas fa-question"></i>
-                  <span>You are here</span>
+                  <span>{t('pages.notFound.youAreHere')}</span>
                 </div>
                 <div className="marker finish">
                   <i className="fas fa-flag-checkered"></i>
@@ -70,7 +73,7 @@ const NotFound = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            Don't worry! Unlike in the real march, we can help you find your way back.
+            {t('pages.notFound.help')}
           </motion.p>
 
           <motion.div
@@ -80,10 +83,10 @@ const NotFound = () => {
             transition={{ duration: 0.5, delay: 1 }}
           >
             <Link to="/" className="btn btn-primary">
-              <i className="fas fa-home"></i> Return to Home
+              <i className="fas fa-home"></i> {t('pages.notFound.returnHome')}
             </Link>
             <Link to="/current-march" className="btn btn-secondary">
-              <i className="fas fa-map-signs"></i> View Current March
+              <i className="fas fa-map-signs"></i> {t('pages.notFound.viewCurrentMarch')}
             </Link>
           </motion.div>
 
@@ -93,15 +96,15 @@ const NotFound = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            <h3>Looking for something specific?</h3>
+            <h3>{t('pages.notFound.lookingFor.title')}</h3>
             <ul className="quick-links">
-              <li><Link to="/registration">Registration</Link></li>
-              <li><Link to="/history">History</Link></li>
-              <li><Link to="/leaderboards">Leaderboards</Link></li>
-              <li><Link to="/gallery">Photo Gallery</Link></li>
+              <li><Link to="/registration">{t('common.navigation.registration')}</Link></li>
+              <li><Link to="/history">{t('common.navigation.history')}</Link></li>
+              <li><Link to="/leaderboards">{t('common.navigation.leaderboards')}</Link></li>
+              <li><Link to="/gallery">{t('common.navigation.gallery')}</Link></li>
             </ul>
             <p>
-              If you need assistance, please <a href="mailto:kommando@bernerdm.ch">contact us</a>.
+              {t('pages.notFound.lookingFor.contact')} <a href="mailto:kommando@bernerdm.ch">kommando@bernerdm.ch</a>.
             </p>
           </motion.div>
         </motion.div>

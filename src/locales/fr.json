@@ -706,8 +706,8 @@
       },
       "videoSection": {
         "title": "Vidéos",
-        "highlightsTitle": "Temps forts de la 66ᵉ édition (2024)",
-        "description": "Revivez les temps forts de la marche 2024 : parcours, participants et esprit de camaraderie.",
+        "highlightsTitle": "Temps forts de la 62ᵉ édition (2020)",
+        "description": "Revivez les temps forts de la marche 2020 : parcours, participants et esprit de camaraderie.",
         "viewMoreVideos": "Voir plus de vidéos"
       }
     },
@@ -715,6 +715,7 @@
       "title": "404 - Page introuvable",
       "message": "On dirait que vous êtes sorti du parcours désigné !",
       "help": "Ne vous inquiétez pas ! Contrairement à la marche, on peut vous aider à retrouver votre chemin.",
+      "youAreHere": "Vous êtes ici",
       "returnHome": "Retour à l’accueil",
       "viewCurrentMarch": "Voir la marche en cours",
       "lookingFor": {

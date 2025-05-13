@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/Leaderboards.css';
 
 const Leaderboards = () => {
+  const { t } = useTranslation();
   const [selectedYear, setSelectedYear] = useState('2024');
   const [selectedCategory, setSelectedCategory] = useState('cat-a-men');
 
@@ -176,13 +178,13 @@ const Leaderboards = () => {
   const years = Object.keys(leaderboardData).sort((a, b) => b - a); // Sort years in descending order
 
   const categories = [
-    { id: 'cat-a-men', name: 'Category A - Men (Uniformed)' },
-    { id: 'cat-a-women', name: 'Category A - Women (Uniformed)' },
-    { id: 'cat-a-group', name: 'Category A - Group (Uniformed)' },
-    { id: 'cat-b', name: 'Category B - Youth & Sport' },
-    { id: 'cat-c-men', name: 'Category C - Men' },
-    { id: 'cat-c-women', name: 'Category C - Women' },
-    { id: 'cat-c-group', name: 'Category C - Group' },
+    { id: 'cat-a-men', name: t('pages.leaderboards.categories.catAMen') },
+    { id: 'cat-a-women', name: t('pages.leaderboards.categories.catAWomen') },
+    { id: 'cat-a-group', name: t('pages.leaderboards.categories.catAGroup') },
+    { id: 'cat-b', name: t('pages.leaderboards.categories.catB') },
+    { id: 'cat-c-men', name: t('pages.leaderboards.categories.catCMen') },
+    { id: 'cat-c-women', name: t('pages.leaderboards.categories.catCWomen') },
+    { id: 'cat-c-group', name: t('pages.leaderboards.categories.catCGroup') },
   ];
 
   const handleYearChange = (event) => {
@@ -197,15 +199,15 @@ const Leaderboards = () => {
     <div className="leaderboards-page">
       <div className="page-header">
         <div className="container">
-          <h1>Leaderboards</h1>
-          <p>Past results and rankings from the Bernese Distance March</p>
+          <h1>{t('pages.leaderboards.header.title')}</h1>
+          <p>{t('pages.leaderboards.header.subtitle')}</p>
         </div>
       </div>
 
       <div className="container">
         <div className="leaderboards-filters">
           <div className="filter-group">
-            <label htmlFor="year-select">Year</label>
+            <label htmlFor="year-select">{t('pages.leaderboards.filters.year')}</label>
             <select
               id="year-select"
               value={selectedYear}
@@ -221,7 +223,7 @@ const Leaderboards = () => {
           </div>
 
           <div className="filter-group">
-            <label htmlFor="category-select">Category</label>
+            <label htmlFor="category-select">{t('pages.leaderboards.filters.category')}</label>
             <select
               id="category-select"
               value={selectedCategory}
@@ -246,17 +248,17 @@ const Leaderboards = () => {
         >
           <div className="leaderboard-header">
             <h2>{categories.find(cat => cat.id === selectedCategory).name} - {selectedYear}</h2>
-            <p>Distance: {leaderboardData[selectedYear][selectedCategory][0]?.distance}</p>
+            <p>{t('pages.leaderboards.distance')}: {leaderboardData[selectedYear][selectedCategory][0]?.distance}</p>
           </div>
 
           <div className="leaderboard-table-container">
             <table className="leaderboard-table">
               <thead>
                 <tr>
-                  <th>Rank</th>
-                  <th>Name</th>
-                  <th>Country</th>
-                  <th>Time</th>
+                  <th>{t('pages.leaderboards.table.rank')}</th>
+                  <th>{t('pages.leaderboards.table.name')}</th>
+                  <th>{t('pages.leaderboards.table.country')}</th>
+                  <th>{t('pages.leaderboards.table.time')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -294,16 +296,16 @@ const Leaderboards = () => {
         </motion.div>
 
         <div className="leaderboard-stats">
-          <h3>Interesting Statistics</h3>
+          <h3>{t('pages.leaderboards.stats.title')}</h3>
           <div className="stats-grid">
             <div className="stat-card">
               <div className="stat-icon">
                 <i className="fas fa-trophy"></i>
               </div>
               <div className="stat-content">
-                <div className="stat-title">Most Wins</div>
-                <div className="stat-value">Johannes Schmidt</div>
-                <div className="stat-description">3 victories in Category A - Men</div>
+                <div className="stat-title">{t('pages.leaderboards.stats.mostWins.title')}</div>
+                <div className="stat-value">{t('pages.leaderboards.stats.mostWins.value')}</div>
+                <div className="stat-description">{t('pages.leaderboards.stats.mostWins.description')}</div>
               </div>
             </div>
 
@@ -312,9 +314,9 @@ const Leaderboards = () => {
                 <i className="fas fa-stopwatch"></i>
               </div>
               <div className="stat-content">
-                <div className="stat-title">Fastest Time</div>
-                <div className="stat-value">4:21:05</div>
-                <div className="stat-description">Thomas Huber (2023, Category A - Men)</div>
+                <div className="stat-title">{t('pages.leaderboards.stats.fastestTime.title')}</div>
+                <div className="stat-value">{t('pages.leaderboards.stats.fastestTime.value')}</div>
+                <div className="stat-description">{t('pages.leaderboards.stats.fastestTime.description')}</div>
               </div>
             </div>
 
@@ -323,9 +325,9 @@ const Leaderboards = () => {
                 <i className="fas fa-users"></i>
               </div>
               <div className="stat-content">
-                <div className="stat-title">Most Consistent Team</div>
-                <div className="stat-value">Team Alpine</div>
-                <div className="stat-description">Never finished below 2nd place</div>
+                <div className="stat-title">{t('pages.leaderboards.stats.mostConsistentTeam.title')}</div>
+                <div className="stat-value">{t('pages.leaderboards.stats.mostConsistentTeam.value')}</div>
+                <div className="stat-description">{t('pages.leaderboards.stats.mostConsistentTeam.description')}</div>
               </div>
             </div>
 
@@ -334,17 +336,17 @@ const Leaderboards = () => {
                 <i className="fas fa-flag"></i>
               </div>
               <div className="stat-content">
-                <div className="stat-title">Most Represented Country</div>
-                <div className="stat-value">Switzerland</div>
-                <div className="stat-description">65% of all participants</div>
+                <div className="stat-title">{t('pages.leaderboards.stats.mostRepresentedCountry.title')}</div>
+                <div className="stat-value">{t('pages.leaderboards.stats.mostRepresentedCountry.value')}</div>
+                <div className="stat-description">{t('pages.leaderboards.stats.mostRepresentedCountry.description')}</div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="archive-section">
-          <h3>Leaderboard Archive</h3>
-          <p>Looking for older results? Check out our comprehensive archive of past Bernese Distance March leaderboards:</p>
+          <h3>{t('pages.leaderboards.archive.title')}</h3>
+          <p>{t('pages.leaderboards.archive.description')}</p>
 
           <div className="archive-years">
             {/* These would link to archived results from previous years */}
@@ -359,52 +361,52 @@ const Leaderboards = () => {
           </div>
 
           <button className="btn btn-secondary">
-            <i className="fas fa-archive"></i> View Complete Archive
+            <i className="fas fa-archive"></i> {t('pages.leaderboards.archive.viewComplete')}
           </button>
         </div>
 
         <div className="records-section">
-          <h3>All-Time Records</h3>
+          <h3>{t('pages.leaderboards.records.title')}</h3>
           <div className="records-grid">
             <div className="record-card">
-              <h4>Category A - Men</h4>
+              <h4>{t('pages.leaderboards.records.categories.catAMen')}</h4>
               <p className="record-holder">Thomas Huber</p>
               <p className="record-value">4:21:05 (2023)</p>
             </div>
             <div className="record-card">
-              <h4>Category A - Women</h4>
+              <h4>{t('pages.leaderboards.records.categories.catAWomen')}</h4>
               <p className="record-holder">Marie Fontaine</p>
               <p className="record-value">4:43:18 (2023)</p>
             </div>
             <div className="record-card">
-              <h4>Category A - Group</h4>
+              <h4>{t('pages.leaderboards.records.categories.catAGroup')}</h4>
               <p className="record-holder">Swiss Guards</p>
               <p className="record-value">4:32:54 (2023)</p>
             </div>
             <div className="record-card">
-              <h4>Category B</h4>
+              <h4>{t('pages.leaderboards.records.categories.catB')}</h4>
               <p className="record-holder">Tim Schneider</p>
               <p className="record-value">2:31:22 (2023)</p>
             </div>
             <div className="record-card">
-              <h4>Category C - Men</h4>
+              <h4>{t('pages.leaderboards.records.categories.catCMen')}</h4>
               <p className="record-holder">Alexander Keller</p>
               <p className="record-value">5:05:42 (2023)</p>
             </div>
             <div className="record-card">
-              <h4>Category C - Women</h4>
+              <h4>{t('pages.leaderboards.records.categories.catCWomen')}</h4>
               <p className="record-holder">Laura Weber</p>
               <p className="record-value">5:29:37 (2023)</p>
             </div>
             <div className="record-card">
-              <h4>Category C - Group</h4>
+              <h4>{t('pages.leaderboards.records.categories.catCGroup')}</h4>
               <p className="record-holder">Bern Trekkers</p>
               <p className="record-value">5:11:19 (2023)</p>
             </div>
             <div className="record-card special-record">
-              <h4>Most Participations</h4>
+              <h4>{t('pages.leaderboards.records.categories.participations')}</h4>
               <p className="record-holder">Paul Fürst</p>
-              <p className="record-value">All 66 editions</p>
+              <p className="record-value">{t('pages.leaderboards.records.allEditions')}</p>
             </div>
           </div>
         </div>

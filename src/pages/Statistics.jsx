@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/Statistics.css';
 
 const Statistics = () => {
+  const { t } = useTranslation();
   const [activeChart, setActiveChart] = useState('participants');
   const [chartLoaded, setChartLoaded] = useState(false);
 
@@ -63,8 +65,8 @@ const Statistics = () => {
   const renderParticipantsChart = () => (
     <div className="chart participants-chart">
       <div className="chart-header">
-        <h3>Participants by Year and Category</h3>
-        <p>The total number of participants in the Bernese Distance March from 2015 to 2024</p>
+        <h3>{t('pages.statistics.charts.participants.title')}</h3>
+        <p>{t('pages.statistics.charts.participants.subtitle')}</p>
       </div>
       <div className="chart-content">
         {chartLoaded && (
@@ -106,15 +108,15 @@ const Statistics = () => {
             <div className="chart-legend">
               <div className="legend-item">
                 <span className="legend-color cat-a"></span>
-                <span className="legend-label">Category A (Military)</span>
+                <span className="legend-label">{t('pages.statistics.charts.participants.legend.catA')}</span>
               </div>
               <div className="legend-item">
                 <span className="legend-color cat-b"></span>
-                <span className="legend-label">Category B (Youth)</span>
+                <span className="legend-label">{t('pages.statistics.charts.participants.legend.catB')}</span>
               </div>
               <div className="legend-item">
                 <span className="legend-color cat-c"></span>
-                <span className="legend-label">Category C (Civilian)</span>
+                <span className="legend-label">{t('pages.statistics.charts.participants.legend.catC')}</span>
               </div>
             </div>
           </>
@@ -122,7 +124,7 @@ const Statistics = () => {
         {!chartLoaded && (
           <div className="chart-loading">
             <div className="loading-spinner"></div>
-            <p>Loading chart data...</p>
+            <p>{t('pages.statistics.charts.participants.loading')}</p>
           </div>
         )}
       </div>
@@ -132,8 +134,8 @@ const Statistics = () => {
   const renderInternationalChart = () => (
     <div className="chart international-chart">
       <div className="chart-header">
-        <h3>International Participation</h3>
-        <p>Percentage of participants by country of origin (2024 data)</p>
+        <h3>{t('pages.statistics.charts.international.title')}</h3>
+        <p>{t('pages.statistics.charts.international.subtitle')}</p>
       </div>
       <div className="chart-content">
         {chartLoaded ? (
@@ -171,7 +173,7 @@ const Statistics = () => {
         ) : (
           <div className="chart-loading">
             <div className="loading-spinner"></div>
-            <p>Loading chart data...</p>
+            <p>{t('pages.statistics.charts.participants.loading')}</p>
           </div>
         )}
       </div>
@@ -181,8 +183,8 @@ const Statistics = () => {
   const renderAgeDistributionChart = () => (
     <div className="chart age-distribution-chart">
       <div className="chart-header">
-        <h3>Age Distribution</h3>
-        <p>Percentage of participants by age group (2024 data)</p>
+        <h3>{t('pages.statistics.charts.ageDistribution.title')}</h3>
+        <p>{t('pages.statistics.charts.ageDistribution.subtitle')}</p>
       </div>
       <div className="chart-content">
         {chartLoaded ? (
@@ -206,7 +208,7 @@ const Statistics = () => {
         ) : (
           <div className="chart-loading">
             <div className="loading-spinner"></div>
-            <p>Loading chart data...</p>
+            <p>{t('pages.statistics.charts.participants.loading')}</p>
           </div>
         )}
       </div>
@@ -216,8 +218,8 @@ const Statistics = () => {
   const renderCompletionRatesChart = () => (
     <div className="chart completion-rates-chart">
       <div className="chart-header">
-        <h3>Completion Rates</h3>
-        <p>Percentage of participants who successfully completed the march</p>
+        <h3>{t('pages.statistics.charts.completionRates.title')}</h3>
+        <p>{t('pages.statistics.charts.completionRates.subtitle')}</p>
       </div>
       <div className="chart-content">
         {chartLoaded ? (
@@ -272,7 +274,7 @@ const Statistics = () => {
         ) : (
           <div className="chart-loading">
             <div className="loading-spinner"></div>
-            <p>Loading chart data...</p>
+            <p>{t('pages.statistics.charts.participants.loading')}</p>
           </div>
         )}
       </div>
@@ -298,17 +300,15 @@ const Statistics = () => {
     <div className="statistics-page">
       <div className="page-header">
         <div className="container">
-          <h1>Statistics</h1>
-          <p>Data and insights from past Bernese Distance Marches</p>
+          <h1>{t('pages.statistics.header.title')}</h1>
+          <p>{t('pages.statistics.header.subtitle')}</p>
         </div>
       </div>
 
       <div className="container">
         <div className="statistics-intro">
           <p>
-            The Bernese Distance March has been collecting data since its inception in the 1960s.
-            These statistics offer insights into participation trends, international representation,
-            and other interesting facts about this unique event.
+            {t('pages.statistics.intro')}
           </p>
         </div>
 
@@ -318,28 +318,28 @@ const Statistics = () => {
             onClick={() => handleChartChange('participants')}
           >
             <i className="fas fa-users"></i>
-            <span>Participation</span>
+            <span>{t('pages.statistics.chartTabs.participation')}</span>
           </button>
           <button
             className={`chart-tab ${activeChart === 'international' ? 'active' : ''}`}
             onClick={() => handleChartChange('international')}
           >
             <i className="fas fa-globe-europe"></i>
-            <span>International</span>
+            <span>{t('pages.statistics.chartTabs.international')}</span>
           </button>
           <button
             className={`chart-tab ${activeChart === 'age' ? 'active' : ''}`}
             onClick={() => handleChartChange('age')}
           >
             <i className="fas fa-user-clock"></i>
-            <span>Age Groups</span>
+            <span>{t('pages.statistics.chartTabs.ageGroups')}</span>
           </button>
           <button
             className={`chart-tab ${activeChart === 'completion' ? 'active' : ''}`}
             onClick={() => handleChartChange('completion')}
           >
             <i className="fas fa-chart-line"></i>
-            <span>Completion Rates</span>
+            <span>{t('pages.statistics.chartTabs.completionRates')}</span>
           </button>
         </div>
 
@@ -348,16 +348,16 @@ const Statistics = () => {
         </div>
 
         <div className="key-statistics">
-          <h2>Key Statistics</h2>
+          <h2>{t('pages.statistics.keyStats.title')}</h2>
           <div className="stats-cards">
             <div className="stat-card">
               <div className="stat-icon">
                 <i className="fas fa-users"></i>
               </div>
-              <div className="stat-number">598</div>
-              <div className="stat-label">Participants in 2024</div>
+              <div className="stat-number">{t('pages.statistics.keyStats.participants.value')}</div>
+              <div className="stat-label">{t('pages.statistics.keyStats.participants.label')}</div>
               <div className="stat-trend positive">
-                <i className="fas fa-arrow-up"></i> 5.1% from 2023
+                <i className="fas fa-arrow-up"></i> {t('pages.statistics.keyStats.participants.trend')}
               </div>
             </div>
 
@@ -365,10 +365,10 @@ const Statistics = () => {
               <div className="stat-icon">
                 <i className="fas fa-medal"></i>
               </div>
-              <div className="stat-number">67</div>
-              <div className="stat-label">Years of tradition</div>
+              <div className="stat-number">{t('pages.statistics.keyStats.tradition.value')}</div>
+              <div className="stat-label">{t('pages.statistics.keyStats.tradition.label')}</div>
               <div className="stat-trend">
-                <i className="fas fa-calendar-alt"></i> Since 1960
+                <i className="fas fa-calendar-alt"></i> {t('pages.statistics.keyStats.tradition.trend')}
               </div>
             </div>
 
@@ -376,10 +376,10 @@ const Statistics = () => {
               <div className="stat-icon">
                 <i className="fas fa-flag"></i>
               </div>
-              <div className="stat-number">14</div>
-              <div className="stat-label">Countries represented</div>
+              <div className="stat-number">{t('pages.statistics.keyStats.countries.value')}</div>
+              <div className="stat-label">{t('pages.statistics.keyStats.countries.label')}</div>
               <div className="stat-trend positive">
-                <i className="fas fa-arrow-up"></i> 2 new countries in 2024
+                <i className="fas fa-arrow-up"></i> {t('pages.statistics.keyStats.countries.trend')}
               </div>
             </div>
 
@@ -387,77 +387,77 @@ const Statistics = () => {
               <div className="stat-icon">
                 <i className="fas fa-route"></i>
               </div>
-              <div className="stat-number">23,920</div>
-              <div className="stat-label">Total km walked in 2024</div>
+              <div className="stat-number">{t('pages.statistics.keyStats.totalDistance.value')}</div>
+              <div className="stat-label">{t('pages.statistics.keyStats.totalDistance.label')}</div>
               <div className="stat-trend positive">
-                <i className="fas fa-arrow-up"></i> 1,160 km from 2023
+                <i className="fas fa-arrow-up"></i> {t('pages.statistics.keyStats.totalDistance.trend')}
               </div>
             </div>
           </div>
         </div>
 
         <div className="interesting-facts">
-          <h2>Interesting Facts</h2>
+          <h2>{t('pages.statistics.interestingFacts.title')}</h2>
           <div className="facts-grid">
             <div className="fact-card">
               <div className="fact-icon">
                 <i className="fas fa-clock"></i>
               </div>
-              <h3>Fastest Time</h3>
-              <p>The fastest completion time ever recorded was 4:21:05 by Thomas Huber in 2023 (Category A).</p>
+              <h3>{t('pages.statistics.interestingFacts.fastestTime.title')}</h3>
+              <p>{t('pages.statistics.interestingFacts.fastestTime.description')}</p>
             </div>
 
             <div className="fact-card">
               <div className="fact-icon">
                 <i className="fas fa-baby"></i>
               </div>
-              <h3>Youngest Participant</h3>
-              <p>The youngest participant was 7-year-old Emma Keller, who completed the youth course in 2022.</p>
+              <h3>{t('pages.statistics.interestingFacts.youngestParticipant.title')}</h3>
+              <p>{t('pages.statistics.interestingFacts.youngestParticipant.description')}</p>
             </div>
 
             <div className="fact-card">
               <div className="fact-icon">
                 <i className="fas fa-user-clock"></i>
               </div>
-              <h3>Oldest Participant</h3>
-              <p>The oldest participant was 82-year-old Johann Weber, who completed his 45th march in 2024.</p>
+              <h3>{t('pages.statistics.interestingFacts.oldestParticipant.title')}</h3>
+              <p>{t('pages.statistics.interestingFacts.oldestParticipant.description')}</p>
             </div>
 
             <div className="fact-card">
               <div className="fact-icon">
                 <i className="fas fa-user-friends"></i>
               </div>
-              <h3>Largest Group</h3>
-              <p>The largest group ever to participate was the "Bern Veterans" with 28 members in 2019.</p>
+              <h3>{t('pages.statistics.interestingFacts.largestGroup.title')}</h3>
+              <p>{t('pages.statistics.interestingFacts.largestGroup.description')}</p>
             </div>
 
             <div className="fact-card">
               <div className="fact-icon">
                 <i className="fas fa-plane"></i>
               </div>
-              <h3>Farthest Traveler</h3>
-              <p>In 2023, a participant traveled from New Zealand (18,000 km) to join the march.</p>
+              <h3>{t('pages.statistics.interestingFacts.farthestTraveler.title')}</h3>
+              <p>{t('pages.statistics.interestingFacts.farthestTraveler.description')}</p>
             </div>
 
             <div className="fact-card">
               <div className="fact-icon">
                 <i className="fas fa-history"></i>
               </div>
-              <h3>Perfect Attendance</h3>
-              <p>Paul Fürst has participated in all 66 editions of the march without missing a single year.</p>
+              <h3>{t('pages.statistics.interestingFacts.perfectAttendance.title')}</h3>
+              <p>{t('pages.statistics.interestingFacts.perfectAttendance.description')}</p>
             </div>
           </div>
         </div>
 
         <div className="data-download">
-          <h2>Historical Data</h2>
-          <p>Looking for more detailed statistics? Download our historical data files:</p>
+          <h2>{t('pages.statistics.dataDownload.title')}</h2>
+          <p>{t('pages.statistics.dataDownload.description')}</p>
           <div className="download-buttons">
             <a href="#" className="btn btn-secondary">
-              <i className="fas fa-download"></i> Participation Data (2000-2024)
+              <i className="fas fa-download"></i> {t('pages.statistics.dataDownload.participationData')}
             </a>
             <a href="#" className="btn btn-secondary">
-              <i className="fas fa-download"></i> Complete Results Archive
+              <i className="fas fa-download"></i> {t('pages.statistics.dataDownload.resultsArchive')}
             </a>
           </div>
         </div>

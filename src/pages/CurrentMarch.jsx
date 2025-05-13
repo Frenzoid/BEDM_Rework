@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../styles/CurrentMarch.css';
 
 const CurrentMarch = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState('overview');
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -26,8 +28,8 @@ const CurrentMarch = () => {
     <div className="current-march-page">
       <div className="page-header">
         <div className="container">
-          <h1>Current March</h1>
-          <p>67th Bernese Distance March - December 6th, 2025</p>
+          <h1>{t('pages.currentMarch.header.title')}</h1>
+          <p>{t('pages.currentMarch.header.subtitle')}</p>
         </div>
       </div>
 
@@ -38,32 +40,32 @@ const CurrentMarch = () => {
               className={`tab ${activeTab === 'overview' ? 'active' : ''}`}
               onClick={() => handleTabChange('overview')}
             >
-              Overview
+              {t('pages.currentMarch.tabs.overview')}
             </button>
 
             <button
               className={`tab ${activeTab === 'how-it-works' ? 'active' : ''}`}
               onClick={() => handleTabChange('how-it-works')}
             >
-              How It Works
+              {t('pages.currentMarch.tabs.howItWorks')}
             </button>
             <button
               className={`tab ${activeTab === 'distance-scheme' ? 'active' : ''}`}
               onClick={() => handleTabChange('distance-scheme')}
             >
-              Distance Scheme
+              {t('pages.currentMarch.tabs.distanceScheme')}
             </button>
             <button
               className={`tab ${activeTab === 'regulations' ? 'active' : ''}`}
               onClick={() => handleTabChange('regulations')}
             >
-              Regulations
+              {t('pages.currentMarch.tabs.regulations')}
             </button>
             <button
               className={`tab ${activeTab === 'faq' ? 'active' : ''}`}
               onClick={() => handleTabChange('faq')}
             >
-              FAQ
+              {t('pages.currentMarch.tabs.faq')}
             </button>
           </div>
 
@@ -75,75 +77,75 @@ const CurrentMarch = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2>67th Bernese Distance March</h2>
+                <h2>{t('pages.currentMarch.overview.title')}</h2>
                 <div className="march-info-cards">
                   <div className="info-card">
                     <div className="icon p-4">
                       <i className="fas fa-calendar-day"></i>
                     </div>
-                    <h3>Date</h3>
-                    <p>December 6th, 2025</p>
+                    <h3>{t('pages.currentMarch.overview.marchInfo.date.title')}</h3>
+                    <p>{t('pages.currentMarch.overview.marchInfo.date.info')}</p>
                   </div>
                   <div className="info-card">
                     <div className="icon p-4">
                       <i className="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>Location</h3>
-                    <p>Ins, Canton of Bern, Switzerland</p>
+                    <h3>{t('pages.currentMarch.overview.marchInfo.location.title')}</h3>
+                    <p>{t('pages.currentMarch.overview.marchInfo.location.info')}</p>
                   </div>
                   <div className="info-card">
                     <div className="icon p-4">
                       <i className="fas fa-clock"></i>
                     </div>
-                    <h3>Start Time</h3>
-                    <p>8:00 AM - 10:00 AM</p>
+                    <h3>{t('pages.currentMarch.overview.marchInfo.startTime.title')}</h3>
+                    <p>{t('pages.currentMarch.overview.marchInfo.startTime.info')}</p>
                   </div>
                 </div>
 
                 <div className="overview-description">
                   <p>
-                    The Bernese Distance March is unique among distance marches because it allows participants to choose their own routes between control points. Unlike traditional marches with fixed paths, you can design your own journey through the beautiful landscapes of Bern.
+                    {t('pages.currentMarch.overview.description.paragraph1')}
                   </p>
 
                   <p>
-                    Participants can join as individuals or groups across several categories, with routes of varying distances depending on your category and preference. The march combines military tradition with an appreciation for Switzerland's natural beauty.
+                    {t('pages.currentMarch.overview.description.paragraph2')}
                   </p>
 
                   <div className="cta-buttons">
-                    <Link to="/registration" className="btn btn-primary">Register Now</Link>
+                    <Link to="/registration" className="btn btn-primary">{t('common.buttons.registerNow')}</Link>
                     <a href="#how-it-works" className="btn btn-secondary" onClick={(e) => {
                       e.preventDefault();
                       handleTabChange('how-it-works');
-                    }}>How It Works</a>
+                    }}>{t('pages.currentMarch.tabs.howItWorks')}</a>
                     <a href="#distance-scheme" className="btn btn-secondary" onClick={(e) => {
                       e.preventDefault();
                       handleTabChange('distance-scheme');
-                    }}>View Distance Scheme</a>
+                    }}>{t('pages.currentMarch.tabs.distanceScheme')}</a>
                   </div>
                 </div>
 
                 <div className="march-highlights">
-                  <h3>Event Highlights</h3>
+                  <h3>{t('pages.currentMarch.overview.highlights.title')}</h3>
                   <ul>
                     <li>
                       <span className="highlight-icon"><i className="fas fa-check-circle"></i></span>
-                      <span className="highlight-text">Design your own route through the Canton of Bern</span>
+                      <span className="highlight-text">{t('pages.currentMarch.overview.highlights.item1')}</span>
                     </li>
                     <li>
                       <span className="highlight-icon"><i className="fas fa-check-circle"></i></span>
-                      <span className="highlight-text">Categories for military personnel, civilians, youth, and groups</span>
+                      <span className="highlight-text">{t('pages.currentMarch.overview.highlights.item2')}</span>
                     </li>
                     <li>
                       <span className="highlight-icon"><i className="fas fa-check-circle"></i></span>
-                      <span className="highlight-text">Medals awarded based on completion and category</span>
+                      <span className="highlight-text">{t('pages.currentMarch.overview.highlights.item3')}</span>
                     </li>
                     <li>
                       <span className="highlight-icon"><i className="fas fa-check-circle"></i></span>
-                      <span className="highlight-text">International participants welcome from around the world</span>
+                      <span className="highlight-text">{t('pages.currentMarch.overview.highlights.item4')}</span>
                     </li>
                     <li>
                       <span className="highlight-icon"><i className="fas fa-check-circle"></i></span>
-                      <span className="highlight-text">Over 60 years of tradition in Swiss military marching</span>
+                      <span className="highlight-text">{t('pages.currentMarch.overview.highlights.item5')}</span>
                     </li>
                   </ul>
                 </div>
@@ -164,103 +166,103 @@ const CurrentMarch = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2>Distance Scheme 2025</h2>
+                <h2>{t('pages.currentMarch.distanceScheme.title')}</h2>
                 <div className="scheme-info">
                   <div className="scheme-alert">
                     <i className="fas fa-info-circle"></i>
-                    <p>The definite distance scheme for the 2025 march is currently being prepared and will be published as soon as possible.</p>
+                    <p>{t('pages.currentMarch.distanceScheme.alert')}</p>
                   </div>
 
-                  <h3>How the Distance Scheme Works</h3>
+                  <h3>{t('pages.currentMarch.distanceScheme.howItWorks.title')}</h3>
                   <p>
-                    The Bernese Distance March uses a unique checkpoint system that allows participants to create their own routes. Here's how it works:
+                    {t('pages.currentMarch.distanceScheme.howItWorks.description')}
                   </p>
 
                   <ul className="scheme-steps">
                     <li>
                       <div className="step-number">1</div>
                       <div className="step-content">
-                        <h4>Start at the central checkpoint</h4>
-                        <p>All participants begin at the main registration point in Ins.</p>
+                        <h4>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step1.title')}</h4>
+                        <p>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step1.description')}</p>
                       </div>
                     </li>
                     <li>
                       <div className="step-number">2</div>
                       <div className="step-content">
-                        <h4>Choose your checkpoints</h4>
-                        <p>Based on your category, you'll need to visit a specific number of checkpoints scattered throughout the region.</p>
+                        <h4>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step2.title')}</h4>
+                        <p>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step2.description')}</p>
                       </div>
                     </li>
                     <li>
                       <div className="step-number">3</div>
                       <div className="step-content">
-                        <h4>Plan your route</h4>
-                        <p>You decide the order and path between checkpoints, allowing for a personalized experience.</p>
+                        <h4>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step3.title')}</h4>
+                        <p>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step3.description')}</p>
                       </div>
                     </li>
                     <li>
                       <div className="step-number">4</div>
                       <div className="step-content">
-                        <h4>Complete the march</h4>
-                        <p>Return to the finish line after visiting all required checkpoints within the time limit.</p>
+                        <h4>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step4.title')}</h4>
+                        <p>{t('pages.currentMarch.distanceScheme.howItWorks.steps.step4.description')}</p>
                       </div>
                     </li>
                   </ul>
 
                   <div className="distance-categories">
-                    <h3>Distance Categories</h3>
-                    <p>Different categories have different distance requirements:</p>
+                    <h3>{t('pages.currentMarch.distanceScheme.categories.title')}</h3>
+                    <p>{t('pages.currentMarch.distanceScheme.categories.description')}</p>
 
                     <div className="category-table">
                       <div className="table-header">
-                        <div className="column">Category</div>
-                        <div className="column">Minimum Distance</div>
-                        <div className="column">Required Checkpoints</div>
+                        <div className="column">{t('pages.currentMarch.distanceScheme.categories.table.category')}</div>
+                        <div className="column">{t('pages.currentMarch.distanceScheme.categories.table.minDistance')}</div>
+                        <div className="column">{t('pages.currentMarch.distanceScheme.categories.table.requiredCheckpoints')}</div>
                       </div>
                       <div className="table-row">
-                        <div className="column">Category A - Military</div>
+                        <div className="column">{t('pages.currentMarch.distanceScheme.categories.table.catA')}</div>
                         <div className="column">40 km</div>
                         <div className="column">5-7</div>
                       </div>
                       <div className="table-row">
-                        <div className="column">Category B - Youth</div>
+                        <div className="column">{t('pages.currentMarch.distanceScheme.categories.table.catB')}</div>
                         <div className="column">20 km</div>
                         <div className="column">3-5</div>
                       </div>
                       <div className="table-row">
-                        <div className="column">Category C - Civilian</div>
+                        <div className="column">{t('pages.currentMarch.distanceScheme.categories.table.catC')}</div>
                         <div className="column">30 km</div>
                         <div className="column">4-6</div>
                       </div>
                     </div>
 
                     <p className="note">
-                      <i className="fas fa-exclamation-circle"></i> Note: The final distance scheme for 2025 may have different requirements and will be published closer to the event date.
+                      <i className="fas fa-exclamation-circle"></i> {t('pages.currentMarch.distanceScheme.categories.note')}
                     </p>
                   </div>
 
                   <div className="map-placeholder">
                     <div className="map-overlay">
                       <i className="fas fa-map-marked-alt"></i>
-                      <p>Interactive map coming soon</p>
+                      <p>{t('pages.currentMarch.distanceScheme.map.comingSoon')}</p>
                     </div>
                   </div>
 
                   <div className="download-section">
-                    <h3>Important Documents</h3>
-                    <p>The following documents will be available for download:</p>
+                    <h3>{t('pages.currentMarch.distanceScheme.documents.title')}</h3>
+                    <p>{t('pages.currentMarch.distanceScheme.documents.description')}</p>
                     <ul className="download-list">
                       <li>
                         <i className="fas fa-file-pdf"></i>
-                        <span>Flyer 2025 (Coming Soon)</span>
+                        <span>{t('pages.currentMarch.distanceScheme.documents.flyer')}</span>
                       </li>
                       <li>
                         <i className="fas fa-file-pdf"></i>
-                        <span>Distance Scheme Map (Coming Soon)</span>
+                        <span>{t('pages.currentMarch.distanceScheme.documents.map')}</span>
                       </li>
                       <li>
                         <i className="fas fa-file-pdf"></i>
-                        <span>Marching Regulations (Coming Soon)</span>
+                        <span>{t('pages.currentMarch.distanceScheme.documents.regulations')}</span>
                       </li>
                     </ul>
                   </div>
@@ -275,30 +277,31 @@ const CurrentMarch = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2>How Does the March Work?</h2>
+                <h2>{t('pages.currentMarch.howItWorks.title')}</h2>
 
                 <div className="overview-description">
                   <p>
-                    The Bernese Distance March is distinguished by a unique approach to course design that sets it apart from many other marching events. While most marches require participants to follow a fixed route and register the distance in advance, participants of the Bernese Distance March have the freedom to choose their route individually. They orient themselves according to a given distance scheme and can decide how far they wish to go. This flexible structure not only presents a physical challenge but also adds an extra task in navigation and orientation in the terrain.
+                    {t('pages.currentMarch.howItWorks.description')}
                   </p>
                 </div>
 
                 <div className="scheme-info">
-                  <h3>Example of the Distance Scheme</h3>
+                  <h3>{t('pages.currentMarch.howItWorks.example.title')}</h3>
                   <div className="featured-image">
                     <img
                       src="https://www.bernerdm.ch/wp-content/uploads/2025/02/Muster_Distanzschema.png"
+                      alt="Distance scheme example"
                     />
                   </div>
                 </div>
 
                 <div className="regulations-section mt-4">
-                  <h3>Here's an example:</h3>
+                  <h3>{t('pages.currentMarch.howItWorks.title')}</h3>
 
-                  <h4>Before the March:</h4>
+                  <h4>{t('pages.currentMarch.howItWorks.beforeMarch.title')}</h4>
                   <div className="overview-description">
                     <p>
-                      All participants gather at the march center before the starting time and receive their march card. If you have registered for shooting: This will take place before the march, so go directly to the shooting range or profit from our shuttle service, departing from the march center.
+                      {t('pages.currentMarch.howItWorks.beforeMarch.description1')}
                     </p>
                   </div>
 
@@ -331,25 +334,26 @@ const CurrentMarch = () => {
 
                   <div className="overview-description">
                     <p>
-                      Once you've received your march card, you'll choose a route (of at least 10 km). The numbers in the black boxes indicate the number of kilometers you will walk to reach the desired checkpoint. For example, if you want to walk from the start to checkpoints C, D, and then back, according to the scheme, that would be 6 km + 5 km + 7 km = 18 km.
+                      {t('pages.currentMarch.howItWorks.beforeMarch.description2')}
                     </p>
                   </div>
 
                   <div className="featured-image">
                     <img
                       src="https://www.bernerdm.ch/wp-content/uploads/2025/02/grafik-2-1024x566.png"
+                      alt="Distance graph example"
                     />
                   </div>
                 </div>
 
                 <div className="regulations-section mt-4">
-                  <h4>During the March:</h4>
+                  <h4>{t('pages.currentMarch.howItWorks.duringMarch.title')}</h4>
                   <div className="overview-description">
                     <p>
-                      From 12:00 PM, the commander will start the march, and you can begin! The route is signposted, and members of the BEDM team will also be on the route to assist with any questions or emergencies.
+                      {t('pages.currentMarch.howItWorks.duringMarch.description1')}
                     </p>
                     <p>
-                      Once you reach your first checkpoint, you can have the BEDM team member log your distance. The checkpoints are strategically located in inns that are both easily accessible and easy to find. During a break, you can relax here and be served drinks and small snacks by the friendly staff before continuing on the march.
+                      {t('pages.currentMarch.howItWorks.duringMarch.description2')}
                     </p>
                   </div>
 
@@ -390,13 +394,13 @@ const CurrentMarch = () => {
                 </div>
 
                 <div className="regulations-section mt-4">
-                  <h4>After the March:</h4>
+                  <h4>{t('pages.currentMarch.howItWorks.afterMarch.title')}</h4>
                   <div className="overview-description">
                     <p>
-                      After completing your march, return to the march center and hand in your march card to the BEDM team. Upon request, you will receive a certificate, a shooting badge, and a medal. Now you can relax and refresh at the march center—our guesthouse is ready to welcome you.
+                      {t('pages.currentMarch.howItWorks.afterMarch.description1')}
                     </p>
                     <p>
-                      At 11:00 PM, the rankings for the various categories will be announced—at which point the march day officially ends.
+                      {t('pages.currentMarch.howItWorks.afterMarch.description2')}
                     </p>
                   </div>
 
@@ -463,13 +467,13 @@ const CurrentMarch = () => {
 
                 <div className="overview-description">
                   <p>
-                    The <Link to="/leaderboards">rankings</Link> will be uploaded to the website in the weeks following the march.
+                    {t('pages.currentMarch.howItWorks.conclusion.rankings')}
                   </p>
                   <p>
-                    For more information regarding the shooting program or the march itself, feel free to take a look at our regulations (<Link to="/download">shooting regulations, march regulations</Link>).
+                    {t('pages.currentMarch.howItWorks.conclusion.moreInfo')}
                   </p>
                   <p className="text-center">
-                    <strong>"Have fun with the march!"</strong>
+                    <strong>{t('pages.currentMarch.howItWorks.conclusion.haveFun')}</strong>
                   </p>
                 </div>
 
@@ -477,24 +481,28 @@ const CurrentMarch = () => {
                   <div className="featured-image">
                     <img
                       src="https://www.bernerdm.ch/wp-content/uploads/2025/02/hiking-bears.jpg"
+                      alt="Hiking bears"
                     />
                   </div>
                   <div className="featured-image">
                     <img
                       src="https://www.bernerdm.ch/wp-content/uploads/2025/02/image-1024x680.png"
+                      alt="Distance march participants"
                     />
                   </div>
                 </div>
 
                 <div className="overview-description">
                   <p className="text-center">
-                    <strong>Bernese Distance March 2025 – 2027: March with us to Ins!</strong>
+                    <strong>{t('pages.currentMarch.howItWorks.conclusion.invitation')}</strong>
                   </p>
                 </div>
 
                 <div className="cta-buttons">
-                  <Link to="/registration" className="btn btn-primary">Register Now</Link>
-                  <button onClick={() => handleTabChange('regulations')} className="btn btn-secondary">View Regulations</button>
+                  <Link to="/registration" className="btn btn-primary">{t('common.buttons.registerNow')}</Link>
+                  <button onClick={() => handleTabChange('regulations')} className="btn btn-secondary">
+                    {t('pages.currentMarch.tabs.regulations')}
+                  </button>
                 </div>
               </motion.div>
             )}
@@ -506,123 +514,123 @@ const CurrentMarch = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2>March Regulations</h2>
+                <h2>{t('pages.currentMarch.regulations.title')}</h2>
 
                 <div className="regulations-section mt-4">
-                  <h3>General Rules</h3>
+                  <h3>{t('pages.currentMarch.regulations.generalRules.title')}</h3>
                   <ul className="regulations-list">
                     <li>
                       <i className="fas fa-check"></i>
-                      <span>Participants must register before the event.</span>
+                      <span>{t('pages.currentMarch.regulations.generalRules.rule1')}</span>
                     </li>
                     <li>
                       <i className="fas fa-check"></i>
-                      <span>All participants must check in at the starting point on December 6th, 2025.</span>
+                      <span>{t('pages.currentMarch.regulations.generalRules.rule2')}</span>
                     </li>
                     <li>
                       <i className="fas fa-check"></i>
-                      <span>Each participant must visit all required checkpoints for their category.</span>
+                      <span>{t('pages.currentMarch.regulations.generalRules.rule3')}</span>
                     </li>
                     <li>
                       <i className="fas fa-check"></i>
-                      <span>Checkpoints must be visited during their operational hours.</span>
+                      <span>{t('pages.currentMarch.regulations.generalRules.rule4')}</span>
                     </li>
                     <li>
                       <i className="fas fa-check"></i>
-                      <span>Participants must finish the march within the designated time limit.</span>
+                      <span>{t('pages.currentMarch.regulations.generalRules.rule5')}</span>
                     </li>
                     <li>
                       <i className="fas fa-check"></i>
-                      <span>All participants must respect private property and follow Swiss traffic laws.</span>
+                      <span>{t('pages.currentMarch.regulations.generalRules.rule6')}</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className="regulations-section mt-4">
-                  <h3>Category-Specific Requirements</h3>
+                  <h3>{t('pages.currentMarch.regulations.categoryRequirements.title')}</h3>
 
                   <div className="category-regulation">
-                    <h4>Category A - Military/Uniformed</h4>
+                    <h4>{t('pages.currentMarch.regulations.categoryRequirements.catA.title')}</h4>
                     <ul>
-                      <li>Must wear official uniform of their service</li>
-                      <li>Required to carry standard equipment as specified</li>
-                      <li>Must complete minimum 40km distance</li>
-                      <li>Teams must stay together throughout the march</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catA.req1')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catA.req2')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catA.req3')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catA.req4')}</li>
                     </ul>
                   </div>
 
                   <div className="category-regulation">
-                    <h4>Category B - Youth & Sport (under 20)</h4>
+                    <h4>{t('pages.currentMarch.regulations.categoryRequirements.catB.title')}</h4>
                     <ul>
-                      <li>Participants under 16 must be accompanied by an adult</li>
-                      <li>Must complete minimum 20km distance</li>
-                      <li>Recommended to travel in groups of at least 2</li>
-                      <li>Must carry sufficient water and supplies</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catB.req1')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catB.req2')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catB.req3')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catB.req4')}</li>
                     </ul>
                   </div>
 
                   <div className="category-regulation">
-                    <h4>Category C - Civilian</h4>
+                    <h4>{t('pages.currentMarch.regulations.categoryRequirements.catC.title')}</h4>
                     <ul>
-                      <li>Must complete minimum 30km distance</li>
-                      <li>Must check in at all required control points</li>
-                      <li>Teams register together and finish together</li>
-                      <li>Proper hiking equipment recommended</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catC.req1')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catC.req2')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catC.req3')}</li>
+                      <li>{t('pages.currentMarch.regulations.categoryRequirements.catC.req4')}</li>
                     </ul>
                   </div>
                 </div>
 
                 <div className="regulations-section">
-                  <h3>Equipment Requirements</h3>
+                  <h3>{t('pages.currentMarch.regulations.equipment.title')}</h3>
                   <div className="equipment-list">
                     <div className="equipment-category">
-                      <h4>Essential Items for All Participants</h4>
+                      <h4>{t('pages.currentMarch.regulations.equipment.essential.title')}</h4>
                       <ul>
-                        <li>Comfortable walking/hiking shoes</li>
-                        <li>Weather-appropriate clothing (layers recommended)</li>
-                        <li>Waterproof jacket</li>
-                        <li>Personal identification</li>
-                        <li>Water bottle or hydration system</li>
-                        <li>High-energy snacks</li>
-                        <li>Basic first aid kit</li>
-                        <li>Mobile phone (fully charged)</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item1')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item2')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item3')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item4')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item5')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item6')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item7')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.essential.item8')}</li>
                       </ul>
                     </div>
 
                     <div className="equipment-category">
-                      <h4>Recommended Additional Items</h4>
+                      <h4>{t('pages.currentMarch.regulations.equipment.recommended.title')}</h4>
                       <ul>
-                        <li>Map of the region</li>
-                        <li>Compass or GPS device</li>
-                        <li>Small backpack</li>
-                        <li>Sunscreen and hat</li>
-                        <li>Walking poles</li>
-                        <li>Extra socks</li>
-                        <li>Blister treatment supplies</li>
-                        <li>Flashlight or headlamp</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item1')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item2')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item3')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item4')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item5')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item6')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item7')}</li>
+                        <li>{t('pages.currentMarch.regulations.equipment.recommended.item8')}</li>
                       </ul>
                     </div>
                   </div>
                 </div>
 
                 <div className="safety-notice">
-                  <h3>Safety Information</h3>
+                  <h3>{t('pages.currentMarch.regulations.safety.title')}</h3>
                   <p>
-                    The safety of all participants is our highest priority. Please note the following safety guidelines:
+                    {t('pages.currentMarch.regulations.safety.description')}
                   </p>
                   <ul>
-                    <li>Medical support will be available at checkpoints and through emergency services.</li>
-                    <li>In case of emergency, call the event emergency number or 112 for Swiss emergency services.</li>
-                    <li>If you are unable to complete the march, inform the nearest checkpoint staff.</li>
-                    <li>Check weather forecasts before the event and dress accordingly.</li>
-                    <li>Stay hydrated throughout the march.</li>
-                    <li>Respect nature and wildlife encountered during the march.</li>
+                    <li>{t('pages.currentMarch.regulations.safety.guideline1')}</li>
+                    <li>{t('pages.currentMarch.regulations.safety.guideline2')}</li>
+                    <li>{t('pages.currentMarch.regulations.safety.guideline3')}</li>
+                    <li>{t('pages.currentMarch.regulations.safety.guideline4')}</li>
+                    <li>{t('pages.currentMarch.regulations.safety.guideline5')}</li>
+                    <li>{t('pages.currentMarch.regulations.safety.guideline6')}</li>
                   </ul>
                 </div>
 
                 <div className="download-button">
                   <a href="#" className="btn btn-primary">
-                    <i className="fas fa-download"></i> Download Complete Regulations (Coming Soon)
+                    <i className="fas fa-download"></i> {t('pages.currentMarch.regulations.download')}
                   </a>
                 </div>
               </motion.div>
@@ -635,140 +643,124 @@ const CurrentMarch = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2>Frequently Asked Questions</h2>
+                <h2>{t('pages.currentMarch.faq.title')}</h2>
 
                 <div className="faq-list">
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>What makes the Bernese Distance March different from other marches?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q1.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        Unlike traditional marches with fixed routes, the Bernese Distance March allows participants to choose their own path between checkpoints. This freedom to design your own route makes each participant's experience unique and personal.
+                        {t('pages.currentMarch.faq.questions.q1.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>How do I register for the march?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q2.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        You can register online through our <Link to="/registration">Registration Page</Link>. Registration will remain open until November 15, 2025, but we recommend registering early to secure your spot.
+                        {t('pages.currentMarch.faq.questions.q2.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>What is the registration fee?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q3.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        The registration fee is CHF 25.00 for adults and CHF 20.00 for juniors under 20 years of age. Children under 7 can participate for free. Payment is made in cash (CHF only) at the event. No credit cards or checks are accepted.
+                        {t('pages.currentMarch.faq.questions.q3.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>What are the different categories?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q4.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        We have three main categories:
-                      </p>
-                      <ul>
-                        <li><strong>Category A:</strong> For uniformed participants (military, police, etc.)</li>
-                        <li><strong>Category B:</strong> For youth and sport participants under 20 years old</li>
-                        <li><strong>Category C:</strong> For civilian participants</li>
-                      </ul>
-                      <p>
-                        Within Categories A and C, there are also group options for those who wish to march together.
+                        {t('pages.currentMarch.faq.questions.q4.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>How far will I need to walk?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q5.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        The distance depends on your category and the route you choose:
-                      </p>
-                      <ul>
-                        <li>Category A (Military): Approximately 40km</li>
-                        <li>Category B (Youth): Approximately 20km</li>
-                        <li>Category C (Civilian): Approximately 30km</li>
-                      </ul>
-                      <p>
-                        The final distance scheme for 2025 will be published closer to the event date.
+                        {t('pages.currentMarch.faq.questions.q5.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>Do I need special equipment?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q6.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        You should have good walking shoes, appropriate clothing for December weather in Switzerland, water, snacks, and a small backpack. Category A participants must wear their official uniforms. A detailed equipment list is available in the Regulations tab.
+                        {t('pages.currentMarch.faq.questions.q6.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>How do I plan my route?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q7.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        Once the official distance scheme is published, you'll be able to see all checkpoints. You can then decide which checkpoints to visit and in what order, based on your category requirements. You can use online mapping tools or traditional maps to plan your route between checkpoints.
+                        {t('pages.currentMarch.faq.questions.q7.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>What happens if I can't complete the march?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q8.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        If you are unable to complete the march, please inform the nearest checkpoint staff. They will arrange transport back to the start/finish area if needed. Safety is our priority, and there is no shame in not completing the full distance.
+                        {t('pages.currentMarch.faq.questions.q8.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>Can international participants join?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q9.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        Absolutely! We welcome participants from around the world. The Bernese Distance March has a long tradition of international participation, especially from military personnel from various countries.
+                        {t('pages.currentMarch.faq.questions.q9.answer')}
                       </p>
                     </div>
                   </div>
 
                   <div className="faq-item">
                     <div className="faq-question">
-                      <h3>How do I get to the starting point?</h3>
+                      <h3>{t('pages.currentMarch.faq.questions.q10.question')}</h3>
                     </div>
                     <div className="faq-answer">
                       <p>
-                        The 2025 march will start in Ins, Canton of Bern. Detailed directions and transportation options will be provided closer to the event date. Ins is accessible by public transportation (train) from major Swiss cities.
+                        {t('pages.currentMarch.faq.questions.q10.answer')}
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="contact-info">
-                  <h3>Still Have Questions?</h3>
+                  <h3>{t('pages.currentMarch.faq.moreQuestions.title')}</h3>
                   <p>
-                    Contact the organizing committee at <a href="mailto:kommando@bernerdm.ch">kommando@bernerdm.ch</a> or call +41 (0) 79 153 28 87.
+                    {t('pages.currentMarch.faq.moreQuestions.contact')} <a href="mailto:kommando@bernerdm.ch">kommando@bernerdm.ch</a>
                   </p>
                 </div>
               </motion.div>
@@ -779,9 +771,9 @@ const CurrentMarch = () => {
 
       <div className="cta-banner">
         <div className="container">
-          <h2>Ready to Join the 67th Bernese Distance March?</h2>
-          <p>Register today and be part of this unique Swiss tradition!</p>
-          <Link to="/registration" className="btn btn-large">Register Now</Link>
+          <h2>{t('pages.currentMarch.ctaBanner.title')}</h2>
+          <p>{t('pages.currentMarch.ctaBanner.subtitle')}</p>
+          <Link to="/registration" className="btn btn-large">{t('common.buttons.registerNow')}</Link>
         </div>
       </div>
 

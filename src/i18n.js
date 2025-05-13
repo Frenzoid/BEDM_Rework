@@ -1,4 +1,5 @@
-// i18n.js
+// Translation Engine
+// This file is responsible for setting up the i18next translation engine
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';

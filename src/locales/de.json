@@ -706,14 +706,15 @@
       },
       "videoSection": {
         "title": "Video­highlights",
-        "highlightsTitle": "Highlights vom 66. Berner Distanzmarsch (2024)",
-        "description": "Erlebe die Höhepunkte des 66. Marsches 2024. Dieses Video zeigt die schönen Routen, begeisterte Teilnehmende und den Kameradschaftsgeist, der dieses Event besonders macht.",
+        "highlightsTitle": "Highlights vom 62. Berner Distanzmarsch (2020)",
+        "description": "Erlebe die Höhepunkte des 62. Marsches 2020. Dieses Video zeigt die schönen Routen, begeisterte Teilnehmende und den Kameradschaftsgeist, der dieses Event besonders macht.",
         "viewMoreVideos": "Weitere Videos ansehen"
       }
     },
     "notFound": {
       "title": "404 – Seite nicht gefunden",
       "message": "Es scheint, du hast die Route verlassen!",
+      "youAreHere": "Du bist hier",
       "help": "Keine Sorge! Anders als beim Marsch helfen wir dir, zurückzufinden.",
       "returnHome": "Zur Startseite",
       "viewCurrentMarch": "Aktuellen Marsch ansehen",

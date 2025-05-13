@@ -1,49 +1,52 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/History.css';
 
 const History = () => {
+  const { t } = useTranslation();
+
   const timelineEvents = [
     {
       year: 1960,
-      title: "The First March",
-      description: "The Berner Distanzmarsch was founded by Heinz Krähenbühl and Walter Bürki. It began as a military competition combined with the general meeting of the Bern Section of the SVMLT.",
+      title: t('pages.history.timeline.events.event1.title'),
+      description: t('pages.history.timeline.events.event1.description'),
       image: "https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
     },
     {
-      year: "1960s",
-      title: "Early Development",
-      description: "The event lasted from 17:00 on Saturday to 07:00 on Sunday. Only marchers in uniform (military, railway, post office, civil defence, fire brigade, etc.) were permitted.",
+      year: t('pages.history.timeline.events.event2.year'),
+      title: t('pages.history.timeline.events.event2.title'),
+      description: t('pages.history.timeline.events.event2.description'),
       image: "https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
     },
     {
-      year: "1980s",
-      title: "International Participation",
-      description: "A delegation of reservists from the Saarland visited the Bern Distance March, creating a deep comradeship between the Saarland Reservist Association and the Bern Section of the SVMLT.",
+      year: t('pages.history.timeline.events.event3.year'),
+      title: t('pages.history.timeline.events.event3.title'),
+      description: t('pages.history.timeline.events.event3.description'),
       image: "https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
     },
     {
-      year: "1990s",
-      title: "Evolving Traditions",
-      description: "The distance march was separated from the general meeting, breaking with a long-standing tradition but allowing more focus on the march itself.",
+      year: t('pages.history.timeline.events.event4.year'),
+      title: t('pages.history.timeline.events.event4.title'),
+      description: t('pages.history.timeline.events.event4.description'),
       image: "https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
     },
     {
       year: 2000,
-      title: "New Leadership",
-      description: "Hptm Ruedi Lehmann fought to continue the Berner Distanzmarsch during a critical time when the event's future was uncertain.",
+      title: t('pages.history.timeline.events.event5.title'),
+      description: t('pages.history.timeline.events.event5.description'),
       image: "https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
     },
     {
       year: 2020,
-      title: "Remote March",
-      description: "During the COVID-19 pandemic, a milestone was achieved with the holding of the Remote March 2020, showcasing the flexibility and commitment of the organizing team.",
+      title: t('pages.history.timeline.events.event6.title'),
+      description: t('pages.history.timeline.events.event6.description'),
       image: "https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
     },
     {
       year: 2025,
-      title: "67th Edition",
-      description: "The 67th Berne distance march continues the proud tradition, now under the leadership of Hptadj Adrian Venner and his staff.",
+      title: t('pages.history.timeline.events.event7.title'),
+      description: t('pages.history.timeline.events.event7.description'),
       image: "https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
     }
   ];
@@ -52,8 +55,8 @@ const History = () => {
     <div className="history-page">
       <div className="page-header">
         <div className="container">
-          <h1>History</h1>
-          <p>Exploring the rich tradition of the Bernese Distance March</p>
+          <h1>{t('pages.history.header.title')}</h1>
+          <p>{t('pages.history.header.subtitle')}</p>
         </div>
       </div>
 
@@ -66,15 +69,15 @@ const History = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>The Beginnings</h2>
+            <h2>{t('pages.history.intro.title')}</h2>
             <p>
-              The Bernese Distance March, originally called the Night March, has its roots in the early 1960s. It was founded by two officers and members of the Bern section of the SVMLT (Swiss Association of Master Technical Troops), Heinz Krähenbühl and Walter Bürki, who are considered the founding fathers of this traditional event.
+              {t('pages.history.intro.paragraph1')}
             </p>
             <p>
-              The idea emerged from practical concerns: due to petrol rationing measures at the time, not every Swiss household owned a car. The founders had the innovative idea that the general meeting location of the Bern Section could be reached by all members on foot from home while simultaneously being combined with a military competition.
+              {t('pages.history.intro.paragraph2')}
             </p>
             <p>
-              This gave rise to the Berner Distanzmarsch, a tradition that has continued and evolved for over six decades, becoming an important part of Swiss military and cultural heritage.
+              {t('pages.history.intro.paragraph3')}
             </p>
           </motion.div>
 
@@ -87,13 +90,13 @@ const History = () => {
           >
             <img
               src="https://www.bernerdm.ch/wp-content/uploads/2024/12/image-1-1024x680.png"
-              alt="Historic image of the Bernese Distance March"
+              alt={t('pages.history.intro.imageAlt')}
             />
           </motion.div>
         </div>
 
         <div className="timeline-section">
-          <h2>Timeline of the Bernese Distance March</h2>
+          <h2>{t('pages.history.timeline.title')}</h2>
           <div className="timeline">
             {timelineEvents.map((event, index) => (
               <motion.div
@@ -126,7 +129,7 @@ const History = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Evolving Traditions
+            {t('pages.history.traditions.title')}
           </motion.h2>
 
           <div className="traditions-content">
@@ -138,19 +141,19 @@ const History = () => {
               transition={{ duration: 0.6 }}
             >
               <p>
-                The conditions of the march have changed over the decades. Originally, the event lasted from 17:00 on Saturday to 07:00 on Sunday, and only marchers in uniform were permitted. Civilian escorts were not allowed, and scoring followed a special scheme where weapons carried and rucksack weight contributed to points.
+                {t('pages.history.traditions.paragraph1')}
               </p>
               <p>
-                In the 1980s, the march gained an international dimension when a delegation of reservists from the Saarland in Germany participated. This resulted in a deep comradeship and friendship between the Saarland Reservist Association and the Bern Section of the SVMLT, formalized in a sponsorship agreement.
+                {t('pages.history.traditions.paragraph2')}
               </p>
               <p>
-                A significant change came when the distance march was separated from the general meeting, breaking with a long-standing tradition. This decision was made because many members who completed the march stayed away from the meeting to rest, while those who persevered often fell asleep during proceedings.
+                {t('pages.history.traditions.paragraph3')}
               </p>
               <p>
-                Throughout its history, the Bernese Distance March has faced challenges and periods of uncertainty. During a critical time when voices called for abandoning the tradition, Hptm Ruedi Lehmann fought for its continuation.
+                {t('pages.history.traditions.paragraph4')}
               </p>
               <p>
-                Today, under the leadership of Hptadj Adrian Venner and his staff, the long-term continuation of the traditional Berner Distanzmarsch is guaranteed, adapting to new times while preserving the spirit of the founding fathers.
+                {t('pages.history.traditions.paragraph5')}
               </p>
             </motion.div>
 
@@ -163,26 +166,26 @@ const History = () => {
             >
               <div className="stat-card">
                 <div className="stat-number">67</div>
-                <div className="stat-label">Editions</div>
+                <div className="stat-label">{t('pages.history.traditions.stats.editions')}</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number">6,000+</div>
-                <div className="stat-label">Peak Participants</div>
+                <div className="stat-label">{t('pages.history.traditions.stats.peakParticipants')}</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number">10+</div>
-                <div className="stat-label">Countries Represented</div>
+                <div className="stat-label">{t('pages.history.traditions.stats.countriesRepresented')}</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number">65</div>
-                <div className="stat-label">Years of Tradition</div>
+                <div className="stat-label">{t('pages.history.traditions.stats.yearsOfTradition')}</div>
               </div>
             </motion.div>
           </div>
         </div>
 
         <div className="notable-participants">
-          <h2>Notable Participants</h2>
+          <h2>{t('pages.history.notableParticipants.title')}</h2>
           <div className="participants-grid">
             <motion.div
               className="participant-card"
@@ -194,13 +197,13 @@ const History = () => {
               <div className="participant-image">
                 <img
                   src="https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
-                  alt="Paul Fürst"
+                  alt={t('pages.history.notableParticipants.participant1.name')}
                 />
               </div>
-              <h3>Pol Wm Fürst Paul</h3>
-              <p className="participant-achievement">Completed ALL distance marches without any gaps</p>
+              <h3>{t('pages.history.notableParticipants.participant1.name')}</h3>
+              <p className="participant-achievement">{t('pages.history.notableParticipants.participant1.achievement')}</p>
               <p className="participant-description">
-                A living example of dedication and loyalty to the tradition of the Bernese Distance March.
+                {t('pages.history.notableParticipants.participant1.description')}
               </p>
             </motion.div>
 
@@ -214,13 +217,13 @@ const History = () => {
               <div className="participant-image">
                 <img
                   src="https://www.bernerdm.ch/wp-content/uploads/2021/01/Oberst_Kraehenbuehl-726x1024.jpg"
-                  alt="Heinz Krähenbühl"
+                  alt={t('pages.history.notableParticipants.participant2.name')}
                 />
               </div>
-              <h3>Heinz Krähenbühl</h3>
-              <p className="participant-achievement">Co-founder</p>
+              <h3>{t('pages.history.notableParticipants.participant2.name')}</h3>
+              <p className="participant-achievement">{t('pages.history.notableParticipants.participant2.achievement')}</p>
               <p className="participant-description">
-                One of the two founding fathers who initiated the Bernese Distance March in the early 1960s.
+                {t('pages.history.notableParticipants.participant2.description')}
               </p>
             </motion.div>
 
@@ -234,13 +237,13 @@ const History = () => {
               <div className="participant-image">
                 <img
                   src="https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
-                  alt="Ruedi Lehmann"
+                  alt={t('pages.history.notableParticipants.participant3.name')}
                 />
               </div>
-              <h3>Hptm Ruedi Lehmann</h3>
-              <p className="participant-achievement">Preservation Leader</p>
+              <h3>{t('pages.history.notableParticipants.participant3.name')}</h3>
+              <p className="participant-achievement">{t('pages.history.notableParticipants.participant3.achievement')}</p>
               <p className="participant-description">
-                Fought in the front line for the continuation of the Berner Distanzmarsch during a critical period.
+                {t('pages.history.notableParticipants.participant3.description')}
               </p>
             </motion.div>
 
@@ -254,13 +257,13 @@ const History = () => {
               <div className="participant-image">
                 <img
                   src="https://www.bernerdm.ch/wp-content/uploads/2022/07/command_adrian_venner-150x150.jpg"
-                  alt="Adrian Venner"
+                  alt={t('pages.history.notableParticipants.participant4.name')}
                 />
               </div>
-              <h3>Hptadj Adrian Venner</h3>
-              <p className="participant-achievement">Current Commander</p>
+              <h3>{t('pages.history.notableParticipants.participant4.name')}</h3>
+              <p className="participant-achievement">{t('pages.history.notableParticipants.participant4.achievement')}</p>
               <p className="participant-description">
-                Leading the Bernese Distance March into the future while preserving its rich traditions.
+                {t('pages.history.notableParticipants.participant4.description')}
               </p>
             </motion.div>
           </div>
@@ -274,18 +277,18 @@ const History = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>A Living Legacy</h2>
+            <h2>{t('pages.history.legacy.title')}</h2>
             <p>
-              The Bernese Distance March represents more than just a physical challenge—it embodies a living legacy of Swiss military tradition, camaraderie, and adaptability. Through world events, changing times, and evolving social norms, the march has persisted, adapting while maintaining its core spirit.
+              {t('pages.history.legacy.paragraph1')}
             </p>
             <p>
-              In 2020, the event demonstrated its resilience and innovation by holding a Remote March during the COVID-19 pandemic. This flexibility ensured the tradition continued unbroken despite global challenges.
+              {t('pages.history.legacy.paragraph2')}
             </p>
             <p>
-              Today, with approximately 600 participants annually, the Bernese Distance March continues to inspire loyalty and interest. The current leadership team remains committed to leading this cherished tradition into a secure future, honoring all those who have contributed to its success over the decades.
+              {t('pages.history.legacy.paragraph3')}
             </p>
             <p>
-              As we look forward to the 67th edition in 2025, we celebrate not only a physical challenge in the beautiful Swiss landscape but also a rich cultural heritage that connects generations and crosses international boundaries.
+              {t('pages.history.legacy.paragraph4')}
             </p>
           </motion.div>
         </div>

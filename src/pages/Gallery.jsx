@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/Gallery.css';
 
 const Gallery = () => {
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedYear, setSelectedYear] = useState('all');
   const [selectedCategory, setSelectedCategory] = useState('all');
-
 
   const images = [
     // 2020 → December
@@ -141,13 +142,12 @@ const Gallery = () => {
   const years = ['all', '2024', '2022', '2021', '2020'];
 
   const categories = [
-    { id: 'all', name: 'All Categories' },
-    { id: 'participants', name: 'Participants' },
-    { id: 'landscapes', name: 'Landscapes' },
-    { id: 'ceremonies', name: 'Ceremonies' },
-    { id: 'remote', name: 'Remote March 2020' },
+    { id: 'all', name: t('pages.gallery.filters.byCategory.allCategories') },
+    { id: 'participants', name: t('pages.gallery.filters.byCategory.participants') },
+    { id: 'landscapes', name: t('pages.gallery.filters.byCategory.landscapes') },
+    { id: 'ceremonies', name: t('pages.gallery.filters.byCategory.ceremonies') },
+    { id: 'remote', name: t('pages.gallery.filters.byCategory.remoteMarch') },
   ];
-
 
   const handleYearChange = (year) => {
     setSelectedYear(year);
@@ -175,15 +175,15 @@ const Gallery = () => {
     <div className="gallery-page">
       <div className="page-header">
         <div className="container">
-          <h1>Gallery</h1>
-          <p>Images from past Bernese Distance Marches</p>
+          <h1>{t('pages.gallery.header.title')}</h1>
+          <p>{t('pages.gallery.header.subtitle')}</p>
         </div>
       </div>
 
       <div className="container">
         <div className="gallery-filters">
           <div className="year-filter">
-            <h3>Filter by Year</h3>
+            <h3>{t('pages.gallery.filters.byYear.title')}</h3>
             <div className="filter-buttons">
               {years.map((year) => (
                 <button
@@ -191,14 +191,14 @@ const Gallery = () => {
                   className={`filter-btn ${selectedYear === year ? 'active' : ''}`}
                   onClick={() => handleYearChange(year)}
                 >
-                  {year === 'all' ? 'All Years' : year}
+                  {year === 'all' ? t('pages.gallery.filters.byYear.allYears') : year}
                 </button>
               ))}
             </div>
           </div>
 
           <div className="category-filter">
-            <h3>Filter by Category</h3>
+            <h3>{t('pages.gallery.filters.byCategory.title')}</h3>
             <div className="filter-buttons">
               {categories.map((category) => (
                 <button
@@ -243,7 +243,6 @@ const Gallery = () => {
                     <p>{image.caption}</p>
                   </div>
                 )}
-
               </motion.div>
             ))}
           </AnimatePresence>
@@ -252,8 +251,8 @@ const Gallery = () => {
         {filteredImages.length === 0 && (
           <div className="no-results">
             <i className="fas fa-image"></i>
-            <h3>No images found</h3>
-            <p>Try changing your filter settings to see more images.</p>
+            <h3>{t('pages.gallery.noResults.title')}</h3>
+            <p>{t('pages.gallery.noResults.description')}</p>
             <button
               className="btn btn-primary"
               onClick={() => {
@@ -261,7 +260,7 @@ const Gallery = () => {
                 setSelectedCategory('all');
               }}
             >
-              Reset Filters
+              {t('pages.gallery.noResults.resetFilters')}
             </button>
           </div>
         )}
@@ -290,9 +289,9 @@ const Gallery = () => {
                   <img src={selectedImage.src} alt={selectedImage.alt} className="modal-image" />
                 </div>
                 <div className="modal-info">
-                  <div className="modal-year">Year: {selectedImage.year}</div>
+                  <div className="modal-year">{t('pages.gallery.modal.year')} {selectedImage.year}</div>
                   <div className="modal-category">
-                    {selectedImage.category && `Category: ${selectedImage.category}`}
+                    {selectedImage.category && `${t('pages.gallery.modal.category')} ${selectedImage.category}`}
                   </div>
                   {selectedImage.caption && <p className="modal-caption">{selectedImage.caption}</p>}
                 </div>
@@ -302,10 +301,9 @@ const Gallery = () => {
         </AnimatePresence>
 
         <div className="gallery-more-info">
-          <h2>Submit Your Photos</h2>
+          <h2>{t('pages.gallery.submitPhotos.title')}</h2>
           <p>
-            Do you have photos from past Bernese Distance Marches that you'd like to share?
-            We welcome contributions to our gallery from participants and spectators.
+            {t('pages.gallery.submitPhotos.description')}
           </p>
           <div className="submission-info">
             <div className="info-item">
@@ -313,12 +311,12 @@ const Gallery = () => {
                 <i className="fas fa-camera"></i>
               </div>
               <div className="info-content">
-                <h3>Photo Requirements</h3>
+                <h3>{t('pages.gallery.submitPhotos.requirements.title')}</h3>
                 <ul>
-                  <li>High-resolution images (minimum 1500px width)</li>
-                  <li>JPG or PNG format</li>
-                  <li>Include date and location in the description</li>
-                  <li>Maximum 10 photos per submission</li>
+                  <li>{t('pages.gallery.submitPhotos.requirements.req1')}</li>
+                  <li>{t('pages.gallery.submitPhotos.requirements.req2')}</li>
+                  <li>{t('pages.gallery.submitPhotos.requirements.req3')}</li>
+                  <li>{t('pages.gallery.submitPhotos.requirements.req4')}</li>
                 </ul>
               </div>
             </div>
@@ -327,38 +325,36 @@ const Gallery = () => {
                 <i className="fas fa-paper-plane"></i>
               </div>
               <div className="info-content">
-                <h3>How to Submit</h3>
+                <h3>{t('pages.gallery.submitPhotos.howToSubmit.title')}</h3>
                 <p>
-                  Send your photos to <a href="mailto:medien@bernerdm.ch">medien@bernerdm.ch</a> with
-                  the subject line "Bernese Distance March Photos". Please include your name, the year of the march,
-                  and a brief description of each photo.
+                  {t('pages.gallery.submitPhotos.howToSubmit.description')}
                 </p>
               </div>
             </div>
           </div>
-          <a href="mailto:medien@bernerdm.ch" className="btn btn-primary">Submit Your Photos</a>
+          <a href="mailto:medien@bernerdm.ch" className="btn btn-primary">{t('pages.gallery.submitPhotos.submitButton')}</a>
         </div>
-
         <div className="video-section">
-          <h2>Video Highlights</h2>
+          <h2>{t('pages.gallery.videoSection.title')}</h2>
           <div className="video-container">
-            <div className="video-placeholder">
-              <div className="play-button">
-                <i className="fas fa-play"></i>
-              </div>
-              <div className="video-title">
-                <h3>Highlights from the 66th Bernese Distance March (2024)</h3>
-              </div>
-            </div>
+            <video
+              className="gallery-video"
+              controls
+              poster="https://www.bernerdm.ch/wp-content/uploads/2024/12/image-1-1024x680.png"
+            >
+              <source
+                src="https://www.bernerdm.ch/wp-content/uploads/2021/05/Neues-Projekt.mp4"
+                type="video/mp4"
+              />
+              {t('pages.gallery.videoSection.fallbackMessage')}
+            </video>
           </div>
           <div className="video-description">
             <p>
-              Experience the highlights from the 66th Bernese Distance March in 2024. This video showcases the
-              beautiful routes, enthusiastic participants, and the spirit of camaraderie that makes this event
-              special.
+              {t('pages.gallery.videoSection.description')}
             </p>
             <button className="btn btn-secondary">
-              <i className="fab fa-youtube"></i> View More Videos
+              <i className="fab fa-youtube"></i> {t('pages.gallery.videoSection.viewMoreVideos')}
             </button>
           </div>
         </div>

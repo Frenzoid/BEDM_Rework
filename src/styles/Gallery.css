@@ -458,3 +458,24 @@
     height: 250px;
   }
 }
+
+
+/* Add to your Gallery.css file */
+.gallery-video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.video-title {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.video-container {
+  margin-bottom: 20px;
+}
