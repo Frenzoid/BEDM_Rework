@@ -1,0 +1,726 @@
+{
+  "common": {
+    "siteTitle": "Marcha de Distancia de Berna",
+    "subtitle": "Una tradición del Ejército Suizo",
+    "buttons": {
+      "registerNow": "Regístrate ahora",
+      "learnMore": "Más información",
+      "viewMore": "Ver más",
+      "submit": "Enviar",
+      "reset": "Restablecer"
+    },
+    "navigation": {
+      "home": "Inicio",
+      "currentMarch": "Marcha actual",
+      "registration": "Inscripción",
+      "history": "Historia",
+      "leaderboards": "Clasificaciones",
+      "statistics": "Estadísticas",
+      "gallery": "Galería"
+    },
+    "footer": {
+      "quickLinks": "Enlaces rápidos",
+      "contact": "Contacto",
+      "followUs": "Síguenos",
+      "copyright": "© {year} Marcha de Distancia de Berna. Todos los derechos reservados. - Hecho por",
+      "privacyPolicy": "Política de privacidad",
+      "termsOfService": "Términos del servicio",
+      "sitemap": "Mapa del sitio"
+    },
+    "contactInfo": {
+      "commander": "Hptadj Adrian Venner",
+      "address": "Rütigässli 3",
+      "city": "CH - 3115 Gerzensee",
+      "phone": "+41 (0) 79 153 28 87",
+      "email": "kommando@bernerdm.ch"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Bienvenido a la Marcha de Distancia de Berna",
+        "subtitle": "Una experiencia de marcha única en las hermosas regiones del Cantón de Berna"
+      },
+      "eventInfo": {
+        "edition": {
+          "title": "67.ª Edición",
+          "description": "¡La 67.ª marcha de distancia de Berna tendrá lugar en Ins el 6 de diciembre de 2025!"
+        },
+        "route": {
+          "title": "Diseña tu ruta",
+          "description": "A diferencia de otras marchas con rutas fijas, los participantes pueden elegir libremente su camino entre los puestos establecidos."
+        },
+        "welcome": {
+          "title": "Todos son bienvenidos",
+          "description": "Ya sea de manera individual o en grupo, la marcha está abierta a todos los que deseen participar."
+        }
+      },
+      "about": {
+        "title": "Acerca de la marcha",
+        "paragraph1": "La Marcha de Distancia de Berna es un evento único que combina la belleza del paisaje suizo con una tradición militar. A diferencia de las marchas convencionales, los participantes diseñan su propia ruta entre puntos de control, haciendo que cada experiencia sea personal y única.",
+        "paragraph2": "Durante muchos años, personas de todo el mundo se han inscrito en este extraordinario evento celebrado en las hermosas regiones del cantón de Berna. La tradición sigue creciendo, acogiendo tanto a personal militar como a civiles.",
+        "discoverHistory": "Descubre nuestra historia"
+      },
+      "testimonials": {
+        "title": "Lo que dicen los participantes",
+        "testimonial1": {
+          "quote": "La Marcha de Distancia de Berna fue una experiencia inolvidable. La libertad de elegir mi propia ruta mientras disfrutaba de los impresionantes paisajes suizos la hizo realmente especial.",
+          "author": "Hans Schmidt",
+          "role": "Participante en 3 ocasiones"
+        },
+        "testimonial2": {
+          "quote": "Como grupo, hemos participado durante 5 años. Cada vez la organización es impecable y el desafío sigue siendo novedoso porque siempre podemos probar nuevas rutas. ¡Muy recomendable!",
+          "author": "Maria Weber",
+          "role": "Líder de grupo"
+        }
+      },
+      "cta": {
+        "title": "¿Listo para el desafío?",
+        "subtitle": "Únete a cientos de participantes de todo el mundo en este evento extraordinario.",
+        "button": "Regístrate en la 67.ª Marcha de Distancia de Berna"
+      },
+      "featuredPosts": {
+        "title": "Últimas novedades",
+        "post1": {
+          "title": "Esquema de distancia 2025",
+          "description": "El esquema definitivo de distancias para la marcha de 2025 se está preparando actualmente.",
+          "readMore": "Leer más"
+        },
+        "post2": {
+          "title": "Clasificaciones actualizadas",
+          "description": "¡Consulta las últimas clasificaciones de eventos anteriores!",
+          "readMore": "Ver clasificaciones"
+        },
+        "post3": {
+          "title": "Historia de la marcha",
+          "description": "Conoce la rica historia de la Marcha de Distancia de Berna.",
+          "readMore": "Explorar historia"
+        }
+      }
+    },
+    "registration": {
+      "header": {
+        "title": "Inscripción",
+        "subtitle": "Inscríbete en la 67.ª Marcha de Distancia de Berna - 6 de diciembre de 2025"
+      },
+      "info": {
+        "title": "Información de inscripción",
+        "importantNotes": {
+          "title": "Notas importantes",
+          "deadline": "Fecha límite de inscripción: 15 de noviembre de 2025",
+          "fee": "Cuota de inscripción: CHF 25.00 para adultos",
+          "childrenFree": "Niños menores de 7 años: Gratis",
+          "payment": "Pago en el lugar (solo en efectivo)",
+          "noCards": "No se aceptan tarjetas de crédito ni cheques"
+        },
+        "categories": {
+          "title": "Categorías",
+          "catA": "Categoría A: Participantes uniformados (militares, policía, etc.)",
+          "catB": "Categoría B: Juvenil y deporte (menores de 20 años)",
+          "catC": "Categoría C: Participantes civiles",
+          "groups": "Grupos: Inscríbete como grupo de la Categoría A o C"
+        }
+      },
+      "form": {
+        "title": "Formulario de inscripción",
+        "fields": {
+          "firstName": "Nombre",
+          "lastName": "Apellido",
+          "email": "Correo electrónico",
+          "phone": "Número de teléfono",
+          "birthDate": "Fecha de nacimiento",
+          "category": "Categoría",
+          "groupName": "Nombre del grupo",
+          "agreeTerms": "Acepto los términos y condiciones y reconozco que estoy en condiciones físicas para participar en este evento."
+        },
+        "categories": {
+          "select": "Selecciona una categoría",
+          "catAMen": "Categoría A - Hombres (uniformados)",
+          "catAWomen": "Categoría A - Mujeres (uniformadas)",
+          "catAGroup": "Categoría A - Grupo (uniformados)",
+          "catB": "Categoría B - Juvenil y deporte (menores de 20)",
+          "catCMen": "Categoría C - Hombres",
+          "catCWomen": "Categoría C - Mujeres",
+          "catCGroup": "Categoría C - Grupo"
+        },
+        "buttons": {
+          "submit": "Enviar inscripción",
+          "reset": "Restablecer formulario"
+        }
+      },
+      "success": {
+        "title": "¡Inscripción exitosa!",
+        "thankYou": "¡Gracias por inscribirte en la 67.ª Marcha de Distancia de Berna! ¡Estamos emocionados de que participes!",
+        "emailSent": "Se ha enviado un correo de confirmación a {email} con más detalles sobre el evento.",
+        "details": "Tus datos de inscripción:",
+        "name": "Nombre:",
+        "category": "Categoría:",
+        "groupName": "Nombre del grupo:",
+        "questions": "Si tienes alguna pregunta, contáctanos en",
+        "registerAnother": "Inscribir otro participante"
+      }
+    },
+    "currentMarch": {
+      "header": {
+        "title": "Marcha actual",
+        "subtitle": "67.ª Marcha de Distancia de Berna - 6 de diciembre de 2025"
+      },
+      "tabs": {
+        "overview": "Resumen",
+        "howItWorks": "Cómo funciona",
+        "distanceScheme": "Esquema de distancias",
+        "regulations": "Reglamentos",
+        "faq": "Preguntas frecuentes"
+      },
+      "overview": {
+        "title": "67.ª Marcha de Distancia de Berna",
+        "marchInfo": {
+          "date": {
+            "title": "Fecha",
+            "info": "6 de diciembre de 2025"
+          },
+          "location": {
+            "title": "Ubicación",
+            "info": "Ins, Cantón de Berna, Suiza"
+          },
+          "startTime": {
+            "title": "Hora de inicio",
+            "info": "8:00 - 10:00"
+          }
+        },
+        "description": {
+          "paragraph1": "La Marcha de Distancia de Berna es única entre las marchas de resistencia porque permite a los participantes elegir sus propias rutas entre puntos de control. A diferencia de las marchas tradicionales con recorridos fijos, puedes diseñar tu propio trayecto a través de los hermosos paisajes de Berna.",
+          "paragraph2": "Los participantes pueden unirse como individuos o en grupos en varias categorías, con rutas de diferentes distancias según su categoría y preferencia. La marcha combina la tradición militar con el aprecio por la belleza natural de Suiza."
+        },
+        "highlights": {
+          "title": "Aspectos destacados del evento",
+          "item1": "Diseña tu propia ruta por el Cantón de Berna",
+          "item2": "Categorías para personal militar, civiles, jóvenes y grupos",
+          "item3": "Medallas otorgadas según la finalización y la categoría",
+          "item4": "Participantes internacionales bienvenidos de todo el mundo",
+          "item5": "Más de 60 años de tradición en marchas militares suizas"
+        }
+      },
+      "distanceScheme": {
+        "title": "Esquema de distancias 2025",
+        "alert": "El esquema definitivo de distancias para la marcha de 2025 se está preparando y se publicará lo antes posible.",
+        "howItWorks": {
+          "title": "Cómo funciona el esquema de distancias",
+          "description": "La Marcha de Distancia de Berna utiliza un sistema único de puntos de control que permite a los participantes crear sus propias rutas. Así es como funciona:",
+          "steps": {
+            "step1": {
+              "title": "Comienza en el punto de control central",
+              "description": "Todos los participantes comienzan en el punto principal de registro en Ins."
+            },
+            "step2": {
+              "title": "Elige tus puntos de control",
+              "description": "Según tu categoría, deberás visitar un número específico de puntos de control repartidos por la región."
+            },
+            "step3": {
+              "title": "Planifica tu ruta",
+              "description": "Tú decides el orden y el camino entre los puntos de control, permitiendo una experiencia personalizada."
+            },
+            "step4": {
+              "title": "Completa la marcha",
+              "description": "Regresa a la línea de meta después de visitar todos los puntos de control requeridos dentro del límite de tiempo."
+            }
+          }
+        },
+        "categories": {
+          "title": "Categorías de distancia",
+          "description": "Las diferentes categorías tienen distintos requisitos de distancia:",
+          "table": {
+            "category": "Categoría",
+            "minDistance": "Distancia mínima",
+            "requiredCheckpoints": "Puntos de control requeridos",
+            "catA": "Categoría A - Militar",
+            "catB": "Categoría B - Juvenil",
+            "catC": "Categoría C - Civil"
+          },
+          "note": "Nota: El esquema final de distancias para 2025 puede tener requisitos diferentes y se publicará más cerca de la fecha del evento."
+        },
+        "map": {
+          "comingSoon": "Mapa interactivo próximamente"
+        },
+        "documents": {
+          "title": "Documentos importantes",
+          "description": "Los siguientes documentos estarán disponibles para descargar:",
+          "flyer": "Folleto 2025 (próximamente)",
+          "map": "Mapa del esquema de distancias (próximamente)",
+          "regulations": "Reglamentos de la marcha (próximamente)"
+        }
+      },
+      "howItWorks": {
+        "title": "¿Cómo funciona la marcha?",
+        "description": "La Marcha de Distancia de Berna se distingue por un enfoque único en el diseño del recorrido que la diferencia de muchos otros eventos de marcha. Mientras que la mayoría de las marchas requieren que los participantes sigan una ruta fija y registren la distancia con antelación, los participantes de la Marcha de Distancia de Berna tienen la libertad de elegir su ruta de forma individual. Se orientan según un esquema de distancias dado y pueden decidir hasta dónde desean llegar. Esta estructura flexible no solo presenta un desafío físico, sino que añade una tarea adicional de navegación y orientación en el terreno.",
+        "example": {
+          "title": "Ejemplo del esquema de distancias"
+        },
+        "beforeMarch": {
+          "title": "Antes de la marcha:",
+          "description1": "Todos los participantes se reúnen en el centro de la marcha antes de la hora de salida y reciben su tarjeta de marcha. Si te has inscrito para tiro: esto tendrá lugar antes de la marcha, así que dirígete directamente al campo de tiro o aprovecha nuestro servicio de traslado desde el centro de la marcha.",
+          "description2": "Una vez que hayas recibido tu tarjeta de marcha, elegirás una ruta (de al menos 10 km). Los números en los recuadros negros indican los kilómetros que caminarás para llegar al punto de control deseado. Por ejemplo, si quieres caminar desde la salida hasta los puntos C, D y luego regresar, según el esquema serían 6 km + 5 km + 7 km = 18 km."
+        },
+        "duringMarch": {
+          "title": "Durante la marcha:",
+          "description1": "A partir de las 12:00, el comandante dará inicio a la marcha ¡y podrás comenzar! La ruta está señalizada y miembros del equipo de la marcha estarán disponibles para resolver dudas o emergencias.",
+          "description2": "Una vez que llegues a tu primer punto de control, un miembro del equipo anotará tu distancia. Los puntos de control están ubicados en posadas de fácil acceso. Durante la parada, puedes relajarte y disfrutar de bebidas y aperitivos ofrecidos por el personal antes de continuar."
+        },
+        "afterMarch": {
+          "title": "Después de la marcha:",
+          "description1": "Después de completar tu recorrido, regresa al centro de la marcha y entrega tu tarjeta al equipo. A solicitud, recibirás un certificado, una insignia de tiro y una medalla. Luego podrás descansar y refrescarte en nuestro hostal junto al centro.",
+          "description2": "A las 23:00 se anunciarán las clasificaciones de las distintas categorías, momento en el que finalizará oficialmente el día de la marcha."
+        },
+        "conclusion": {
+          "rankings": "Las clasificaciones se subirán al sitio web en las semanas posteriores a la marcha.",
+          "moreInfo": "Para más información sobre el programa de tiro o la marcha, consulta nuestros reglamentos (reglamento de tiro, reglamento de marcha).",
+          "haveFun": "¡Diviértete en la marcha!",
+          "invitation": "Marcha de Distancia de Berna 2025 – 2027: ¡Marcha con nosotros a Ins!"
+        }
+      },
+      "regulations": {
+        "title": "Reglamentos de la marcha",
+        "generalRules": {
+          "title": "Reglas generales",
+          "rule1": "Los participantes deben inscribirse antes del evento.",
+          "rule2": "Todos los participantes deben registrarse en el punto de inicio el 6 de diciembre de 2025.",
+          "rule3": "Cada participante debe visitar todos los puntos de control requeridos para su categoría.",
+          "rule4": "Los puntos de control deben visitarse durante su horario de funcionamiento.",
+          "rule5": "Los participantes deben completar la marcha dentro del tiempo límite designado.",
+          "rule6": "Todos los participantes deben respetar la propiedad privada y cumplir con las leyes de tráfico suizas."
+        },
+        "categoryRequirements": {
+          "title": "Requisitos específicos por categoría",
+          "catA": {
+            "title": "Categoría A - Militar/Uniformados",
+            "req1": "Deben llevar el uniforme oficial de su servicio",
+            "req2": "Obligatorio llevar el equipo estándar especificado",
+            "req3": "Deben completar un mínimo de 40 km",
+            "req4": "Los equipos deben permanecer juntos durante toda la marcha"
+          },
+          "catB": {
+            "title": "Categoría B - Juvenil y deporte (menores de 20)",
+            "req1": "Los participantes menores de 16 años deben ir acompañados de un adulto",
+            "req2": "Deben completar un mínimo de 20 km",
+            "req3": "Se recomienda viajar en grupos de al menos 2 personas",
+            "req4": "Deben llevar suficiente agua y provisiones"
+          },
+          "catC": {
+            "title": "Categoría C - Civiles",
+            "req1": "Deben completar un mínimo de 30 km",
+            "req2": "Deben registrarse en todos los puntos de control requeridos",
+            "req3": "Los equipos se registran juntos y finalizan juntos",
+            "req4": "Se recomienda equipo de senderismo adecuado"
+          }
+        },
+        "equipment": {
+          "title": "Requisitos de equipo",
+          "essential": {
+            "title": "Elementos esenciales para todos los participantes",
+            "item1": "Calzado cómodo para caminar o senderismo",
+            "item2": "Ropa adecuada para el clima (se recomiendan varias capas)",
+            "item3": "Chaqueta impermeable",
+            "item4": "Identificación personal",
+            "item5": "Botella de agua o sistema de hidratación",
+            "item6": "Snacks energéticos",
+            "item7": "Botiquín de primeros auxilios básico",
+            "item8": "Teléfono móvil (completamente cargado)"
+          },
+          "recommended": {
+            "title": "Artículos adicionales recomendados",
+            "item1": "Mapa de la región",
+            "item2": "Brújula o dispositivo GPS",
+            "item3": "Mochila pequeña",
+            "item4": "Protector solar y gorra",
+            "item5": "Bastones de senderismo",
+            "item6": "Calcetines extra",
+            "item7": "Suministros para tratar ampollas",
+            "item8": "Linterna o frontal"
+          }
+        },
+        "safety": {
+          "title": "Información de seguridad",
+          "description": "La seguridad de todos los participantes es nuestra máxima prioridad. Ten en cuenta las siguientes pautas de seguridad:",
+          "guideline1": "Habrá apoyo médico en los puntos de control y servicios de emergencia.",
+          "guideline2": "En caso de emergencia, llama al número de emergencia del evento o al 112 para servicios de emergencia suizos.",
+          "guideline3": "Si no puedes completar la marcha, informa al personal del punto de control más cercano.",
+          "guideline4": "Consulta el pronóstico del tiempo antes del evento y vístete en consecuencia.",
+          "guideline5": "Mantente hidratado durante toda la marcha.",
+          "guideline6": "Respeta la naturaleza y la fauna que encuentres en el recorrido."
+        },
+        "download": "Descargar reglamentos completos (próximamente)"
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "questions": {
+          "q1": {
+            "question": "¿Qué hace diferente a la Marcha de Distancia de Berna de otras marchas?",
+            "answer": "A diferencia de las marchas tradicionales con rutas fijas, la Marcha de Distancia de Berna permite a los participantes elegir su propio camino entre los puntos de control. Esta libertad de diseñar tu propia ruta hace que la experiencia de cada participante sea única y personal."
+          },
+          "q2": {
+            "question": "¿Cómo me inscribo en la marcha?",
+            "answer": "Puedes inscribirte en línea a través de nuestra página de Inscripción. La inscripción permanecerá abierta hasta el 15 de noviembre de 2025, pero recomendamos inscribirse con antelación para asegurar tu plaza."
+          },
+          "q3": {
+            "question": "¿Cuál es la cuota de inscripción?",
+            "answer": "La cuota de inscripción es de CHF 25.00 para adultos y CHF 20.00 para menores de 20 años. Los niños menores de 7 años pueden participar gratis. El pago se realiza en efectivo (solo CHF) en el evento. No se aceptan tarjetas de crédito ni cheques."
+          },
+          "q4": {
+            "question": "¿Cuáles son las diferentes categorías?",
+            "answer": "Tenemos tres categorías principales: Categoría A para participantes uniformados (militares, policía, etc.), Categoría B para menores de 20 años y deporte, y Categoría C para participantes civiles. Dentro de las categorías A y C también hay opciones de grupo para quienes deseen marchar juntos."
+          },
+          "q5": {
+            "question": "¿Cuánto tendré que caminar?",
+            "answer": "La distancia depende de tu categoría y de la ruta que elijas: Categoría A (Militar): Aproximadamente 40 km, Categoría B (Juvenil): Aproximadamente 20 km, Categoría C (Civil): Aproximadamente 30 km. El esquema definitivo de distancias para 2025 se publicará más cerca de la fecha del evento."
+          },
+          "q6": {
+            "question": "¿Necesito equipo especial?",
+            "answer": "Debes llevar buen calzado para caminar, ropa adecuada para el clima de diciembre en Suiza, agua, snacks y una mochila pequeña. Los participantes de la Categoría A deben llevar su uniforme oficial. Hay una lista detallada de equipo en la pestaña de Reglamentos."
+          },
+          "q7": {
+            "question": "¿Cómo planifico mi ruta?",
+            "answer": "Una vez que se publique el esquema oficial de distancias, podrás ver todos los puntos de control. Luego podrás decidir qué puntos visitar y en qué orden, según los requisitos de tu categoría. Puedes usar herramientas de mapas en línea o mapas tradicionales para planificar tu recorrido."
+          },
+          "q8": {
+            "question": "¿Qué sucede si no puedo completar la marcha?",
+            "answer": "Si no puedes completar la marcha, informa al personal del punto de control más cercano. Organizarán tu transporte de regreso al área de salida/meta si es necesario. La seguridad es nuestra prioridad, y no hay ningún problema en no completar la distancia completa."
+          },
+          "q9": {
+            "question": "¿Pueden participar personas internacionales?",
+            "answer": "¡Por supuesto! Damos la bienvenida a participantes de todo el mundo. La Marcha de Distancia de Berna tiene una larga tradición de participación internacional, especialmente de personal militar de varios países."
+          },
+          "q10": {
+            "question": "¿Cómo llego al punto de inicio?",
+            "answer": "La marcha de 2025 comenzará en Ins, Cantón de Berna. Próximamente se proporcionarán direcciones detalladas y opciones de transporte. Ins es accesible en tren desde las principales ciudades suizas."
+          }
+        },
+        "moreQuestions": {
+          "title": "¿Aún tienes preguntas?",
+          "contact": "Contacta con el comité organizador en"
+        }
+      },
+      "ctaBanner": {
+        "title": "¿Listo para unirte a la 67.ª Marcha de Distancia de Berna?",
+        "subtitle": "¡Regístrate hoy y forma parte de esta tradición suiza única!"
+      }
+    },
+    "leaderboards": {
+      "header": {
+        "title": "Clasificaciones",
+        "subtitle": "Resultados y clasificaciones anteriores de la Marcha de Distancia de Berna"
+      },
+      "filters": {
+        "year": "Año",
+        "category": "Categoría"
+      },
+      "categories": {
+        "catAMen": "Categoría A - Hombres (uniformados)",
+        "catAWomen": "Categoría A - Mujeres (uniformadas)",
+        "catAGroup": "Categoría A - Grupo (uniformados)",
+        "catB": "Categoría B - Juvenil y deporte",
+        "catCMen": "Categoría C - Hombres",
+        "catCWomen": "Categoría C - Mujeres",
+        "catCGroup": "Categoría C - Grupo"
+      },
+      "table": {
+        "rank": "Posición",
+        "name": "Nombre",
+        "country": "País",
+        "time": "Tiempo",
+        "distance": "Distancia"
+      },
+      "stats": {
+        "title": "Estadísticas interesantes",
+        "mostWins": {
+          "title": "Más victorias",
+          "value": "Johannes Schmidt",
+          "description": "3 victorias en Categoría A - Hombres"
+        },
+        "fastestTime": {
+          "title": "Tiempo más rápido",
+          "value": "4:21:05",
+          "description": "Thomas Huber (2023, Categoría A - Hombres)"
+        },
+        "mostConsistentTeam": {
+          "title": "Equipo más consistente",
+          "value": "Team Alpine",
+          "description": "Nunca ha quedado por debajo del 2.º puesto"
+        },
+        "mostRepresentedCountry": {
+          "title": "País más representado",
+          "value": "Suiza",
+          "description": "65% de todos los participantes"
+        }
+      },
+      "archive": {
+        "title": "Archivo de clasificaciones",
+        "description": "¿Buscas resultados antiguos? Consulta nuestro archivo completo de clasificaciones de la Marcha de Distancia de Berna:",
+        "viewComplete": "Ver archivo completo"
+      },
+      "records": {
+        "title": "Récords de todos los tiempos",
+        "categories": {
+          "catAMen": "Categoría A - Hombres",
+          "catAWomen": "Categoría A - Mujeres",
+          "catAGroup": "Categoría A - Grupo",
+          "catB": "Categoría B",
+          "catCMen": "Categoría C - Hombres",
+          "catCWomen": "Categoría C - Mujeres",
+          "catCGroup": "Categoría C - Grupo",
+          "participations": "Más participaciones"
+        }
+      }
+    },
+    "statistics": {
+      "header": {
+        "title": "Estadísticas",
+        "subtitle": "Datos e información de marchas de distancia de Berna pasadas"
+      },
+      "intro": "La Marcha de Distancia de Berna ha estado recopilando datos desde sus inicios en la década de 1960. Estas estadísticas ofrecen información sobre tendencias de participación, representación internacional y otros datos interesantes de este evento único.",
+      "chartTabs": {
+        "participation": "Participación",
+        "international": "Internacional",
+        "ageGroups": "Grupos de edad",
+        "completionRates": "Tasas de finalización"
+      },
+      "charts": {
+        "participants": {
+          "title": "Participantes por año y categoría",
+          "subtitle": "El número total de participantes en la Marcha de Distancia de Berna de 2015 a 2024",
+          "legend": {
+            "catA": "Categoría A (Militar)",
+            "catB": "Categoría B (Juvenil)",
+            "catC": "Categoría C (Civil)"
+          },
+          "loading": "Cargando datos del gráfico..."
+        },
+        "international": {
+          "title": "Participación internacional",
+          "subtitle": "Porcentaje de participantes por país de origen (datos de 2024)"
+        },
+        "ageDistribution": {
+          "title": "Distribución de edades",
+          "subtitle": "Porcentaje de participantes por grupo de edad (datos de 2024)"
+        },
+        "completionRates": {
+          "title": "Tasas de finalización",
+          "subtitle": "Porcentaje de participantes que completaron con éxito la marcha"
+        }
+      },
+      "keyStats": {
+        "title": "Estadísticas clave",
+        "participants": {
+          "value": "598",
+          "label": "Participantes en 2024",
+          "trend": "5,1% respecto a 2023"
+        },
+        "tradition": {
+          "value": "67",
+          "label": "Años de tradición",
+          "trend": "Desde 1960"
+        },
+        "countries": {
+          "value": "14",
+          "label": "Países representados",
+          "trend": "2 nuevos países en 2024"
+        },
+        "totalDistance": {
+          "value": "23 920",
+          "label": "Total de km recorridos en 2024",
+          "trend": "1 160 km respecto a 2023"
+        }
+      },
+      "interestingFacts": {
+        "title": "Datos interesantes",
+        "fastestTime": {
+          "title": "Tiempo más rápido",
+          "description": "El tiempo de finalización más rápido jamás registrado fue de 4:21:05 por Thomas Huber en 2023 (Categoría A)."
+        },
+        "youngestParticipant": {
+          "title": "Participante más joven",
+          "description": "La participante más joven fue Emma Keller, de 7 años, que completó el recorrido juvenil en 2022."
+        },
+        "oldestParticipant": {
+          "title": "Participante de mayor edad",
+          "description": "El participante de mayor edad fue Johann Weber, de 82 años, que completó su 45.ª marcha en 2024."
+        },
+        "largestGroup": {
+          "title": "Grupo más numeroso",
+          "description": "El grupo más numeroso que ha participado fue \"Bern Veterans\" con 28 miembros en 2019."
+        },
+        "farthestTraveler": {
+          "title": "Viajero de mayor distancia",
+          "description": "En 2023, un participante viajó desde Nueva Zelanda (18 000 km) para unirse a la marcha."
+        },
+        "perfectAttendance": {
+          "title": "Asistencia perfecta",
+          "description": "Paul Fürst ha participado en las 66 ediciones de la marcha sin faltar ni un solo año."
+        }
+      },
+      "dataDownload": {
+        "title": "Datos históricos",
+        "description": "¿Buscas estadísticas más detalladas? Descarga nuestros archivos de datos históricos:",
+        "participationData": "Datos de participación (2000-2024)",
+        "resultsArchive": "Archivo completo de resultados"
+      }
+    },
+    "history": {
+      "header": {
+        "title": "Historia",
+        "subtitle": "Explorando la rica tradición de la Marcha de Distancia de Berna"
+      },
+      "intro": {
+        "title": "Los inicios",
+        "paragraph1": "La Marcha de Distancia de Berna, originalmente llamada Marcha Nocturna, tiene sus raíces a principios de la década de 1960. Fue fundada por dos oficiales y miembros de la sección de Berna de la SVMLT, Heinz Krähenbühl y Walter Bürki, considerados los padres fundadores de este evento tradicional.",
+        "paragraph2": "La idea surgió por razones prácticas: debido a la ración de gasolina en aquel entonces, no todos los hogares suizos disponían de coche. Los fundadores tuvieron la idea innovadora de que la reunión general de la sección de Berna pudiera realizarse a pie desde casa, al mismo tiempo que se celebraba una competición militar.",
+        "paragraph3": "Así nació el Berner Distanzmarsch, una tradición que ha continuado y evolucionado durante más de seis décadas, convirtiéndose en una parte importante del patrimonio militar y cultural suizo."
+      },
+      "timeline": {
+        "title": "Cronología de la Marcha de Distancia de Berna",
+        "events": {
+          "event1": {
+            "year": "1960",
+            "title": "La primera marcha",
+            "description": "El Berner Distanzmarsch fue fundado por Heinz Krähenbühl y Walter Bürki. Comenzó como una competición militar combinada con la reunión general de la sección de Berna de la SVMLT."
+          },
+          "event2": {
+            "year": "Años 60",
+            "title": "Primeros desarrollos",
+            "description": "El evento duraba desde las 17:00 del sábado hasta las 07:00 del domingo. Solo podían participar marchadores uniformados (militares, ferrocarriles, correos, defensa civil, bomberos, etc.)."
+          },
+          "event3": {
+            "year": "Años 80",
+            "title": "Participación internacional",
+            "description": "Una delegación de reservistas del Sarre visitó la Marcha de Distancia de Berna, creando una profunda camaradería entre la Asociación de Reservistas del Sarre y la sección de Berna de la SVMLT."
+          },
+          "event4": {
+            "year": "Años 90",
+            "title": "Evolución de las tradiciones",
+            "description": "La marcha de distancia se separó de la reunión general, rompiendo con una tradición de larga data pero permitiendo mayor enfoque en la propia marcha."
+          },
+          "event5": {
+            "year": "2000",
+            "title": "Nueva dirección",
+            "description": "El Hptm Ruedi Lehmann luchó por la continuidad del Berner Distanzmarsch durante un momento crítico en que el futuro del evento estaba en duda."
+          },
+          "event6": {
+            "year": "2020",
+            "title": "Marcha remota",
+            "description": "Durante la pandemia de COVID-19, se logró un hito con la celebración de la Marcha Remota 2020, demostrando la flexibilidad y el compromiso del equipo organizador."
+          },
+          "event7": {
+            "year": "2025",
+            "title": "67.ª edición",
+            "description": "La 67.ª marcha de distancia de Berna continúa la orgullosa tradición, ahora bajo el liderazgo del Hptadj Adrian Venner y su equipo."
+          }
+        }
+      },
+      "traditions": {
+        "title": "Tradiciones en evolución",
+        "paragraph1": "Las condiciones de la marcha han cambiado a lo largo de las décadas. Originalmente, el evento duraba desde las 17:00 del sábado hasta las 07:00 del domingo, y solo podían participar marchadores uniformados. No se permitían acompañantes civiles, y la puntuación seguía un esquema especial donde el peso del armamento y la mochila contribuían a los puntos.",
+        "paragraph2": "En los años 80, la marcha adquirió una dimensión internacional cuando una delegación de reservistas del Sarre, en Alemania, participó. Esto dio lugar a una profunda camaradería y amistad entre la Asociación de Reservistas del Sarre y la sección de Berna de la SVMLT, formalizada en un acuerdo de patrocinio.",
+        "paragraph3": "Un cambio significativo llegó cuando la marcha de distancia se separó de la reunión general, rompiendo con una tradición de larga data. Esta decisión se tomó porque muchos miembros que completaban la marcha se ausentaban de la reunión para descansar, mientras que quienes permanecían a menudo se quedaban dormidos durante las sesiones.",
+        "paragraph4": "A lo largo de su historia, la Marcha de Distancia de Berna ha enfrentado desafíos y periodos de incertidumbre. En un momento crítico en que se planteó abandonar la tradición, el Hptm Ruedi Lehmann luchó por su continuidad.",
+        "paragraph5": "Hoy, bajo el liderazgo del Hptadj Adrian Venner y su equipo, se garantiza la continuidad a largo plazo del tradicional Berner Distanzmarsch, adaptándose a los nuevos tiempos sin perder el espíritu de los padres fundadores.",
+        "stats": {
+          "editions": "Ediciones",
+          "peakParticipants": "Máximo de participantes",
+          "countriesRepresented": "Países representados",
+          "yearsOfTradition": "Años de tradición"
+        }
+      },
+      "notableParticipants": {
+        "title": "Participantes destacados",
+        "participant1": {
+          "name": "Pol Wm Fürst Paul",
+          "achievement": "Completó todas las marchas de distancia sin faltar ninguna",
+          "description": "Un ejemplo viviente de dedicación y lealtad a la tradición de la Marcha de Distancia de Berna."
+        },
+        "participant2": {
+          "name": "Heinz Krähenbühl",
+          "achievement": "Cofundador",
+          "description": "Uno de los dos padres fundadores que iniciaron la Marcha de Distancia de Berna a principios de los años 60."
+        },
+        "participant3": {
+          "name": "Hptm Ruedi Lehmann",
+          "achievement": "Líder de preservación",
+          "description": "Luchó en primera línea para la continuidad del Berner Distanzmarsch durante un período crítico."
+        },
+        "participant4": {
+          "name": "Hptadj Adrian Venner",
+          "achievement": "Comandante actual",
+          "description": "Lidera la Marcha de Distancia de Berna hacia el futuro preservando sus ricas tradiciones."
+        }
+      },
+      "legacy": {
+        "title": "Un legado vivo",
+        "paragraph1": "La Marcha de Distancia de Berna representa más que un desafío físico: encarna un legado vivo de tradición militar suiza, camaradería y adaptabilidad. A través de eventos mundiales, tiempos cambiantes y normas sociales, la marcha ha persistido, adaptándose sin perder su espíritu central.",
+        "paragraph2": "En 2020, el evento demostró su resiliencia e innovación al celebrar una Marcha Remota durante la pandemia de COVID-19. Esta flexibilidad aseguró que la tradición continuara sin interrupciones a pesar de los desafíos globales.",
+        "paragraph3": "Hoy, con aproximadamente 600 participantes anuales, la Marcha de Distancia de Berna sigue inspirando lealtad e interés. El equipo de liderazgo actual se mantiene comprometido en guiar esta querida tradición hacia un futuro seguro, honrando a todos los que han contribuido a su éxito a lo largo de las décadas.",
+        "paragraph4": "De cara a la 67.ª edición en 2025, celebramos no solo un reto físico en el hermoso paisaje suizo, sino también un rico patrimonio cultural que conecta generaciones y trasciende fronteras internacionales."
+      }
+    },
+    "gallery": {
+      "header": {
+        "title": "Galería",
+        "subtitle": "Imágenes de marchas de distancia de Berna pasadas"
+      },
+      "filters": {
+        "byYear": {
+          "title": "Filtrar por año",
+          "allYears": "Todos los años"
+        },
+        "byCategory": {
+          "title": "Filtrar por categoría",
+          "allCategories": "Todas las categorías",
+          "participants": "Participantes",
+          "landscapes": "Paisajes",
+          "ceremonies": "Ceremonias",
+          "remoteMarch": "Marcha remota 2020"
+        }
+      },
+      "noResults": {
+        "title": "No se encontraron imágenes",
+        "description": "Intenta cambiar los filtros para ver más imágenes.",
+        "resetFilters": "Restablecer filtros"
+      },
+      "modal": {
+        "year": "Año:",
+        "category": "Categoría:"
+      },
+      "submitPhotos": {
+        "title": "Envía tus fotos",
+        "description": "¿Tienes fotos de marchas de distancia de Berna pasadas que te gustaría compartir? Agradecemos las contribuciones de participantes y espectadores para nuestra galería.",
+        "requirements": {
+          "title": "Requisitos de las fotos",
+          "req1": "Imágenes de alta resolución (ancho mínimo 1500px)",
+          "req2": "Formato JPG o PNG",
+          "req3": "Incluir fecha y ubicación en la descripción",
+          "req4": "Máximo 10 fotos por envío"
+        },
+        "howToSubmit": {
+          "title": "Cómo enviar",
+          "description": "Envía tus fotos a medien@bernerdm.ch con el asunto \"Fotos Marcha de Distancia de Berna\". Por favor, incluye tu nombre, el año de la marcha y una breve descripción de cada foto."
+        },
+        "submitButton": "Envía tus fotos"
+      },
+      "videoSection": {
+        "title": "Destacados en video",
+        "highlightsTitle": "Destacados de la 66.ª Marcha de Distancia de Berna (2024)",
+        "description": "Disfruta de los mejores momentos de la 66.ª Marcha de Distancia de Berna en 2024. Este video muestra las rutas, los participantes entusiastas y el espíritu de camaradería que hace especial este evento.",
+        "viewMoreVideos": "Ver más videos"
+      }
+    },
+    "notFound": {
+      "title": "404 - Página no encontrada",
+      "message": "¡Parece que te has salido de la ruta designada!",
+      "help": "¡No te preocupes! A diferencia de la marcha real, podemos ayudarte a volver.",
+      "returnHome": "Volver al inicio",
+      "viewCurrentMarch": "Ver marcha actual",
+      "lookingFor": {
+        "title": "¿Buscas algo específico?",
+        "contact": "Si necesitas ayuda, contáctanos."
+      }
+    }
+  }
+}

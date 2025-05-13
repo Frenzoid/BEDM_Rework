@@ -1,13 +1,17 @@
-import React from 'react';
+import { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+// Internationalization
+import './i18n';
+
+// Style lIbraries
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Suspense fallback={<div>Loading translations…</div>}>
     <App />
-  </React.StrictMode>
+  </Suspense>,
+  document.getElementById('root')
 );
-
-reportWebVitals();

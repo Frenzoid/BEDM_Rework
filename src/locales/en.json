@@ -1,0 +1,726 @@
+{
+  "common": {
+    "siteTitle": "Bernese Distance March",
+    "subtitle": "A Swiss Army Tradition",
+    "buttons": {
+      "registerNow": "Register Now",
+      "learnMore": "Learn More",
+      "viewMore": "View More",
+      "submit": "Submit",
+      "reset": "Reset"
+    },
+    "navigation": {
+      "home": "Home",
+      "currentMarch": "Current March",
+      "registration": "Registration",
+      "history": "History",
+      "leaderboards": "Leaderboards",
+      "statistics": "Statistics",
+      "gallery": "Gallery"
+    },
+    "footer": {
+      "quickLinks": "Quick Links",
+      "contact": "Contact",
+      "followUs": "Follow Us",
+      "copyright": "© {year} Bernese Distance March. All Rights Reserved. - Made by",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "sitemap": "Sitemap"
+    },
+    "contactInfo": {
+      "commander": "Hptadj Adrian Venner",
+      "address": "Rütigässli 3",
+      "city": "CH - 3115 Gerzensee",
+      "phone": "+41 (0) 79 153 28 87",
+      "email": "kommando@bernerdm.ch"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Welcome to the Bernese Distance March",
+        "subtitle": "A unique marching experience in the beautiful regions of the Canton of Bern"
+      },
+      "eventInfo": {
+        "edition": {
+          "title": "67th Edition",
+          "description": "The 67th Berne distance march will take place at Ins on 6th December 2025!"
+        },
+        "route": {
+          "title": "Design Your Route",
+          "description": "Unlike other marches with fixed routes, participants can freely choose their path between given posts."
+        },
+        "welcome": {
+          "title": "Everyone Welcome",
+          "description": "Whether as an individual or a group, the march is open to everyone who wants to participate."
+        }
+      },
+      "about": {
+        "title": "About The March",
+        "paragraph1": "The Bernese Distance March is a unique event that combines the beauty of the Swiss landscape with a military tradition. Unlike conventional marches, participants design their own route between checkpoints, making each experience personal and unique.",
+        "paragraph2": "For many years, people from all over the world have registered for this extraordinary event held in the lovely regions of the canton of Bern. The tradition continues to grow, welcoming both military personnel and civilians.",
+        "discoverHistory": "Discover Our History"
+      },
+      "testimonials": {
+        "title": "What Participants Say",
+        "testimonial1": {
+          "quote": "The Bernese Distance March was an unforgettable experience. The freedom to choose my own route while enjoying the breathtaking Swiss landscapes made it truly special.",
+          "author": "Hans Schmidt",
+          "role": "3-time Participant"
+        },
+        "testimonial2": {
+          "quote": "As a group, we've participated for 5 years. Each time the organization is impeccable, and the challenge remains fresh because we can always try new routes. Highly recommended!",
+          "author": "Maria Weber",
+          "role": "Group Leader"
+        }
+      },
+      "cta": {
+        "title": "Ready for the Challenge?",
+        "subtitle": "Join hundreds of participants from around the world in this extraordinary event.",
+        "button": "Register for the 67th Bernese Distance March"
+      },
+      "featuredPosts": {
+        "title": "Latest Updates",
+        "post1": {
+          "title": "Distance Scheme 2025",
+          "description": "The definite distance scheme for the 2025 march is currently being prepared.",
+          "readMore": "Read More"
+        },
+        "post2": {
+          "title": "Leaderboards Updated",
+          "description": "Check out the latest rankings from previous events!",
+          "readMore": "View Leaderboards"
+        },
+        "post3": {
+          "title": "History of the March",
+          "description": "Learn about the rich history of the Bernese Distance March.",
+          "readMore": "Explore History"
+        }
+      }
+    },
+    "registration": {
+      "header": {
+        "title": "Registration",
+        "subtitle": "Sign up for the 67th Bernese Distance March - December 6th, 2025"
+      },
+      "info": {
+        "title": "Registration Information",
+        "importantNotes": {
+          "title": "Important Notes",
+          "deadline": "Registration deadline: November 15, 2025",
+          "fee": "Registration fee: CHF 25.00 for adults",
+          "childrenFree": "Children under 7: Free",
+          "payment": "Payment to be made on-site (cash only)",
+          "noCards": "No credit cards or checks accepted"
+        },
+        "categories": {
+          "title": "Categories",
+          "catA": "Category A: Uniformed participants (military, police, etc.)",
+          "catB": "Category B: Youth & Sport (under 20)",
+          "catC": "Category C: Civilian participants",
+          "groups": "Groups: Register as Category A or C group"
+        }
+      },
+      "form": {
+        "title": "Registration Form",
+        "fields": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email Address",
+          "phone": "Phone Number",
+          "birthDate": "Date of Birth",
+          "category": "Category",
+          "groupName": "Group Name",
+          "agreeTerms": "I agree to the terms and conditions and acknowledge that I am physically fit to participate in this event."
+        },
+        "categories": {
+          "select": "Select a category",
+          "catAMen": "Category A - Men (Uniformed)",
+          "catAWomen": "Category A - Women (Uniformed)",
+          "catAGroup": "Category A - Group (Uniformed)",
+          "catB": "Category B - Youth & Sport (under 20)",
+          "catCMen": "Category C - Men",
+          "catCWomen": "Category C - Women",
+          "catCGroup": "Category C - Group"
+        },
+        "buttons": {
+          "submit": "Submit Registration",
+          "reset": "Reset Form"
+        }
+      },
+      "success": {
+        "title": "Registration Successful!",
+        "thankYou": "Thank you for registering for the 67th Bernese Distance March. We're excited to have you join us!",
+        "emailSent": "A confirmation email has been sent to {email} with further details about the event.",
+        "details": "Your registration details:",
+        "name": "Name:",
+        "category": "Category:",
+        "groupName": "Group Name:",
+        "questions": "If you have any questions, please contact us at",
+        "registerAnother": "Register Another Participant"
+      }
+    },
+    "currentMarch": {
+      "header": {
+        "title": "Current March",
+        "subtitle": "67th Bernese Distance March - December 6th, 2025"
+      },
+      "tabs": {
+        "overview": "Overview",
+        "howItWorks": "How It Works",
+        "distanceScheme": "Distance Scheme",
+        "regulations": "Regulations",
+        "faq": "FAQ"
+      },
+      "overview": {
+        "title": "67th Bernese Distance March",
+        "marchInfo": {
+          "date": {
+            "title": "Date",
+            "info": "December 6th, 2025"
+          },
+          "location": {
+            "title": "Location",
+            "info": "Ins, Canton of Bern, Switzerland"
+          },
+          "startTime": {
+            "title": "Start Time",
+            "info": "8:00 AM - 10:00 AM"
+          }
+        },
+        "description": {
+          "paragraph1": "The Bernese Distance March is unique among distance marches because it allows participants to choose their own routes between control points. Unlike traditional marches with fixed paths, you can design your own journey through the beautiful landscapes of Bern.",
+          "paragraph2": "Participants can join as individuals or groups across several categories, with routes of varying distances depending on your category and preference. The march combines military tradition with an appreciation for Switzerland's natural beauty."
+        },
+        "highlights": {
+          "title": "Event Highlights",
+          "item1": "Design your own route through the Canton of Bern",
+          "item2": "Categories for military personnel, civilians, youth, and groups",
+          "item3": "Medals awarded based on completion and category",
+          "item4": "International participants welcome from around the world",
+          "item5": "Over 60 years of tradition in Swiss military marching"
+        }
+      },
+      "distanceScheme": {
+        "title": "Distance Scheme 2025",
+        "alert": "The definite distance scheme for the 2025 march is currently being prepared and will be published as soon as possible.",
+        "howItWorks": {
+          "title": "How the Distance Scheme Works",
+          "description": "The Bernese Distance March uses a unique checkpoint system that allows participants to create their own routes. Here's how it works:",
+          "steps": {
+            "step1": {
+              "title": "Start at the central checkpoint",
+              "description": "All participants begin at the main registration point in Ins."
+            },
+            "step2": {
+              "title": "Choose your checkpoints",
+              "description": "Based on your category, you'll need to visit a specific number of checkpoints scattered throughout the region."
+            },
+            "step3": {
+              "title": "Plan your route",
+              "description": "You decide the order and path between checkpoints, allowing for a personalized experience."
+            },
+            "step4": {
+              "title": "Complete the march",
+              "description": "Return to the finish line after visiting all required checkpoints within the time limit."
+            }
+          }
+        },
+        "categories": {
+          "title": "Distance Categories",
+          "description": "Different categories have different distance requirements:",
+          "table": {
+            "category": "Category",
+            "minDistance": "Minimum Distance",
+            "requiredCheckpoints": "Required Checkpoints",
+            "catA": "Category A - Military",
+            "catB": "Category B - Youth",
+            "catC": "Category C - Civilian"
+          },
+          "note": "Note: The final distance scheme for 2025 may have different requirements and will be published closer to the event date."
+        },
+        "map": {
+          "comingSoon": "Interactive map coming soon"
+        },
+        "documents": {
+          "title": "Important Documents",
+          "description": "The following documents will be available for download:",
+          "flyer": "Flyer 2025 (Coming Soon)",
+          "map": "Distance Scheme Map (Coming Soon)",
+          "regulations": "Marching Regulations (Coming Soon)"
+        }
+      },
+      "howItWorks": {
+        "title": "How Does the March Work?",
+        "description": "The Bernese Distance March is distinguished by a unique approach to course design that sets it apart from many other marching events. While most marches require participants to follow a fixed route and register the distance in advance, participants of the Bernese Distance March have the freedom to choose their route individually. They orient themselves according to a given distance scheme and can decide how far they wish to go. This flexible structure not only presents a physical challenge but also adds an extra task in navigation and orientation in the terrain.",
+        "example": {
+          "title": "Example of the Distance Scheme"
+        },
+        "beforeMarch": {
+          "title": "Before the March:",
+          "description1": "All participants gather at the march center before the starting time and receive their march card. If you have registered for shooting: This will take place before the march, so go directly to the shooting range or profit from our shuttle service, departing from the march center.",
+          "description2": "Once you've received your march card, you'll choose a route (of at least 10 km). The numbers in the black boxes indicate the number of kilometers you will walk to reach the desired checkpoint. For example, if you want to walk from the start to checkpoints C, D, and then back, according to the scheme, that would be 6 km + 5 km + 7 km = 18 km."
+        },
+        "duringMarch": {
+          "title": "During the March:",
+          "description1": "From 12:00 PM, the commander will start the march, and you can begin! The route is signposted, and members of the BEDM team will also be on the route to assist with any questions or emergencies.",
+          "description2": "Once you reach your first checkpoint, you can have the BEDM team member log your distance. The checkpoints are strategically located in inns that are both easily accessible and easy to find. During a break, you can relax here and be served drinks and small snacks by the friendly staff before continuing on the march."
+        },
+        "afterMarch": {
+          "title": "After the March:",
+          "description1": "After completing your march, return to the march center and hand in your march card to the BEDM team. Upon request, you will receive a certificate, a shooting badge, and a medal. Now you can relax and refresh at the march center—our guesthouse is ready to welcome you.",
+          "description2": "At 11:00 PM, the rankings for the various categories will be announced—at which point the march day officially ends."
+        },
+        "conclusion": {
+          "rankings": "The rankings will be uploaded to the website in the weeks following the march.",
+          "moreInfo": "For more information regarding the shooting program or the march itself, feel free to take a look at our regulations (shooting regulations, march regulations).",
+          "haveFun": "Have fun with the march!",
+          "invitation": "Bernese Distance March 2025 – 2027: March with us to Ins!"
+        }
+      },
+      "regulations": {
+        "title": "March Regulations",
+        "generalRules": {
+          "title": "General Rules",
+          "rule1": "Participants must register before the event.",
+          "rule2": "All participants must check in at the starting point on December 6th, 2025.",
+          "rule3": "Each participant must visit all required checkpoints for their category.",
+          "rule4": "Checkpoints must be visited during their operational hours.",
+          "rule5": "Participants must finish the march within the designated time limit.",
+          "rule6": "All participants must respect private property and follow Swiss traffic laws."
+        },
+        "categoryRequirements": {
+          "title": "Category-Specific Requirements",
+          "catA": {
+            "title": "Category A - Military/Uniformed",
+            "req1": "Must wear official uniform of their service",
+            "req2": "Required to carry standard equipment as specified",
+            "req3": "Must complete minimum 40km distance",
+            "req4": "Teams must stay together throughout the march"
+          },
+          "catB": {
+            "title": "Category B - Youth & Sport (under 20)",
+            "req1": "Participants under 16 must be accompanied by an adult",
+            "req2": "Must complete minimum 20km distance",
+            "req3": "Recommended to travel in groups of at least 2",
+            "req4": "Must carry sufficient water and supplies"
+          },
+          "catC": {
+            "title": "Category C - Civilian",
+            "req1": "Must complete minimum 30km distance",
+            "req2": "Must check in at all required control points",
+            "req3": "Teams register together and finish together",
+            "req4": "Proper hiking equipment recommended"
+          }
+        },
+        "equipment": {
+          "title": "Equipment Requirements",
+          "essential": {
+            "title": "Essential Items for All Participants",
+            "item1": "Comfortable walking/hiking shoes",
+            "item2": "Weather-appropriate clothing (layers recommended)",
+            "item3": "Waterproof jacket",
+            "item4": "Personal identification",
+            "item5": "Water bottle or hydration system",
+            "item6": "High-energy snacks",
+            "item7": "Basic first aid kit",
+            "item8": "Mobile phone (fully charged)"
+          },
+          "recommended": {
+            "title": "Recommended Additional Items",
+            "item1": "Map of the region",
+            "item2": "Compass or GPS device",
+            "item3": "Small backpack",
+            "item4": "Sunscreen and hat",
+            "item5": "Walking poles",
+            "item6": "Extra socks",
+            "item7": "Blister treatment supplies",
+            "item8": "Flashlight or headlamp"
+          }
+        },
+        "safety": {
+          "title": "Safety Information",
+          "description": "The safety of all participants is our highest priority. Please note the following safety guidelines:",
+          "guideline1": "Medical support will be available at checkpoints and through emergency services.",
+          "guideline2": "In case of emergency, call the event emergency number or 112 for Swiss emergency services.",
+          "guideline3": "If you are unable to complete the march, inform the nearest checkpoint staff.",
+          "guideline4": "Check weather forecasts before the event and dress accordingly.",
+          "guideline5": "Stay hydrated throughout the march.",
+          "guideline6": "Respect nature and wildlife encountered during the march."
+        },
+        "download": "Download Complete Regulations (Coming Soon)"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": {
+          "q1": {
+            "question": "What makes the Bernese Distance March different from other marches?",
+            "answer": "Unlike traditional marches with fixed routes, the Bernese Distance March allows participants to choose their own path between checkpoints. This freedom to design your own route makes each participant's experience unique and personal."
+          },
+          "q2": {
+            "question": "How do I register for the march?",
+            "answer": "You can register online through our Registration Page. Registration will remain open until November 15, 2025, but we recommend registering early to secure your spot."
+          },
+          "q3": {
+            "question": "What is the registration fee?",
+            "answer": "The registration fee is CHF 25.00 for adults and CHF 20.00 for juniors under 20 years of age. Children under 7 can participate for free. Payment is made in cash (CHF only) at the event. No credit cards or checks are accepted."
+          },
+          "q4": {
+            "question": "What are the different categories?",
+            "answer": "We have three main categories: Category A: For uniformed participants (military, police, etc.), Category B: For youth and sport participants under 20 years old, Category C: For civilian participants. Within Categories A and C, there are also group options for those who wish to march together."
+          },
+          "q5": {
+            "question": "How far will I need to walk?",
+            "answer": "The distance depends on your category and the route you choose: Category A (Military): Approximately 40km, Category B (Youth): Approximately 20km, Category C (Civilian): Approximately 30km. The final distance scheme for 2025 will be published closer to the event date."
+          },
+          "q6": {
+            "question": "Do I need special equipment?",
+            "answer": "You should have good walking shoes, appropriate clothing for December weather in Switzerland, water, snacks, and a small backpack. Category A participants must wear their official uniforms. A detailed equipment list is available in the Regulations tab."
+          },
+          "q7": {
+            "question": "How do I plan my route?",
+            "answer": "Once the official distance scheme is published, you'll be able to see all checkpoints. You can then decide which checkpoints to visit and in what order, based on your category requirements. You can use online mapping tools or traditional maps to plan your route between checkpoints."
+          },
+          "q8": {
+            "question": "What happens if I can't complete the march?",
+            "answer": "If you are unable to complete the march, please inform the nearest checkpoint staff. They will arrange transport back to the start/finish area if needed. Safety is our priority, and there is no shame in not completing the full distance."
+          },
+          "q9": {
+            "question": "Can international participants join?",
+            "answer": "Absolutely! We welcome participants from around the world. The Bernese Distance March has a long tradition of international participation, especially from military personnel from various countries."
+          },
+          "q10": {
+            "question": "How do I get to the starting point?",
+            "answer": "The 2025 march will start in Ins, Canton of Bern. Detailed directions and transportation options will be provided closer to the event date. Ins is accessible by public transportation (train) from major Swiss cities."
+          }
+        },
+        "moreQuestions": {
+          "title": "Still Have Questions?",
+          "contact": "Contact the organizing committee at"
+        }
+      },
+      "ctaBanner": {
+        "title": "Ready to Join the 67th Bernese Distance March?",
+        "subtitle": "Register today and be part of this unique Swiss tradition!"
+      }
+    },
+    "leaderboards": {
+      "header": {
+        "title": "Leaderboards",
+        "subtitle": "Past results and rankings from the Bernese Distance March"
+      },
+      "filters": {
+        "year": "Year",
+        "category": "Category"
+      },
+      "categories": {
+        "catAMen": "Category A - Men (Uniformed)",
+        "catAWomen": "Category A - Women (Uniformed)",
+        "catAGroup": "Category A - Group (Uniformed)",
+        "catB": "Category B - Youth & Sport",
+        "catCMen": "Category C - Men",
+        "catCWomen": "Category C - Women",
+        "catCGroup": "Category C - Group"
+      },
+      "table": {
+        "rank": "Rank",
+        "name": "Name",
+        "country": "Country",
+        "time": "Time",
+        "distance": "Distance"
+      },
+      "stats": {
+        "title": "Interesting Statistics",
+        "mostWins": {
+          "title": "Most Wins",
+          "value": "Johannes Schmidt",
+          "description": "3 victories in Category A - Men"
+        },
+        "fastestTime": {
+          "title": "Fastest Time",
+          "value": "4:21:05",
+          "description": "Thomas Huber (2023, Category A - Men)"
+        },
+        "mostConsistentTeam": {
+          "title": "Most Consistent Team",
+          "value": "Team Alpine",
+          "description": "Never finished below 2nd place"
+        },
+        "mostRepresentedCountry": {
+          "title": "Most Represented Country",
+          "value": "Switzerland",
+          "description": "65% of all participants"
+        }
+      },
+      "archive": {
+        "title": "Leaderboard Archive",
+        "description": "Looking for older results? Check out our comprehensive archive of past Bernese Distance March leaderboards:",
+        "viewComplete": "View Complete Archive"
+      },
+      "records": {
+        "title": "All-Time Records",
+        "categories": {
+          "catAMen": "Category A - Men",
+          "catAWomen": "Category A - Women",
+          "catAGroup": "Category A - Group",
+          "catB": "Category B",
+          "catCMen": "Category C - Men",
+          "catCWomen": "Category C - Women",
+          "catCGroup": "Category C - Group",
+          "participations": "Most Participations"
+        }
+      }
+    },
+    "statistics": {
+      "header": {
+        "title": "Statistics",
+        "subtitle": "Data and insights from past Bernese Distance Marches"
+      },
+      "intro": "The Bernese Distance March has been collecting data since its inception in the 1960s. These statistics offer insights into participation trends, international representation, and other interesting facts about this unique event.",
+      "chartTabs": {
+        "participation": "Participation",
+        "international": "International",
+        "ageGroups": "Age Groups",
+        "completionRates": "Completion Rates"
+      },
+      "charts": {
+        "participants": {
+          "title": "Participants by Year and Category",
+          "subtitle": "The total number of participants in the Bernese Distance March from 2015 to 2024",
+          "legend": {
+            "catA": "Category A (Military)",
+            "catB": "Category B (Youth)",
+            "catC": "Category C (Civilian)"
+          },
+          "loading": "Loading chart data..."
+        },
+        "international": {
+          "title": "International Participation",
+          "subtitle": "Percentage of participants by country of origin (2024 data)"
+        },
+        "ageDistribution": {
+          "title": "Age Distribution",
+          "subtitle": "Percentage of participants by age group (2024 data)"
+        },
+        "completionRates": {
+          "title": "Completion Rates",
+          "subtitle": "Percentage of participants who successfully completed the march"
+        }
+      },
+      "keyStats": {
+        "title": "Key Statistics",
+        "participants": {
+          "value": "598",
+          "label": "Participants in 2024",
+          "trend": "5.1% from 2023"
+        },
+        "tradition": {
+          "value": "67",
+          "label": "Years of tradition",
+          "trend": "Since 1960"
+        },
+        "countries": {
+          "value": "14",
+          "label": "Countries represented",
+          "trend": "2 new countries in 2024"
+        },
+        "totalDistance": {
+          "value": "23,920",
+          "label": "Total km walked in 2024",
+          "trend": "1,160 km from 2023"
+        }
+      },
+      "interestingFacts": {
+        "title": "Interesting Facts",
+        "fastestTime": {
+          "title": "Fastest Time",
+          "description": "The fastest completion time ever recorded was 4:21:05 by Thomas Huber in 2023 (Category A)."
+        },
+        "youngestParticipant": {
+          "title": "Youngest Participant",
+          "description": "The youngest participant was 7-year-old Emma Keller, who completed the youth course in 2022."
+        },
+        "oldestParticipant": {
+          "title": "Oldest Participant",
+          "description": "The oldest participant was 82-year-old Johann Weber, who completed his 45th march in 2024."
+        },
+        "largestGroup": {
+          "title": "Largest Group",
+          "description": "The largest group ever to participate was the \"Bern Veterans\" with 28 members in 2019."
+        },
+        "farthestTraveler": {
+          "title": "Farthest Traveler",
+          "description": "In 2023, a participant traveled from New Zealand (18,000 km) to join the march."
+        },
+        "perfectAttendance": {
+          "title": "Perfect Attendance",
+          "description": "Paul Fürst has participated in all 66 editions of the march without missing a single year."
+        }
+      },
+      "dataDownload": {
+        "title": "Historical Data",
+        "description": "Looking for more detailed statistics? Download our historical data files:",
+        "participationData": "Participation Data (2000-2024)",
+        "resultsArchive": "Complete Results Archive"
+      }
+    },
+    "history": {
+      "header": {
+        "title": "History",
+        "subtitle": "Exploring the rich tradition of the Bernese Distance March"
+      },
+      "intro": {
+        "title": "The Beginnings",
+        "paragraph1": "The Bernese Distance March, originally called the Night March, has its roots in the early 1960s. It was founded by two officers and members of the Bern section of the SVMLT (Swiss Association of Master Technical Troops), Heinz Krähenbühl and Walter Bürki, who are considered the founding fathers of this traditional event.",
+        "paragraph2": "The idea emerged from practical concerns: due to petrol rationing measures at the time, not every Swiss household owned a car. The founders had the innovative idea that the general meeting location of the Bern Section could be reached by all members on foot from home while simultaneously being combined with a military competition.",
+        "paragraph3": "This gave rise to the Berner Distanzmarsch, a tradition that has continued and evolved for over six decades, becoming an important part of Swiss military and cultural heritage."
+      },
+      "timeline": {
+        "title": "Timeline of the Bernese Distance March",
+        "events": {
+          "event1": {
+            "year": "1960",
+            "title": "The First March",
+            "description": "The Berner Distanzmarsch was founded by Heinz Krähenbühl and Walter Bürki. It began as a military competition combined with the general meeting of the Bern Section of the SVMLT."
+          },
+          "event2": {
+            "year": "1960s",
+            "title": "Early Development",
+            "description": "The event lasted from 17:00 on Saturday to 07:00 on Sunday. Only marchers in uniform (military, railway, post office, civil defence, fire brigade, etc.) were permitted."
+          },
+          "event3": {
+            "year": "1980s",
+            "title": "International Participation",
+            "description": "A delegation of reservists from the Saarland visited the Bern Distance March, creating a deep comradeship between the Saarland Reservist Association and the Bern Section of the SVMLT."
+          },
+          "event4": {
+            "year": "1990s",
+            "title": "Evolving Traditions",
+            "description": "The distance march was separated from the general meeting, breaking with a long-standing tradition but allowing more focus on the march itself."
+          },
+          "event5": {
+            "year": "2000",
+            "title": "New Leadership",
+            "description": "Hptm Ruedi Lehmann fought to continue the Berner Distanzmarsch during a critical time when the event's future was uncertain."
+          },
+          "event6": {
+            "year": "2020",
+            "title": "Remote March",
+            "description": "During the COVID-19 pandemic, a milestone was achieved with the holding of the Remote March 2020, showcasing the flexibility and commitment of the organizing team."
+          },
+          "event7": {
+            "year": "2025",
+            "title": "67th Edition",
+            "description": "The 67th Berne distance march continues the proud tradition, now under the leadership of Hptadj Adrian Venner and his staff."
+          }
+        }
+      },
+      "traditions": {
+        "title": "Evolving Traditions",
+        "paragraph1": "The conditions of the march have changed over the decades. Originally, the event lasted from 17:00 on Saturday to 07:00 on Sunday, and only marchers in uniform were permitted. Civilian escorts were not allowed, and scoring followed a special scheme where weapons carried and rucksack weight contributed to points.",
+        "paragraph2": "In the 1980s, the march gained an international dimension when a delegation of reservists from the Saarland in Germany participated. This resulted in a deep comradeship and friendship between the Saarland Reservist Association and the Bern Section of the SVMLT, formalized in a sponsorship agreement.",
+        "paragraph3": "A significant change came when the distance march was separated from the general meeting, breaking with a long-standing tradition. This decision was made because many members who completed the march stayed away from the meeting to rest, while those who persevered often fell asleep during proceedings.",
+        "paragraph4": "Throughout its history, the Bernese Distance March has faced challenges and periods of uncertainty. During a critical time when voices called for abandoning the tradition, Hptm Ruedi Lehmann fought for its continuation.",
+        "paragraph5": "Today, under the leadership of Hptadj Adrian Venner and his staff, the long-term continuation of the traditional Berner Distanzmarsch is guaranteed, adapting to new times while preserving the spirit of the founding fathers.",
+        "stats": {
+          "editions": "Editions",
+          "peakParticipants": "Peak Participants",
+          "countriesRepresented": "Countries Represented",
+          "yearsOfTradition": "Years of Tradition"
+        }
+      },
+      "notableParticipants": {
+        "title": "Notable Participants",
+        "participant1": {
+          "name": "Pol Wm Fürst Paul",
+          "achievement": "Completed ALL distance marches without any gaps",
+          "description": "A living example of dedication and loyalty to the tradition of the Bernese Distance March."
+        },
+        "participant2": {
+          "name": "Heinz Krähenbühl",
+          "achievement": "Co-founder",
+          "description": "One of the two founding fathers who initiated the Bernese Distance March in the early 1960s."
+        },
+        "participant3": {
+          "name": "Hptm Ruedi Lehmann",
+          "achievement": "Preservation Leader",
+          "description": "Fought in the front line for the continuation of the Berner Distanzmarsch during a critical period."
+        },
+        "participant4": {
+          "name": "Hptadj Adrian Venner",
+          "achievement": "Current Commander",
+          "description": "Leading the Bernese Distance March into the future while preserving its rich traditions."
+        }
+      },
+      "legacy": {
+        "title": "A Living Legacy",
+        "paragraph1": "The Bernese Distance March represents more than just a physical challenge—it embodies a living legacy of Swiss military tradition, camaraderie, and adaptability. Through world events, changing times, and evolving social norms, the march has persisted, adapting while maintaining its core spirit.",
+        "paragraph2": "In 2020, the event demonstrated its resilience and innovation by holding a Remote March during the COVID-19 pandemic. This flexibility ensured the tradition continued unbroken despite global challenges.",
+        "paragraph3": "Today, with approximately 600 participants annually, the Bernese Distance March continues to inspire loyalty and interest. The current leadership team remains committed to leading this cherished tradition into a secure future, honoring all those who have contributed to its success over the decades.",
+        "paragraph4": "As we look forward to the 67th edition in 2025, we celebrate not only a physical challenge in the beautiful Swiss landscape but also a rich cultural heritage that connects generations and crosses international boundaries."
+      }
+    },
+    "gallery": {
+      "header": {
+        "title": "Gallery",
+        "subtitle": "Images from past Bernese Distance Marches"
+      },
+      "filters": {
+        "byYear": {
+          "title": "Filter by Year",
+          "allYears": "All Years"
+        },
+        "byCategory": {
+          "title": "Filter by Category",
+          "allCategories": "All Categories",
+          "participants": "Participants",
+          "landscapes": "Landscapes",
+          "ceremonies": "Ceremonies",
+          "remoteMarch": "Remote March 2020"
+        }
+      },
+      "noResults": {
+        "title": "No images found",
+        "description": "Try changing your filter settings to see more images.",
+        "resetFilters": "Reset Filters"
+      },
+      "modal": {
+        "year": "Year:",
+        "category": "Category:"
+      },
+      "submitPhotos": {
+        "title": "Submit Your Photos",
+        "description": "Do you have photos from past Bernese Distance Marches that you'd like to share? We welcome contributions to our gallery from participants and spectators.",
+        "requirements": {
+          "title": "Photo Requirements",
+          "req1": "High-resolution images (minimum 1500px width)",
+          "req2": "JPG or PNG format",
+          "req3": "Include date and location in the description",
+          "req4": "Maximum 10 photos per submission"
+        },
+        "howToSubmit": {
+          "title": "How to Submit",
+          "description": "Send your photos to medien@bernerdm.ch with the subject line \"Bernese Distance March Photos\". Please include your name, the year of the march, and a brief description of each photo."
+        },
+        "submitButton": "Submit Your Photos"
+      },
+      "videoSection": {
+        "title": "Video Highlights",
+        "highlightsTitle": "Highlights from the 66th Bernese Distance March (2024)",
+        "description": "Experience the highlights from the 66th Bernese Distance March in 2024. This video showcases the beautiful routes, enthusiastic participants, and the spirit of camaraderie that makes this event special.",
+        "viewMoreVideos": "View More Videos"
+      }
+    },
+    "notFound": {
+      "title": "404 - Page Not Found",
+      "message": "It seems you've gone off the designated route!",
+      "help": "Don't worry! Unlike in the real march, we can help you find your way back.",
+      "returnHome": "Return to Home",
+      "viewCurrentMarch": "View Current March",
+      "lookingFor": {
+        "title": "Looking for something specific?",
+        "contact": "If you need assistance, please contact us."
+      }
+    }
+  }
+}

@@ -1,0 +1,726 @@
+{
+  "common": {
+    "siteTitle": "Marcia di Distanza Bernese",
+    "subtitle": "Una Tradizione dell'Esercito Svizzero",
+    "buttons": {
+      "registerNow": "Registrati Ora",
+      "learnMore": "Scopri di Più",
+      "viewMore": "Vedi Altro",
+      "submit": "Invia",
+      "reset": "Reimposta"
+    },
+    "navigation": {
+      "home": "Home",
+      "currentMarch": "Marcia Attuale",
+      "registration": "Registrazione",
+      "history": "Storia",
+      "leaderboards": "Classifiche",
+      "statistics": "Statistiche",
+      "gallery": "Galleria"
+    },
+    "footer": {
+      "quickLinks": "Link Rapidi",
+      "contact": "Contatti",
+      "followUs": "Seguici",
+      "copyright": "© {year} Marcia di Distanza Bernese. Tutti i diritti riservati. - Realizzato da",
+      "privacyPolicy": "Informativa sulla Privacy",
+      "termsOfService": "Termini di Servizio",
+      "sitemap": "Mappa del Sito"
+    },
+    "contactInfo": {
+      "commander": "Hptadj Adrian Venner",
+      "address": "Rütigässli 3",
+      "city": "CH - 3115 Gerzensee",
+      "phone": "+41 (0) 79 153 28 87",
+      "email": "kommando@bernerdm.ch"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Benvenuti alla Marcia di Distanza Bernese",
+        "subtitle": "Un'esperienza di marcia unica nelle splendide regioni del Canton Berna"
+      },
+      "eventInfo": {
+        "edition": {
+          "title": "67ª Edizione",
+          "description": "La 67ª Marcia di Distanza Bernese si terrà a Ins il 6 dicembre 2025!"
+        },
+        "route": {
+          "title": "Crea il Tuo Percorso",
+          "description": "A differenza di altre marce con percorsi fissi, i partecipanti possono scegliere liberamente il proprio cammino tra i punti di controllo."
+        },
+        "welcome": {
+          "title": "Tutti Benvenuti",
+          "description": "Sia come individuo che come gruppo, la marcia è aperta a tutti coloro che desiderano partecipare."
+        }
+      },
+      "about": {
+        "title": "Informazioni sulla Marcia",
+        "paragraph1": "La Marcia di Distanza Bernese è un evento unico che combina la bellezza del paesaggio svizzero con la tradizione militare. A differenza delle marce convenzionali, i partecipanti progettano il proprio percorso tra i punti di controllo, rendendo ogni esperienza personale e unica.",
+        "paragraph2": "Da molti anni, persone da tutto il mondo si iscrivono a questo straordinario evento che si svolge nelle splendide regioni del canton Berna. La tradizione continua a crescere, accogliendo sia personale militare che civili.",
+        "discoverHistory": "Scopri la Nostra Storia"
+      },
+      "testimonials": {
+        "title": "Cosa Dicono i Partecipanti",
+        "testimonial1": {
+          "quote": "La Marcia di Distanza Bernese è stata un'esperienza indimenticabile. La libertà di scegliere il mio percorso mentre godevo dei paesaggi svizzeri mozzafiato l'ha resa davvero speciale.",
+          "author": "Hans Schmidt",
+          "role": "Partecipante per 3 volte"
+        },
+        "testimonial2": {
+          "quote": "Come gruppo, abbiamo partecipato per 5 anni. Ogni volta l'organizzazione è impeccabile e la sfida rimane fresca perché possiamo sempre provare nuovi percorsi. Altamente consigliato!",
+          "author": "Maria Weber",
+          "role": "Leader del Gruppo"
+        }
+      },
+      "cta": {
+        "title": "Pronto per la Sfida?",
+        "subtitle": "Unisciti a centinaia di partecipanti da tutto il mondo in questo straordinario evento.",
+        "button": "Registrati per la 67ª Marcia di Distanza Bernese"
+      },
+      "featuredPosts": {
+        "title": "Ultimi Aggiornamenti",
+        "post1": {
+          "title": "Schema di Distanza 2025",
+          "description": "Lo schema definitivo di distanza per la marcia del 2025 è attualmente in fase di preparazione.",
+          "readMore": "Leggi di Più"
+        },
+        "post2": {
+          "title": "Classifiche Aggiornate",
+          "description": "Controlla le ultime classifiche degli eventi precedenti!",
+          "readMore": "Visualizza Classifiche"
+        },
+        "post3": {
+          "title": "Storia della Marcia",
+          "description": "Scopri la ricca storia della Marcia di Distanza Bernese.",
+          "readMore": "Esplora la Storia"
+        }
+      }
+    },
+    "registration": {
+      "header": {
+        "title": "Registrazione",
+        "subtitle": "Iscriviti alla 67ª Marcia di Distanza Bernese - 6 dicembre 2025"
+      },
+      "info": {
+        "title": "Informazioni sulla Registrazione",
+        "importantNotes": {
+          "title": "Note Importanti",
+          "deadline": "Scadenza per la registrazione: 15 novembre 2025",
+          "fee": "Quota di iscrizione: CHF 25.00 per adulti",
+          "childrenFree": "Bambini sotto i 7 anni: Gratuito",
+          "payment": "Pagamento da effettuare sul posto (solo contanti)",
+          "noCards": "Carte di credito o assegni non accettati"
+        },
+        "categories": {
+          "title": "Categorie",
+          "catA": "Categoria A: Partecipanti in uniforme (militari, polizia, ecc.)",
+          "catB": "Categoria B: Giovani e Sport (sotto i 20 anni)",
+          "catC": "Categoria C: Partecipanti civili",
+          "groups": "Gruppi: Registrati come gruppo di Categoria A o C"
+        }
+      },
+      "form": {
+        "title": "Modulo di Registrazione",
+        "fields": {
+          "firstName": "Nome",
+          "lastName": "Cognome",
+          "email": "Indirizzo Email",
+          "phone": "Numero di Telefono",
+          "birthDate": "Data di Nascita",
+          "category": "Categoria",
+          "groupName": "Nome del Gruppo",
+          "agreeTerms": "Accetto i termini e le condizioni e riconosco di essere fisicamente idoneo a partecipare a questo evento."
+        },
+        "categories": {
+          "select": "Seleziona una categoria",
+          "catAMen": "Categoria A - Uomini (In Uniforme)",
+          "catAWomen": "Categoria A - Donne (In Uniforme)",
+          "catAGroup": "Categoria A - Gruppo (In Uniforme)",
+          "catB": "Categoria B - Giovani e Sport (sotto i 20 anni)",
+          "catCMen": "Categoria C - Uomini",
+          "catCWomen": "Categoria C - Donne",
+          "catCGroup": "Categoria C - Gruppo"
+        },
+        "buttons": {
+          "submit": "Invia Registrazione",
+          "reset": "Reimposta Modulo"
+        }
+      },
+      "success": {
+        "title": "Registrazione Completata con Successo!",
+        "thankYou": "Grazie per esserti registrato alla 67ª Marcia di Distanza Bernese. Siamo entusiasti di averti con noi!",
+        "emailSent": "Un'email di conferma è stata inviata a {email} con ulteriori dettagli sull'evento.",
+        "details": "I tuoi dettagli di registrazione:",
+        "name": "Nome:",
+        "category": "Categoria:",
+        "groupName": "Nome del Gruppo:",
+        "questions": "Se hai domande, contattaci a",
+        "registerAnother": "Registra un Altro Partecipante"
+      }
+    },
+    "currentMarch": {
+      "header": {
+        "title": "Marcia Attuale",
+        "subtitle": "67ª Marcia di Distanza Bernese - 6 dicembre 2025"
+      },
+      "tabs": {
+        "overview": "Panoramica",
+        "howItWorks": "Come Funziona",
+        "distanceScheme": "Schema di Distanza",
+        "regulations": "Regolamenti",
+        "faq": "FAQ"
+      },
+      "overview": {
+        "title": "67ª Marcia di Distanza Bernese",
+        "marchInfo": {
+          "date": {
+            "title": "Data",
+            "info": "6 dicembre 2025"
+          },
+          "location": {
+            "title": "Località",
+            "info": "Ins, Canton Berna, Svizzera"
+          },
+          "startTime": {
+            "title": "Orario di Partenza",
+            "info": "8:00 - 10:00"
+          }
+        },
+        "description": {
+          "paragraph1": "La Marcia di Distanza Bernese è unica tra le marce di distanza perché permette ai partecipanti di scegliere i propri percorsi tra i punti di controllo. A differenza delle marce tradizionali con percorsi fissi, puoi progettare il tuo viaggio attraverso i bellissimi paesaggi di Berna.",
+          "paragraph2": "I partecipanti possono unirsi come individui o gruppi in diverse categorie, con percorsi di varie distanze a seconda della categoria e delle preferenze. La marcia combina la tradizione militare con l'apprezzamento per la bellezza naturale della Svizzera."
+        },
+        "highlights": {
+          "title": "Punti Salienti dell'Evento",
+          "item1": "Progetta il tuo percorso attraverso il Canton Berna",
+          "item2": "Categorie per personale militare, civili, giovani e gruppi",
+          "item3": "Medaglie assegnate in base al completamento e alla categoria",
+          "item4": "Partecipanti internazionali benvenuti da tutto il mondo",
+          "item5": "Oltre 60 anni di tradizione nella marcia militare svizzera"
+        }
+      },
+      "distanceScheme": {
+        "title": "Schema di Distanza 2025",
+        "alert": "Lo schema definitivo di distanza per la marcia del 2025 è attualmente in fase di preparazione e sarà pubblicato quanto prima.",
+        "howItWorks": {
+          "title": "Come Funziona lo Schema di Distanza",
+          "description": "La Marcia di Distanza Bernese utilizza un sistema unico di punti di controllo che permette ai partecipanti di creare i propri percorsi. Ecco come funziona:",
+          "steps": {
+            "step1": {
+              "title": "Inizia dal punto di controllo centrale",
+              "description": "Tutti i partecipanti iniziano dal punto principale di registrazione a Ins."
+            },
+            "step2": {
+              "title": "Scegli i tuoi punti di controllo",
+              "description": "In base alla tua categoria, dovrai visitare un numero specifico di punti di controllo sparsi in tutta la regione."
+            },
+            "step3": {
+              "title": "Pianifica il tuo percorso",
+              "description": "Decidi l'ordine e il percorso tra i punti di controllo, consentendo un'esperienza personalizzata."
+            },
+            "step4": {
+              "title": "Completa la marcia",
+              "description": "Ritorna alla linea di arrivo dopo aver visitato tutti i punti di controllo richiesti entro il limite di tempo."
+            }
+          }
+        },
+        "categories": {
+          "title": "Categorie di Distanza",
+          "description": "Categorie diverse hanno requisiti di distanza diversi:",
+          "table": {
+            "category": "Categoria",
+            "minDistance": "Distanza Minima",
+            "requiredCheckpoints": "Punti di Controllo Richiesti",
+            "catA": "Categoria A - Militare",
+            "catB": "Categoria B - Giovani",
+            "catC": "Categoria C - Civile"
+          },
+          "note": "Nota: Lo schema finale di distanza per il 2025 potrebbe avere requisiti diversi e sarà pubblicato in prossimità della data dell'evento."
+        },
+        "map": {
+          "comingSoon": "Mappa interattiva in arrivo"
+        },
+        "documents": {
+          "title": "Documenti Importanti",
+          "description": "I seguenti documenti saranno disponibili per il download:",
+          "flyer": "Volantino 2025 (In Arrivo)",
+          "map": "Mappa dello Schema di Distanza (In Arrivo)",
+          "regulations": "Regolamenti della Marcia (In Arrivo)"
+        }
+      },
+      "howItWorks": {
+        "title": "Come Funziona la Marcia?",
+        "description": "La Marcia di Distanza Bernese si distingue per un approccio unico alla progettazione del percorso che la differenzia da molti altri eventi di marcia. Mentre la maggior parte delle marce richiede ai partecipanti di seguire un percorso fisso e registrare la distanza in anticipo, i partecipanti della Marcia di Distanza Bernese hanno la libertà di scegliere il proprio percorso individualmente. Si orientano secondo uno schema di distanza dato e possono decidere quanto lontano desiderano andare. Questa struttura flessibile non solo presenta una sfida fisica, ma aggiunge anche un compito extra nella navigazione e nell'orientamento nel terreno.",
+        "example": {
+          "title": "Esempio dello Schema di Distanza"
+        },
+        "beforeMarch": {
+          "title": "Prima della Marcia:",
+          "description1": "Tutti i partecipanti si riuniscono al centro della marcia prima dell'orario di partenza e ricevono la loro carta di marcia. Se ti sei registrato per il tiro: Questo si svolgerà prima della marcia, quindi vai direttamente al poligono di tiro o approfitta del nostro servizio navetta, in partenza dal centro della marcia.",
+          "description2": "Una volta ricevuta la tua carta di marcia, sceglierai un percorso (di almeno 10 km). I numeri nelle caselle nere indicano il numero di chilometri che percorrerai per raggiungere il punto di controllo desiderato. Ad esempio, se vuoi camminare dall'inizio ai punti di controllo C, D e poi tornare, secondo lo schema, sarebbero 6 km + 5 km + 7 km = 18 km."
+        },
+        "duringMarch": {
+          "title": "Durante la Marcia:",
+          "description1": "Dalle 12:00, il comandante darà inizio alla marcia e potrai cominciare! Il percorso è segnalato, e i membri del team BEDM saranno anche sul percorso per assistere con qualsiasi domanda o emergenza.",
+          "description2": "Una volta raggiunto il tuo primo punto di controllo, potrai far registrare la tua distanza dal membro del team BEDM. I punti di controllo sono strategicamente situati in locande facilmente accessibili e facili da trovare. Durante una pausa, potrai rilassarti qui e ricevere bevande e piccoli spuntini dal personale cordiale prima di continuare la marcia."
+        },
+        "afterMarch": {
+          "title": "Dopo la Marcia:",
+          "description1": "Dopo aver completato la tua marcia, ritorna al centro della marcia e consegna la tua carta di marcia al team BEDM. Su richiesta, riceverai un certificato, un distintivo di tiro e una medaglia. Ora puoi rilassarti e rinfrescarti al centro della marcia—la nostra locanda è pronta ad accoglierti.",
+          "description2": "Alle 23:00, verranno annunciate le classifiche per le varie categorie—a questo punto la giornata della marcia termina ufficialmente."
+        },
+        "conclusion": {
+          "rankings": "Le classifiche saranno caricate sul sito web nelle settimane successive alla marcia.",
+          "moreInfo": "Per ulteriori informazioni riguardanti il programma di tiro o la marcia stessa, sentiti libero di consultare i nostri regolamenti (regolamenti di tiro, regolamenti di marcia).",
+          "haveFun": "Buon divertimento con la marcia!",
+          "invitation": "Marcia di Distanza Bernese 2025 – 2027: Marcia con noi a Ins!"
+        }
+      },
+      "regulations": {
+        "title": "Regolamenti della Marcia",
+        "generalRules": {
+          "title": "Regole Generali",
+          "rule1": "I partecipanti devono registrarsi prima dell'evento.",
+          "rule2": "Tutti i partecipanti devono fare il check-in al punto di partenza il 6 dicembre 2025.",
+          "rule3": "Ogni partecipante deve visitare tutti i punti di controllo richiesti per la propria categoria.",
+          "rule4": "I punti di controllo devono essere visitati durante le loro ore operative.",
+          "rule5": "I partecipanti devono terminare la marcia entro il limite di tempo designato.",
+          "rule6": "Tutti i partecipanti devono rispettare la proprietà privata e seguire le leggi svizzere sul traffico."
+        },
+        "categoryRequirements": {
+          "title": "Requisiti Specifici per Categoria",
+          "catA": {
+            "title": "Categoria A - Militare/In Uniforme",
+            "req1": "Deve indossare l'uniforme ufficiale del proprio servizio",
+            "req2": "Tenuto a portare l'equipaggiamento standard come specificato",
+            "req3": "Deve completare una distanza minima di 40km",
+            "req4": "Le squadre devono rimanere unite durante tutta la marcia"
+          },
+          "catB": {
+            "title": "Categoria B - Giovani e Sport (sotto i 20 anni)",
+            "req1": "I partecipanti sotto i 16 anni devono essere accompagnati da un adulto",
+            "req2": "Deve completare una distanza minima di 20km",
+            "req3": "Consigliato viaggiare in gruppi di almeno 2",
+            "req4": "Deve portare acqua e rifornimenti sufficienti"
+          },
+          "catC": {
+            "title": "Categoria C - Civile",
+            "req1": "Deve completare una distanza minima di 30km",
+            "req2": "Deve registrarsi a tutti i punti di controllo richiesti",
+            "req3": "Le squadre si registrano insieme e terminano insieme",
+            "req4": "Equipaggiamento da escursione adeguato consigliato"
+          }
+        },
+        "equipment": {
+          "title": "Requisiti di Equipaggiamento",
+          "essential": {
+            "title": "Articoli Essenziali per Tutti i Partecipanti",
+            "item1": "Scarpe comode da passeggio/escursione",
+            "item2": "Abbigliamento adatto al tempo di dicembre (strati consigliati)",
+            "item3": "Giacca impermeabile",
+            "item4": "Identificazione personale",
+            "item5": "Bottiglia d'acqua o sistema di idratazione",
+            "item6": "Snack ad alto contenuto energetico",
+            "item7": "Kit di primo soccorso di base",
+            "item8": "Telefono cellulare (completamente carico)"
+          },
+          "recommended": {
+            "title": "Articoli Aggiuntivi Consigliati",
+            "item1": "Mappa della regione",
+            "item2": "Bussola o dispositivo GPS",
+            "item3": "Piccolo zaino",
+            "item4": "Protezione solare e cappello",
+            "item5": "Bastoncini da trekking",
+            "item6": "Calzini extra",
+            "item7": "Materiale per il trattamento delle vesciche",
+            "item8": "Torcia o lampada frontale"
+          }
+        },
+        "safety": {
+          "title": "Informazioni sulla Sicurezza",
+          "description": "La sicurezza di tutti i partecipanti è la nostra massima priorità. Si prega di notare le seguenti linee guida di sicurezza:",
+          "guideline1": "Supporto medico sarà disponibile ai punti di controllo e tramite i servizi di emergenza.",
+          "guideline2": "In caso di emergenza, chiamare il numero di emergenza dell'evento o il 112 per i servizi di emergenza svizzeri.",
+          "guideline3": "Se non sei in grado di completare la marcia, informa il personale del punto di controllo più vicino.",
+          "guideline4": "Controlla le previsioni meteo prima dell'evento e vestiti di conseguenza.",
+          "guideline5": "Rimani idratato durante tutta la marcia.",
+          "guideline6": "Rispetta la natura e la fauna selvatica incontrata durante la marcia."
+        },
+        "download": "Scarica i Regolamenti Completi (In Arrivo)"
+      },
+      "faq": {
+        "title": "Domande Frequenti",
+        "questions": {
+          "q1": {
+            "question": "Cosa rende la Marcia di Distanza Bernese diversa dalle altre marce?",
+            "answer": "A differenza delle marce tradizionali con percorsi fissi, la Marcia di Distanza Bernese permette ai partecipanti di scegliere il proprio percorso tra i punti di controllo. Questa libertà di progettare il proprio percorso rende l'esperienza di ogni partecipante unica e personale."
+          },
+          "q2": {
+            "question": "Come mi registro per la marcia?",
+            "answer": "Puoi registrarti online attraverso la nostra Pagina di Registrazione. La registrazione rimarrà aperta fino al 15 novembre 2025, ma consigliamo di registrarsi in anticipo per assicurarti il posto."
+          },
+          "q3": {
+            "question": "Qual è la quota di iscrizione?",
+            "answer": "La quota di iscrizione è di CHF 25.00 per gli adulti e CHF 20.00 per i giovani sotto i 20 anni. I bambini sotto i 7 anni possono partecipare gratuitamente. Il pagamento viene effettuato in contanti (solo CHF) all'evento. Carte di credito o assegni non sono accettati."
+          },
+          "q4": {
+            "question": "Quali sono le diverse categorie?",
+            "answer": "Abbiamo tre categorie principali: Categoria A: Per partecipanti in uniforme (militari, polizia, ecc.), Categoria B: Per giovani e sportivi sotto i 20 anni, Categoria C: Per partecipanti civili. All'interno delle Categorie A e C, ci sono anche opzioni di gruppo per coloro che desiderano marciare insieme."
+          },
+          "q5": {
+            "question": "Quanto dovrò camminare?",
+            "answer": "La distanza dipende dalla tua categoria e dal percorso che scegli: Categoria A (Militare): Circa 40km, Categoria B (Giovani): Circa 20km, Categoria C (Civile): Circa 30km. Lo schema finale di distanza per il 2025 sarà pubblicato in prossimità della data dell'evento."
+          },
+          "q6": {
+            "question": "Ho bisogno di equipaggiamento speciale?",
+            "answer": "Dovresti avere buone scarpe da passeggio, abbigliamento adatto al tempo di dicembre in Svizzera, acqua, snack e un piccolo zaino. I partecipanti della Categoria A devono indossare le loro uniformi ufficiali. Un elenco dettagliato dell'equipaggiamento è disponibile nella scheda Regolamenti."
+          },
+          "q7": {
+            "question": "Come pianifico il mio percorso?",
+            "answer": "Una volta pubblicato lo schema ufficiale di distanza, potrai vedere tutti i punti di controllo. Potrai quindi decidere quali punti di controllo visitare e in quale ordine, in base ai requisiti della tua categoria. Puoi utilizzare strumenti di mappatura online o mappe tradizionali per pianificare il tuo percorso tra i punti di controllo."
+          },
+          "q8": {
+            "question": "Cosa succede se non riesco a completare la marcia?",
+            "answer": "Se non sei in grado di completare la marcia, ti preghiamo di informare il personale del punto di controllo più vicino. Organizzeranno il trasporto di ritorno all'area di partenza/arrivo se necessario. La sicurezza è la nostra priorità, e non c'è vergogna nel non completare l'intera distanza."
+          },
+          "q9": {
+            "question": "I partecipanti internazionali possono unirsi?",
+            "answer": "Assolutamente! Accogliamo partecipanti da tutto il mondo. La Marcia di Distanza Bernese ha una lunga tradizione di partecipazione internazionale, specialmente da parte di personale militare di vari paesi."
+          },
+          "q10": {
+            "question": "Come arrivo al punto di partenza?",
+            "answer": "La marcia del 2025 partirà da Ins, Canton Berna. Indicazioni dettagliate e opzioni di trasporto saranno fornite in prossimità della data dell'evento. Ins è accessibile con i mezzi pubblici (treno) dalle principali città svizzere."
+          }
+        },
+        "moreQuestions": {
+          "title": "Hai Ancora Domande?",
+          "contact": "Contatta il comitato organizzatore a"
+        }
+      },
+      "ctaBanner": {
+        "title": "Pronto a Unirti alla 67ª Marcia di Distanza Bernese?",
+        "subtitle": "Registrati oggi e fai parte di questa tradizione svizzera unica!"
+      }
+    },
+    "leaderboards": {
+      "header": {
+        "title": "Classifiche",
+        "subtitle": "Risultati e classifiche passate della Marcia di Distanza Bernese"
+      },
+      "filters": {
+        "year": "Anno",
+        "category": "Categoria"
+      },
+      "categories": {
+        "catAMen": "Categoria A - Uomini (In Uniforme)",
+        "catAWomen": "Categoria A - Donne (In Uniforme)",
+        "catAGroup": "Categoria A - Gruppo (In Uniforme)",
+        "catB": "Categoria B - Giovani e Sport",
+        "catCMen": "Categoria C - Uomini",
+        "catCWomen": "Categoria C - Donne",
+        "catCGroup": "Categoria C - Gruppo"
+      },
+      "table": {
+        "rank": "Posizione",
+        "name": "Nome",
+        "country": "Paese",
+        "time": "Tempo",
+        "distance": "Distanza"
+      },
+      "stats": {
+        "title": "Statistiche Interessanti",
+        "mostWins": {
+          "title": "Più Vittorie",
+          "value": "Johannes Schmidt",
+          "description": "3 vittorie nella Categoria A - Uomini"
+        },
+        "fastestTime": {
+          "title": "Tempo Più Veloce",
+          "value": "4:21:05",
+          "description": "Thomas Huber (2023, Categoria A - Uomini)"
+        },
+        "mostConsistentTeam": {
+          "title": "Squadra Più Costante",
+          "value": "Team Alpine",
+          "description": "Mai arrivato sotto il 2° posto"
+        },
+        "mostRepresentedCountry": {
+          "title": "Paese Più Rappresentato",
+          "value": "Svizzera",
+          "description": "65% di tutti i partecipanti"
+        }
+      },
+      "archive": {
+        "title": "Archivio delle Classifiche",
+        "description": "Cerchi risultati più vecchi? Consulta il nostro archivio completo delle classifiche passate della Marcia di Distanza Bernese:",
+        "viewComplete": "Visualizza Archivio Completo"
+      },
+      "records": {
+        "title": "Record di Tutti i Tempi",
+        "categories": {
+          "catAMen": "Categoria A - Uomini",
+          "catAWomen": "Categoria A - Donne",
+          "catAGroup": "Categoria A - Gruppo",
+          "catB": "Categoria B",
+          "catCMen": "Categoria C - Uomini",
+          "catCWomen": "Categoria C - Donne",
+          "catCGroup": "Categoria C - Gruppo",
+          "participations": "Più Partecipazioni"
+        }
+      }
+    },
+    "statistics": {
+      "header": {
+        "title": "Statistiche",
+        "subtitle": "Dati e approfondimenti dalle passate Marce di Distanza Bernesi"
+      },
+      "intro": "La Marcia di Distanza Bernese raccoglie dati sin dal suo inizio negli anni '60. Queste statistiche offrono informazioni sulle tendenze di partecipazione, sulla rappresentanza internazionale e su altri fatti interessanti riguardo questo evento unico.",
+      "chartTabs": {
+        "participation": "Partecipazione",
+        "international": "Internazionale",
+        "ageGroups": "Gruppi di Età",
+        "completionRates": "Tassi di Completamento"
+      },
+      "charts": {
+        "participants": {
+          "title": "Partecipanti per Anno e Categoria",
+          "subtitle": "Il numero totale di partecipanti alla Marcia di Distanza Bernese dal 2015 al 2024",
+          "legend": {
+            "catA": "Categoria A (Militare)",
+            "catB": "Categoria B (Giovani)",
+            "catC": "Categoria C (Civile)"
+          },
+          "loading": "Caricamento dati del grafico..."
+        },
+        "international": {
+          "title": "Partecipazione Internazionale",
+          "subtitle": "Percentuale di partecipanti per paese di origine (dati 2024)"
+        },
+        "ageDistribution": {
+          "title": "Distribuzione per Età",
+          "subtitle": "Percentuale di partecipanti per fascia di età (dati 2024)"
+        },
+        "completionRates": {
+          "title": "Tassi di Completamento",
+          "subtitle": "Percentuale di partecipanti che hanno completato con successo la marcia"
+        }
+      },
+      "keyStats": {
+        "title": "Statistiche Chiave",
+        "participants": {
+          "value": "598",
+          "label": "Partecipanti nel 2024",
+          "trend": "5.1% rispetto al 2023"
+        },
+        "tradition": {
+          "value": "67",
+          "label": "Anni di tradizione",
+          "trend": "Dal 1960"
+        },
+        "countries": {
+          "value": "14",
+          "label": "Paesi rappresentati",
+          "trend": "2 nuovi paesi nel 2024"
+        },
+        "totalDistance": {
+          "value": "23,920",
+          "label": "Totale km percorsi nel 2024",
+          "trend": "1,160 km rispetto al 2023"
+        }
+      },
+      "interestingFacts": {
+        "title": "Fatti Interessanti",
+        "fastestTime": {
+          "title": "Tempo Più Veloce",
+          "description": "Il tempo di completamento più veloce mai registrato è stato di 4:21:05 da Thomas Huber nel 2023 (Categoria A)."
+        },
+        "youngestParticipant": {
+          "title": "Partecipante Più Giovane",
+          "description": "Il partecipante più giovane è stata Emma Keller, di 7 anni, che ha completato il percorso giovanile nel 2022."
+        },
+        "oldestParticipant": {
+          "title": "Partecipante Più Anziano",
+          "description": "Il partecipante più anziano è stato Johann Weber, di 82 anni, che ha completato la sua 45ª marcia nel 2024."
+        },
+        "largestGroup": {
+          "title": "Gruppo Più Numeroso",
+          "description": "Il gruppo più numeroso mai partecipante è stato il \"Bern Veterans\" con 28 membri nel 2019."
+        },
+        "farthestTraveler": {
+          "title": "Viaggiatore Più Lontano",
+          "description": "Nel 2023, un partecipante ha viaggiato dalla Nuova Zelanda (18.000 km) per unirsi alla marcia."
+        },
+        "perfectAttendance": {
+          "title": "Presenza Perfetta",
+          "description": "Paul Fürst ha partecipato a tutte le 66 edizioni della marcia senza saltarne una."
+        }
+      },
+      "dataDownload": {
+        "title": "Dati Storici",
+        "description": "Cerchi statistiche più dettagliate? Scarica i nostri file di dati storici:",
+        "participationData": "Dati di Partecipazione (2000-2024)",
+        "resultsArchive": "Archivio Completo dei Risultati"
+      }
+    },
+    "history": {
+      "header": {
+        "title": "Storia",
+        "subtitle": "Esplorare la ricca tradizione della Marcia di Distanza Bernese"
+      },
+      "intro": {
+        "title": "Gli Inizi",
+        "paragraph1": "La Marcia di Distanza Bernese, originariamente chiamata Marcia Notturna, ha le sue radici nei primi anni '60. Fu fondata da due ufficiali e membri della sezione di Berna dell'SVMLT (Associazione Svizzera delle Truppe Tecniche Magistrali), Heinz Krähenbühl e Walter Bürki, considerati i padri fondatori di questo evento tradizionale.",
+        "paragraph2": "L'idea nacque da preoccupazioni pratiche: a causa delle misure di razionamento della benzina all'epoca, non ogni famiglia svizzera possedeva un'auto. I fondatori ebbero l'idea innovativa che il luogo dell'assemblea generale della Sezione di Berna potesse essere raggiunto a piedi da casa da tutti i membri e contemporaneamente essere combinato con una competizione militare.",
+        "paragraph3": "Così nacque la Berner Distanzmarsch, una tradizione che è continuata ed evoluta per oltre sei decenni, diventando una parte importante del patrimonio militare e culturale svizzero."
+      },
+      "timeline": {
+        "title": "Cronologia della Marcia di Distanza Bernese",
+        "events": {
+          "event1": {
+            "year": "1960",
+            "title": "La Prima Marcia",
+            "description": "La Berner Distanzmarsch fu fondata da Heinz Krähenbühl e Walter Bürki. Iniziò come una competizione militare combinata con l'assemblea generale della Sezione di Berna dell'SVMLT."
+          },
+          "event2": {
+            "year": "1960s",
+            "title": "Primi Sviluppi",
+            "description": "L'evento durava dalle 17:00 del sabato alle 07:00 della domenica. Solo i marciatori in uniforme (militari, ferrovieri, postini, protezione civile, vigili del fuoco, ecc.) erano ammessi."
+          },
+          "event3": {
+            "year": "1980s",
+            "title": "Partecipazione Internazionale",
+            "description": "Una delegazione di riservisti della Saarland visitò la Marcia di Distanza di Berna, creando una profonda cameratismo tra l'Associazione dei Riservisti della Saarland e la Sezione di Berna dell'SVMLT."
+          },
+          "event4": {
+            "year": "1990s",
+            "title": "Tradizioni in Evoluzione",
+            "description": "La marcia di distanza fu separata dall'assemblea generale, rompendo con una tradizione di lunga data ma permettendo una maggiore attenzione alla marcia stessa."
+          },
+          "event5": {
+            "year": "2000",
+            "title": "Nuova Leadership",
+            "description": "Hptm Ruedi Lehmann lottò per continuare la Berner Distanzmarsch durante un periodo critico in cui il futuro dell'evento era incerto."
+          },
+          "event6": {
+            "year": "2020",
+            "title": "Marcia Remota",
+            "description": "Durante la pandemia di COVID-19, si raggiunse una pietra miliare con lo svolgimento della Marcia Remota 2020, dimostrando la flessibilità e l'impegno del team organizzatore."
+          },
+          "event7": {
+            "year": "2025",
+            "title": "67ª Edizione",
+            "description": "La 67ª edizione della marcia di distanza di Berna continua la tradizione orgogliosa, ora sotto la guida di Hptadj Adrian Venner e del suo staff."
+          }
+        }
+      },
+      "traditions": {
+        "title": "Tradizioni in Evoluzione",
+        "paragraph1": "Le condizioni della marcia sono cambiate nel corso dei decenni. Originariamente, l'evento durava dalle 17:00 del sabato alle 07:00 della domenica, e solo i marciatori in uniforme erano ammessi. Le scorte civili non erano permesse, e il punteggio seguiva uno schema speciale in cui le armi trasportate e il peso dello zaino contribuivano ai punti.",
+        "paragraph2": "Negli anni '80, la marcia acquisì una dimensione internazionale quando una delegazione di riservisti della Saarland in Germania partecipò. Questo risultò in un profondo cameratismo e amicizia tra l'Associazione dei Riservisti della Saarland e la Sezione di Berna dell'SVMLT, formalizzata in un accordo di sponsorizzazione.",
+        "paragraph3": "Un cambiamento significativo avvenne quando la marcia di distanza fu separata dall'assemblea generale, rompendo con una tradizione di lunga data. Questa decisione fu presa perché molti membri che completavano la marcia rimanevano lontani dalla riunione per riposare, mentre quelli che perseveravano spesso si addormentavano durante le procedure.",
+        "paragraph4": "Durante la sua storia, la Marcia di Distanza Bernese ha affrontato sfide e periodi di incertezza. Durante un periodo critico in cui voci chiedevano l'abbandono della tradizione, Hptm Ruedi Lehmann lottò per la sua continuazione.",
+        "paragraph5": "Oggi, sotto la guida di Hptadj Adrian Venner e del suo staff, la continuazione a lungo termine della tradizionale Berner Distanzmarsch è garantita, adattandosi ai nuovi tempi mentre preserva lo spirito dei padri fondatori.",
+        "stats": {
+          "editions": "Edizioni",
+          "peakParticipants": "Picco di Partecipanti",
+          "countriesRepresented": "Paesi Rappresentati",
+          "yearsOfTradition": "Anni di Tradizione"
+        }
+      },
+      "notableParticipants": {
+        "title": "Partecipanti Notevoli",
+        "participant1": {
+          "name": "Pol Wm Fürst Paul",
+          "achievement": "Ha completato TUTTE le marce di distanza senza interruzioni",
+          "description": "Un esempio vivente di dedizione e lealtà alla tradizione della Marcia di Distanza Bernese."
+        },
+        "participant2": {
+          "name": "Heinz Krähenbühl",
+          "achievement": "Co-fondatore",
+          "description": "Uno dei due padri fondatori che iniziarono la Marcia di Distanza Bernese nei primi anni '60."
+        },
+        "participant3": {
+          "name": "Hptm Ruedi Lehmann",
+          "achievement": "Leader della Preservazione",
+          "description": "Ha combattuto in prima linea per la continuazione della Berner Distanzmarsch durante un periodo critico."
+        },
+        "participant4": {
+          "name": "Hptadj Adrian Venner",
+          "achievement": "Comandante Attuale",
+          "description": "Guida la Marcia di Distanza Bernese verso il futuro preservando le sue ricche tradizioni."
+        }
+      },
+      "legacy": {
+        "title": "Un'Eredità Vivente",
+        "paragraph1": "La Marcia di Distanza Bernese rappresenta più di una semplice sfida fisica: incarna un'eredità vivente della tradizione militare svizzera, del cameratismo e dell'adattabilità. Attraverso eventi mondiali, tempi che cambiano e norme sociali in evoluzione, la marcia è persistita, adattandosi mentre mantiene il suo spirito fondamentale.",
+        "paragraph2": "Nel 2020, l'evento ha dimostrato la sua resilienza e innovazione tenendo una Marcia Remota durante la pandemia di COVID-19. Questa flessibilità ha assicurato che la tradizione continuasse ininterrotta nonostante le sfide globali.",
+        "paragraph3": "Oggi, con circa 600 partecipanti annuali, la Marcia di Distanza Bernese continua a ispirare lealtà e interesse. L'attuale team di leadership rimane impegnato a guidare questa preziosa tradizione verso un futuro sicuro, onorando tutti coloro che hanno contribuito al suo successo nel corso dei decenni.",
+        "paragraph4": "Mentre guardiamo avanti alla 67ª edizione nel 2025, celebriamo non solo una sfida fisica nel bellissimo paesaggio svizzero, ma anche un ricco patrimonio culturale che collega generazioni e attraversa confini internazionali."
+      }
+    },
+    "gallery": {
+      "header": {
+        "title": "Galleria",
+        "subtitle": "Immagini dalle passate Marce di Distanza Bernesi"
+      },
+      "filters": {
+        "byYear": {
+          "title": "Filtra per Anno",
+          "allYears": "Tutti gli Anni"
+        },
+        "byCategory": {
+          "title": "Filtra per Categoria",
+          "allCategories": "Tutte le Categorie",
+          "participants": "Partecipanti",
+          "landscapes": "Paesaggi",
+          "ceremonies": "Cerimonie",
+          "remoteMarch": "Marcia Remota 2020"
+        }
+      },
+      "noResults": {
+        "title": "Nessuna immagine trovata",
+        "description": "Prova a cambiare le impostazioni dei filtri per vedere più immagini.",
+        "resetFilters": "Reimposta Filtri"
+      },
+      "modal": {
+        "year": "Anno:",
+        "category": "Categoria:"
+      },
+      "submitPhotos": {
+        "title": "Invia le Tue Foto",
+        "description": "Hai foto delle passate Marce di Distanza Bernesi che vorresti condividere? Accogliamo con piacere contributi alla nostra galleria da partecipanti e spettatori.",
+        "requirements": {
+          "title": "Requisiti delle Foto",
+          "req1": "Immagini ad alta risoluzione (larghezza minima 1500px)",
+          "req2": "Formato JPG o PNG",
+          "req3": "Includi data e luogo nella descrizione",
+          "req4": "Massimo 10 foto per invio"
+        },
+        "howToSubmit": {
+          "title": "Come Inviare",
+          "description": "Invia le tue foto a medien@bernerdm.ch con l'oggetto \"Foto della Marcia di Distanza Bernese\". Includi il tuo nome, l'anno della marcia e una breve descrizione di ogni foto."
+        },
+        "submitButton": "Invia le Tue Foto"
+      },
+      "videoSection": {
+        "title": "Video in Evidenza",
+        "highlightsTitle": "Momenti salienti della 66ª Marcia di Distanza Bernese (2024)",
+        "description": "Vivi i momenti salienti della 66ª Marcia di Distanza Bernese nel 2024. Questo video mostra i bellissimi percorsi, i partecipanti entusiasti e lo spirito di cameratismo che rende speciale questo evento.",
+        "viewMoreVideos": "Guarda Altri Video"
+      }
+    },
+    "notFound": {
+      "title": "404 - Pagina Non Trovata",
+      "message": "Sembra che tu sia uscito dal percorso designato!",
+      "help": "Non preoccuparti! A differenza della vera marcia, possiamo aiutarti a trovare la strada del ritorno.",
+      "returnHome": "Torna alla Home",
+      "viewCurrentMarch": "Visualizza Marcia Attuale",
+      "lookingFor": {
+        "title": "Cerchi qualcosa in particolare?",
+        "contact": "Se hai bisogno di assistenza, contattaci."
+      }
+    }
+  }
+}

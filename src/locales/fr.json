@@ -1,0 +1,726 @@
+{
+  "common": {
+    "siteTitle": "Marche de distance bernoise",
+    "subtitle": "Une tradition de l’armée suisse",
+    "buttons": {
+      "registerNow": "Inscrivez-vous maintenant",
+      "learnMore": "En savoir plus",
+      "viewMore": "Voir plus",
+      "submit": "Envoyer",
+      "reset": "Réinitialiser"
+    },
+    "navigation": {
+      "home": "Accueil",
+      "currentMarch": "Marche en cours",
+      "registration": "Inscription",
+      "history": "Historique",
+      "leaderboards": "Classements",
+      "statistics": "Statistiques",
+      "gallery": "Galerie"
+    },
+    "footer": {
+      "quickLinks": "Liens rapides",
+      "contact": "Contact",
+      "followUs": "Suivez-nous",
+      "copyright": "© {year} Marche de distance bernoise. Tous droits réservés. - Réalisé par",
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfService": "Conditions d’utilisation",
+      "sitemap": "Plan du site"
+    },
+    "contactInfo": {
+      "commander": "Hptadj Adrian Venner",
+      "address": "Rütigässli 3",
+      "city": "CH - 3115 Gerzensee",
+      "phone": "+41 (0) 79 153 28 87",
+      "email": "kommando@bernerdm.ch"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Bienvenue à la Marche de distance bernoise",
+        "subtitle": "Une expérience de marche unique dans les magnifiques régions du canton de Berne"
+      },
+      "eventInfo": {
+        "edition": {
+          "title": "67ᵉ édition",
+          "description": "La 67ᵉ marche de distance bernoise aura lieu à Ins le 6 décembre 2025 !"
+        },
+        "route": {
+          "title": "Créez votre itinéraire",
+          "description": "Contrairement à d’autres marches aux parcours fixes, les participants peuvent choisir librement leur chemin entre les postes donnés."
+        },
+        "welcome": {
+          "title": "Ouvert à tous",
+          "description": "Que vous participiez seul ou en groupe, la marche est ouverte à tous ceux qui souhaitent y prendre part."
+        }
+      },
+      "about": {
+        "title": "À propos de la marche",
+        "paragraph1": "La Marche de distance bernoise est un événement unique qui associe la beauté du paysage suisse à une tradition militaire. Contrairement aux marches conventionnelles, les participants conçoivent leur propre itinéraire entre les points de contrôle, rendant chaque expérience personnelle et unique.",
+        "paragraph2": "Pendant de nombreuses années, des personnes du monde entier se sont inscrites à cet événement extraordinaire qui se tient dans les charmantes régions du canton de Berne. La tradition ne cesse de croître, accueillant tant le personnel militaire que les civils.",
+        "discoverHistory": "Découvrir notre histoire"
+      },
+      "testimonials": {
+        "title": "Ce que disent les participants",
+        "testimonial1": {
+          "quote": "La Marche de distance bernoise a été une expérience inoubliable. La liberté de choisir mon propre itinéraire tout en profitant des paysages suisses à couper le souffle a rendu l'événement vraiment spécial.",
+          "author": "Hans Schmidt",
+          "role": "Participant à 3 reprises"
+        },
+        "testimonial2": {
+          "quote": "En tant que groupe, nous y participons depuis 5 ans. À chaque fois, l’organisation est impeccable et le défi reste renouvelé car nous pouvons toujours essayer de nouveaux parcours. Fortement recommandé !",
+          "author": "Maria Weber",
+          "role": "Cheffe de groupe"
+        }
+      },
+      "cta": {
+        "title": "Prêt pour le défi ?",
+        "subtitle": "Rejoignez des centaines de participants du monde entier lors de cet événement extraordinaire.",
+        "button": "Inscrivez-vous à la 67ᵉ Marche de distance bernoise"
+      },
+      "featuredPosts": {
+        "title": "Dernières actualités",
+        "post1": {
+          "title": "Plan de distance 2025",
+          "description": "Le plan de distance définitif pour la marche 2025 est en cours d'élaboration.",
+          "readMore": "En savoir plus"
+        },
+        "post2": {
+          "title": "Classements mis à jour",
+          "description": "Consultez les derniers classements des éditions précédentes !",
+          "readMore": "Voir les classements"
+        },
+        "post3": {
+          "title": "Histoire de la marche",
+          "description": "Découvrez la riche histoire de la Marche de distance bernoise.",
+          "readMore": "Explorer l’histoire"
+        }
+      }
+    },
+    "registration": {
+      "header": {
+        "title": "Inscription",
+        "subtitle": "Inscrivez-vous à la 67ᵉ Marche de distance bernoise - 6 décembre 2025"
+      },
+      "info": {
+        "title": "Informations sur l’inscription",
+        "importantNotes": {
+          "title": "Notes importantes",
+          "deadline": "Date limite d’inscription : 15 novembre 2025",
+          "fee": "Frais d’inscription : 25,00 CHF pour les adultes",
+          "childrenFree": "Enfants de moins de 7 ans : gratuit",
+          "payment": "Paiement sur place (espèces uniquement)",
+          "noCards": "Cartes de crédit et chèques non acceptés"
+        },
+        "categories": {
+          "title": "Catégories",
+          "catA": "Catégorie A : Participants en uniforme (militaire, police, etc.)",
+          "catB": "Catégorie B : Jeunesse & sport (moins de 20 ans)",
+          "catC": "Catégorie C : Participants civils",
+          "groups": "Groupes : Inscription en tant que groupe de catégorie A ou C"
+        }
+      },
+      "form": {
+        "title": "Formulaire d’inscription",
+        "fields": {
+          "firstName": "Prénom",
+          "lastName": "Nom",
+          "email": "Adresse e-mail",
+          "phone": "Numéro de téléphone",
+          "birthDate": "Date de naissance",
+          "category": "Catégorie",
+          "groupName": "Nom du groupe",
+          "agreeTerms": "J’accepte les termes et conditions et reconnais être en bonne condition physique pour participer à cet événement."
+        },
+        "categories": {
+          "select": "Sélectionnez une catégorie",
+          "catAMen": "Catégorie A - Hommes (Uniforme)",
+          "catAWomen": "Catégorie A - Femmes (Uniforme)",
+          "catAGroup": "Catégorie A - Groupe (Uniforme)",
+          "catB": "Catégorie B - Jeunesse & sport (moins de 20 ans)",
+          "catCMen": "Catégorie C - Hommes",
+          "catCWomen": "Catégorie C - Femmes",
+          "catCGroup": "Catégorie C - Groupe"
+        },
+        "buttons": {
+          "submit": "Envoyer l’inscription",
+          "reset": "Réinitialiser le formulaire"
+        }
+      },
+      "success": {
+        "title": "Inscription réussie !",
+        "thankYou": "Merci pour votre inscription à la 67ᵉ Marche de distance bernoise. Nous sommes ravis de vous compter parmi nous !",
+        "emailSent": "Un e-mail de confirmation a été envoyé à {email} avec plus de détails sur l’événement.",
+        "details": "Détails de votre inscription :",
+        "name": "Nom :",
+        "category": "Catégorie :",
+        "groupName": "Nom du groupe :",
+        "questions": "Si vous avez des questions, veuillez nous contacter à",
+        "registerAnother": "Inscrire un autre participant"
+      }
+    },
+    "currentMarch": {
+      "header": {
+        "title": "Marche en cours",
+        "subtitle": "67ᵉ Marche de distance bernoise - 6 décembre 2025"
+      },
+      "tabs": {
+        "overview": "Aperçu",
+        "howItWorks": "Fonctionnement",
+        "distanceScheme": "Plan de distance",
+        "regulations": "Règlementation",
+        "faq": "FAQ"
+      },
+      "overview": {
+        "title": "67ᵉ Marche de distance bernoise",
+        "marchInfo": {
+          "date": {
+            "title": "Date",
+            "info": "6 décembre 2025"
+          },
+          "location": {
+            "title": "Lieu",
+            "info": "Ins, canton de Berne, Suisse"
+          },
+          "startTime": {
+            "title": "Heure de départ",
+            "info": "8h00 - 10h00"
+          }
+        },
+        "description": {
+          "paragraph1": "La Marche de distance bernoise se distingue car elle permet aux participants de choisir leur propre itinéraire entre les points de contrôle. Contrairement aux marches traditionnelles à parcours fixe, vous pouvez concevoir votre propre parcours à travers les magnifiques paysages de Berne.",
+          "paragraph2": "Les participants peuvent s’inscrire en individuel ou en groupe dans plusieurs catégories, avec des distances variables selon votre catégorie et vos préférences. La marche allie tradition militaire et appréciation de la beauté naturelle de la Suisse."
+        },
+        "highlights": {
+          "title": "Points forts de l’événement",
+          "item1": "Concevez votre propre itinéraire dans le canton de Berne",
+          "item2": "Catégories pour le personnel militaire, les civils, les jeunes et les groupes",
+          "item3": "Médaille attribuée selon la catégorie et l’achèvement",
+          "item4": "Participants internationaux bienvenus",
+          "item5": "Plus de 60 ans de tradition dans la marche militaire suisse"
+        }
+      },
+      "distanceScheme": {
+        "title": "Plan de distance 2025",
+        "alert": "Le plan de distance définitif pour la marche 2025 est en cours d’élaboration et sera publié dès que possible.",
+        "howItWorks": {
+          "title": "Comment fonctionne le plan de distance",
+          "description": "La Marche de distance bernoise utilise un système unique de points de contrôle qui permet aux participants de créer leurs propres itinéraires. Voici comment cela fonctionne :",
+          "steps": {
+            "step1": {
+              "title": "Départ au point de contrôle central",
+              "description": "Tous les participants commencent au point d’inscription principal à Ins."
+            },
+            "step2": {
+              "title": "Choisissez vos points de contrôle",
+              "description": "Selon votre catégorie, vous devrez visiter un nombre spécifique de points de contrôle répartis dans la région."
+            },
+            "step3": {
+              "title": "Planifiez votre itinéraire",
+              "description": "Vous décidez de l’ordre et du chemin entre les points de contrôle, pour une expérience personnalisée."
+            },
+            "step4": {
+              "title": "Terminez la marche",
+              "description": "Retournez à la ligne d’arrivée après avoir visité tous les points de contrôle requis dans le temps imparti."
+            }
+          }
+        },
+        "categories": {
+          "title": "Catégories de distance",
+          "description": "Les différentes catégories ont des exigences de distance variées :",
+          "table": {
+            "category": "Catégorie",
+            "minDistance": "Distance minimale",
+            "requiredCheckpoints": "Points de contrôle requis",
+            "catA": "Catégorie A - Militaire",
+            "catB": "Catégorie B - Jeunesse",
+            "catC": "Catégorie C - Civil"
+          },
+          "note": "Note : le plan de distance final pour 2025 peut présenter des exigences différentes et sera publié à l’approche de l’événement."
+        },
+        "map": {
+          "comingSoon": "Carte interactive bientôt disponible"
+        },
+        "documents": {
+          "title": "Documents importants",
+          "description": "Les documents suivants seront disponibles en téléchargement :",
+          "flyer": "Flyer 2025 (bientôt disponible)",
+          "map": "Carte du plan de distance (bientôt disponible)",
+          "regulations": "Règlementation de la marche (bientôt disponible)"
+        }
+      },
+      "howItWorks": {
+        "title": "Comment fonctionne la marche ?",
+        "description": "La Marche de distance bernoise se distingue par une approche unique de conception du parcours. Alors que la plupart des marches imposent un itinéraire fixe et une distance enregistrée à l’avance, ici vous choisissez votre propre route. Vous vous orientez selon un plan donné et décidez jusqu’où vous souhaitez aller. Cette structure flexible représente un défi physique et une tâche supplémentaire de navigation et d’orientation.",
+        "example": {
+          "title": "Exemple du plan de distance"
+        },
+        "beforeMarch": {
+          "title": "Avant la marche :",
+          "description1": "Tous les participants se rassemblent au centre de la marche avant le départ et reçoivent leur carte de marche. Si vous êtes inscrit au tir : il aura lieu avant la marche ; rendez-vous directement au stand de tir ou profitez de notre navette depuis le centre.",
+          "description2": "Une fois votre carte reçue, choisissez un itinéraire (au moins 10 km). Les chiffres dans les cases noires indiquent le nombre de kilomètres entre chaque point. Par exemple, du départ aux points C, D puis retour : 6 km + 5 km + 7 km = 18 km."
+        },
+        "duringMarch": {
+          "title": "Pendant la marche :",
+          "description1": "À partir de 12h00, le commandant donne le départ et vous pouvez commencer ! Le parcours est balisé, et des membres de l’équipe BEDM sont là pour toute aide ou urgence.",
+          "description2": "Au premier point de contrôle, un membre de l’équipe BEDM enregistre votre distance. Les points sont situés dans des auberges faciles à trouver. Vous pourrez y faire une pause, boire et grignoter avant de poursuivre."
+        },
+        "afterMarch": {
+          "title": "Après la marche :",
+          "description1": "Après avoir terminé, retournez au centre et remettez votre carte. Sur demande, vous recevrez un certificat, un badge de tir et une médaille. Vous pourrez ensuite vous détendre dans notre maison d’hôtes.",
+          "description2": "À 23h00, les classements sont annoncés, marquant la fin officielle de la journée."
+        },
+        "conclusion": {
+          "rankings": "Les classements seront publiés sur le site dans les semaines qui suivent.",
+          "moreInfo": "Pour plus d’informations sur le programme de tir ou la marche, consultez notre règlement.",
+          "haveFun": "Amusez-vous bien !",
+          "invitation": "Marche de distance bernoise 2025 – 2027 : marchez avec nous jusqu’à Ins !"
+        }
+      },
+      "regulations": {
+        "title": "Règlement de la marche",
+        "generalRules": {
+          "title": "Règles générales",
+          "rule1": "Les participants doivent s’inscrire avant l’événement.",
+          "rule2": "Tous doivent se présenter au point de départ le 6 décembre 2025.",
+          "rule3": "Chaque participant doit visiter tous les points exigés.",
+          "rule4": "Les points doivent être visités pendant leurs heures d’ouverture.",
+          "rule5": "Les participants doivent terminer la marche dans le temps imparti.",
+          "rule6": "Respecter les propriétés privées et le code de la route suisse."
+        },
+        "categoryRequirements": {
+          "title": "Exigences par catégorie",
+          "catA": {
+            "title": "Catégorie A - Militaire/Uniforme",
+            "req1": "Porter l’uniforme officiel de son service",
+            "req2": "Porter l’équipement standard spécifié",
+            "req3": "Compléter au moins 40 km",
+            "req4": "Les équipes doivent rester groupées"
+          },
+          "catB": {
+            "title": "Catégorie B - Jeunesse & sport (moins de 20 ans)",
+            "req1": "Les moins de 16 ans doivent être accompagnés d’un adulte",
+            "req2": "Compléter au moins 20 km",
+            "req3": "Voyager de préférence en groupes d’au moins 2",
+            "req4": "Avoir suffisamment d’eau et de provisions"
+          },
+          "catC": {
+            "title": "Catégorie C - Civil",
+            "req1": "Compléter au moins 30 km",
+            "req2": "Se présenter à tous les points requis",
+            "req3": "Les équipes s’inscrivent et terminent ensemble",
+            "req4": "Équipement de randonnée recommandé"
+          }
+        },
+        "equipment": {
+          "title": "Équipement requis",
+          "essential": {
+            "title": "Articles essentiels pour tous",
+            "item1": "Chaussures de marche/randonnée confortables",
+            "item2": "Vêtements adaptés (superpositions recommandées)",
+            "item3": "Veste imperméable",
+            "item4": "Carte d’identité",
+            "item5": "Bouteille d’eau ou système d’hydratation",
+            "item6": "En-cas énergétiques",
+            "item7": "Trousse de premiers secours",
+            "item8": "Téléphone portable chargé"
+          },
+          "recommended": {
+            "title": "Articles supplémentaires recommandés",
+            "item1": "Carte de la région",
+            "item2": "Boussole ou GPS",
+            "item3": "Petit sac à dos",
+            "item4": "Crème solaire et chapeau",
+            "item5": "Bâtons de marche",
+            "item6": "Chaussettes de rechange",
+            "item7": "Fournitures pour ampoules",
+            "item8": "Lampe de poche ou frontale"
+          }
+        },
+        "safety": {
+          "title": "Consignes de sécurité",
+          "description": "La sécurité de tous est notre priorité. Veuillez noter :",
+          "guideline1": "Assistance médicale disponible aux points de contrôle et via les urgences.",
+          "guideline2": "En urgence, appelez le numéro de l’événement ou le 112.",
+          "guideline3": "Si vous ne pouvez pas terminer, informez le personnel le plus proche.",
+          "guideline4": "Consultez la météo avant l’événement et habillez-vous en conséquence.",
+          "guideline5": "Restez hydraté tout au long de la marche.",
+          "guideline6": "Respectez la nature et la faune."
+        },
+        "download": "Télécharger le règlement complet (bientôt disponible)"
+      },
+      "faq": {
+        "title": "Questions fréquentes",
+        "questions": {
+          "q1": {
+            "question": "Qu’est-ce qui différencie cette marche ?",
+            "answer": "Contrairement aux marches à parcours fixe, vous choisissez votre propre chemin entre les points de contrôle, rendant chaque expérience unique."
+          },
+          "q2": {
+            "question": "Comment m’inscrire ?",
+            "answer": "Inscrivez-vous en ligne via notre page d’inscription. Ouvert jusqu’au 15 novembre 2025, mais nous recommandons de vous inscrire tôt."
+          },
+          "q3": {
+            "question": "Quels sont les frais ?",
+            "answer": "25,00 CHF pour les adultes, 20,00 CHF pour les moins de 20 ans. Enfants de moins de 7 ans gratuits. Paiement en espèces (CHF uniquement). Cartes de crédit et chèques non acceptés."
+          },
+          "q4": {
+            "question": "Quelles sont les catégories ?",
+            "answer": "Trois catégories : A - Uniforme (militaire, police, etc.), B - Jeunesse & sport (< 20 ans), C - Civil. Options de groupe pour A et C."
+          },
+          "q5": {
+            "question": "Quelle distance parcourrai-je ?",
+            "answer": "Selon la catégorie et l’itinéraire choisi : A (~40 km), B (~20 km), C (~30 km). Le plan définitif pour 2025 sera publié ultérieurement."
+          },
+          "q6": {
+            "question": "Équipement spécial requis ?",
+            "answer": "Bonnes chaussures, vêtements adaptés à décembre en Suisse, eau, en-cas et un petit sac à dos. Uniforme officiel pour la catégorie A. Détails dans la règlementation."
+          },
+          "q7": {
+            "question": "Comment planifier mon itinéraire ?",
+            "answer": "Une fois le plan publié, choisissez les points de contrôle et l’ordre de votre parcours à l’aide d’outils de cartographie ou de cartes traditionnelles."
+          },
+          "q8": {
+            "question": "Que se passe-t-il si je ne termine pas ?",
+            "answer": "Informez le personnel du point de contrôle le plus proche. Un retour au départ peut être organisé. La sécurité prime sur tout."
+          },
+          "q9": {
+            "question": "Les internationaux peuvent-ils participer ?",
+            "answer": "Oui ! Nous accueillons des participants du monde entier, notamment du personnel militaire de divers pays."
+          },
+          "q10": {
+            "question": "Comment rejoindre le départ ?",
+            "answer": "La marche 2025 débute à Ins (BE). Instructions et transports seront précisés ultérieurement. Accessible en train depuis les grandes villes suisses."
+          }
+        },
+        "moreQuestions": {
+          "title": "Encore des questions ?",
+          "contact": "Contactez le comité d’organisation à"
+        }
+      },
+      "ctaBanner": {
+        "title": "Prêt à rejoindre la 67ᵉ Marche de distance bernoise ?",
+        "subtitle": "Inscrivez-vous dès aujourd’hui et prenez part à cette tradition suisse unique !"
+      }
+    },
+    "leaderboards": {
+      "header": {
+        "title": "Classements",
+        "subtitle": "Résultats et classements passés de la Marche de distance bernoise"
+      },
+      "filters": {
+        "year": "Année",
+        "category": "Catégorie"
+      },
+      "categories": {
+        "catAMen": "Catégorie A - Hommes (Uniforme)",
+        "catAWomen": "Catégorie A - Femmes (Uniforme)",
+        "catAGroup": "Catégorie A - Groupe (Uniforme)",
+        "catB": "Catégorie B - Jeunesse & sport",
+        "catCMen": "Catégorie C - Hommes",
+        "catCWomen": "Catégorie C - Femmes",
+        "catCGroup": "Catégorie C - Groupe"
+      },
+      "table": {
+        "rank": "Classement",
+        "name": "Nom",
+        "country": "Pays",
+        "time": "Temps",
+        "distance": "Distance"
+      },
+      "stats": {
+        "title": "Statistiques intéressantes",
+        "mostWins": {
+          "title": "Plus de victoires",
+          "value": "Johannes Schmidt",
+          "description": "3 victoires en Catégorie A - Hommes"
+        },
+        "fastestTime": {
+          "title": "Meilleur temps",
+          "value": "4:21:05",
+          "description": "Thomas Huber (2023, Catégorie A - Hommes)"
+        },
+        "mostConsistentTeam": {
+          "title": "Équipe la plus régulière",
+          "value": "Team Alpine",
+          "description": "Jamais en dessous de la 2ᵉ place"
+        },
+        "mostRepresentedCountry": {
+          "title": "Pays le plus représenté",
+          "value": "Suisse",
+          "description": "65 % des participants"
+        }
+      },
+      "archive": {
+        "title": "Archive des classements",
+        "description": "Vous recherchez des résultats plus anciens ? Consultez notre archive complète :",
+        "viewComplete": "Voir l’archive complète"
+      },
+      "records": {
+        "title": "Records absolus",
+        "categories": {
+          "catAMen": "Catégorie A - Hommes",
+          "catAWomen": "Catégorie A - Femmes",
+          "catAGroup": "Catégorie A - Groupe",
+          "catB": "Catégorie B",
+          "catCMen": "Catégorie C - Hommes",
+          "catCWomen": "Catégorie C - Femmes",
+          "catCGroup": "Catégorie C - Groupe",
+          "participations": "Plus de participations"
+        }
+      }
+    },
+    "statistics": {
+      "header": {
+        "title": "Statistiques",
+        "subtitle": "Données et aperçus des éditions passées de la Marche de distance bernoise"
+      },
+      "intro": "La Marche de distance bernoise recueille des données depuis les années 1960. Ces statistiques offrent un aperçu des tendances de participation, de la représentation internationale et d’autres faits intéressants sur cet événement unique.",
+      "chartTabs": {
+        "participation": "Participation",
+        "international": "International",
+        "ageGroups": "Groupes d’âge",
+        "completionRates": "Taux de réussite"
+      },
+      "charts": {
+        "participants": {
+          "title": "Participants par année et catégorie",
+          "subtitle": "Nombre total de participants de 2015 à 2024",
+          "legend": {
+            "catA": "Catégorie A (Militaire)",
+            "catB": "Catégorie B (Jeunesse)",
+            "catC": "Catégorie C (Civil)"
+          },
+          "loading": "Chargement des données..."
+        },
+        "international": {
+          "title": "Participation internationale",
+          "subtitle": "Pourcentage de participants par pays (données 2024)"
+        },
+        "ageDistribution": {
+          "title": "Répartition par âge",
+          "subtitle": "Pourcentage des participants par groupe d’âge (données 2024)"
+        },
+        "completionRates": {
+          "title": "Taux de réussite",
+          "subtitle": "Pourcentage de participants ayant terminé la marche"
+        }
+      },
+      "keyStats": {
+        "title": "Statistiques clés",
+        "participants": {
+          "value": "598",
+          "label": "Participants en 2024",
+          "trend": "5,1 % par rapport à 2023"
+        },
+        "tradition": {
+          "value": "67",
+          "label": "Années de tradition",
+          "trend": "Depuis 1960"
+        },
+        "countries": {
+          "value": "14",
+          "label": "Pays représentés",
+          "trend": "2 nouveaux pays en 2024"
+        },
+        "totalDistance": {
+          "value": "23 920",
+          "label": "Km totaux parcourus en 2024",
+          "trend": "1 160 km de plus qu’en 2023"
+        }
+      },
+      "interestingFacts": {
+        "title": "Faits intéressants",
+        "fastestTime": {
+          "title": "Meilleur temps",
+          "description": "Le temps le plus rapide jamais enregistré : 4:21:05 par Thomas Huber en 2023 (Catégorie A)."
+        },
+        "youngestParticipant": {
+          "title": "Le plus jeune participant",
+          "description": "7 ans : Emma Keller, qui a terminé le parcours jeunesse en 2022."
+        },
+        "oldestParticipant": {
+          "title": "Le plus âgé participant",
+          "description": "82 ans : Johann Weber, qui a complété sa 45ᵉ marche en 2024."
+        },
+        "largestGroup": {
+          "title": "Le plus grand groupe",
+          "description": "« Bern Veterans » : 28 membres en 2019."
+        },
+        "farthestTraveler": {
+          "title": "Le voyageur le plus éloigné",
+          "description": "Nouvelle-Zélande : 18 000 km pour rejoindre la marche en 2023."
+        },
+        "perfectAttendance": {
+          "title": "Présence parfaite",
+          "description": "Paul Fürst a participé à toutes les 66 éditions sans manquer une année."
+        }
+      },
+      "dataDownload": {
+        "title": "Données historiques",
+        "description": "Vous cherchez des statistiques plus détaillées ? Téléchargez nos fichiers de données historiques :",
+        "participationData": "Données de participation (2000-2024)",
+        "resultsArchive": "Archive complète des résultats"
+      }
+    },
+    "history": {
+      "header": {
+        "title": "Historique",
+        "subtitle": "La riche tradition de la Marche de distance bernoise"
+      },
+      "intro": {
+        "title": "Les débuts",
+        "paragraph1": "Initialement appelée Marche de nuit, la Marche de distance bernoise est née au début des années 1960. Fondée par Heinz Krähenbühl et Walter Bürki de la SVMLT (Association suisse des maîtres troupes techniques), elle est aujourd’hui un pilier du patrimoine militaire et culturel suisse.",
+        "paragraph2": "L’idée venait du rationnement d’essence : peu de ménages possédaient une voiture. Les fondateurs ont imaginé un trajet à pied pour rejoindre la réunion générale de Berne tout en transformant l’événement en compétition militaire.",
+        "paragraph3": "Ainsi est née la Berner Distanzmarsch, perpétuée et adaptée depuis plus de six décennies."
+      },
+      "timeline": {
+        "title": "Chronologie",
+        "events": {
+          "event1": {
+            "year": "1960",
+            "title": "Première marche",
+            "description": "Lancée par Heinz Krähenbühl et Walter Bürki, combinant compétition militaire et réunion générale de la section de Berne de la SVMLT."
+          },
+          "event2": {
+            "year": "années 1960",
+            "title": "Débuts",
+            "description": "De 17h0 le samedi à 7h0 le dimanche, seuls les marcheurs en uniforme (militaires, cheminots, postiers, protection civile, pompiers, etc.) étaient autorisés."
+          },
+          "event3": {
+            "year": "années 1980",
+            "title": "Ouverture internationale",
+            "description": "Une délégation de réservistes de la Sarre a participé, scellant une amitié durable entre la Sarre et Berne."
+          },
+          "event4": {
+            "year": "années 1990",
+            "title": "Évolution",
+            "description": "La marche a été dissociée de la réunion générale pour se concentrer sur la compétition."
+          },
+          "event5": {
+            "year": "2000",
+            "title": "Nouvelle direction",
+            "description": "Le Hptm Ruedi Lehmann a sauvé la marche lors d’une crise menaçant son avenir."
+          },
+          "event6": {
+            "year": "2020",
+            "title": "Marche à distance",
+            "description": "En pleine pandémie, la Marche à distance 2020 a démontré la flexibilité de l’organisation."
+          },
+          "event7": {
+            "year": "2025",
+            "title": "67ᵉ édition",
+            "description": "Sous la direction du Hptadj Adrian Venner, la tradition se poursuit fièrement."
+          }
+        }
+      },
+      "traditions": {
+        "title": "Traditions évolutives",
+        "paragraph1": "Au départ, l’événement durait du samedi 17h0 au dimanche 7h0, réservé aux marcheurs en uniforme, scoring inclus en fonction du poids du sac et de l’armement.",
+        "paragraph2": "Dans les années 1980, la participation de la Sarre a renforcé les liens internationaux via un accord de parrainage.",
+        "paragraph3": "La séparation d’avec la réunion générale a permis de se consacrer pleinement à la marche.",
+        "paragraph4": "Face aux appels à l’arrêt de la tradition, le Hptm Ruedi Lehmann a défendu son maintien.",
+        "paragraph5": "Aujourd’hui, sous Hptadj Adrian Venner, la marche continue de s’adapter tout en honorant ses fondateurs.",
+        "stats": {
+          "editions": "Éditions",
+          "peakParticipants": "Nombre maximal de participants",
+          "countriesRepresented": "Pays représentés",
+          "yearsOfTradition": "Années de tradition"
+        }
+      },
+      "notableParticipants": {
+        "title": "Participants remarquables",
+        "participant1": {
+          "name": "Pol Wm Fürst Paul",
+          "achievement": "Toutes les marches complétées sans interruption",
+          "description": "Symbole de dévouement à la tradition de la Marche de distance bernoise."
+        },
+        "participant2": {
+          "name": "Heinz Krähenbühl",
+          "achievement": "Cofondateur",
+          "description": "L’un des pères fondateurs de la marche au début des années 1960."
+        },
+        "participant3": {
+          "name": "Hptm Ruedi Lehmann",
+          "achievement": "Sauveur de la tradition",
+          "description": "A combattu pour maintenir la marche lors d’une période critique."
+        },
+        "participant4": {
+          "name": "Hptadj Adrian Venner",
+          "achievement": "Commandant actuel",
+          "description": "Guide la marche vers l’avenir tout en préservant ses riches traditions."
+        }
+      },
+      "legacy": {
+        "title": "Un héritage vivant",
+        "paragraph1": "La Marche de distance bernoise représente plus qu’un défi physique : elle incarne un héritage militaire suisse, de camaraderie et d’adaptabilité.",
+        "paragraph2": "En 2020, la version à distance a prouvé la résilience de la tradition malgré la pandémie.",
+        "paragraph3": "Avec environ 600 participants chaque année, l’événement continue d’inspirer loyauté et intérêt international.",
+        "paragraph4": "En 2025, nous célébrons non seulement un défi dans les paysages suisses, mais aussi un riche patrimoine qui unit les générations."
+      }
+    },
+    "gallery": {
+      "header": {
+        "title": "Galerie",
+        "subtitle": "Images des éditions passées"
+      },
+      "filters": {
+        "byYear": {
+          "title": "Filtrer par année",
+          "allYears": "Toutes les années"
+        },
+        "byCategory": {
+          "title": "Filtrer par catégorie",
+          "allCategories": "Toutes les catégories",
+          "participants": "Participants",
+          "landscapes": "Paysages",
+          "ceremonies": "Cérémonies",
+          "remoteMarch": "Marche à distance 2020"
+        }
+      },
+      "noResults": {
+        "title": "Aucune image trouvée",
+        "description": "Essayez d’ajuster vos filtres pour voir plus d’images.",
+        "resetFilters": "Réinitialiser les filtres"
+      },
+      "modal": {
+        "year": "Année :",
+        "category": "Catégorie :"
+      },
+      "submitPhotos": {
+        "title": "Soumettez vos photos",
+        "description": "Vous avez des photos des marches passées ? Partagez-les ! Nous accueillons vos contributions.",
+        "requirements": {
+          "title": "Critères des photos",
+          "req1": "Images haute résolution (min. 1500 px de large)",
+          "req2": "Format JPG ou PNG",
+          "req3": "Inclure date et lieu dans la description",
+          "req4": "Max. 10 photos par soumission"
+        },
+        "howToSubmit": {
+          "title": "Comment soumettre",
+          "description": "Envoyez vos photos à medien@bernerdm.ch avec l’objet « Photos Marche de distance bernoise ». Indiquez votre nom, l’année et une brève description."
+        },
+        "submitButton": "Soumettre vos photos"
+      },
+      "videoSection": {
+        "title": "Vidéos",
+        "highlightsTitle": "Temps forts de la 66ᵉ édition (2024)",
+        "description": "Revivez les temps forts de la marche 2024 : parcours, participants et esprit de camaraderie.",
+        "viewMoreVideos": "Voir plus de vidéos"
+      }
+    },
+    "notFound": {
+      "title": "404 - Page introuvable",
+      "message": "On dirait que vous êtes sorti du parcours désigné !",
+      "help": "Ne vous inquiétez pas ! Contrairement à la marche, on peut vous aider à retrouver votre chemin.",
+      "returnHome": "Retour à l’accueil",
+      "viewCurrentMarch": "Voir la marche en cours",
+      "lookingFor": {
+        "title": "Vous cherchez quelque chose ?",
+        "contact": "En cas de besoin, contactez-nous."
+      }
+    }
+  }
+}

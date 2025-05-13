@@ -1,0 +1,726 @@
+{
+  "common": {
+    "siteTitle": "Berner Distanzmarsch",
+    "subtitle": "E Tradition vo de Schwiizer Armee",
+    "buttons": {
+      "registerNow": "Jetzt aamälde",
+      "learnMore": "Me erfahre",
+      "viewMore": "Me aaluege",
+      "submit": "Absände",
+      "reset": "Zruggsetze"
+    },
+    "navigation": {
+      "home": "Zuehau",
+      "currentMarch": "Aktuelle Marsch",
+      "registration": "Aamäldig",
+      "history": "Gschicht",
+      "leaderboards": "Rangliste",
+      "statistics": "Statistike",
+      "gallery": "Galerie"
+    },
+    "footer": {
+      "quickLinks": "Schnälllinks",
+      "contact": "Kontakt",
+      "followUs": "Folgt üs",
+      "copyright": "© {year} Berner Distanzmarsch. Alli Räächt vorbehalte. - Gmacht vo",
+      "privacyPolicy": "Dateschutzrichtlinie",
+      "termsOfService": "Nutzigsbedingige",
+      "sitemap": "Site-Übersicht"
+    },
+    "contactInfo": {
+      "commander": "Hptadj Adrian Venner",
+      "address": "Rütigässli 3",
+      "city": "CH - 3115 Gerzensee",
+      "phone": "+41 (0) 79 153 28 87",
+      "email": "kommando@bernerdm.ch"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Willkomme bim Berner Distanzmarsch",
+        "subtitle": "E einzigartigi Marscherfahrung i de schönschte Regio vom Kanton Bern"
+      },
+      "eventInfo": {
+        "edition": {
+          "title": "67. Usgab",
+          "description": "Dr 67. Berner Distanzmarsch findet am 6. Dezember 2025 i Ins statt!"
+        },
+        "route": {
+          "title": "Gestalte din Wäg",
+          "description": "Im Unterschied zue andere Marschä mit fixe Route chönd Teilnehmer ihri Wäg zwüsche de Postä frei uussueche."
+        },
+        "welcome": {
+          "title": "Alli sin willkomme",
+          "description": "Ob as Einzelperson oder i Gruppe – dä Marsch isch offe für alli, wo mitmache wend."
+        }
+      },
+      "about": {
+        "title": "Über dä Marsch",
+        "paragraph1": "Dr Berner Distanzmarsch isch e einzigartigs Event, wo d'Schöni vo dr Schwiizer Landschaft mit ere militärische Tradition verbindt. Im Unterschied zu konventionelle Marschä chönd Teilnehmer ihri eigene Route zwüsche Kontrollpunkt plane, was jedes Erlebnis persönlich und speziell macht.",
+        "paragraph2": "Siit Johr melden sich Lüüt us dr ganze Wält a für die aussergwöhnliche Veranstaltung i de liebliche Regio vom Kanton Bern. D Tradition wachst wiiter und heisst sowohl Militär- as au Zivil-Teilnehmer willkomme.",
+        "discoverHistory": "Entdeck üsi Gschicht"
+      },
+      "testimonials": {
+        "title": "Was d Teilnehmer säged",
+        "testimonial1": {
+          "quote": "Dr Berner Distanzmarsch isch e unvergässlichi Erfahrung gsi. D Freiheit, min eigene Wäg z wähle und debii d atemberaubendi Schwiizer Landschaft z geniesse, hets uufsetzt!",
+          "author": "Hans Schmidt",
+          "role": "3-fach Teilnehmer"
+        },
+        "testimonial2": {
+          "quote": "Mir sind als Gruppe scho 5 Johr debii. Jed Mal top Organisatio und s Herausforderung bleibt spannend, will mer immer wieder neui Routen probiere chönd. Sehr empfehlenswert!",
+          "author": "Maria Weber",
+          "role": "Gruppenleiterin"
+        }
+      },
+      "cta": {
+        "title": "Bereit für d Herausforderung?",
+        "subtitle": "Mach mit bi hunderte Teilnehmer us dr ganze Wält i dem aussergwöhnliche Event.",
+        "button": "Für dr 67. Berner Distanzmarsch aamälde"
+      },
+      "featuredPosts": {
+        "title": "Aktuälls Uus",
+        "post1": {
+          "title": "Distanzschema 2025",
+          "description": "Ds definitiv Distanzschema für dr Mäschaft 2025 wird grad vorbereitet.",
+          "readMore": "Witerlese"
+        },
+        "post2": {
+          "title": "Rangliste aktualisiert",
+          "description": "Lueg die neuste Rangierige vo früehere Events aa!",
+          "readMore": "Rangliste aaluege"
+        },
+        "post3": {
+          "title": "Gschicht vom Marsch",
+          "description": "Erfahre meh über d räichi Gschicht vom Berner Distanzmarsch.",
+          "readMore": "Gschicht entdecke"
+        }
+      }
+    },
+    "registration": {
+      "header": {
+        "title": "Aamäldig",
+        "subtitle": "Mäh di aa für dr 67. Berner Distanzmarsch – 6. Dezember 2025"
+      },
+      "info": {
+        "title": "Informatione zur Aamäldig",
+        "importantNotes": {
+          "title": "Wichtigi Hinweis",
+          "deadline": "Aamäldeschluss: 15. November 2025",
+          "fee": "Gebühr: CHF 25.00 für Erwachseni",
+          "childrenFree": "Chind unter 7: gratis",
+          "payment": "Zahlig vor Ort (nur Bar)",
+          "noCards": "Kei Kreditkarte oder Check akzeptiert"
+        },
+        "categories": {
+          "title": "Kategorie",
+          "catA": "Kategorie A: Uniformierti (Militär, Polizei, usw.)",
+          "catB": "Kategorie B: Jugend & Sport (unter 20)",
+          "catC": "Kategorie C: Zivili Teilnehmer",
+          "groups": "Gruppen: as Kategorie A oder C aamälde"
+        }
+      },
+      "form": {
+        "title": "Aamäldigsformular",
+        "fields": {
+          "firstName": "Vorname",
+          "lastName": "Nachname",
+          "email": "E-Mail-Adress",
+          "phone": "Telefonnummer",
+          "birthDate": "Geburtsdatum",
+          "category": "Kategorie",
+          "groupName": "Gruppenname",
+          "agreeTerms": "Ich stimme de Bedingige zue und bestätige, dass ich körperlich fit bin."
+        },
+        "categories": {
+          "select": "Kategorie uuswehle",
+          "catAMen": "Kategorie A – Männe (uniformiert)",
+          "catAWomen": "Kategorie A – Froue (uniformiert)",
+          "catAGroup": "Kategorie A – Gruppe (uniformiert)",
+          "catB": "Kategorie B – Jugend & Sport",
+          "catCMen": "Kategorie C – Männe",
+          "catCWomen": "Kategorie C – Froue",
+          "catCGroup": "Kategorie C – Gruppe"
+        },
+        "buttons": {
+          "submit": "Aamäldig abschliessä",
+          "reset": "Formular zruggsetze"
+        }
+      },
+      "success": {
+        "title": "Aamäldig erfolgrich!",
+        "thankYou": "Merci für dini Aamäldig zum 67. Berner Distanzmarsch. Mir freue üs uf di!",
+        "emailSent": "E Bestätigungs-E-Mail isch an {email} gschickt worde mit witeri Detail.",
+        "details": "Dini Aamäldigsdetail:",
+        "name": "Name:",
+        "category": "Kategorie:",
+        "groupName": "Gruppenname:",
+        "questions": "Bei Froge kontaktier üs bi",
+        "registerAnother": "No e Teilnehmer aamälde"
+      }
+    },
+    "currentMarch": {
+      "header": {
+        "title": "Aktuelle Marsch",
+        "subtitle": "67. Berner Distanzmarsch – 6. Dezember 2025"
+      },
+      "tabs": {
+        "overview": "Übersicht",
+        "howItWorks": "Wie’s funktioniert",
+        "distanceScheme": "Distanzschema",
+        "regulations": "Reglement",
+        "faq": "FAQ"
+      },
+      "overview": {
+        "title": "67. Berner Distanzmarsch",
+        "marchInfo": {
+          "date": {
+            "title": "Datum",
+            "info": "6. Dezember 2025"
+          },
+          "location": {
+            "title": "Ort",
+            "info": "Ins, Kanton Bern, Schweiz"
+          },
+          "startTime": {
+            "title": "Startzyt",
+            "info": "08:00 – 10:00 Uhr"
+          }
+        },
+        "description": {
+          "paragraph1": "Dr Berner Distanzmarsch isch einzigartig, will Teilnehmer ihri eigene Route z Wätselpunkt wähle chönd. Nöd wie bi fixe Marschwegle, gestalte du dini persönlechi Rei.",
+          "paragraph2": "Ob as Einzelperson oder i Gruppe, i verschidene Kategorie und Distanz, verbindet dä Marsch Militärtradition mit dr Schwiizer Landschaft."
+        },
+        "highlights": {
+          "title": "Highlights",
+          "item1": "Design din eigene Wäg dür dr Kanton Bern",
+          "item2": "Kategorie für Militär, Zivili, Jugend & Gruppe",
+          "item3": "Medaille je nach Abschlus und Kategorie",
+          "item4": "Internationeli Teilnehmer willkomme",
+          "item5": "Über 60 Johr Tradition"
+        }
+      },
+      "distanceScheme": {
+        "title": "Distanzschema 2025",
+        "alert": "Ds definitivi Schema wird bald veröffentlicht.",
+        "howItWorks": {
+          "title": "So funktioneert’s",
+          "description": "Mir nutze e Kontrollpunkt-System, wo dir d Freiheit git, d Route selber z wähle:",
+          "steps": {
+            "step1": {
+              "title": "Start bim zentrale Punkt",
+              "description": "Alle starte bim Hauptaamäldig in Ins."
+            },
+            "step2": {
+              "title": "Wähl dini Punkte",
+              "description": "Je nach Kategorie muesch e Anzahl Punkt bsueche."
+            },
+            "step3": {
+              "title": "Plän din Wäg",
+              "description": "Du entschiedisch, in weler Reihenfolg du gah witt."
+            },
+            "step4": {
+              "title": "Abschliessä",
+              "description": "Keh zrugg bim Ziel nach dr vorgegebene Ziit."
+            }
+          }
+        },
+        "categories": {
+          "title": "Kategorie",
+          "description": "Verschideni Kategorie hei unterschidlichi Anforderige:",
+          "table": {
+            "category": "Kategorie",
+            "minDistance": "Mindestdistanz",
+            "requiredCheckpoints": "Benötigti Punkte",
+            "catA": "Kategorie A – Militär",
+            "catB": "Kategorie B – Jugend",
+            "catC": "Kategorie C – Zivili"
+          },
+          "note": "Ds endgültigi Schema für 2025 chönt no ändert werde."
+        },
+        "map": {
+          "comingSoon": "Interaktive Karte folgt bald"
+        },
+        "documents": {
+          "title": "Dokument",
+          "description": "Folgendi Dateien chönd do bald glade werde:",
+          "flyer": "Flyer 2025 (bald)",
+          "map": "Karte (bald)",
+          "regulations": "Reglement (bald)"
+        }
+      },
+      "howItWorks": {
+        "title": "Wie funktioniert dä Marsch?",
+        "description": "Im Gegensatz zu fixe Route luegsch du selber, weli Kontrollpunkt du bsuechsch. Das fordert di körperlich und navigationsmässig heraus.",
+        "example": {
+          "title": "Beispil Schema"
+        },
+        "beforeMarch": {
+          "title": "Vor em Start:",
+          "description1": "Mir treffe üs im Zentrum, bechömed Marschkärtli und, falls fürs Schiesse aamäldet, gönd zum Schiessstand oder Shuttle.",
+          "description2": "Wähl e Route (mindestens 10 km). D Zahl im schwarze Feld zeigt d Distanz zum nächschte Punkt."
+        },
+        "duringMarch": {
+          "title": "Während em Marsch:",
+          "description1": "Ab 12:00 Uhr startet dr Kommandant. D Route isch signalisiert und s Team unterstützt bi Froge.",
+          "description2": "Bi jedem Punkt wird d Distanz afgmerkt. In Gasthüser chasch e Pause mache."
+        },
+        "afterMarch": {
+          "title": "Nach em Marsch:",
+          "description1": "Gib dini Karte ab im Zentrum, bechömed Zertifikat, Abzeichä und Medaille. Dr Gastbetrieb ladet zErholung ii.",
+          "description2": "Um 23:00 Uhr chömed d Rangliste uf d Bühne – drum isch dä Tag offiziell erledigt."
+        },
+        "conclusion": {
+          "rankings": "D Rangliste wird i dr Wuche nach em Event online gstellt.",
+          "moreInfo": "Für meh Info zum Schiesse oder Reglement luäg i dä entsprechende Sektion.",
+          "haveFun": "Viel Spass bim Marsch!",
+          "invitation": "Berner Distanzmarsch 2025–2027: Marsch mit üs in Ins!"
+        }
+      },
+      "regulations": {
+        "title": "Reglement",
+        "generalRules": {
+          "title": "Allgmeini Regel",
+          "rule1": "Aamäldig vor em Event Pflicht.",
+          "rule2": "Am 6. Dezember 2025 mues jedes Mitglied beim Startchek-in sy.",
+          "rule3": "Alle benötigte Punkte bsueche.",
+          "rule4": "Punkte nur während dr Öffnig bsuechbar.",
+          "rule5": "Marsch innerhalb dr Ziit abschliessä.",
+          "rule6": "Privatgrund respektiere und Verkehrsregel ihalte."
+        },
+        "categoryRequirements": {
+          "title": "Anforderige pro Kategorie",
+          "catA": {
+            "title": "Kategorie A – Militär/Uniformiert",
+            "req1": "Offiziälli Uniform traiage.",
+            "req2": "Standard-Ausrüstung debii haa.",
+            "req3": "Mind. 40 km absolviere.",
+            "req4": "Team zäme bliebe."
+          },
+          "catB": {
+            "title": "Kategorie B – Jugend & Sport",
+            "req1": "Unter 16 mit erwachse Begleitperson.",
+            "req2": "Mind. 20 km absolviere.",
+            "req3": "In Gruppe vo mind. 2 reise.",
+            "req4": "Genug Wasser und Snack debii haa."
+          },
+          "catC": {
+            "title": "Kategorie C – Zivili",
+            "req1": "Mind. 30 km absolviere.",
+            "req2": "Alle Punkte abghockt haa.",
+            "req3": "Team zäme aamälde und abschliessä.",
+            "req4": "Gee Ausrüestig empfählenswert."
+          }
+        },
+        "equipment": {
+          "title": "Ausrüstung",
+          "essential": {
+            "title": "Wichtig für alli",
+            "item1": "Bequemi Wanderschuhe",
+            "item2": "Wättergängigi Chopf (Schichte)",
+            "item3": "Wätterfesti Jacke",
+            "item4": "ID-Dokument",
+            "item5": "Wasserfläsche",
+            "item6": "Energiereichi Znacht",
+            "item7": "Ersthilfekit",
+            "item8": "Vollaade Handy"
+          },
+          "recommended": {
+            "title": "Zuesätzlich empfählenswert",
+            "item1": "Regiokarte",
+            "item2": "Kompass/GPS",
+            "item3": "Chli Rucksack",
+            "item4": "Sonnäcreme & Hüetli",
+            "item5": "Wanderstöck",
+            "item6": "Extra Söck",
+            "item7": "Blässlipflegemittel",
+            "item8": "Taschenlächt"
+          }
+        },
+        "safety": {
+          "title": "Sicherheit",
+          "description": "D Gesundheit vo alli isch üsi Prioriät. Bitte beachtet:",
+          "guideline1": "Medizinischi Hilfe bi Punkte und Notfallnummer.",
+          "guideline2": "Im Notfall 112 oder Event-Notfallnummer.",
+          "guideline3": "Kannsch nöd abschliessä, meld dich bim nächschte Punkt.",
+          "guideline4": "Wätter prüefe und entspröchend aa zieh.",
+          "guideline5": "Genug trinke.",
+          "guideline6": "Natur und Tier respektiere."
+        },
+        "download": "Kompletts Reglement (bald)"
+      },
+      "faq": {
+        "title": "FAQ",
+        "questions": {
+          "q1": {
+            "question": "Was macht dä Berner Distanzmarsch anders?",
+            "answer": "Statt fixe Route chasch dini eigene Wäg z Kontrollpunkt wähle – jedes Erlebnis isch unik."
+          },
+          "q2": {
+            "question": "Wie mache ich di aamälde?",
+            "answer": "Online uf dr Aamäldigsseite bis 15. November 2025. Besser früeh!"
+          },
+          "q3": {
+            "question": "Was koscht’s?",
+            "answer": "CHF 25.00 für Erwachseni, Juniors (unter 20) CHF 20.00, Chind unter 7 gratis. Nur Bar (CHF)."
+          },
+          "q4": {
+            "question": "Welche Kategorie git’s?",
+            "answer": "A: Uniformierti (Militär, Polizei), B: Jugend & Sport (<20), C: Zivili. Insider: A/C-Teams gaht au."
+          },
+          "q5": {
+            "question": "Wie wiit laufe ich?",
+            "answer": "Kategoriabhängig: A ≈40 km, B ≈20 km, C ≈30 km. Definitiv Schema folgt spöter."
+          },
+          "q6": {
+            "question": "Brauch ich spezielle Ausrüestig?",
+            "answer": "Gute Wanderschuhe, Wätterchicht, Wasser, Snack, chli Rucksack. A-Triager müend Uniform träge."
+          },
+          "q7": {
+            "question": "Wie plane ich mini Route?",
+            "answer": "Sobald d'Schema online isch, wählisch iene beliebige Kontrollpunkt-Route und planisch mit Online- oder Papierkarte."
+          },
+          "q8": {
+            "question": "Was wenn ich nöd fertig werd?",
+            "answer": "Informier d Punktstaff, sie organisiere Züüg zrugg zum Start/Ziel. Sicherheit geht vor."
+          },
+          "q9": {
+            "question": "Dürfe au Internationals mitmache?",
+            "answer": "Aber sicher! Mir hei langi Tradition mit Teilnehmer us dr ganze Wält."
+          },
+          "q10": {
+            "question": "Wie chum i zum Start?",
+            "answer": "D Marsch start i Ins, Kanton Bern. ÖV: Zugverbindung vo grössere Schwiizer Städte."
+          }
+        },
+        "moreQuestions": {
+          "title": "No Froge?",
+          "contact": "Kontaktier dä Organisationskomitee bi"
+        }
+      },
+      "ctaBanner": {
+        "title": "Bereit für dä 67. Berner Distanzmarsch?",
+        "subtitle": "Mäh di hüt aam und werde Teil vo däre Tradition!"
+      }
+    },
+    "leaderboards": {
+      "header": {
+        "title": "Rangliste",
+        "subtitle": "Vergangeni Resultat und Rangierige"
+      },
+      "filters": {
+        "year": "Johr",
+        "category": "Kategorie"
+      },
+      "categories": {
+        "catAMen": "Kategorie A – Männe (uniformiert)",
+        "catAWomen": "Kategorie A – Froue (uniformiert)",
+        "catAGroup": "Kategorie A – Gruppe (uniformiert)",
+        "catB": "Kategorie B – Jugend & Sport",
+        "catCMen": "Kategorie C – Männe",
+        "catCWomen": "Kategorie C – Froue",
+        "catCGroup": "Kategorie C – Gruppe"
+      },
+      "table": {
+        "rank": "Rang",
+        "name": "Name",
+        "country": "Land",
+        "time": "Zit",
+        "distance": "Distanz"
+      },
+      "stats": {
+        "title": "Interessanti Statistike",
+        "mostWins": {
+          "title": "Meischti Siege",
+          "value": "Johannes Schmidt",
+          "description": "3 Siege in Kategorie A – Männe"
+        },
+        "fastestTime": {
+          "title": "Schnällscht Zit",
+          "value": "4:21:05",
+          "description": "Thomas Huber (2023, Kategorie A – Männe)"
+        },
+        "mostConsistentTeam": {
+          "title": "Konsequentischti Team",
+          "value": "Team Alpine",
+          "description": "Nie unter Platz 2 abgschlosse"
+        },
+        "mostRepresentedCountry": {
+          "title": "Meischts vertretens Land",
+          "value": "Schwiiz",
+          "description": "65 % vo alli Teilnehmer"
+        }
+      },
+      "archive": {
+        "title": "Archiv",
+        "description": "Suechsch ältere Resultat? Lueg i üsem Archiv.",
+        "viewComplete": "Ganze Archiv aaluege"
+      },
+      "records": {
+        "title": "Allzäitrekord",
+        "categories": {
+          "catAMen": "Kategorie A – Männe",
+          "catAWomen": "Kategorie A – Froue",
+          "catAGroup": "Kategorie A – Gruppe",
+          "catB": "Kategorie B",
+          "catCMen": "Kategorie C – Männe",
+          "catCWomen": "Kategorie C – Froue",
+          "catCGroup": "Kategorie C – Gruppe",
+          "participations": "Meischti Teilnahm"
+        }
+      }
+    },
+    "statistics": {
+      "header": {
+        "title": "Statistike",
+        "subtitle": "Daten und Insight vo vergangene Marschä"
+      },
+      "intro": "Siit de 1960er-Johr sammled mir Daten. Die Stats zeig Trend, Internationalität und meh.",
+      "chartTabs": {
+        "participation": "Teilnahme",
+        "international": "International",
+        "ageGroups": "Altersgruppe",
+        "completionRates": "Abschlussquote"
+      },
+      "charts": {
+        "participants": {
+          "title": "Teilnehmer pro Johr & Kategorie",
+          "subtitle": "Total Teilnehmer vo 2015 bis 2024",
+          "legend": {
+            "catA": "Kategorie A (Militär)",
+            "catB": "Kategorie B (Jugend)",
+            "catC": "Kategorie C (Zivili)"
+          },
+          "loading": "Lade Grafik…"
+        },
+        "international": {
+          "title": "Internationeli Teilnahme",
+          "subtitle": "Prozäntteil nach Land (2024)"
+        },
+        "ageDistribution": {
+          "title": "Altersverteil",
+          "subtitle": "Prozäntteil no Altersgruppe (2024)"
+        },
+        "completionRates": {
+          "title": "Abschlussquote",
+          "subtitle": "Prozäntteil, wo d Marsch abgschlosse hei"
+        }
+      },
+      "keyStats": {
+        "title": "Key Stats",
+        "participants": {
+          "value": "598",
+          "label": "Teilnehmer 2024",
+          "trend": "+5.1 % ggü. 2023"
+        },
+        "tradition": {
+          "value": "67",
+          "label": "Johr Tradition",
+          "trend": "Siit 1960"
+        },
+        "countries": {
+          "value": "14",
+          "label": "Vertreteni Länder",
+          "trend": "+2 no 2024"
+        },
+        "totalDistance": {
+          "value": "23’920",
+          "label": "Km Total 2024",
+          "trend": "+1’160 ggü. 2023"
+        }
+      },
+      "interestingFacts": {
+        "title": "Spannendi Facts",
+        "fastestTime": {
+          "title": "Schnällscht Zit",
+          "description": "Schnällscht Ziit allerziit: 4:21:05 – Thomas Huber 2023 (Kat. A)."
+        },
+        "youngestParticipant": {
+          "title": "Jüngschti Teilnehmer",
+          "description": "7-jährigi Emma Keller, Jugendkurs 2022."
+        },
+        "oldestParticipant": {
+          "title": "Alterschti Teilnehmer",
+          "description": "82-jährigi Johann Weber, 45. Marsch 2024."
+        },
+        "largestGroup": {
+          "title": "Größti Gruppe",
+          "description": "„Bern Veterans“ mit 28 Mitgliedern 2019."
+        },
+        "farthestTraveler": {
+          "title": "Weitschtre Reisender",
+          "description": "2023 vo Neuseeland (18’000 km) gno."
+        },
+        "perfectAttendance": {
+          "title": "Perfekti Anwesenheit",
+          "description": "Paul Fürst – alli 66 Usgabe ohne Underbruch."
+        }
+      },
+      "dataDownload": {
+        "title": "Historische Daten",
+        "description": "Möchtisch meh detaillierti Stats? Lade ab:",
+        "participationData": "Teilnahmedate (2000–2024)",
+        "resultsArchive": "Komplette Resultate-Archiv"
+      }
+    },
+    "history": {
+      "header": {
+        "title": "Gschicht",
+        "subtitle": "E Reise dür d Tradition vom Berner Distanzmarsch"
+      },
+      "intro": {
+        "title": "D Aafang",
+        "paragraph1": "Ursprüngli „Nachtmarsch“ gno, isch dä Event i de früeh 1960er-Johr entstande. Gegründet vo Heinz Krähenbühl und Walter Bürki, zwei Offiziere vo dr Berner Sektion SVMLT.",
+        "paragraph2": "Idee: Wäge Benzinrationierig hät nöd jedi Famig e Auto ghaa. Drum händ sie d Generalversammlung mit em Marsch zäme glegt – föd dynamischi militärischi Wettbewerb.",
+        "paragraph3": "D „Berner Distanzmarsch“ het sech zu ere über sechzi Joor entwicklet und isch hüt e wichtigi Militär- und Kulturerbe i dr Schwiiz."
+      },
+      "timeline": {
+        "title": "Timeline",
+        "events": {
+          "event1": {
+            "year": "1960",
+            "title": "Dr erschte Marsch",
+            "description": "Gegründet vo Krähenbühl & Bürki. Kombiniert Militär-Wettkampf mit Generalversammlung."
+          },
+          "event2": {
+            "year": "1960s",
+            "title": "Früeh Entwicklig",
+            "description": "Von 17:00 Samschtig bis 07:00 Sunntig. Nur uniformierti Marschierer erlaubt."
+          },
+          "event3": {
+            "year": "1980s",
+            "title": "Internationali Teilnahme",
+            "description": "Reserviste us dr Saarland han debii gsi, Freundschaft zwüsche Saarland und Bern sektion."
+          },
+          "event4": {
+            "year": "1990s",
+            "title": "Tradition im Wandel",
+            "description": "Marsch getrennt vo dr GV, meh Fokus uf dä Event selber."
+          },
+          "event5": {
+            "year": "2000",
+            "title": "Neui Führig",
+            "description": "Hptm Ruedi Lehmann het dä Marsch i dr schwierige Ziit gerettet."
+          },
+          "event6": {
+            "year": "2020",
+            "title": "Remote March",
+            "description": "Während COVID-19 het dä virtuelle Marsch d Flexibilität zeigt."
+          },
+          "event7": {
+            "year": "2025",
+            "title": "67. Usgab",
+            "description": "Unter dr Leitung vo Hptadj Adrian Venner geht’s wiiter."
+          }
+        }
+      },
+      "traditions": {
+        "title": "Tradition im Wandel",
+        "paragraph1": "Urspruenglich vo Samschtig 17:00 bis Sunntig 07:00 und nur Uniformierte, mital vo Punktesystem mit Waffengewicht.",
+        "paragraph2": "1980er – internat. Reserviste ufgno, Sponsorship zwüsche Saarland und Bern.",
+        "paragraph3": "Trennung vo Marsch und GV, weil ville erschöpft ware bi dr GV.",
+        "paragraph4": "Herausforderige und Umbrüch, aber Ruedi Lehmann het dä Event gerette.",
+        "paragraph5": "Hüt garantiert Hptadj Venner d Zukunft vo dä Traditionsveranstaltung.",
+        "stats": {
+          "editions": "Usgabe",
+          "peakParticipants": "Spitzen-Teilnehmer",
+          "countriesRepresented": "Vertreteni Länder",
+          "yearsOfTradition": "Johr Tradition"
+        }
+      },
+      "notableParticipants": {
+        "title": "Bedeutendi Teilnehmer",
+        "participant1": {
+          "name": "Pol Wm Fürst Paul",
+          "achievement": "Alle Marschä ohne Unterbruch abgschlosse",
+          "description": "Läbendi Beispiel vo Hingab und Loyalität."
+        },
+        "participant2": {
+          "name": "Heinz Krähenbühl",
+          "achievement": "Mitgründer",
+          "description": "Mitinitiator vom ursprüngliche Nachtmarsch."
+        },
+        "participant3": {
+          "name": "Hptm Ruedi Lehmann",
+          "achievement": "Erhaltungsspieler",
+          "description": "Hat dä Marsch während Krise sichergstellt."
+        },
+        "participant4": {
+          "name": "Hptadj Adrian Venner",
+          "achievement": "Aktueller Kommandant",
+          "description": "Führt dä Marsch i d Zuekunft mit Respekt vor Tradition."
+        }
+      },
+      "legacy": {
+        "title": "E lebendi Legacy",
+        "paragraph1": "Dr Distanzmarsch isch meh als e körperligi Prüfung – es lebendi Erbe vo Schweizer Militärtradition und Kameradschaft.",
+        "paragraph2": "2020 het d Remote-Version d Widerstandsfähigkeit zeigt.",
+        "paragraph3": "Hüt mit ca. 600 Teilnehmer jährlich, inspiriert dä Marsch no immer.",
+        "paragraph4": "Für d 67. Usgab 2025 fiiret mer Tradition und Natur iene."
+      }
+    },
+    "gallery": {
+      "header": {
+        "title": "Galerie",
+        "subtitle": "Bilder vo vergangene Marschä"
+      },
+      "filters": {
+        "byYear": {
+          "title": "Filter no Johr",
+          "allYears": "All Johr"
+        },
+        "byCategory": {
+          "title": "Filter no Kategorie",
+          "allCategories": "All Kategorie",
+          "participants": "Teilnehmer",
+          "landscapes": "Landschaft",
+          "ceremonies": "Zeremonie",
+          "remoteMarch": "Remote March 2020"
+        }
+      },
+      "noResults": {
+        "title": "Kei Bilder gfunde",
+        "description": "Passe Filter aa und versuech no mol.",
+        "resetFilters": "Filter zruggsetze"
+      },
+      "modal": {
+        "year": "Johr:",
+        "category": "Kategorie:"
+      },
+      "submitPhotos": {
+        "title": "Bilder iiichine",
+        "description": "Hesch Fotos vo früehere Marschä? Teil sie mit üs!",
+        "requirements": {
+          "title": "Fotonforderige",
+          "req1": "Mindestens 1500 px Breiti",
+          "req2": "JPG oder PNG",
+          "req3": "Datum und Ort in Beschrieb",
+          "req4": "Max 10 Fotos pro Submission"
+        },
+        "howToSubmit": {
+          "title": "So schicksch",
+          "description": "Schick dini Fotos aa medien@bernerdm.ch mit Betreff „Bernese Distance March Photos“ und Info zu Name, Johr und Beschrieb."
+        },
+        "submitButton": "Fotos iiichine"
+      },
+      "videoSection": {
+        "title": "Video-Highlights",
+        "highlightsTitle": "Highlights vom 66. Marsch (2024)",
+        "description": "Erlebs d Highlights, d Route, d Teilnehmer und d Kameradschaft.",
+        "viewMoreVideos": "Mehr Videos aaluege"
+      }
+    },
+    "notFound": {
+      "title": "404 – Seite nid gfunde",
+      "message": "Hesch di vo dr Route verläuft!",
+      "help": "Kei Sorge – mir hälfed dir, zrugg zuefinde.",
+      "returnHome": "Zrugg zuehau",
+      "viewCurrentMarch": "Aktuelle Marsch aaluege",
+      "lookingFor": {
+        "title": "Suechsch öppis Speziells?",
+        "contact": "Bei Hilf meld dich bi üs."
+      }
+    }
+  }
+}

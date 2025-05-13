@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/Home.css';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -15,14 +18,14 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Welcome to the Bernese Distance March
+            {t('pages.home.hero.title')}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            A unique marching experience in the beautiful regions of the Canton of Bern
+            {t('pages.home.hero.subtitle')}
           </motion.p>
           <motion.div
             className="hero-buttons"
@@ -31,10 +34,10 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Link to="/registration" className="btn btn-primary">
-              Register Now
+              {t('common.buttons.registerNow')}
             </Link>
             <Link to="/current-march" className="btn btn-secondary">
-              Learn More
+              {t('common.buttons.learnMore')}
             </Link>
           </motion.div>
         </div>
@@ -47,9 +50,9 @@ const Home = () => {
             <div className="event-icon">
               <i className="fas fa-calendar-alt"></i>
             </div>
-            <h3>67th Edition</h3>
+            <h3>{t('pages.home.eventInfo.edition.title')}</h3>
             <p>
-              The 67th Berne distance march will take place at Ins on 6th December 2025!
+              {t('pages.home.eventInfo.edition.description')}
             </p>
           </div>
 
@@ -57,9 +60,9 @@ const Home = () => {
             <div className="event-icon">
               <i className="fas fa-map-marked-alt"></i>
             </div>
-            <h3>Design Your Route</h3>
+            <h3>{t('pages.home.eventInfo.route.title')}</h3>
             <p>
-              Unlike other marches with fixed routes, participants can freely choose their path between given posts.
+              {t('pages.home.eventInfo.route.description')}
             </p>
           </div>
 
@@ -67,9 +70,9 @@ const Home = () => {
             <div className="event-icon">
               <i className="fas fa-users"></i>
             </div>
-            <h3>Everyone Welcome</h3>
+            <h3>{t('pages.home.eventInfo.welcome.title')}</h3>
             <p>
-              Whether as an individual or a group, the march is open to everyone who wants to participate.
+              {t('pages.home.eventInfo.welcome.description')}
             </p>
           </div>
         </div>
@@ -86,15 +89,15 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2>About The March</h2>
+              <h2>{t('pages.home.about.title')}</h2>
               <p>
-                The Bernese Distance March is a unique event that combines the beauty of the Swiss landscape with a military tradition. Unlike conventional marches, participants design their own route between checkpoints, making each experience personal and unique.
+                {t('pages.home.about.paragraph1')}
               </p>
               <p>
-                For many years, people from all over the world have registered for this extraordinary event held in the lovely regions of the canton of Bern. The tradition continues to grow, welcoming both military personnel and civilians.
+                {t('pages.home.about.paragraph2')}
               </p>
               <Link to="/history" className="btn btn-outline">
-                Discover Our History
+                {t('pages.home.about.discoverHistory')}
               </Link>
             </motion.div>
             <motion.div
@@ -116,19 +119,19 @@ const Home = () => {
       {/* Testimonials Section */}
       <section className="testimonials-section">
         <div className="container">
-          <h2>What Participants Say</h2>
+          <h2>{t('pages.home.testimonials.title')}</h2>
           <div className="testimonial-slider">
             <div className="testimonial">
               <div className="testimonial-content">
                 <p>
-                  "The Bernese Distance March was an unforgettable experience. The freedom to choose my own route while enjoying the breathtaking Swiss landscapes made it truly special."
+                  {t('pages.home.testimonials.testimonial1.quote')}
                 </p>
                 <div className="testimonial-author">
                   {/* Using placeholder for testimonial author image */}
                   <div className="author-avatar">HS</div>
                   <div className="author-info">
-                    <h4>Hans Schmidt</h4>
-                    <p>3-time Participant</p>
+                    <h4>{t('pages.home.testimonials.testimonial1.author')}</h4>
+                    <p>{t('pages.home.testimonials.testimonial1.role')}</p>
                   </div>
                 </div>
               </div>
@@ -136,14 +139,14 @@ const Home = () => {
             <div className="testimonial">
               <div className="testimonial-content">
                 <p>
-                  "As a group, we've participated for 5 years. Each time the organization is impeccable, and the challenge remains fresh because we can always try new routes. Highly recommended!"
+                  {t('pages.home.testimonials.testimonial2.quote')}
                 </p>
                 <div className="testimonial-author">
                   {/* Using placeholder for testimonial author image */}
                   <div className="author-avatar">MW</div>
                   <div className="author-info">
-                    <h4>Maria Weber</h4>
-                    <p>Group Leader</p>
+                    <h4>{t('pages.home.testimonials.testimonial2.author')}</h4>
+                    <p>{t('pages.home.testimonials.testimonial2.role')}</p>
                   </div>
                 </div>
               </div>
@@ -156,12 +159,12 @@ const Home = () => {
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready for the Challenge?</h2>
+            <h2>{t('pages.home.cta.title')}</h2>
             <p>
-              Join hundreds of participants from around the world in this extraordinary event.
+              {t('pages.home.cta.subtitle')}
             </p>
             <Link to="/registration" className="btn btn-large">
-              Register for the 67th Bernese Distance March
+              {t('pages.home.cta.button')}
             </Link>
           </div>
         </div>
@@ -170,7 +173,7 @@ const Home = () => {
       {/* Featured Posts */}
       <section className="featured-posts">
         <div className="container">
-          <h2>Latest Updates</h2>
+          <h2>{t('pages.home.featuredPosts.title')}</h2>
           <div className="post-grid">
             <div className="post-card">
               <div className="post-image">
@@ -178,10 +181,10 @@ const Home = () => {
                 <div className="post-icon"><i className="fas fa-route"></i></div>
               </div>
               <div className="post-content">
-                <h3>Distance Scheme 2025</h3>
-                <p>The definite distance scheme for the 2025 march is currently being prepared.</p>
+                <h3>{t('pages.home.featuredPosts.post1.title')}</h3>
+                <p>{t('pages.home.featuredPosts.post1.description')}</p>
                 <Link to="/current-march" className="read-more">
-                  Read More <i className="fas fa-arrow-right"></i>
+                  {t('pages.home.featuredPosts.post1.readMore')} <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>
@@ -191,10 +194,10 @@ const Home = () => {
                 <div className="post-icon"><i className="fas fa-medal"></i></div>
               </div>
               <div className="post-content">
-                <h3>Leaderboards Updated</h3>
-                <p>Check out the latest rankings from previous events!</p>
+                <h3>{t('pages.home.featuredPosts.post2.title')}</h3>
+                <p>{t('pages.home.featuredPosts.post2.description')}</p>
                 <Link to="/leaderboards" className="read-more">
-                  View Leaderboards <i className="fas fa-arrow-right"></i>
+                  {t('pages.home.featuredPosts.post2.readMore')} <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>
@@ -204,10 +207,10 @@ const Home = () => {
                 <div className="post-icon"><i className="fas fa-history"></i></div>
               </div>
               <div className="post-content">
-                <h3>History of the March</h3>
-                <p>Learn about the rich history of the Bernese Distance March.</p>
+                <h3>{t('pages.home.featuredPosts.post3.title')}</h3>
+                <p>{t('pages.home.featuredPosts.post3.description')}</p>
                 <Link to="/history" className="read-more">
-                  Explore History <i className="fas fa-arrow-right"></i>
+                  {t('pages.home.featuredPosts.post3.readMore')} <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>

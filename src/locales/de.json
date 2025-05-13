@@ -1,0 +1,726 @@
+{
+  "common": {
+    "siteTitle": "Berner Distanzmarsch",
+    "subtitle": "Eine Tradition der Schweizer Armee",
+    "buttons": {
+      "registerNow": "Jetzt anmelden",
+      "learnMore": "Mehr erfahren",
+      "viewMore": "Mehr anzeigen",
+      "submit": "Absenden",
+      "reset": "Zurücksetzen"
+    },
+    "navigation": {
+      "home": "Startseite",
+      "currentMarch": "Aktueller Marsch",
+      "registration": "Anmeldung",
+      "history": "Geschichte",
+      "leaderboards": "Ranglisten",
+      "statistics": "Statistiken",
+      "gallery": "Galerie"
+    },
+    "footer": {
+      "quickLinks": "Schnellzugriff",
+      "contact": "Kontakt",
+      "followUs": "Folgen Sie uns",
+      "copyright": "© {year} Berner Distanzmarsch. Alle Rechte vorbehalten. – Erstellt von",
+      "privacyPolicy": "Datenschutz",
+      "termsOfService": "Nutzungsbedingungen",
+      "sitemap": "Seitenübersicht"
+    },
+    "contactInfo": {
+      "commander": "Hptadj Adrian Venner",
+      "address": "Rütigässli 3",
+      "city": "CH – 3115 Gerzensee",
+      "phone": "+41 (0) 79 153 28 87",
+      "email": "kommando@bernerdm.ch"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Willkommen zum Berner Distanzmarsch",
+        "subtitle": "Ein einzigartiges Marscherlebnis in den schönen Regionen des Kantons Bern"
+      },
+      "eventInfo": {
+        "edition": {
+          "title": "67. Ausgabe",
+          "description": "Der 67. Berner Distanzmarsch findet am 6. Dezember 2025 in Ins statt!"
+        },
+        "route": {
+          "title": "Gestalte deine Route",
+          "description": "Im Gegensatz zu anderen Märschen mit festen Routen können die Teilnehmenden ihren Weg zwischen den Posten frei wählen."
+        },
+        "welcome": {
+          "title": "Alle willkommen",
+          "description": "Ob als Einzelperson oder Gruppe, der Marsch steht allen offen, die mitmachen möchten."
+        }
+      },
+      "about": {
+        "title": "Über den Marsch",
+        "paragraph1": "Der Berner Distanzmarsch ist ein einzigartiges Ereignis, das die Schönheit der Schweizer Landschaft mit einer militärischen Tradition verbindet. Im Gegensatz zu herkömmlichen Märschen gestalten die Teilnehmenden ihre eigene Route zwischen Kontrollpunkten, was jede Erfahrung persönlich und einzigartig macht.",
+        "paragraph2": "Seit vielen Jahren melden sich Menschen aus aller Welt für dieses außergewöhnliche Ereignis in den herrlichen Regionen des Kantons Bern an. Die Tradition wächst weiter und heißt sowohl Militärangehörige als auch Zivilisten willkommen.",
+        "discoverHistory": "Unsere Geschichte entdecken"
+      },
+      "testimonials": {
+        "title": "Was Teilnehmende sagen",
+        "testimonial1": {
+          "quote": "Der Berner Distanzmarsch war ein unvergessliches Erlebnis. Die Freiheit, meine eigene Route zu wählen und dabei die atemberaubende Schweizer Landschaft zu genießen, machte es wirklich besonders.",
+          "author": "Hans Schmidt",
+          "role": "Dreifacher Teilnehmer"
+        },
+        "testimonial2": {
+          "quote": "Wir nehmen seit fünf Jahren als Gruppe teil. Jedes Mal ist die Organisation makellos und die Herausforderung bleibt spannend, weil wir immer neue Routen ausprobieren können. Sehr empfehlenswert!",
+          "author": "Maria Weber",
+          "role": "Gruppenleiterin"
+        }
+      },
+      "cta": {
+        "title": "Bereit für die Herausforderung?",
+        "subtitle": "Schließe dich Hunderten von Teilnehmenden aus aller Welt bei diesem außergewöhnlichen Ereignis an.",
+        "button": "Für den 67. Berner Distanzmarsch anmelden"
+      },
+      "featuredPosts": {
+        "title": "Neueste Updates",
+        "post1": {
+          "title": "Distanzschema 2025",
+          "description": "Das endgültige Distanzschema für den Marsch 2025 wird derzeit vorbereitet.",
+          "readMore": "Mehr lesen"
+        },
+        "post2": {
+          "title": "Ranglisten aktualisiert",
+          "description": "Sieh dir die aktuellen Platzierungen der vergangenen Veranstaltungen an!",
+          "readMore": "Ranglisten anzeigen"
+        },
+        "post3": {
+          "title": "Geschichte des Marsches",
+          "description": "Erfahre mehr über die reiche Geschichte des Berner Distanzmarsches.",
+          "readMore": "Geschichte erkunden"
+        }
+      }
+    },
+    "registration": {
+      "header": {
+        "title": "Anmeldung",
+        "subtitle": "Melde dich für den 67. Berner Distanzmarsch an – 6. Dezember 2025"
+      },
+      "info": {
+        "title": "Anmeldeinformationen",
+        "importantNotes": {
+          "title": "Wichtige Hinweise",
+          "deadline": "Anmeldeschluss: 15. November 2025",
+          "fee": "Anmeldegebühr: CHF 25.00 für Erwachsene",
+          "childrenFree": "Kinder unter 7 Jahren: Gratis",
+          "payment": "Zahlung vor Ort (nur Bar)",
+          "noCards": "Keine Kreditkarten oder Schecks akzeptiert"
+        },
+        "categories": {
+          "title": "Kategorien",
+          "catA": "Kategorie A: Uniformierte Teilnehmende (Militär, Polizei, etc.)",
+          "catB": "Kategorie B: Jugend & Sport (unter 20 Jahren)",
+          "catC": "Kategorie C: Zivile Teilnehmende",
+          "groups": "Gruppen: Anmeldung als Kategorie A- oder C-Gruppe"
+        }
+      },
+      "form": {
+        "title": "Anmeldeformular",
+        "fields": {
+          "firstName": "Vorname",
+          "lastName": "Nachname",
+          "email": "E-Mail-Adresse",
+          "phone": "Telefonnummer",
+          "birthDate": "Geburtsdatum",
+          "category": "Kategorie",
+          "groupName": "Gruppenname",
+          "agreeTerms": "Ich stimme den AGB zu und bestätige, dass ich körperlich fit bin, um an diesem Ereignis teilzunehmen."
+        },
+        "categories": {
+          "select": "Kategorie wählen",
+          "catAMen": "Kategorie A – Männer (Uniformiert)",
+          "catAWomen": "Kategorie A – Frauen (Uniformiert)",
+          "catAGroup": "Kategorie A – Gruppe (Uniformiert)",
+          "catB": "Kategorie B – Jugend & Sport (unter 20)",
+          "catCMen": "Kategorie C – Männer",
+          "catCWomen": "Kategorie C – Frauen",
+          "catCGroup": "Kategorie C – Gruppe"
+        },
+        "buttons": {
+          "submit": "Anmeldung absenden",
+          "reset": "Formular zurücksetzen"
+        }
+      },
+      "success": {
+        "title": "Anmeldung erfolgreich!",
+        "thankYou": "Danke für deine Anmeldung zum 67. Berner Distanzmarsch. Wir freuen uns, dich dabei zu haben!",
+        "emailSent": "Eine Bestätigungs-E-Mail wurde an {email} mit weiteren Informationen zum Ereignis gesendet.",
+        "details": "Deine Anmeldedaten:",
+        "name": "Name:",
+        "category": "Kategorie:",
+        "groupName": "Gruppenname:",
+        "questions": "Bei Fragen kontaktiere uns bitte unter",
+        "registerAnother": "Weitere Person anmelden"
+      }
+    },
+    "currentMarch": {
+      "header": {
+        "title": "Aktueller Marsch",
+        "subtitle": "67. Berner Distanzmarsch – 6. Dezember 2025"
+      },
+      "tabs": {
+        "overview": "Übersicht",
+        "howItWorks": "Ablauf",
+        "distanceScheme": "Distanzschema",
+        "regulations": "Reglement",
+        "faq": "FAQ"
+      },
+      "overview": {
+        "title": "67. Berner Distanzmarsch",
+        "marchInfo": {
+          "date": {
+            "title": "Datum",
+            "info": "6. Dezember 2025"
+          },
+          "location": {
+            "title": "Ort",
+            "info": "Ins, Kanton Bern, Schweiz"
+          },
+          "startTime": {
+            "title": "Startzeit",
+            "info": "08:00 – 10:00 Uhr"
+          }
+        },
+        "description": {
+          "paragraph1": "Der Berner Distanzmarsch ist einzigartig, da die Teilnehmenden ihre Routen zwischen den Kontrollpunkten selbst wählen können. Im Gegensatz zu traditionellen Märschen mit festen Wegen gestaltest du deine eigene Strecke durch die wunderschöne Landschaft des Kantons Bern.",
+          "paragraph2": "Teilnehmende können als Einzelpersonen oder Gruppen in mehreren Kategorien mit unterschiedlichen Distanzen je nach Präferenz antreten. Der Marsch vereint militärische Tradition mit der Wertschätzung für die natürliche Schönheit der Schweiz."
+        },
+        "highlights": {
+          "title": "Highlights",
+          "item1": "Gestalte deine eigene Route durch den Kanton Bern",
+          "item2": "Kategorien für Militärangehörige, Zivilisten, Jugendliche und Gruppen",
+          "item3": "Medaille je nach Abschluss und Kategorie",
+          "item4": "Internationale Teilnehmende willkommen",
+          "item5": "Über 60 Jahre Tradition im Schweizer Militärmarsch"
+        }
+      },
+      "distanceScheme": {
+        "title": "Distanzschema 2025",
+        "alert": "Das endgültige Distanzschema für 2025 wird derzeit vorbereitet und so bald wie möglich veröffentlicht.",
+        "howItWorks": {
+          "title": "Funktionsweise des Distanzschemas",
+          "description": "Der Berner Distanzmarsch nutzt ein einzigartiges Kontrollpunktsystem, das den Teilnehmenden erlaubt, eigene Routen zu erstellen. So funktioniert es:",
+          "steps": {
+            "step1": {
+              "title": "Start am Hauptkontrollpunkt",
+              "description": "Alle Teilnehmenden beginnen am Hauptanmeldestandort in Ins."
+            },
+            "step2": {
+              "title": "Wähle deine Kontrollpunkte",
+              "description": "Je nach Kategorie musst du eine bestimmte Anzahl Kontrollpunkte im Gebiet anlaufen."
+            },
+            "step3": {
+              "title": "Plane deine Route",
+              "description": "Du entscheidest die Reihenfolge und den Weg zwischen den Punkten, für ein persönliches Erlebnis."
+            },
+            "step4": {
+              "title": "Beende den Marsch",
+              "description": "Kehre nach Besuch aller erforderlichen Punkte innerhalb der Zeitvorgabe zur Ziellinie zurück."
+            }
+          }
+        },
+        "categories": {
+          "title": "Distanzkategorien",
+          "description": "Die verschiedenen Kategorien haben unterschiedliche Anforderungen:",
+          "table": {
+            "category": "Kategorie",
+            "minDistance": "Mindestdistanz",
+            "requiredCheckpoints": "Erforderliche Kontrollpunkte",
+            "catA": "Kategorie A – Militär",
+            "catB": "Kategorie B – Jugend",
+            "catC": "Kategorie C – Zivil"
+          },
+          "note": "Hinweis: Das endgültige Schema für 2025 kann abweichen und wird näher am Eventdatum veröffentlicht."
+        },
+        "map": {
+          "comingSoon": "Interaktive Karte folgt"
+        },
+        "documents": {
+          "title": "Wichtige Dokumente",
+          "description": "Folgende Dokumente stehen zum Download bereit:",
+          "flyer": "Flyer 2025 (bald verfügbar)",
+          "map": "Distanzschema-Karte (bald verfügbar)",
+          "regulations": "Reglement (bald verfügbar)"
+        }
+      },
+      "howItWorks": {
+        "title": "Wie funktioniert der Marsch?",
+        "description": "Der Berner Distanzmarsch zeichnet sich durch ein flexibles Streckenkonzept aus. Während die meisten Märsche feste Routen und Voranmeldung erfordern, können Teilnehmende hier ihre Strecke individuell wählen. Sie orientieren sich an einem Distanzschema und entscheiden, wie weit sie gehen möchten. Diese Struktur bietet nicht nur eine körperliche Herausforderung, sondern auch eine navigative Aufgabe im Gelände.",
+        "example": {
+          "title": "Beispiel Distanzschema"
+        },
+        "beforeMarch": {
+          "title": "Vor dem Marsch:",
+          "description1": "Alle Teilnehmenden versammeln sich vor dem Start am Marschzentrum und erhalten ihre Marschkarte. Wer sich für Schießen registriert hat: Das Schießen findet vor dem Marsch statt. Gehe dazu direkt zum Schießstand oder nutze unseren Shuttle-Service ab Marschzentrum.",
+          "description2": "Nachdem du deine Marschkarte erhalten hast, wählst du eine Route (mindestens 10 km). Die Zahlen in den schwarzen Kästen geben die Kilometer an, die du zum nächsten Kontrollpunkt gehst. Beispiel: Start → Punkte C, D → zurück ergibt laut Schema 6 km + 5 km + 7 km = 18 km."
+        },
+        "duringMarch": {
+          "title": "Während des Marschs:",
+          "description1": "Ab 12:00 Uhr startet der Kommandant den Marsch und du kannst losgehen! Die Route ist ausgeschildert, und das BEDM-Team ist unterwegs, um bei Fragen oder Notfällen zu unterstützen.",
+          "description2": "An jedem Kontrollpunkt kann ein Teammitglied deine Marschkarte abstempeln. Die Kontrollpunkte befinden sich in Gasthäusern, die gut erreichbar und leicht zu finden sind. Bei einer Pause kannst du dich mit Getränken und kleinen Snacks stärken."
+        },
+        "afterMarch": {
+          "title": "Nach dem Marsch:",
+          "description1": "Nach Abschluss reichst du deine Karte im Marschzentrum ein. Auf Wunsch erhältst du eine Urkunde, ein Schießabzeichen und eine Medaille. Anschließend kannst du im Gasthaus entspannen und dich stärken.",
+          "description2": "Um 23:00 Uhr werden die Ranglisten in den verschiedenen Kategorien bekanntgegeben – damit endet der Marschtag offiziell."
+        },
+        "conclusion": {
+          "rankings": "Die Ranglisten werden in den Wochen nach dem Marsch auf der Website veröffentlicht.",
+          "moreInfo": "Weitere Informationen zum Schießprogramm oder Marsch findest du in unserem Reglement (Schieß- und Marschreglement).",
+          "haveFun": "Viel Spaß beim Marsch!",
+          "invitation": "Berner Distanzmarsch 2025 – 2027: Marschiere mit uns nach Ins!"
+        }
+      },
+      "regulations": {
+        "title": "Marschreglement",
+        "generalRules": {
+          "title": "Allgemeine Regeln",
+          "rule1": "Teilnehmende müssen sich vor dem Event anmelden.",
+          "rule2": "Alle Teilnehmenden müssen sich am 6. Dezember 2025 am Startpunkt einfinden.",
+          "rule3": "Jeder Teilnehmende muss alle erforderlichen Kontrollpunkte seiner Kategorie absolvieren.",
+          "rule4": "Kontrollpunkte dürfen nur während ihrer Betriebszeiten besucht werden.",
+          "rule5": "Der Marsch muss innerhalb der festgelegten Zeit beendet werden.",
+          "rule6": "Teilnehmende müssen Privatgrund respektieren und die Schweizer Verkehrsregeln einhalten."
+        },
+        "categoryRequirements": {
+          "title": "Kategorie-spezifische Anforderungen",
+          "catA": {
+            "title": "Kategorie A – Militär/Uniformiert",
+            "req1": "Offizielle Uniform des Dienstes tragen",
+            "req2": "Standardausrüstung gemäß Vorgabe mitführen",
+            "req3": "Mindestens 40 km zurücklegen",
+            "req4": "Teams müssen zusammenbleiben"
+          },
+          "catB": {
+            "title": "Kategorie B – Jugend & Sport (unter 20)",
+            "req1": "Teilnehmende unter 16 Jahren müssen von einem Erwachsenen begleitet werden",
+            "req2": "Mindestens 20 km zurücklegen",
+            "req3": "Empfohlen in Gruppen zu zweit oder mehr zu reisen",
+            "req4": "Ausreichend Wasser und Verpflegung mitführen"
+          },
+          "catC": {
+            "title": "Kategorie C – Zivil",
+            "req1": "Mindestens 30 km zurücklegen",
+            "req2": "Alle erforderlichen Kontrollpunkte ansteuern",
+            "req3": "Teams melden sich gemeinsam an und beenden den Marsch gemeinsam",
+            "req4": "Richtige Wanderausrüstung empfohlen"
+          }
+        },
+        "equipment": {
+          "title": "Ausrüstungsvorgaben",
+          "essential": {
+            "title": "Unverzichtbare Ausrüstung für alle Teilnehmenden",
+            "item1": "Bequeme Wander-/Marschschuhe",
+            "item2": "Wettergerechte Kleidung (mehrere Schichten empfohlen)",
+            "item3": "Wasser­dichte Jacke",
+            "item4": "Personalausweis",
+            "item5": "Wasserflasche oder Trinksystem",
+            "item6": "Energie­reiche Snacks",
+            "item7": "Erste-Hilfe-Set",
+            "item8": "Voll aufgeladenes Mobiltelefon"
+          },
+          "recommended": {
+            "title": "Empfohlene Zusatz­ausrüstung",
+            "item1": "Karte der Region",
+            "item2": "Kompass oder GPS-Gerät",
+            "item3": "Kleiner Rucksack",
+            "item4": "Sonnen­schutz und Hut",
+            "item5": "Wander­stöcke",
+            "item6": "Extra-Socken",
+            "item7": "Blasen­pflaster",
+            "item8": "Taschenlampe oder Stirnlampe"
+          }
+        },
+        "safety": {
+          "title": "Sicherheits­informationen",
+          "description": "Die Sicherheit aller Teilnehmenden hat höchste Priorität. Bitte beachte folgende Hinweise:",
+          "guideline1": "Medizinische Betreuung an Kontrollpunkten und über Rettungs­dienste verfügbar.",
+          "guideline2": "Im Notfall 112 oder die Event-Notrufnummer anrufen.",
+          "guideline3": "Bei Unfähigkeit den Marsch fortzusetzen, informiere das nächste Kontrollpunkt-Team.",
+          "guideline4": "Wetter­prognosen vor dem Event prüfen und entsprechende Kleidung wählen.",
+          "guideline5": "Den ganzen Marsch über hydriert bleiben.",
+          "guideline6": "Natur und Tierwelt respektieren."
+        },
+        "download": "Komplettes Reglement herunterladen (bald verfügbar)"
+      },
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "questions": {
+          "q1": {
+            "question": "Wodurch unterscheidet sich der Berner Distanzmarsch von anderen Märschen?",
+            "answer": "Im Gegensatz zu traditionellen Märschen mit festen Routen können die Teilnehmenden hier ihren eigenen Weg zwischen den Kontrollpunkten wählen. Diese Freiheit macht jede Erfahrung einzigartig und persönlich."
+          },
+          "q2": {
+            "question": "Wie melde ich mich an?",
+            "answer": "Du kannst dich online über unsere Anmeldeseite registrieren. Die Anmeldung ist bis zum 15. November 2025 geöffnet, wir empfehlen jedoch eine frühzeitige Anmeldung."
+          },
+          "q3": {
+            "question": "Wie hoch ist die Anmeldegebühr?",
+            "answer": "Die Gebühr beträgt CHF 25.00 für Erwachsene und CHF 20.00 für Jugendliche unter 20 Jahren. Kinder unter 7 Jahren nehmen gratis teil. Zahlung nur bar (CHF) vor Ort. Keine Kreditkarten oder Schecks."
+          },
+          "q4": {
+            "question": "Welche Kategorien gibt es?",
+            "answer": "Es gibt drei Hauptkategorien: A – Uniformierte (Militär, Polizei, etc.), B – Jugend & Sport (unter 20), C – Zivil. In A und C gibt es zusätzlich Gruppenoptionen."
+          },
+          "q5": {
+            "question": "Wie weit muss ich laufen?",
+            "answer": "Die Distanz hängt von der Kategorie und deiner gewählten Route ab: A (Militär) ca. 40 km, B (Jugend) ca. 20 km, C (Zivil) ca. 30 km. Das endgültige Schema für 2025 wird rechtzeitig veröffentlicht."
+          },
+          "q6": {
+            "question": "Brauche ich Spezialausrüstung?",
+            "answer": "Du solltest gute Wanderschuhe, wettergerechte Kleidung, Wasser, Snacks und einen kleinen Rucksack dabei haben. Kategorie A-Teilnehmende tragen ihre offizielle Uniform. Eine detaillierte Ausrüstungsliste steht im Reglement."
+          },
+          "q7": {
+            "question": "Wie plane ich meine Route?",
+            "answer": "Sobald das offizielle Distanzschema veröffentlicht ist, siehst du alle Kontrollpunkte. Du entscheidest dann, welche Punkte du in welcher Reihenfolge ansteuern möchtest. Nutze Online-Karten oder traditionelle Karten zur Planung."
+          },
+          "q8": {
+            "question": "Was passiert, wenn ich den Marsch nicht beenden kann?",
+            "answer": "Informiere in diesem Fall das nächste Kontrollpunkt-Team. Sie organisieren bei Bedarf den Rücktransport zum Start-/Zielbereich. Deine Sicherheit hat Vorrang, und es ist keine Schande, nicht das gesamte Pensum zu schaffen."
+          },
+          "q9": {
+            "question": "Können internationale Teilnehmende mitmachen?",
+            "answer": "Natürlich! Wir heißen Teilnehmende aus aller Welt willkommen. Der Berner Distanzmarsch hat eine lange Tradition internationaler Beteiligung, insbesondere im Militärbereich."
+          },
+          "q10": {
+            "question": "Wie komme ich zum Startpunkt?",
+            "answer": "Der Marsch 2025 startet in Ins, Kanton Bern. Detaillierte Anfahrts- und Verkehrsinfos werden rechtzeitig veröffentlicht. Ins ist mit dem Zug aus den wichtigsten Schweizer Städten erreichbar."
+          }
+        },
+        "moreQuestions": {
+          "title": "Noch Fragen?",
+          "contact": "Kontaktiere das Organisationskomitee unter"
+        }
+      },
+      "ctaBanner": {
+        "title": "Bereit für den 67. Berner Distanzmarsch?",
+        "subtitle": "Melde dich heute an und werde Teil dieser einzigartigen Schweizer Tradition!"
+      }
+    },
+    "leaderboards": {
+      "header": {
+        "title": "Ranglisten",
+        "subtitle": "Ergebnisse und Platzierungen vergangener Berner Distanzmärsche"
+      },
+      "filters": {
+        "year": "Jahr",
+        "category": "Kategorie"
+      },
+      "categories": {
+        "catAMen": "Kategorie A – Männer (Uniformiert)",
+        "catAWomen": "Kategorie A – Frauen (Uniformiert)",
+        "catAGroup": "Kategorie A – Gruppe (Uniformiert)",
+        "catB": "Kategorie B – Jugend & Sport",
+        "catCMen": "Kategorie C – Männer",
+        "catCWomen": "Kategorie C – Frauen",
+        "catCGroup": "Kategorie C – Gruppe"
+      },
+      "table": {
+        "rank": "Platz",
+        "name": "Name",
+        "country": "Land",
+        "time": "Zeit",
+        "distance": "Distanz"
+      },
+      "stats": {
+        "title": "Interessante Statistiken",
+        "mostWins": {
+          "title": "Meiste Siege",
+          "value": "Johannes Schmidt",
+          "description": "3 Siege in Kategorie A – Männer"
+        },
+        "fastestTime": {
+          "title": "Beste Zeit",
+          "value": "4:21:05",
+          "description": "Thomas Huber (2023, Kategorie A – Männer)"
+        },
+        "mostConsistentTeam": {
+          "title": "Konsequentestes Team",
+          "value": "Team Alpine",
+          "description": "Nie unter Platz 2"
+        },
+        "mostRepresentedCountry": {
+          "title": "Häufigstes Land",
+          "value": "Schweiz",
+          "description": "65 % aller Teilnehmenden"
+        }
+      },
+      "archive": {
+        "title": "Archiv der Ranglisten",
+        "description": "Suchst du ältere Ergebnisse? Sieh dir unser Archiv vergangener Ranglisten an:",
+        "viewComplete": "Komplettes Archiv anzeigen"
+      },
+      "records": {
+        "title": "Allzeit-Rekorde",
+        "categories": {
+          "catAMen": "Kategorie A – Männer",
+          "catAWomen": "Kategorie A – Frauen",
+          "catAGroup": "Kategorie A – Gruppe",
+          "catB": "Kategorie B",
+          "catCMen": "Kategorie C – Männer",
+          "catCWomen": "Kategorie C – Frauen",
+          "catCGroup": "Kategorie C – Gruppe",
+          "participations": "Meiste Teilnahmen"
+        }
+      }
+    },
+    "statistics": {
+      "header": {
+        "title": "Statistiken",
+        "subtitle": "Daten und Erkenntnisse vergangener Berner Distanzmärsche"
+      },
+      "intro": "Der Berner Distanzmarsch sammelt seit den 1960er Jahren Daten. Diese Statistiken bieten Einblicke in Teilnehmertrends, internationale Beteiligung und andere interessante Fakten zu diesem einzigartigen Event.",
+      "chartTabs": {
+        "participation": "Teilnahmen",
+        "international": "International",
+        "ageGroups": "Altersgruppen",
+        "completionRates": "Abschlussraten"
+      },
+      "charts": {
+        "participants": {
+          "title": "Teilnehmende nach Jahr und Kategorie",
+          "subtitle": "Anzahl der Teilnehmenden von 2015 bis 2024",
+          "legend": {
+            "catA": "Kategorie A (Militär)",
+            "catB": "Kategorie B (Jugend)",
+            "catC": "Kategorie C (Zivil)"
+          },
+          "loading": "Lade Diagrammdaten…"
+        },
+        "international": {
+          "title": "Internationale Beteiligung",
+          "subtitle": "Prozentsatz der Teilnehmenden nach Herkunftsland (2024)"
+        },
+        "ageDistribution": {
+          "title": "Altersverteilung",
+          "subtitle": "Prozentsatz der Teilnehmenden nach Altersgruppe (2024)"
+        },
+        "completionRates": {
+          "title": "Abschlussraten",
+          "subtitle": "Prozentsatz der Teilnehmenden, die den Marsch abgeschlossen haben"
+        }
+      },
+      "keyStats": {
+        "title": "Schlüsselstatistiken",
+        "participants": {
+          "value": "598",
+          "label": "Teilnehmende 2024",
+          "trend": "5,1 % mehr als 2023"
+        },
+        "tradition": {
+          "value": "67",
+          "label": "Jahre Tradition",
+          "trend": "Seit 1960"
+        },
+        "countries": {
+          "value": "14",
+          "label": "Länder vertreten",
+          "trend": "2 neue Länder 2024"
+        },
+        "totalDistance": {
+          "value": "23 920",
+          "label": "Gesamt km 2024",
+          "trend": "1 160 km mehr als 2023"
+        }
+      },
+      "interestingFacts": {
+        "title": "Interessante Fakten",
+        "fastestTime": {
+          "title": "Beste Zeit",
+          "description": "Die schnellste je gelaufene Zeit ist 4:21:05 von Thomas Huber 2023 (Kategorie A)."
+        },
+        "youngestParticipant": {
+          "title": "Jüngste Teilnehmerin",
+          "description": "Die jüngste Teilnehmerin war die 7-jährige Emma Keller, die 2022 die Jugendstrecke absolvierte."
+        },
+        "oldestParticipant": {
+          "title": "Ältester Teilnehmer",
+          "description": "Der älteste Teilnehmer war der 82-jährige Johann Weber, der 2024 seinen 45. Marsch abschloss."
+        },
+        "largestGroup": {
+          "title": "Größte Gruppe",
+          "description": "Die größte Gruppe war 2019 die „Bern Veterans“ mit 28 Mitgliedern."
+        },
+        "farthestTraveler": {
+          "title": "Weitester Anreisender",
+          "description": "2023 reiste ein Teilnehmer aus Neuseeland (18 000 km) an."
+        },
+        "perfectAttendance": {
+          "title": "Perfekte Teilnahme",
+          "description": "Paul Fürst hat an allen 66 Ausgaben ohne Unterbrechung teilgenommen."
+        }
+      },
+      "dataDownload": {
+        "title": "Historische Daten",
+        "description": "Für detailliertere Statistiken lade unsere Datendateien herunter:",
+        "participationData": "Teilnahmedaten (2000–2024)",
+        "resultsArchive": "Komplettes Ergebnisarchiv"
+      }
+    },
+    "history": {
+      "header": {
+        "title": "Geschichte",
+        "subtitle": "Die reiche Tradition des Berner Distanzmarsches"
+      },
+      "intro": {
+        "title": "Die Anfänge",
+        "paragraph1": "Der Berner Distanzmarsch, ursprünglich Nachtmarsch genannt, hat seine Wurzeln in den frühen 1960er Jahren. Er wurde von zwei Offizieren der Bern-Sektion der SVMLT (Schweizer Verein Militärischer Technischer Truppen), Heinz Krähenbühl und Walter Bürki, gegründet und gilt als Gründerväter dieses Traditionsanlasses.",
+        "paragraph2": "Die Idee entstand aus praktischen Erwägungen: Aufgrund von Benzinrationierungen besaß nicht jeder Haushalt ein Auto. Die Gründer hatten die innovative Idee, dass sich alle Mitglieder zu Fuß am Versammlungsort treffen und das mit einem Wettkampf verbinden könnten.",
+        "paragraph3": "So entstand der Berner Distanzmarsch, eine Tradition, die sich über sechs Jahrzehnte entwickelt hat und ein wichtiger Teil des Schweizer Militär- und Kulturerbes ist."
+      },
+      "timeline": {
+        "title": "Zeitleiste des Distanzmarsches",
+        "events": {
+          "event1": {
+            "year": "1960",
+            "title": "Der erste Marsch",
+            "description": "Der Berner Distanzmarsch wurde von Heinz Krähenbühl und Walter Bürki ins Leben gerufen. Er begann als Militärwettkampf in Verbindung mit der Generalversammlung der Bern-Sektion der SVMLT."
+          },
+          "event2": {
+            "year": "1960er",
+            "title": "Frühe Entwicklung",
+            "description": "Der Anlass dauerte von Samstag 17:00 bis Sonntag 07:00. Nur Marschierende in Uniform (Militär, Bahn, Post, Zivilschutz, Feuerwehr etc.) durften teilnehmen."
+          },
+          "event3": {
+            "year": "1980er",
+            "title": "Internationale Teilnahme",
+            "description": "Eine Reservisten-Delegation aus dem Saarland besuchte den Marsch, was zu einer engen Kameradschaft zwischen dem Saarländischen Reservistenverband und der Bern-Sektion führte."
+          },
+          "event4": {
+            "year": "1990er",
+            "title": "Entwicklung der Tradition",
+            "description": "Der Distanzmarsch wurde von der Generalversammlung getrennt, um sich stärker auf den Marsch selbst konzentrieren zu können."
+          },
+          "event5": {
+            "year": "2000",
+            "title": "Neue Leitung",
+            "description": "Hptm Ruedi Lehmann setzte sich dafür ein, den Berner Distanzmarsch in einer kritischen Phase zu erhalten."
+          },
+          "event6": {
+            "year": "2020",
+            "title": "Remote-Marsch",
+            "description": "Während der COVID-19-Pandemie fand erstmals der Remote-Marsch 2020 statt, ein Meilenstein für Flexibilität und Engagement des Organisationsteams."
+          },
+          "event7": {
+            "year": "2025",
+            "title": "67. Ausgabe",
+            "description": "Die 67. Ausgabe wird unter der Leitung von Hptadj Adrian Venner fortgeführt."
+          }
+        }
+      },
+      "traditions": {
+        "title": "Entwickelte Traditionen",
+        "paragraph1": "Die Rahmenbedingungen haben sich über die Jahrzehnte geändert. Ursprünglich dauerte der Anlass von Samstag 17:00 bis Sonntag 07:00, und nur Uniformträger waren zugelassen. Zivile Begleiter waren ausgeschlossen, und die Bewertung erfolgte nach einem speziellen Punktesystem, bei dem Waffe und Rucksackgewicht zählten.",
+        "paragraph2": "In den 1980ern erhielt der Marsch eine internationale Dimension, als eine Reservistendelegation aus dem Saarland teilnahm. Dies führte zu einer offiziellen Partnerschaft zwischen dem Saarländischen Reservistenverband und der Bern-Sektion.",
+        "paragraph3": "Ein wichtiger Wandel war die Trennung von Marsch und Generalversammlung, weil viele Teilnehmende sich nach dem Marsch zurückzogen und an der Versammlung nicht mehr aktiv teilnahmen.",
+        "paragraph4": "In kritischen Zeiten, als Stimmen das Ende der Tradition forderten, kämpfte Hptm Ruedi Lehmann für deren Fortbestand.",
+        "paragraph5": "Heute garantiert Hptadj Adrian Venner mit seinem Team die langfristige Fortführung des Berner Distanzmarsches, indem er Tradition und Moderne vereint.",
+        "stats": {
+          "editions": "Ausgaben",
+          "peakParticipants": "Max. Teilnehmende",
+          "countriesRepresented": "Vertretene Länder",
+          "yearsOfTradition": "Jahre Tradition"
+        }
+      },
+      "notableParticipants": {
+        "title": "Bemerkenswerte Teilnehmer",
+        "participant1": {
+          "name": "Pol Wm Fürst Paul",
+          "achievement": "Keine Auslassungen bei allen Märschen",
+          "description": "Ein lebendiges Beispiel für Treue zur Tradition des Berner Distanzmarsches."
+        },
+        "participant2": {
+          "name": "Heinz Krähenbühl",
+          "achievement": "Mitbegründer",
+          "description": "Einer der Gründerväter, der den Distanzmarsch in den frühen 1960ern initiierte."
+        },
+        "participant3": {
+          "name": "Hptm Ruedi Lehmann",
+          "achievement": "Erhaltungs­kämpfer",
+          "description": "Setzte sich in einer kritischen Phase für die Fortführung des Marsches ein."
+        },
+        "participant4": {
+          "name": "Hptadj Adrian Venner",
+          "achievement": "Aktueller Kommandant",
+          "description": "Führt den Berner Distanzmarsch in die Zukunft und bewahrt seine Tradition."
+        }
+      },
+      "legacy": {
+        "title": "Ein lebendiges Erbe",
+        "paragraph1": "Der Berner Distanzmarsch ist mehr als eine körperliche Herausforderung – er verkörpert ein lebendiges Erbe schweizerischer Militärtradition, Kameradschaft und Anpassungsfähigkeit. Weltgeschehen, gesellschaftlicher Wandel und neue Zeiten haben ihn geprägt, ohne den Kern zu verlieren.",
+        "paragraph2": "2020 bewies der Marsch seine Innovationskraft mit dem Remote-Marsch während der Pandemie und hielt die Tradition trotz globaler Einschränkungen aufrecht.",
+        "paragraph3": "Heute nehmen jährlich rund 600 Teilnehmende teil. Das aktuelle Leitungsteam sorgt dafür, dass diese geschätzte Tradition gesichert in die Zukunft getragen wird und die Verdienste aller Beteiligten geehrt werden.",
+        "paragraph4": "Mit Blick auf die 67. Ausgabe 2025 feiern wir nicht nur eine sportliche Herausforderung in der wunderschönen Schweizer Landschaft, sondern auch ein reiches Kulturerbe, das Generationen verbindet und Grenzen überschreitet."
+      }
+    },
+    "gallery": {
+      "header": {
+        "title": "Galerie",
+        "subtitle": "Bilder vergangener Berner Distanzmärsche"
+      },
+      "filters": {
+        "byYear": {
+          "title": "Nach Jahr filtern",
+          "allYears": "Alle Jahre"
+        },
+        "byCategory": {
+          "title": "Nach Kategorie filtern",
+          "allCategories": "Alle Kategorien",
+          "participants": "Teilnehmende",
+          "landscapes": "Landschaften",
+          "ceremonies": "Zeremonien",
+          "remoteMarch": "Remote-Marsch 2020"
+        }
+      },
+      "noResults": {
+        "title": "Keine Bilder gefunden",
+        "description": "Ändere deine Filtereinstellungen, um mehr Bilder zu sehen.",
+        "resetFilters": "Filter zurücksetzen"
+      },
+      "modal": {
+        "year": "Jahr:",
+        "category": "Kategorie:"
+      },
+      "submitPhotos": {
+        "title": "Reiche deine Fotos ein",
+        "description": "Hast du Bilder vergangener Berner Distanzmärsche, die du teilen möchtest? Wir freuen uns über Einsendungen von Teilnehmenden und Zuschauern.",
+        "requirements": {
+          "title": "Foto­anforderungen",
+          "req1": "Hochauflösende Bilder (mindestens 1500 px Breite)",
+          "req2": "JPG- oder PNG-Format",
+          "req3": "Datum und Ort in der Beschreibung angeben",
+          "req4": "Maximal 10 Bilder pro Einsendung"
+        },
+        "howToSubmit": {
+          "title": "So reichst du ein",
+          "description": "Sende deine Fotos an medien@bernerdm.ch mit dem Betreff „Bernese Distance March Photos“. Bitte gib deinen Namen, das Jahr des Marsches und eine kurze Beschreibung zu jedem Bild an."
+        },
+        "submitButton": "Fotos einreichen"
+      },
+      "videoSection": {
+        "title": "Video­highlights",
+        "highlightsTitle": "Highlights vom 66. Berner Distanzmarsch (2024)",
+        "description": "Erlebe die Höhepunkte des 66. Marsches 2024. Dieses Video zeigt die schönen Routen, begeisterte Teilnehmende und den Kameradschaftsgeist, der dieses Event besonders macht.",
+        "viewMoreVideos": "Weitere Videos ansehen"
+      }
+    },
+    "notFound": {
+      "title": "404 – Seite nicht gefunden",
+      "message": "Es scheint, du hast die Route verlassen!",
+      "help": "Keine Sorge! Anders als beim Marsch helfen wir dir, zurückzufinden.",
+      "returnHome": "Zur Startseite",
+      "viewCurrentMarch": "Aktuellen Marsch ansehen",
+      "lookingFor": {
+        "title": "Suchst du etwas Bestimmtes?",
+        "contact": "Bei Fragen kontaktiere uns bitte."
+      }
+    }
+  }
+}
