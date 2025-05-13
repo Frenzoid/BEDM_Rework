@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/CurrentMarch.css';
 
 const CurrentMarch = () => {
   const [activeTab, setActiveTab] = useState('overview');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
+  };
+
+  const handleImageClick = (e) => {
+    setSelectedImage({
+      src: e.target.src,
+      alt: e.target.alt
+    });
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
   };
 
   return (
@@ -27,6 +39,13 @@ const CurrentMarch = () => {
               onClick={() => handleTabChange('overview')}
             >
               Overview
+            </button>
+
+            <button
+              className={`tab ${activeTab === 'how-it-works' ? 'active' : ''}`}
+              onClick={() => handleTabChange('how-it-works')}
+            >
+              How It Works
             </button>
             <button
               className={`tab ${activeTab === 'distance-scheme' ? 'active' : ''}`}
@@ -59,21 +78,21 @@ const CurrentMarch = () => {
                 <h2>67th Bernese Distance March</h2>
                 <div className="march-info-cards">
                   <div className="info-card">
-                    <div className="icon">
+                    <div className="icon p-4">
                       <i className="fas fa-calendar-day"></i>
                     </div>
                     <h3>Date</h3>
                     <p>December 6th, 2025</p>
                   </div>
                   <div className="info-card">
-                    <div className="icon">
+                    <div className="icon p-4">
                       <i className="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>Location</h3>
                     <p>Ins, Canton of Bern, Switzerland</p>
                   </div>
                   <div className="info-card">
-                    <div className="icon">
+                    <div className="icon p-4">
                       <i className="fas fa-clock"></i>
                     </div>
                     <h3>Start Time</h3>
@@ -92,6 +111,10 @@ const CurrentMarch = () => {
 
                   <div className="cta-buttons">
                     <Link to="/registration" className="btn btn-primary">Register Now</Link>
+                    <a href="#how-it-works" className="btn btn-secondary" onClick={(e) => {
+                      e.preventDefault();
+                      handleTabChange('how-it-works');
+                    }}>How It Works</a>
                     <a href="#distance-scheme" className="btn btn-secondary" onClick={(e) => {
                       e.preventDefault();
                       handleTabChange('distance-scheme');
@@ -245,6 +268,237 @@ const CurrentMarch = () => {
               </motion.div>
             )}
 
+            {activeTab === 'how-it-works' && (
+              <motion.div
+                className="distance-scheme-content"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <h2>How Does the March Work?</h2>
+
+                <div className="overview-description">
+                  <p>
+                    The Bernese Distance March is distinguished by a unique approach to course design that sets it apart from many other marching events. While most marches require participants to follow a fixed route and register the distance in advance, participants of the Bernese Distance March have the freedom to choose their route individually. They orient themselves according to a given distance scheme and can decide how far they wish to go. This flexible structure not only presents a physical challenge but also adds an extra task in navigation and orientation in the terrain.
+                  </p>
+                </div>
+
+                <div className="scheme-info">
+                  <h3>Example of the Distance Scheme</h3>
+                  <div className="featured-image">
+                    <img
+                      src="https://www.bernerdm.ch/wp-content/uploads/2025/02/Muster_Distanzschema.png"
+                    />
+                  </div>
+                </div>
+
+                <div className="regulations-section mt-4">
+                  <h3>Here's an example:</h3>
+
+                  <h4>Before the March:</h4>
+                  <div className="overview-description">
+                    <p>
+                      All participants gather at the march center before the starting time and receive their march card. If you have registered for shooting: This will take place before the march, so go directly to the shooting range or profit from our shuttle service, departing from the march center.
+                    </p>
+                  </div>
+
+                  <div className="march-images">
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241130115404-768x1024.jpg"
+                        alt="Participants at the march center"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/DSC_0064-1536x1021-Kopie-1024x681.jpg"
+                        alt="Shuttle Service"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241130115000-Kopie-1024x768.jpg"
+                        alt="Participants preparing"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="overview-description">
+                    <p>
+                      Once you've received your march card, you'll choose a route (of at least 10 km). The numbers in the black boxes indicate the number of kilometers you will walk to reach the desired checkpoint. For example, if you want to walk from the start to checkpoints C, D, and then back, according to the scheme, that would be 6 km + 5 km + 7 km = 18 km.
+                    </p>
+                  </div>
+
+                  <div className="featured-image">
+                    <img
+                      src="https://www.bernerdm.ch/wp-content/uploads/2025/02/grafik-2-1024x566.png"
+                    />
+                  </div>
+                </div>
+
+                <div className="regulations-section mt-4">
+                  <h4>During the March:</h4>
+                  <div className="overview-description">
+                    <p>
+                      From 12:00 PM, the commander will start the march, and you can begin! The route is signposted, and members of the BEDM team will also be on the route to assist with any questions or emergencies.
+                    </p>
+                    <p>
+                      Once you reach your first checkpoint, you can have the BEDM team member log your distance. The checkpoints are strategically located in inns that are both easily accessible and easy to find. During a break, you can relax here and be served drinks and small snacks by the friendly staff before continuing on the march.
+                    </p>
+                  </div>
+
+                  <div className="march-images">
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/DSC_0002-1024x685.jpg"
+                        alt="BEDM Checkpoint"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/DSC_0018-1024x685.jpg"
+                        alt="Checkpoint"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/DSC_0028-1024x685.jpg"
+                        alt="Participants at a checkpoint"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG_4500-1024x683.jpg"
+                        alt="Participants on the route"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="regulations-section mt-4">
+                  <h4>After the March:</h4>
+                  <div className="overview-description">
+                    <p>
+                      After completing your march, return to the march center and hand in your march card to the BEDM team. Upon request, you will receive a certificate, a shooting badge, and a medal. Now you can relax and refresh at the march center—our guesthouse is ready to welcome you.
+                    </p>
+                    <p>
+                      At 11:00 PM, the rankings for the various categories will be announced—at which point the march day officially ends.
+                    </p>
+                  </div>
+
+                  <div className="march-images">
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241130101143-768x1024.jpg"
+                        alt="March completion"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241130101204-1024x768.jpg"
+                        alt="Printing some stuff"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241130183501-768x1024.jpg"
+                        alt="Certificate"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241130210412-1024x768.jpg"
+                        alt="Participants relaxing"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/DSC_0381-1536x1021-1-1024x681.jpg"
+                        alt="March center"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/DSC_0425-1536x1021-1-1024x681.jpg"
+                        alt="Awards ceremony"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                    <div className="featured-image">
+                      <img
+                        src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241129213336-1024x768.jpg"
+                        alt="Top 3 Winners"
+                        onClick={handleImageClick}
+                        className="clickable-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="overview-description">
+                  <p>
+                    The <Link to="/leaderboards">rankings</Link> will be uploaded to the website in the weeks following the march.
+                  </p>
+                  <p>
+                    For more information regarding the shooting program or the march itself, feel free to take a look at our regulations (<Link to="/download">shooting regulations, march regulations</Link>).
+                  </p>
+                  <p className="text-center">
+                    <strong>"Have fun with the march!"</strong>
+                  </p>
+                </div>
+
+                <div className="march-images">
+                  <div className="featured-image">
+                    <img
+                      src="https://www.bernerdm.ch/wp-content/uploads/2025/02/hiking-bears.jpg"
+                    />
+                  </div>
+                  <div className="featured-image">
+                    <img
+                      src="https://www.bernerdm.ch/wp-content/uploads/2025/02/image-1024x680.png"
+                    />
+                  </div>
+                </div>
+
+                <div className="overview-description">
+                  <p className="text-center">
+                    <strong>Bernese Distance March 2025 – 2027: March with us to Ins!</strong>
+                  </p>
+                </div>
+
+                <div className="cta-buttons">
+                  <Link to="/registration" className="btn btn-primary">Register Now</Link>
+                  <button onClick={() => handleTabChange('regulations')} className="btn btn-secondary">View Regulations</button>
+                </div>
+              </motion.div>
+            )}
+
             {activeTab === 'regulations' && (
               <motion.div
                 className="regulations-content"
@@ -254,7 +508,7 @@ const CurrentMarch = () => {
               >
                 <h2>March Regulations</h2>
 
-                <div className="regulations-section">
+                <div className="regulations-section mt-4">
                   <h3>General Rules</h3>
                   <ul className="regulations-list">
                     <li>
@@ -284,7 +538,7 @@ const CurrentMarch = () => {
                   </ul>
                 </div>
 
-                <div className="regulations-section">
+                <div className="regulations-section mt-4">
                   <h3>Category-Specific Requirements</h3>
 
                   <div className="category-regulation">
@@ -530,6 +784,38 @@ const CurrentMarch = () => {
           <Link to="/registration" className="btn btn-large">Register Now</Link>
         </div>
       </div>
+
+      {/* Image Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            className="image-modal-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closeModal}
+          >
+            <motion.div
+              className="image-modal"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: 'spring', damping: 25 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button className="modal-close" onClick={closeModal}>
+                <i className="fas fa-times"></i>
+              </button>
+              <div className="modal-image-container">
+                <img src={selectedImage.src} alt={selectedImage.alt} className="modal-image" />
+              </div>
+              <div className="modal-info">
+                {selectedImage.alt && <p className="modal-caption">{selectedImage.alt}</p>}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

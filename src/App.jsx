@@ -16,7 +16,9 @@ import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-// Styles
+// Style
+// import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
 
 function App() {
@@ -32,8 +34,8 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/registration" element={<Registration />} />
             <Route path="/current-march" element={<CurrentMarch />} />
+            <Route path="/registration" element={<Registration />} />
             <Route path="/history" element={<History />} />
             <Route path="/leaderboards" element={<Leaderboards />} />
             <Route path="/statistics" element={<Statistics />} />

@@ -96,11 +96,11 @@ const Header = () => {
             <li className={location.pathname === '/' ? 'active' : ''}>
               <Link to="/">Home</Link>
             </li>
-            <li className={location.pathname === '/registration' ? 'active' : ''}>
-              <Link to="/registration">Registration</Link>
-            </li>
             <li className={location.pathname === '/current-march' ? 'active' : ''}>
               <Link to="/current-march">Current March</Link>
+            </li>
+            <li className={location.pathname === '/registration' ? 'active' : ''}>
+              <Link to="/registration">Registration</Link>
             </li>
             <li className={location.pathname.includes('/history') ? 'active' : ''}>
               <Link to="/history">History</Link>
@@ -127,11 +127,11 @@ const Header = () => {
             <motion.li variants={linkVariants} className={location.pathname === '/' ? 'active' : ''}>
               <Link to="/">Home</Link>
             </motion.li>
-            <motion.li variants={linkVariants} className={location.pathname === '/registration' ? 'active' : ''}>
-              <Link to="/registration">Registration</Link>
-            </motion.li>
             <motion.li variants={linkVariants} className={location.pathname === '/current-march' ? 'active' : ''}>
               <Link to="/current-march">Current March</Link>
+            </motion.li>
+            <motion.li variants={linkVariants} className={location.pathname === '/registration' ? 'active' : ''}>
+              <Link to="/registration">Registration</Link>
             </motion.li>
             <motion.li variants={linkVariants} className={location.pathname.includes('/history') ? 'active' : ''}>
               <Link to="/history">History</Link>

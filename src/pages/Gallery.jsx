@@ -238,9 +238,12 @@ const Gallery = () => {
                     </div>
                   </div>
                 </div>
-                <div className="gallery-caption">
-                  <p>{image.caption}</p>
-                </div>
+                {image.caption && (
+                  <div className="gallery-caption">
+                    <p>{image.caption}</p>
+                  </div>
+                )}
+
               </motion.div>
             ))}
           </AnimatePresence>
@@ -289,9 +292,9 @@ const Gallery = () => {
                 <div className="modal-info">
                   <div className="modal-year">Year: {selectedImage.year}</div>
                   <div className="modal-category">
-                    Category: {categories.find(cat => cat.id === selectedImage.category)?.name}
+                    {selectedImage.category && `Category: ${selectedImage.category}`}
                   </div>
-                  <p className="modal-caption">{selectedImage.caption}</p>
+                  {selectedImage.caption && <p className="modal-caption">{selectedImage.caption}</p>}
                 </div>
               </motion.div>
             </motion.div>

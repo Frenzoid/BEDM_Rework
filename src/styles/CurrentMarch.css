@@ -1,7 +1,5 @@
 /* CurrentMarch.css - Styles for the current march page */
 
-
-
 /* Tabs Container */
 .tabs-container {
   margin-bottom: var(--spacing-2xl);
@@ -153,7 +151,7 @@
 .featured-image {
   border-radius: var(--border-radius-lg);
   overflow: hidden;
-  height: 400px;
+  height: 600px;
   box-shadow: var(--shadow-md);
 }
 
@@ -635,6 +633,155 @@
   }
 
   .map-placeholder {
+    height: 250px;
+  }
+}
+
+/* How It Works Tab Styles */
+.march-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin: var(--spacing-xl) 0;
+  justify-items: center;
+  text-align: center;
+}
+
+.march-images .featured-image {
+  height: 250px;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.march-images .featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Modal styles */
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+}
+
+.image-modal {
+  background-color: var(--light);
+  border-radius: var(--border-radius-lg);
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  width: 40px;
+  height: 40px;
+  background-color: var(--light);
+  color: var(--dark);
+  border: none;
+  border-radius: var(--border-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
+}
+
+.modal-close:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.modal-image-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.modal-info {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--gray-lighter);
+}
+
+.modal-caption {
+  margin-bottom: 0;
+  color: var(--dark);
+}
+
+/* Clickable image styling */
+.clickable-image {
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.clickable-image:hover {
+  transform: scale(1.02);
+}
+
+/* Media queries for responsive behavior */
+@media (max-width: 992px) {
+  .march-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-image-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-image-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .march-images {
+    grid-template-columns: 1fr;
+  }
+
+  .march-images .featured-image {
+    height: auto;
+    max-height: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .modal-image-container {
     height: 250px;
   }
 }

@@ -91,7 +91,7 @@
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  color: var(--warning);
+  color: var(--primary);
 }
 
 .marker.finish {
@@ -101,7 +101,7 @@
 }
 
 .marker.pulse i {
-  animation: pulse 2s infinite;
+  animation: pulse 1s infinite;
 }
 
 .map-routes {
@@ -116,7 +116,8 @@
   position: absolute;
   top: 40px;
   left: 65px;
-  width: calc(100% - 130px);
+  margin-left: 10px;
+  width: calc(100% - 160px);
   height: 3px;
   background-color: var(--secondary);
 }
@@ -128,8 +129,8 @@
   width: 3px;
   height: 70px;
   background: repeating-linear-gradient(to bottom,
-      var(--warning) 0,
-      var(--warning) 5px,
+      var(--primary) 0,
+      var(--primary) 5px,
       transparent 5px,
       transparent 10px);
 }
