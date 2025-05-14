@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import '../styles/Header.css';
@@ -75,6 +75,7 @@ const Header = () => {
     open: {
       opacity: 1,
       height: 'auto',
+      visibility: 'visible',
       transition: {
         staggerChildren: 0.1,
         duration: 0.3,
@@ -83,6 +84,7 @@ const Header = () => {
     closed: {
       opacity: 0,
       height: 0,
+      visibility: 'hidden',
       transition: {
         staggerChildren: 0.05,
         staggerDirection: -1,
@@ -172,26 +174,28 @@ const Header = () => {
               <span className="dropdown-arrow">▾</span>
             </button>
 
-            {languageDropdownOpen && (
-              <motion.div
-                className="language-dropdown"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.2 }}
-              >
-                {languages.map((language) => (
-                  <button
-                    key={language.code}
-                    className={`language-option ${language.code === i18n.language ? 'active' : ''}`}
-                    onClick={() => changeLanguage(language.code)}
-                  >
-                    <span className="language-flag">{language.flag}</span>
-                    <span className="language-name">{language.name}</span>
-                  </button>
-                ))}
-              </motion.div>
-            )}
+            <AnimatePresence>
+              {languageDropdownOpen && (
+                <motion.div
+                  className="language-dropdown"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {languages.map((language) => (
+                    <button
+                      key={language.code}
+                      className={`language-option ${language.code === i18n.language ? 'active' : ''}`}
+                      onClick={() => changeLanguage(language.code)}
+                    >
+                      <span className="language-flag">{language.flag}</span>
+                      <span className="language-name">{language.name}</span>
+                    </button>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </nav>
 
