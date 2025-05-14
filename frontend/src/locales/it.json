@@ -4,10 +4,7 @@
     "subtitle": "Una Tradizione dell'Esercito Svizzero",
     "buttons": {
       "registerNow": "Registrati Ora",
-      "learnMore": "Scopri di Più",
-      "viewMore": "Vedi Altro",
-      "submit": "Invia",
-      "reset": "Reimposta"
+      "learnMore": "Scopri di Più"
     },
     "navigation": {
       "home": "Home",
@@ -144,6 +141,7 @@
           "catCGroup": "Categoria C - Gruppo"
         },
         "buttons": {
+          "submitting": "Registrazione in Corso...",
           "submit": "Invia Registrazione",
           "reset": "Reimposta Modulo"
         }
@@ -151,7 +149,7 @@
       "success": {
         "title": "Registrazione Completata con Successo!",
         "thankYou": "Grazie per esserti registrato alla 67ª Marcia di Distanza Bernese. Siamo entusiasti di averti con noi!",
-        "emailSent": "Un'email di conferma è stata inviata a {email} con ulteriori dettagli sull'evento.",
+        "emailSent": "Un'email di conferma è stata inviata a {{email}} con ulteriori dettagli sull'evento.",
         "details": "I tuoi dettagli di registrazione:",
         "name": "Nome:",
         "category": "Categoria:",

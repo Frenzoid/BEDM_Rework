@@ -4,10 +4,7 @@
     "subtitle": "A Swiss Army Tradition",
     "buttons": {
       "registerNow": "Register Now",
-      "learnMore": "Learn More",
-      "viewMore": "View More",
-      "submit": "Submit",
-      "reset": "Reset"
+      "learnMore": "Learn More"
     },
     "navigation": {
       "home": "Home",
@@ -144,6 +141,7 @@
           "catCGroup": "Category C - Group"
         },
         "buttons": {
+          "submitting": "Submitting...",
           "submit": "Submit Registration",
           "reset": "Reset Form"
         }
@@ -151,7 +149,7 @@
       "success": {
         "title": "Registration Successful!",
         "thankYou": "Thank you for registering for the 67th Bernese Distance March. We're excited to have you join us!",
-        "emailSent": "A confirmation email has been sent to {email} with further details about the event.",
+        "emailSent": "A confirmation email has been sent to {{email}} with further details about the event.",
         "details": "Your registration details:",
         "name": "Name:",
         "category": "Category:",

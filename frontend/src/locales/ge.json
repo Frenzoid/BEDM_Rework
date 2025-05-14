@@ -4,10 +4,7 @@
     "subtitle": "E Schwiizerarmeetradition",
     "buttons": {
       "registerNow": "Jetz Amälde",
-      "learnMore": "Meh Erfahre",
-      "viewMore": "Meh Ahluege",
-      "submit": "Abschicke",
-      "reset": "Zrücksetze"
+      "learnMore": "Meh Erfahre"
     },
     "navigation": {
       "home": "Startsiite",
@@ -144,6 +141,7 @@
           "catCGroup": "Kategorie C - Gruppe"
         },
         "buttons": {
+          "submitting": "Aamäldig wird abgeschickt...",
           "submit": "Aamäldig abschicke",
           "reset": "Formular zrücksetze"
         }
@@ -151,7 +149,7 @@
       "success": {
         "title": "Aamäldig erfolgriich!",
         "thankYou": "Danke für dini Aamäldig zum 67. Bärner Distanzmarsch. Mir freue üs, dass du debi bisch!",
-        "emailSent": "E Bestätigungsmail isch a {email} gschickt worde mit wiitere Details zur Veraastaltig.",
+        "emailSent": "E Bestätigungsmail isch a {{email}} gschickt worde mit wiitere Details zur Veraastaltig.",
         "details": "Dini Aamäldigsdetails:",
         "name": "Name:",
         "category": "Kategorie:",

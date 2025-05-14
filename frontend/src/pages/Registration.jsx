@@ -18,6 +18,8 @@ const Registration = () => {
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -41,16 +43,41 @@ const Registration = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // In a real app, we would submit the form data to a server here
-    console.log('Form submitted:', formData);
-    setFormSubmitted(true);
+    setIsSubmitting(true);
+    setError(null);
 
-    // Simulate form submission
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100);
+    try {
+      // Call API to submit form data
+      const response = await fetch('http://localhost:5000/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        console.log('Form submitted successfully:', formData);
+        setFormSubmitted(true);
+
+        // Scroll to top
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 100);
+      } else {
+        console.error('Registration failed:', data.message);
+        setError(data.message || 'Registration failed. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setError('Server error. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {
@@ -66,6 +93,7 @@ const Registration = () => {
       isGroup: false,
       agreeTerms: false
     });
+    setError(null);
   };
 
   // Animation variants
@@ -174,6 +202,13 @@ const Registration = () => {
             variants={containerVariants}
           >
             <h2>{t('pages.registration.form.title')}</h2>
+
+            {error && (
+              <div className="error-message" style={{ color: 'red', marginBottom: '15px', padding: '10px', backgroundColor: '#ffebee', borderRadius: '4px' }}>
+                {error}
+              </div>
+            )}
+
             <form className="registration-form" onSubmit={handleSubmit}>
               <motion.div className="form-row" variants={itemVariants}>
                 <div className="form-group">
@@ -291,21 +326,31 @@ const Registration = () => {
               </motion.div>
 
               <motion.div className="form-actions" variants={itemVariants}>
-                <button type="submit" className="btn btn-primary">{t('pages.registration.form.buttons.submit')}</button>
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? t('pages.registration.form.buttons.submitting') : t('pages.registration.form.buttons.submit')}
+                </button>
                 <button
                   type="reset"
                   className="btn btn-secondary"
-                  onClick={() => setFormData({
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    phone: '',
-                    birthDate: '',
-                    category: '',
-                    groupName: '',
-                    isGroup: false,
-                    agreeTerms: false
-                  })}
+                  onClick={() => {
+                    setFormData({
+                      firstName: '',
+                      lastName: '',
+                      email: '',
+                      phone: '',
+                      birthDate: '',
+                      category: '',
+                      groupName: '',
+                      isGroup: false,
+                      agreeTerms: false
+                    });
+                    setError(null);
+                  }}
+                  disabled={isSubmitting}
                 >
                   {t('pages.registration.form.buttons.reset')}
                 </button>

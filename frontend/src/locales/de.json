@@ -4,10 +4,7 @@
     "subtitle": "Eine Tradition der Schweizer Armee",
     "buttons": {
       "registerNow": "Jetzt anmelden",
-      "learnMore": "Mehr erfahren",
-      "viewMore": "Mehr anzeigen",
-      "submit": "Absenden",
-      "reset": "Zurücksetzen"
+      "learnMore": "Mehr erfahren"
     },
     "navigation": {
       "home": "Startseite",
@@ -144,6 +141,7 @@
           "catCGroup": "Kategorie C – Gruppe"
         },
         "buttons": {
+          "submitting": "Anmeldung wird gesendet...",
           "submit": "Anmeldung absenden",
           "reset": "Formular zurücksetzen"
         }
@@ -151,7 +149,7 @@
       "success": {
         "title": "Anmeldung erfolgreich!",
         "thankYou": "Danke für deine Anmeldung zum 67. Berner Distanzmarsch. Wir freuen uns, dich dabei zu haben!",
-        "emailSent": "Eine Bestätigungs-E-Mail wurde an {email} mit weiteren Informationen zum Ereignis gesendet.",
+        "emailSent": "Eine Bestätigungs-E-Mail wurde an {{email}} mit weiteren Informationen zum Ereignis gesendet.",
         "details": "Deine Anmeldedaten:",
         "name": "Name:",
         "category": "Kategorie:",

@@ -4,10 +4,7 @@
     "subtitle": "Una tradición del Ejército Suizo",
     "buttons": {
       "registerNow": "Regístrate ahora",
-      "learnMore": "Más información",
-      "viewMore": "Ver más",
-      "submit": "Enviar",
-      "reset": "Restablecer"
+      "learnMore": "Más información"
     },
     "navigation": {
       "home": "Inicio",
@@ -144,6 +141,7 @@
           "catCGroup": "Categoría C - Grupo"
         },
         "buttons": {
+          "submitting": "Enviando...",
           "submit": "Enviar inscripción",
           "reset": "Restablecer formulario"
         }
@@ -151,7 +149,7 @@
       "success": {
         "title": "¡Inscripción exitosa!",
         "thankYou": "¡Gracias por inscribirte en la 67.ª Marcha de Distancia de Berna! ¡Estamos emocionados de que participes!",
-        "emailSent": "Se ha enviado un correo de confirmación a {email} con más detalles sobre el evento.",
+        "emailSent": "Se ha enviado un correo de confirmación a {{email}} con más detalles sobre el evento.",
         "details": "Tus datos de inscripción:",
         "name": "Nombre:",
         "category": "Categoría:",

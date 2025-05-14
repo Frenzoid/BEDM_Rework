@@ -4,10 +4,7 @@
     "subtitle": "Une tradition de l’armée suisse",
     "buttons": {
       "registerNow": "Inscrivez-vous maintenant",
-      "learnMore": "En savoir plus",
-      "viewMore": "Voir plus",
-      "submit": "Envoyer",
-      "reset": "Réinitialiser"
+      "learnMore": "En savoir plus"
     },
     "navigation": {
       "home": "Accueil",
@@ -144,6 +141,7 @@
           "catCGroup": "Catégorie C - Groupe"
         },
         "buttons": {
+          "submitting": "Soumission de l’inscription...",
           "submit": "Envoyer l’inscription",
           "reset": "Réinitialiser le formulaire"
         }
@@ -151,7 +149,7 @@
       "success": {
         "title": "Inscription réussie !",
         "thankYou": "Merci pour votre inscription à la 67ᵉ Marche de distance bernoise. Nous sommes ravis de vous compter parmi nous !",
-        "emailSent": "Un e-mail de confirmation a été envoyé à {email} avec plus de détails sur l’événement.",
+        "emailSent": "Un e-mail de confirmation a été envoyé à {{email}} avec plus de détails sur l’événement.",
         "details": "Détails de votre inscription :",
         "name": "Nom :",
         "category": "Catégorie :",
