@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+
+import BerneseMarchMap from '../components/BerneseMarchMap';
+
 import { useTranslation } from 'react-i18next';
 import '../styles/CurrentMarch.css';
 
@@ -241,11 +244,9 @@ const CurrentMarch = () => {
                     </p>
                   </div>
 
-                  <div className="map-placeholder">
-                    <div className="map-overlay">
-                      <i className="fas fa-map-marked-alt"></i>
-                      <p>{t('pages.currentMarch.distanceScheme.map.comingSoon')}</p>
-                    </div>
+                  <div className="map-container">
+                    <h3>Distance Scheme Map</h3>
+                    <BerneseMarchMap />
                   </div>
 
                   <div className="download-section">
