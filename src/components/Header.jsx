@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
 import '../styles/Header.css';
 
 const Header = () => {
@@ -15,11 +14,11 @@ const Header = () => {
   // Languages available in the app with their flag emojis
   const languages = [
     { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'ge', name: 'Schwiizerdütsch', flag: '🇨🇭' },
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'it', name: 'Italiano', flag: '🇮🇹' },
     { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'ge', name: 'Schwiizerdütsch', flag: '🇨🇭' },
   ];
 
   // Get current language
@@ -162,7 +161,7 @@ const Header = () => {
             </li>
           </ul>
 
-          <div className="language-selector ms-4">
+          <div className="language-selector">
             <button
               className="language-toggle"
               onClick={toggleLanguageDropdown}
@@ -171,7 +170,6 @@ const Header = () => {
             >
               <span className="language-flag">{currentLanguage.flag}</span>
               <span className="language-code">{currentLanguage.code.toUpperCase()}</span>
-              <span className="dropdown-arrow">▾</span>
             </button>
 
             <AnimatePresence>

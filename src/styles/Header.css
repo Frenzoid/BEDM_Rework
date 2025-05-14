@@ -70,9 +70,6 @@
   margin: 0;
   line-height: 1.2;
   transition: font-size var(--transition-normal);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .scrolled .site-title h1 {
@@ -100,10 +97,13 @@
 }
 
 .nav-list li {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-list li a {
+  text-align: center;
   display: block;
   color: var(--dark);
   font-family: var(--font-primary);
