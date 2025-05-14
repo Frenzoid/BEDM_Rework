@@ -470,3 +470,10 @@
     font-size: var(--font-size-md);
   }
 }
+
+.text-break {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}

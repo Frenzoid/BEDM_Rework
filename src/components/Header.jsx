@@ -162,7 +162,7 @@ const Header = () => {
             </li>
           </ul>
 
-          <div className="language-selector">
+          <div className="language-selector ms-4">
             <button
               className="language-toggle"
               onClick={toggleLanguageDropdown}

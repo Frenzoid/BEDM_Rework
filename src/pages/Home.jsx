@@ -162,7 +162,7 @@ const Home = () => {
             <p>
               {t('pages.home.cta.subtitle')}
             </p>
-            <Link to="/registration" className="btn btn-large">
+            <Link to="/registration" className="btn btn-large text-break">
               {t('pages.home.cta.button')}
             </Link>
           </div>
