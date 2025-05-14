@@ -36,12 +36,39 @@ const createCustomIcon = (color, type) => {
   });
 };
 
+// Define available map layers with titles
+const mapLayers = [
+  {
+    id: 'osm',
+    title: 'OpenStreetMap',
+    url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    opacity: 1
+  },
+  {
+    id: 'topo',
+    title: 'Topographic Map',
+    url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://opentopomap.org">OpenTopoMap</a>',
+    opacity: 1
+  },
+  {
+    id: 'satellite',
+    title: 'Satellite Imagery',
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attribution: 'Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+    opacity: 0.9
+  }
+];
+
 const BerneseMarchMap = () => {
+  // State to track the currently selected map layer
+  const [selectedLayer, setSelectedLayer] = useState('osm');
+
   // Center the map on Ins, Switzerland
   const mapCenter = [47.0030, 7.1070];
 
   // Create slightly offset positions for the checkpoints around Ins
-  // These would ideally be real geographical coordinates for the actual checkpoints
   const checkpoints = [
     { id: 'A', pos: [47.0130, 7.0930], time: '21:00' },
     { id: 'B', pos: [47.0180, 7.1250], time: '21:00' },
@@ -102,86 +129,129 @@ const BerneseMarchMap = () => {
     "font-size": '14px'
   };
 
+  // Handler for layer selection change
+  const handleLayerChange = (layerId) => {
+    setSelectedLayer(layerId);
+  };
+
   return (
-    <div style={{ height: '800px', borderRadius: '1rem', overflow: 'hidden' }}>
-      <MapContainer
-        center={mapCenter}
-        zoom={14}
-        style={{ height: '100%', width: '100%' }}
-        zoomControl={true}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-
-        {/* Render connections (edges) */}
-        {polylines.map((line, idx) => (
-          <React.Fragment key={`line-${idx}`}>
-            <Polyline positions={line.positions} pathOptions={polylineStyle} />
-            <Marker
-              position={line.midpoint}
-              icon={L.divIcon({
-                className: 'distance-label',
-                html: `<div style="${Object.entries(labelStyle).map(([k, v]) => `${k}:${v}`).join(';')}">${line.distance}</div>`,
-                iconSize: [33, 33],
-                iconAnchor: [12, 12]
-              })}
-            />
-          </React.Fragment>
-        ))}
-
-        {/* Render checkpoints (nodes) */}
-        {checkpoints.map(checkpoint => (
-          <React.Fragment key={`checkpoint-${checkpoint.id}`}>
-            <Marker
-              position={checkpoint.pos}
-              icon={checkpoint.isCenter ? centerIcon : checkpointIcon}
-            >
-              <Popup>
-                <div style={{ textAlign: 'center' }}>
-                  <strong>{checkpoint.isCenter ? 'Marschzentrum' : `Kontrollposten ${checkpoint.id}`}</strong>
-                  <br />
-                  <span>{checkpoint.time}</span>
-                </div>
-              </Popup>
-            </Marker>
-
-            {/* Add a separate marker for the label */}
-            <Marker
-              position={checkpoint.pos}
-              icon={L.divIcon({
-                className: 'checkpoint-label',
-                html: `<div style="
-                  background: ${checkpoint.isCenter ? '#000000' : '#cc0000'};
-                  color: white;
-                  padding: 2px 8px;
-                  border-radius: 4px;
-                  font-weight: bold;
-                  white-space: nowrap;
-                  margin-top: ${checkpoint.isCenter ? '-45px' : '-40px'};
-                  text-align: center;
-                ">${checkpoint.isCenter ? 'Marschzentrum' : `Kontrollposten ${checkpoint.id}`}<br>${checkpoint.time}</div>`,
-                iconSize: [140, 40],
-                iconAnchor: [70, 0]
-              })}
-              interactive={false}
-            />
-          </React.Fragment>
-        ))}
-
-        {/* Add distance circles for scale */}
-        <Circle
+    <div>
+      <div style={{ height: '800px', borderRadius: '1rem', overflow: 'hidden' }}>
+        <MapContainer
           center={mapCenter}
-          radius={1000}
-          pathOptions={{ color: '#cc0000', weight: 1, opacity: 0.3, fillOpacity: 0.05 }}
-        />
-        <Circle
-          center={mapCenter}
-          radius={2000}
-          pathOptions={{ color: '#cc0000', weight: 1, opacity: 0.3, fillOpacity: 0.05 }}
-        />
-      </MapContainer>
+          zoom={14}
+          style={{ height: '100%', width: '100%' }}
+          zoomControl={true}
+        >
+          {/* Render the selected tile layer */}
+          {mapLayers.map((layer) => (
+            selectedLayer === layer.id && (
+              <TileLayer
+                key={layer.id}
+                attribution={layer.attribution}
+                url={layer.url}
+                opacity={layer.opacity}
+              />
+            )
+          ))}
+
+          {/* Render connections (edges) */}
+          {polylines.map((line, idx) => (
+            <React.Fragment key={`line-${idx}`}>
+              <Polyline positions={line.positions} pathOptions={polylineStyle} />
+              <Marker
+                position={line.midpoint}
+                icon={L.divIcon({
+                  className: 'distance-label',
+                  html: `<div style="${Object.entries(labelStyle).map(([k, v]) => `${k}:${v}`).join(';')}">${line.distance}</div>`,
+                  iconSize: [33, 33],
+                  iconAnchor: [12, 12]
+                })}
+              />
+            </React.Fragment>
+          ))}
+
+          {/* Render checkpoints (nodes) */}
+          {checkpoints.map(checkpoint => (
+            <React.Fragment key={`checkpoint-${checkpoint.id}`}>
+              <Marker
+                position={checkpoint.pos}
+                icon={checkpoint.isCenter ? centerIcon : checkpointIcon}
+              >
+                <Popup>
+                  <div style={{ textAlign: 'center' }}>
+                    <strong>{checkpoint.isCenter ? 'Marschzentrum' : `Kontrollposten ${checkpoint.id}`}</strong>
+                    <br />
+                    <span>{checkpoint.time}</span>
+                  </div>
+                </Popup>
+              </Marker>
+
+              {/* Add a separate marker for the label */}
+              <Marker
+                position={checkpoint.pos}
+                icon={L.divIcon({
+                  className: 'checkpoint-label',
+                  html: `<div style="
+                    background: ${checkpoint.isCenter ? '#000000' : '#cc0000'};
+                    color: white;
+                    padding: 2px 8px;
+                    border-radius: 4px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    margin-top: ${checkpoint.isCenter ? '-45px' : '-40px'};
+                    text-align: center;
+                  ">${checkpoint.isCenter ? 'Marschzentrum' : `Kontrollposten ${checkpoint.id}`}<br>${checkpoint.time}</div>`,
+                  iconSize: [140, 40],
+                  iconAnchor: [70, 0]
+                })}
+                interactive={false}
+              />
+            </React.Fragment>
+          ))}
+
+          {/*  Radius circles around the center 
+          <Circle
+            center={mapCenter}
+            radius={1000}
+            pathOptions={{ color: '#cc0000', weight: 1, opacity: 0.3, fillOpacity: 0.05 }}
+          /> <Circle
+            center={mapCenter}
+            radius={2000}
+            pathOptions={{ color: '#cc0000', weight: 1, opacity: 0.3, fillOpacity: 0.05 }}
+          />
+          */}
+        </MapContainer>
+      </div>
+
+      {/* Layer Switcher */}
+      <div className="layer-switcher" style={{
+        marginTop: '15px',
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '10px',
+        flexWrap: 'wrap'
+      }}>
+        {mapLayers.map((layer) => (
+          <button
+            key={layer.id}
+            onClick={() => handleLayerChange(layer.id)}
+            style={{
+              padding: '8px 15px',
+              backgroundColor: selectedLayer === layer.id ? '#cc0000' : '#f0f0f0',
+              color: selectedLayer === layer.id ? 'white' : '#333',
+              border: '1px solid #ddd',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontWeight: selectedLayer === layer.id ? 'bold' : 'normal',
+              transition: 'all 0.2s ease',
+              margin: '5px',
+            }}
+          >
+            {layer.title}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

@@ -244,7 +244,7 @@ const CurrentMarch = () => {
                     </p>
                   </div>
 
-                  <div className="map-container">
+                  <div className="map-container p-4">
                     <h3>Distance Scheme Map</h3>
                     <BerneseMarchMap />
                   </div>
@@ -425,7 +425,7 @@ const CurrentMarch = () => {
                     <div className="featured-image">
                       <img
                         src="https://www.bernerdm.ch/wp-content/uploads/2025/02/IMG20241130183501-768x1024.jpg"
-                        alt="Certificate"
+                        alt="Mistaaa Tobias with his Certificate and Medal"
                         onClick={handleImageClick}
                         className="clickable-image"
                       />
