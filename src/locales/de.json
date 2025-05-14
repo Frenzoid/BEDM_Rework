@@ -22,7 +22,7 @@
       "quickLinks": "Schnellzugriff",
       "contact": "Kontakt",
       "followUs": "Folgen Sie uns",
-      "copyright": "© {year} Berner Distanzmarsch. Alle Rechte vorbehalten. – Erstellt von",
+      "copyright": "© {{year}} Berner Distanzmarsch. Alle Rechte vorbehalten. - Erstellt von",
       "privacyPolicy": "Datenschutz",
       "termsOfService": "Nutzungsbedingungen",
       "sitemap": "Seitenübersicht"

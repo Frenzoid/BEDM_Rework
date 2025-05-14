@@ -22,7 +22,7 @@
       "quickLinks": "Link Rapidi",
       "contact": "Contatti",
       "followUs": "Seguici",
-      "copyright": "© {year} Marcia di Distanza Bernese. Tutti i diritti riservati. - Realizzato da",
+      "copyright": "© {{year}} Marcia di Distanza Bernese. Tutti i diritti riservati. - Realizzato da",
       "privacyPolicy": "Informativa sulla Privacy",
       "termsOfService": "Termini di Servizio",
       "sitemap": "Mappa del Sito"

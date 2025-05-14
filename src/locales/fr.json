@@ -22,7 +22,7 @@
       "quickLinks": "Liens rapides",
       "contact": "Contact",
       "followUs": "Suivez-nous",
-      "copyright": "© {year} Marche de distance bernoise. Tous droits réservés. - Réalisé par",
+      "copyright": "© {{year}} Marche de distance bernoise. Tous droits réservés. - Réalisé par",
       "privacyPolicy": "Politique de confidentialité",
       "termsOfService": "Conditions d’utilisation",
       "sitemap": "Plan du site"

@@ -22,7 +22,7 @@
       "quickLinks": "Quick Links",
       "contact": "Contact",
       "followUs": "Follow Us",
-      "copyright": "© {year} Bernese Distance March. All Rights Reserved. - Made by",
+      "copyright": "© {{year}} Bernese Distance March. All Rights Reserved. - Made by",
       "privacyPolicy": "Privacy Policy",
       "termsOfService": "Terms of Service",
       "sitemap": "Sitemap"

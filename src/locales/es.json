@@ -22,7 +22,7 @@
       "quickLinks": "Enlaces rápidos",
       "contact": "Contacto",
       "followUs": "Síguenos",
-      "copyright": "© {year} Marcha de Distancia de Berna. Todos los derechos reservados. - Hecho por",
+      "copyright": "© {{year}} Marcha de Distancia de Berna. Todos los derechos reservados. - Hecho por",
       "privacyPolicy": "Política de privacidad",
       "termsOfService": "Términos del servicio",
       "sitemap": "Mapa del sitio"
